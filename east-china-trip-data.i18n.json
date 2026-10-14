@@ -1,0 +1,2698 @@
+{
+  "_instructions": {
+    "en": "Multilingual dataset for the East China trip PWA (27 Oct – 12 Nov 2026). Text fields (trip.title, trip.overview, day.title/weekday/focus/roads/clothing/extra, location.name/note/details, general, legend, appGuide, dining) are objects {en,ru,zh}: pick the active language. UI strings live in 'ui' keyed by language code. 'location.category' and 'location.meal' are language-independent codes; look up display labels in ui[lang].categories / ui[lang].meals. New categories compared with the Chiang Mai file: transit, museum, sight. Google Maps links use lat/lng + placeId (name is cosmetic only); placeId may be null. A top-level 'dining' object holds standalone dinner options: {title, intro, places[]} (same schema as a location, time=null, meal=null) and is rendered as the 4th tab (ui[lang].tabDining). 'day.day' is the sequential trip day (1..17), 'day.date' is the calendar date. 'location.details' is an optional expanded reference. Build a language switcher over trip.languages; default = trip.defaultLanguage.",
+    "ru": "Мультиязычный датасет для PWA поездки по Восточному Китаю (27 октября – 12 ноября 2026). Текстовые поля — объекты {en,ru,zh}. Строки интерфейса — в 'ui' по коду языка. Коды 'category'/'meal' языконезависимы, подписи берутся из ui[lang]. Новые категории относительно файла Чиангмая: transit, museum, sight. Ссылки Google Maps строятся по lat/lng + placeId (placeId может быть null). Верхнеуровневый объект 'dining' — отдельные опции для ужина {title, intro, places[]}, выводится 4-й вкладкой (ui[lang].tabDining). 'day.day' — сквозной номер дня поездки (1..17), 'day.date' — календарная дата. 'location.details' — необязательный расширенный справочник. Переключатель языка — по trip.languages, по умолчанию trip.defaultLanguage."
+  },
+  "trip": {
+    "title": {
+      "en": "East China — Shanghai, Hangzhou, Huangshan, Nanjing",
+      "ru": "Восточный Китай — Шанхай, Ханчжоу, Хуаншань, Нанкин",
+      "zh": "华东 — 上海、杭州、黄山、南京"
+    },
+    "dates": "2026-10-27 … 2026-11-12",
+    "brandColor": "#9F1239",
+    "languages": [
+      "en",
+      "ru",
+      "zh"
+    ],
+    "defaultLanguage": "ru",
+    "overview": {
+      "en": "17 days by high-speed train: Shanghai (with Haichang Ocean Park) → Hangzhou (West Lake) → Huangshan (mountains) → Nanjing (Purple Mountain, Xuanwu Lake) with a day in Suzhou → Shanghai again. Autumn: dry and cool; cold on the mountain.",
+      "ru": "17 дней по скоростным поездам: Шанхай (с океанариумом Haichang) → Ханчжоу (озеро Сиху) → Хуаншань (горы) → Нанкин (Пурпурная гора, озеро Сюаньу) с днём в Сучжоу → снова Шанхай. Сезон — осень, сухо и прохладно; на горе холодно.",
+      "zh": "17天高铁环线：上海（含海昌海洋公园）→ 杭州（西湖）→ 黄山 → 南京（紫金山、玄武湖）及苏州一日游 → 回上海。秋季：干燥微凉；山上寒冷。"
+    }
+  },
+  "ui": {
+    "en": {
+      "langName": "English",
+      "directions": "Directions",
+      "viewOnMap": "View on map",
+      "load": "Load",
+      "optional": "optional",
+      "dayWord": "Day",
+      "detailsLabel": "Details",
+      "roadsLabel": "Roads & transit",
+      "clothingLabel": "Clothing & shoes",
+      "noteLabel": "Note",
+      "tabItinerary": "Itinerary",
+      "tabInfo": "Trip info",
+      "tabDining": "Dinner",
+      "tabGuide": "How to use",
+      "meals": {
+        "breakfast": "Breakfast",
+        "dinner": "Dinner",
+        "snack": "Snack",
+        "main": "Main meal"
+      },
+      "categories": {
+        "hotel": "Hotel",
+        "rental": "Rental",
+        "cafe": "Café",
+        "garden": "Garden",
+        "nature": "Nature",
+        "temple": "Temple",
+        "activity": "Activity",
+        "pool": "Billiards",
+        "market": "Market",
+        "food": "Food",
+        "transit": "Transit",
+        "museum": "Museum",
+        "sight": "Sight"
+      }
+    },
+    "ru": {
+      "langName": "Русский",
+      "directions": "Маршрут",
+      "viewOnMap": "На карте",
+      "load": "Нагрузка",
+      "optional": "опционально",
+      "dayWord": "День",
+      "detailsLabel": "Подробнее",
+      "roadsLabel": "Дорога",
+      "clothingLabel": "Одежда/обувь",
+      "noteLabel": "Внимание",
+      "tabItinerary": "Маршрут",
+      "tabInfo": "О поездке",
+      "tabDining": "Ужин",
+      "tabGuide": "Как пользоваться",
+      "meals": {
+        "breakfast": "Завтрак",
+        "dinner": "Ужин",
+        "snack": "Перекус",
+        "main": "Осн. приём пищи"
+      },
+      "categories": {
+        "hotel": "Отель",
+        "rental": "Прокат",
+        "cafe": "Кафе",
+        "garden": "Сад",
+        "nature": "Природа",
+        "temple": "Храм",
+        "activity": "Активность",
+        "pool": "Бильярд",
+        "market": "Рынок",
+        "food": "Еда",
+        "transit": "Транспорт",
+        "museum": "Музей",
+        "sight": "Достопримечательность"
+      }
+    },
+    "zh": {
+      "langName": "中文",
+      "directions": "路线",
+      "viewOnMap": "在地图上查看",
+      "load": "强度",
+      "optional": "可选",
+      "dayWord": "第",
+      "detailsLabel": "详情",
+      "roadsLabel": "交通",
+      "clothingLabel": "着装/鞋",
+      "noteLabel": "注意",
+      "tabItinerary": "行程",
+      "tabInfo": "行程信息",
+      "tabDining": "晚餐",
+      "tabGuide": "使用说明",
+      "meals": {
+        "breakfast": "早餐",
+        "dinner": "晚餐",
+        "snack": "小吃",
+        "main": "主餐"
+      },
+      "categories": {
+        "hotel": "酒店",
+        "rental": "租赁",
+        "cafe": "咖啡馆",
+        "garden": "花园",
+        "nature": "自然",
+        "temple": "寺庙",
+        "activity": "活动",
+        "pool": "台球",
+        "market": "市集",
+        "food": "美食",
+        "transit": "交通",
+        "museum": "博物馆",
+        "sight": "景点"
+      }
+    }
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-10-27",
+      "weekday": {
+        "en": "Tue",
+        "ru": "Вт",
+        "zh": "周二"
+      },
+      "title": {
+        "en": "Arrival in Shanghai (late evening)",
+        "ru": "Прилёт в Шанхай (поздний вечер)",
+        "zh": "抵达上海（深夜）"
+      },
+      "busyness": 1,
+      "focus": {
+        "en": "Arrive, transfer to the hotel, rest. No other plans for the evening.",
+        "ru": "Прилёт, трансфер в отель, отдых. Другие планы на вечер не ставятся.",
+        "zh": "抵达、前往酒店、休息，当晚不安排其他行程。"
+      },
+      "roads": {
+        "en": "From the airport to the centre: metro (Line 2 links Pudong airport and Hongqiao station) or taxi/DiDi. Check the last metro time in advance and keep a taxi/DiDi as the fallback for a late arrival.",
+        "ru": "Из аэропорта в центр — метро (линия 2 связывает аэропорт Пудун и вокзал Хунцяо) или такси/DiDi. Время последнего поезда метро проверьте заранее; такси/DiDi держите как запасной вариант при позднем прилёте.",
+        "zh": "从机场进市区：地铁（2号线连接浦东机场与虹桥站）或出租车/滴滴。请提前确认末班地铁时间，深夜抵达时以出租车/滴滴作备选。"
+      },
+      "clothing": {
+        "en": "A light jacket (about +14 °C at night), comfortable shoes.",
+        "ru": "Лёгкая куртка (ночью около +14 °C), удобная обувь.",
+        "zh": "轻薄外套（夜间约14°C），舒适的鞋。"
+      },
+      "extra": {
+        "en": "Keep your passport and booking confirmation at hand: the hotel registers foreign guests at check-in.",
+        "ru": "Паспорт и подтверждение брони держите под рукой: отель регистрирует иностранных гостей при заселении.",
+        "zh": "护照和订房确认单随身携带：酒店会在入住时为外籍住客登记。"
+      },
+      "locations": [
+        {
+          "id": "d1-arrival",
+          "name": {
+            "en": "Arrival in Shanghai (PVG or SHA)",
+            "ru": "Прилёт в Шанхай (PVG или SHA)",
+            "zh": "抵达上海（浦东PVG或虹桥SHA）"
+          },
+          "time": "поздно",
+          "category": "transit",
+          "lat": 31.1443,
+          "lng": 121.8083,
+          "placeId": null,
+          "note": {
+            "en": "Passport control, then metro or taxi/DiDi to the hotel. Confirm the airport and arrival time from your ticket.",
+            "ru": "Паспорт на границе, затем метро или такси/DiDi в отель. Точный аэропорт и время прилёта уточнить по билету.",
+            "zh": "边检后乘地铁或出租车/滴滴前往酒店。机场和到达时间请以机票为准。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d1-hotel",
+          "name": {
+            "en": "Hotel (to book): central (People's Square / Nanjing Road), near metro",
+            "ru": "Отель (выбрать): центр (Народная площадь, Нанкин-роуд), у метро",
+            "zh": "酒店（待订）：市中心（人民广场/南京路），近地铁"
+          },
+          "time": "—",
+          "category": "hotel",
+          "lat": 31.234721,
+          "lng": 121.474898,
+          "placeId": "ChIJ443NM0NwsjURrWjV1_GoGSU",
+          "note": {
+            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-10-28",
+      "weekday": {
+        "en": "Wed",
+        "ru": "Ср",
+        "zh": "周三"
+      },
+      "title": {
+        "en": "Old town, Nanjing Road, the Bund",
+        "ru": "Старый город, Нанкин-роуд, Бунд",
+        "zh": "老城、南京路、外滩"
+      },
+      "busyness": 3,
+      "focus": {
+        "en": "Yu Garden in the morning, bazaar and lunch nearby, a walk along Nanjing Road, sunset and evening lights on the Bund.",
+        "ru": "Сад Юйюань с утра, рынок и обед рядом, прогулка по Нанкин-роуд, закат и вечерняя подсветка на Бунде.",
+        "zh": "上午豫园，附近市集午餐，漫步南京路，傍晚外滩看日落与夜景。"
+      },
+      "roads": {
+        "en": "All in the centre: metro Lines 10/14 to Yuyuan Garden station, then walk; Nanjing Road to the Bund is a short walk.",
+        "ru": "Всё в центре: метро линии 10 и 14 до станции Yuyuan Garden, далее пешком; от Нанкин-роуд до Бунда около 1,2 км пешком.",
+        "zh": "景点集中在市中心：乘地铁10/14号线至豫园站后步行；南京路步行街到外滩步行可达。"
+      },
+      "clothing": {
+        "en": "Light layers: about +18…+20 °C by day, cooler in the evening; comfortable walking shoes.",
+        "ru": "Лёгкие слои: днём около +18…+20 °C, к вечеру прохладнее; удобная обувь для прогулок.",
+        "zh": "轻便叠穿：白天约18–20°C，傍晚转凉；穿适合步行的鞋。"
+      },
+      "extra": {
+        "en": "Yu Garden is closed on Mondays; today is Wednesday, so it is open.",
+        "ru": "Сад Юйюань по понедельникам закрыт; сегодня среда, всё открыто.",
+        "zh": "豫园周一闭园；今天是周三，正常开放。"
+      },
+      "locations": [
+        {
+          "id": "d2-yu",
+          "name": {
+            "en": "Yu Garden",
+            "ru": "Сад Юйюань",
+            "zh": "豫园"
+          },
+          "time": "09:30",
+          "category": "garden",
+          "lat": 31.227236,
+          "lng": 121.492094,
+          "placeId": "ChIJidPZMUGHrTUR29eIuHbpoIQ",
+          "note": {
+            "en": "A Ming-era classical garden. Arrive at opening, before the groups.",
+            "ru": "Классический сад эпохи Мин. Приходите к открытию, пока нет групп.",
+            "zh": "明代古典园林。开门即到，避开团队。"
+          },
+          "details": {
+            "en": "Tue–Sun 09:00–16:30 (last entry about 16:00), closed Mondays. Ticket ¥40 in the April–November season (prices and hours change, check when buying). Online (Trip.com) or at the ticket office. Allow 1.5–2 h.",
+            "ru": "Вт–вс 09:00–16:30 (последний вход около 16:00), понедельник — выходной. Билет ¥40 в сезон апрель–ноябрь (цена и часы меняются, проверьте при покупке). Билет онлайн (Trip.com) или в кассе. Время осмотра 1,5–2 ч.",
+            "zh": "周二至周日9:00–16:30（约16:00停止入园），周一闭园。4–11月票价¥40（价格与时间可能调整，购票时请核实）。可在Trip.com线上购票或现场购票。建议游览1.5–2小时。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d2-bazaar",
+          "name": {
+            "en": "Yuyuan Bazaar and lunch (xiaolongbao)",
+            "ru": "Рынок Юйюань и обед (сяолунбао)",
+            "zh": "豫园商城与午餐（小笼包）"
+          },
+          "time": "12:00",
+          "category": "food",
+          "lat": 31.2262,
+          "lng": 121.493,
+          "placeId": null,
+          "note": {
+            "en": "Lunch next to the garden: xiaolongbao and local snacks. Queues at the famous spots are normal.",
+            "ru": "Обед рядом с садом: сяолунбао и местные закуски. Очереди в известные места — обычное дело.",
+            "zh": "在豫园旁午餐：小笼包和本地小吃。知名店排队属正常。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d2-nanjingrd",
+          "name": {
+            "en": "Nanjing Road (pedestrian)",
+            "ru": "Нанкин-роуд (пешеходная)",
+            "zh": "南京路步行街"
+          },
+          "time": "14:00",
+          "category": "market",
+          "lat": 31.234721,
+          "lng": 121.474898,
+          "placeId": "ChIJ443NM0NwsjURrWjV1_GoGSU",
+          "note": {
+            "en": "Walk toward the Bund: shops, cafés, street life. Very crowded in the evening.",
+            "ru": "Пешком в сторону Бунда: магазины, кафе, уличная жизнь. Вечером очень людно.",
+            "zh": "向外滩方向步行：商店、咖啡馆、街头热闹。晚上人流很大。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d2-bund",
+          "name": {
+            "en": "The Bund (Waitan)",
+            "ru": "Бунд (Вайтань)",
+            "zh": "外滩"
+          },
+          "time": "16:30",
+          "category": "sight",
+          "lat": 31.240261,
+          "lng": 121.490577,
+          "placeId": "ChIJYUiHi1dwsjURZK_REO37Vk0",
+          "note": {
+            "en": "Sunset around 17:00, then the Pudong skyline lights. The lights usually go off around 22:00.",
+            "ru": "Закат около 17:00, затем вечерняя подсветка Пудуна. Подсветка обычно гаснет около 22:00.",
+            "zh": "日落约17:00，随后浦东夜景亮灯。灯光通常在22:00左右熄灭。"
+          },
+          "details": {
+            "en": "The promenade is free and open round the clock. The best view of the Pudong towers is from the west bank, ideally just after sunset.",
+            "ru": "Набережная бесплатна, круглосуточно. Лучший вид на небоскрёбы Пудуна — с западного берега, лучше сразу после заката.",
+            "zh": "沿江步道免费，全天开放。观赏浦东高楼的最佳位置在西岸（外滩一侧），日落后不久最佳。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-10-29",
+      "weekday": {
+        "en": "Thu",
+        "ru": "Чт",
+        "zh": "周四"
+      },
+      "title": {
+        "en": "Shanghai Haichang Ocean Park",
+        "ru": "Шанхай Haichang Ocean Park",
+        "zh": "上海海昌海洋公园"
+      },
+      "busyness": 4,
+      "focus": {
+        "en": "A full day at the ocean theme park in Lingang. Leave early: the trip takes 1.5 h or more each way.",
+        "ru": "Целый день в океанариуме-парке в Линьгане. Выезд рано: дорога в одну сторону 1,5 ч и больше.",
+        "zh": "整天游览临港的海昌海洋公园。早出发：单程约1.5小时甚至更久。"
+      },
+      "roads": {
+        "en": "Metro from the centre, change to Line 16 (for example at Longyang Road) to Dishui Lake station, then bus 1135 (about ¥1) or taxi/DiDi (about 2.5 km). Leave the park by 16:30 for the return.",
+        "ru": "Метро из центра до линии 16 (пересадка, например, на Longyang Road), до станции Dishui Lake, далее автобус 1135 (≈¥1) или такси/DiDi (≈2,5 км). Обратно выехать из парка до 16:30.",
+        "zh": "从市区乘地铁换乘16号线（如龙阳路站）至滴水湖站，再乘1135路公交（约¥1）或打车/滴滴（约2.5公里）。16:30前离园返程。"
+      },
+      "clothing": {
+        "en": "Layers and comfortable shoes: the park is large, lots of walking; windy near the water. A light rain jacket just in case.",
+        "ru": "Слои и удобная обувь: парк большой, много ходьбы; ветер у воды. Лёгкий дождевик на всякий случай.",
+        "zh": "叠穿并穿舒适的鞋：园区很大，步行多，近水风大。备一件轻便雨衣。"
+      },
+      "extra": {
+        "en": "A weekday was chosen on purpose for smaller crowds. Sources give different opening hours (from 09:00 to 16:30–18:00): check Trip.com or the official WeChat before you go.",
+        "ru": "Будний день выбран осознанно: меньше людей. Часы работы источники указывают по-разному (с 09:00 до 16:30–18:00): проверьте в Trip.com или официальном WeChat перед выездом.",
+        "zh": "特意选在工作日以避开人流。各来源对营业时间说法不一（9:00至16:30–18:00不等）：出发前请在Trip.com或官方微信核实。"
+      },
+      "locations": [
+        {
+          "id": "d3-metro",
+          "name": {
+            "en": "Metro to Lingang (Line 16)",
+            "ru": "Метро в Линьган (линия 16)",
+            "zh": "地铁前往临港（16号线）"
+          },
+          "time": "07:15",
+          "category": "transit",
+          "lat": 30.907245,
+          "lng": 121.929583,
+          "placeId": "ChIJbWj7-JN1rTURFRX4d2dg5h0",
+          "note": {
+            "en": "1–1.5 h from the centre. The terminus is Dishui Lake (滴水湖).",
+            "ru": "Из центра 1–1,5 ч. Конечная — Dishui Lake (滴水湖).",
+            "zh": "从市区约1–1.5小时。终点站为滴水湖。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d3-bus",
+          "name": {
+            "en": "Bus 1135 or taxi to the park",
+            "ru": "Автобус 1135 или такси до парка",
+            "zh": "乘1135路公交或打车到园区"
+          },
+          "time": "08:45",
+          "category": "transit",
+          "lat": 30.907245,
+          "lng": 121.929583,
+          "placeId": "ChIJbWj7-JN1rTURFRX4d2dg5h0",
+          "note": {
+            "en": "About 2.5 km from the station to the entrance. Bus 1135 runs to a terminal by the park; taxi/DiDi as the fallback.",
+            "ru": "От станции до входа около 2,5 км. Автобус 1135 идёт до конечной у парка; такси/DiDi — запасной вариант.",
+            "zh": "从地铁站到入口约2.5公里。1135路公交开到公园旁终点站；打车/滴滴作备选。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d3-haichang",
+          "name": {
+            "en": "Shanghai Haichang Ocean Park",
+            "ru": "Shanghai Haichang Ocean Park",
+            "zh": "上海海昌海洋公园"
+          },
+          "time": "09:00",
+          "category": "activity",
+          "lat": 30.908943,
+          "lng": 121.905765,
+          "placeId": "ChIJr3ucmeB1rTUR1HboCLJbezI",
+          "note": {
+            "en": "Orca, dolphin, sea lion and beluga shows; polar animal pavilions. A mini buggy can be rented inside the large park.",
+            "ru": "Шоу косаток, дельфинов, морских львов и белух; павильоны полярных животных. На большой территории можно взять мини-кар напрокат.",
+            "zh": "虎鲸、海豚、海狮和白鲸表演；极地动物馆。园区很大，园内可租小型观光车。"
+          },
+          "details": {
+            "en": "Address: 166 Yinfei Road, Pudong. Tickets for foreign visitors on Trip.com or Klook; dynamic pricing, about ¥330–400 on weekdays per the sources (verify). Check show times at the entrance or in the park mini-program. Outside food is generally not allowed.",
+            "ru": "Адрес: 166 Yinfei Road, Pudong. Билет для иностранцев — на Trip.com или Klook; цена динамическая, по источникам около ¥330–400 в будни (проверьте). Расписание шоу смотрите у входа или в мини-программе парка. Своя еда в парк обычно не допускается.",
+            "zh": "地址：浦东银飞路166号。外籍游客可在Trip.com或Klook购票；价格浮动，据资料工作日约¥330–400（请核实）。表演时间请在入口或园区小程序查看。通常不允许自带食物。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d3-lunch",
+          "name": {
+            "en": "Lunch in the park",
+            "ru": "Обед в парке",
+            "zh": "园内午餐"
+          },
+          "time": "12:30",
+          "category": "food",
+          "lat": 30.908943,
+          "lng": 121.905765,
+          "placeId": "ChIJr3ucmeB1rTUR1HboCLJbezI",
+          "note": {
+            "en": "The main meal of the day, inside the park between shows.",
+            "ru": "Основной приём пищи дня — внутри парка, между шоу.",
+            "zh": "当天主餐在园内，安排在两场表演之间。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d3-return",
+          "name": {
+            "en": "Return to the centre",
+            "ru": "Возвращение в центр",
+            "zh": "返回市区"
+          },
+          "time": "16:30",
+          "category": "transit",
+          "lat": 30.907245,
+          "lng": 121.929583,
+          "placeId": "ChIJbWj7-JN1rTURFRX4d2dg5h0",
+          "note": {
+            "en": "Leave the park by 16:30: the return takes 1.5 h. Dinner in town, free evening.",
+            "ru": "Выезд из парка до 16:30: обратная дорога 1,5 ч. Ужин в городе, вечер свободный.",
+            "zh": "16:30前离园：返程约1.5小时。晚餐回市区吃，晚上自由安排。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-10-30",
+      "weekday": {
+        "en": "Fri",
+        "ru": "Пт",
+        "zh": "周五"
+      },
+      "title": {
+        "en": "French Concession: Wukang, Jing'an Temple, Tianzifang",
+        "ru": "Французская концессия: Укан, храм Цзинъань, Тяньцзыфан",
+        "zh": "法租界：武康路、静安寺、田子坊"
+      },
+      "busyness": 3,
+      "focus": {
+        "en": "A walking day in the former French Concession: plane-tree streets, a temple, maze-like lanes. Free evening: pack for tomorrow's move.",
+        "ru": "Пешеходный день по бывшей Французской концессии: платановые улицы, храм, кварталы-лабиринты. Вечер свободный: сборы к переезду.",
+        "zh": "漫步前法租界：梧桐街道、寺庙、弄堂街区。晚上自由：整理行李，准备明天转场。"
+      },
+      "roads": {
+        "en": "Metro and on foot. Stations near Wukang Road and Jing'an; Wukang to Tianzifang is 20–30 minutes by metro or taxi.",
+        "ru": "Метро и пешком. Станции у Укан-роуд и Цзинъань; от Укана до Тяньцзыфана 20–30 минут на метро или такси.",
+        "zh": "地铁加步行。武康路和静安寺附近均有地铁站；武康路到田子坊乘地铁或打车约20–30分钟。"
+      },
+      "clothing": {
+        "en": "Comfortable shoes, a light jacket; cooler in the evening.",
+        "ru": "Удобная обувь, лёгкая куртка; вечером прохладнее.",
+        "zh": "舒适的鞋、轻薄外套；晚上较凉。"
+      },
+      "extra": {
+        "en": "Buy tomorrow's train tickets to Hangzhou (31 October) in advance (12306 or Trip.com, passport).",
+        "ru": "Билеты на поезд до Ханчжоу на 31 октября купите заранее (12306 или Trip.com, паспорт).",
+        "zh": "请提前购买10月31日去杭州的火车票（12306或Trip.com，需护照）。"
+      },
+      "locations": [
+        {
+          "id": "d4-wukang",
+          "name": {
+            "en": "Wukang Mansion and Wukang Road",
+            "ru": "Здание Укан и Укан-роуд",
+            "zh": "武康大楼与武康路"
+          },
+          "time": "09:30",
+          "category": "sight",
+          "lat": 31.20448,
+          "lng": 121.438326,
+          "placeId": "ChIJFezOP0llsjURgZUzT-yILHw",
+          "note": {
+            "en": "The famous flat-iron building by Hudec and the quiet plane-tree streets around it. Fewer people in the morning.",
+            "ru": "Знаменитое здание Худенца в форме «утюга» и тихие платановые улицы вокруг. Утром людей меньше.",
+            "zh": "邬达克设计的著名熨斗形大楼及周边安静的梧桐街道。上午人少。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d4-jingan",
+          "name": {
+            "en": "Jing'an Temple",
+            "ru": "Храм Цзинъань",
+            "zh": "静安寺"
+          },
+          "time": "11:15",
+          "category": "temple",
+          "lat": 31.223519,
+          "lng": 121.445284,
+          "placeId": "ChIJVV1KHv5vsjURQgiHHZfGW3o",
+          "note": {
+            "en": "A golden temple among skyscrapers. Entry ¥50, daily 07:30–17:00.",
+            "ru": "Золотой храм среди небоскрёбов. Вход ¥50, ежедневно 07:30–17:00.",
+            "zh": "高楼间的金色寺庙。门票¥50，每日7:30–17:00。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d4-lunch",
+          "name": {
+            "en": "Lunch near Jing'an",
+            "ru": "Обед в кафе у Цзинъань",
+            "zh": "静安寺附近午餐"
+          },
+          "time": "12:45",
+          "category": "food",
+          "lat": 31.223519,
+          "lng": 121.445284,
+          "placeId": "ChIJVV1KHv5vsjURQgiHHZfGW3o",
+          "note": {
+            "en": "The main meal of the day, near the temple or on the way to Tianzifang.",
+            "ru": "Основной приём пищи дня — в районе храма или по пути к Тяньцзыфану.",
+            "zh": "当天主餐在寺附近或前往田子坊途中解决。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d4-tianzifang",
+          "name": {
+            "en": "Tianzifang",
+            "ru": "Тяньцзыфан",
+            "zh": "田子坊"
+          },
+          "time": "14:30",
+          "category": "market",
+          "lat": 31.208812,
+          "lng": 121.468898,
+          "placeId": "ChIJ2-UI76F6sjURj_HAeG5PMhE",
+          "note": {
+            "en": "Lanes of shops, crafts and cafés. Shops are generally open from about 10:00 until late evening.",
+            "ru": "Переулки с лавками, ремёслами и кафе. Магазины работают примерно с 10:00 до позднего вечера.",
+            "zh": "弄堂里的小店、手工艺品和咖啡馆。商店大致10:00营业至晚间。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-10-31",
+      "weekday": {
+        "en": "Sat",
+        "ru": "Сб",
+        "zh": "周六"
+      },
+      "title": {
+        "en": "Move to Hangzhou + West Lake at sunset",
+        "ru": "Переезд в Ханчжоу + озеро Сиху на закате",
+        "zh": "转场杭州 + 西湖日落"
+      },
+      "busyness": 2,
+      "focus": {
+        "en": "A morning high-speed train, check-in, an afternoon walk along the north shore of West Lake.",
+        "ru": "Утренний скоростной поезд, заселение, послеобеденная прогулка по северному берегу Сиху.",
+        "zh": "上午高铁，入住酒店，下午沿西湖北岸散步。"
+      },
+      "roads": {
+        "en": "A G-train from Hongqiao to Hangzhou East (45–60 min, second class ¥57–87). Second-class luggage space is limited: bring one suitcase and a bag. From the station to the lake by metro or taxi.",
+        "ru": "Поезд G с вокзала Хунцяо до Hangzhou East (45–60 мин, второй класс ¥57–87). Багажа на второй класс мало — берите один чемодан и сумку. От вокзала до озера — метро или такси.",
+        "zh": "乘G字头列车从虹桥到杭州东（45–60分钟，二等座¥57–87）。二等座行李空间有限：建议一个行李箱加一个随身包。到站后乘地铁或打车去西湖。"
+      },
+      "clothing": {
+        "en": "A light jacket, comfortable shoes; cooler by the lake.",
+        "ru": "Лёгкая куртка, удобная обувь; на озере прохладнее.",
+        "zh": "轻薄外套、舒适的鞋；湖边较凉。"
+      },
+      "extra": {
+        "en": "Saturday: the lake is busy, so go after lunch and keep to the side paths by the water. Do not trust the so-called tourist information desks in the station: they sell tours.",
+        "ru": "Суббота: на озере людно, лучше выходить после обеда и у воды держаться боковых дорожек. Сотрудникам «туристических стоек» на вокзале не верьте: это продавцы туров.",
+        "zh": "周六：西湖人多，建议午后出发，沿湖走偏僻小路。车站里所谓的「游客咨询台」是卖团的，不要轻信。"
+      },
+      "locations": [
+        {
+          "id": "d5-train",
+          "name": {
+            "en": "Train Hongqiao → Hangzhou East",
+            "ru": "Поезд Хунцяо → Hangzhou East",
+            "zh": "高铁 虹桥 → 杭州东"
+          },
+          "time": "10:00",
+          "category": "transit",
+          "lat": 31.194109,
+          "lng": 121.320454,
+          "placeId": null,
+          "note": {
+            "en": "G-train 45–60 min, ¥57–87 (2nd class). Arrive at the station early: your passport is required.",
+            "ru": "G-поезд 45–60 мин, ¥57–87 (2 класс). Прибытие на вокзал заранее: нужен паспорт.",
+            "zh": "G字头列车45–60分钟，¥57–87（二等座）。请提前到站：需要护照。"
+          },
+          "details": {
+            "en": "Tickets via 12306 (English app, passport) or Trip.com. In Shanghai the station is Hongqiao, in Hangzhou it is Hangzhou East (杭州东). Check both station names on the ticket.",
+            "ru": "Билеты — 12306 (английское приложение, паспорт) или Trip.com. В Шанхае вокзал Хунцяо (Hongqiao), в Ханчжоу — Hangzhou East (杭州东). Проверьте на билете названия обеих станций.",
+            "zh": "可通过12306（英文版，护照）或Trip.com购票。上海站为虹桥，杭州站为杭州东。请核对车票上的两个站名。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d5-arrive",
+          "name": {
+            "en": "Hangzhou East",
+            "ru": "Hangzhou East",
+            "zh": "杭州东站"
+          },
+          "time": "11:15",
+          "category": "transit",
+          "lat": 30.292859,
+          "lng": 120.215818,
+          "placeId": null,
+          "note": {
+            "en": "Metro or taxi to the hotel; leave the luggage if check-in is not yet open.",
+            "ru": "Метро или такси в отель; оставить багаж, если заселение ещё не открыто.",
+            "zh": "乘地铁或出租车去酒店；若尚不能入住，先寄存行李。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d5-hotel",
+          "name": {
+            "en": "Hotel (to book): east shore of West Lake (Hubin/Wulin)",
+            "ru": "Отель (выбрать): восточный берег Сиху (Хубинь/Улинь)",
+            "zh": "酒店（待订）：西湖东岸（湖滨/武林）"
+          },
+          "time": "12:00",
+          "category": "hotel",
+          "lat": 30.257,
+          "lng": 120.164,
+          "placeId": null,
+          "note": {
+            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d5-lunch",
+          "name": {
+            "en": "Lunch near the hotel",
+            "ru": "Обед рядом с отелем",
+            "zh": "酒店附近午餐"
+          },
+          "time": "12:45",
+          "category": "food",
+          "lat": 30.257,
+          "lng": 120.164,
+          "placeId": null,
+          "note": {
+            "en": "The main meal of the day, near the lake; see the Dinner tab for Hangzhou specialities.",
+            "ru": "Основной приём пищи дня — недалеко от озера; специалитеты ханчжоуской кухни смотрите на вкладке «Ужин».",
+            "zh": "当天主餐在湖附近；杭州特色菜见「晚餐」标签。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d5-brokenbridge",
+          "name": {
+            "en": "Broken Bridge and Su Causeway",
+            "ru": "Мост Дуаньцяо и дамба Су",
+            "zh": "断桥与苏堤"
+          },
+          "time": "15:30",
+          "category": "sight",
+          "lat": 30.259271,
+          "lng": 120.15238,
+          "placeId": "ChIJLX_GQptiSzQR6_YUSZJHm1A",
+          "note": {
+            "en": "Walk along the north shore: Broken Bridge, willows, boats. Sunset around 17:00.",
+            "ru": "Пешком вдоль северного берега: мост Дуаньцяо, ивы, лодки. Закат около 17:00.",
+            "zh": "沿北岸步行：断桥、垂柳、游船。日落约17:00。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2026-11-01",
+      "weekday": {
+        "en": "Sun",
+        "ru": "Вс",
+        "zh": "周日"
+      },
+      "title": {
+        "en": "Lingyin Temple, tea village, sunset at Leifeng Pagoda",
+        "ru": "Линъинь, чайная деревня, закат у пагоды Лэйфэн",
+        "zh": "灵隐寺、茶村、雷峰塔日落"
+      },
+      "busyness": 3,
+      "focus": {
+        "en": "A morning at Lingyin Temple at opening, then the tea village and sunset on the lake's south shore.",
+        "ru": "Утро в храме Линъинь у открытия, затем чайная деревня и закат у западного берега озера.",
+        "zh": "清晨开门即到灵隐寺，随后去茶村，傍晚在西湖南岸看日落。"
+      },
+      "roads": {
+        "en": "City buses run from West Lake to the Lingyin entrance; taxi/DiDi as the fallback. Meijiawu is a short ride from Lingyin.",
+        "ru": "От Сиху до Линъинь ходят городские автобусы до входа в зону; такси/DiDi — запасной вариант. Между Линъинь и Meijiawu — короткий проезд.",
+        "zh": "西湖到灵隐有公交直达景区入口；打车/滴滴作备选。灵隐到梅家坞车程很短。"
+      },
+      "clothing": {
+        "en": "Comfortable shoes for stairs and trails; a light jacket.",
+        "ru": "Удобная обувь для лестниц и троп; лёгкая куртка.",
+        "zh": "穿适合台阶和山路的鞋；带轻薄外套。"
+      },
+      "extra": {
+        "en": "Sunday: Lingyin is crowded, hence the 07:30 start. The Feilai Feng area requires a real-name reservation in advance; check the current rules the day before.",
+        "ru": "Воскресенье: в Линъинь много людей, поэтому вход в 07:30. Зона Feilai Feng требует предварительной брони по реальному имени; проверьте актуальные условия накануне.",
+        "zh": "周日：灵隐人多，因此7:30入园。飞来峰景区需提前实名预约；请前一天核实最新规定。"
+      },
+      "locations": [
+        {
+          "id": "d6-lingyin",
+          "name": {
+            "en": "Lingyin Temple and Feilai Feng",
+            "ru": "Храм Линъинь и Feilai Feng",
+            "zh": "灵隐寺与飞来峰"
+          },
+          "time": "07:30",
+          "category": "temple",
+          "lat": 30.240831,
+          "lng": 120.101482,
+          "placeId": "ChIJKaE-rCxjSzQRbBbWRsm-rL4",
+          "note": {
+            "en": "One of China's major temples; Buddhist carvings on the Feilai Feng slopes. 2–3 hours.",
+            "ru": "Один из главных храмов Китая; на склонах Feilai Feng — буддийские рельефы. 2–3 часа.",
+            "zh": "中国重要寺庙之一；飞来峰山体上有佛教造像。约2–3小时。"
+          },
+          "details": {
+            "en": "Per 2026 sources the Lingyin/Feilai Feng area is free with a reservation (mini-program «杭州灵隐飞来峰», real name, time slot); older sources list ¥45. The ticket to the temple itself is ¥30, bought on site. Hours: from 07:30, last entry 17:30, closing about 18:00. Bring your passport for the booking.",
+            "ru": "По источникам 2026 года зона Lingyin/Feilai Feng бесплатна по брони (мини-программа «杭州灵隐飞来峰», реальное имя, слот), прежние источники указывают ¥45. Билет в сам храм ¥30 покупается на месте. Часы: с 07:30, последний вход 17:30, закрытие около 18:00. Паспорт для брони.",
+            "zh": "据2026年资料，灵隐/飞来峰景区需预约、免费（小程序「杭州灵隐飞来峰」，实名、选时段）；旧资料标注¥45。进入寺内需另购¥30的香花券，现场购买。时间：7:30起，17:30停止入内，约18:00闭园。预约需护照。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d6-meijiawu",
+          "name": {
+            "en": "Meijiawu tea village",
+            "ru": "Чайная деревня Meijiawu",
+            "zh": "梅家坞茶村"
+          },
+          "time": "11:30",
+          "category": "nature",
+          "lat": 30.244103,
+          "lng": 120.115148,
+          "placeId": "ChIJGXnEe9ZiSzQRalA5gmAVwgg",
+          "note": {
+            "en": "Longjing tea slopes and tea houses. Careful: tea «sessions» that push pills and supplements — decline politely.",
+            "ru": "Чайные склоны Лунцзин и чайные дома. Осторожно: «чайные сессии» с навязыванием таблеток и добавок — вежливо отказывайтесь.",
+            "zh": "龙井茶山与茶馆。注意：有些「品茶」环节会强行推销药丸和保健品，请礼貌拒绝。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d6-lunch",
+          "name": {
+            "en": "Lunch in the tea village",
+            "ru": "Обед в чайной деревне",
+            "zh": "茶村午餐"
+          },
+          "time": "13:00",
+          "category": "food",
+          "lat": 30.244103,
+          "lng": 120.115148,
+          "placeId": "ChIJGXnEe9ZiSzQRalA5gmAVwgg",
+          "note": {
+            "en": "The main meal of the day: local dishes and tea and dried-fruit snacks.",
+            "ru": "Основной приём пищи дня: местная кухня и закуски из чая и сухофруктов.",
+            "zh": "当天主餐：本地家常菜及茶点、果干。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d6-leifeng",
+          "name": {
+            "en": "Leifeng Pagoda",
+            "ru": "Пагода Лэйфэн",
+            "zh": "雷峰塔"
+          },
+          "time": "16:00",
+          "category": "sight",
+          "lat": 30.231568,
+          "lng": 120.149695,
+          "placeId": "ChIJcZiMplJ9SzQRbdkqb6FKxzM",
+          "note": {
+            "en": "Sunset over the lake from the hill. Ticket about ¥40, daily about 08:00–20:00 (verify).",
+            "ru": "Вид на закат над озером с холма. Билет около ¥40, ежедневно примерно 08:00–20:00 (проверьте).",
+            "zh": "在山上俯瞰西湖日落。门票约¥40，每日约8:00–20:00（请核实）。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2026-11-02",
+      "weekday": {
+        "en": "Mon",
+        "ru": "Пн",
+        "zh": "周一"
+      },
+      "title": {
+        "en": "Xixi Wetland, the lake, Hefang Street",
+        "ru": "Парк Сиси, озеро, улица Хэфан",
+        "zh": "西溪湿地、西湖、河坊街"
+      },
+      "busyness": 3,
+      "focus": {
+        "en": "A morning in Xixi Wetland by boat, the afternoon at the lake, the evening on Hefang Street.",
+        "ru": "Утро в водно-болотном парке Сиси на лодке, вторая половина дня у озера, вечер на улице Хэфан.",
+        "zh": "上午坐船游西溪湿地，下午在西湖边，晚上逛河坊街。"
+      },
+      "roads": {
+        "en": "To Xixi by metro (Line 3, Xixi Wetland South station) or taxi. Boats inside the park.",
+        "ru": "До Сиси метро (линия 3, станция Xixi Wetland South, или такси). Внутри парка — лодки.",
+        "zh": "到西溪可乘地铁（3号线，西溪湿地南站）或打车。园内乘船游览。"
+      },
+      "clothing": {
+        "en": "A jacket and comfortable shoes; the scenery is plainer later in the season, but the crowds are smaller.",
+        "ru": "Куртка и удобная обувь; зимой пейзаж скромнее, зато людей меньше.",
+        "zh": "外套和舒适的鞋；季末景色偏素净，但游客更少。"
+      },
+      "extra": {
+        "en": "Boats are paid separately from admission; the on-board guide usually speaks only Chinese.",
+        "ru": "Лодки оплачиваются отдельно от входа; гид в парке обычно говорит только по-китайски.",
+        "zh": "乘船另行收费；园内船上讲解通常只有中文。"
+      },
+      "locations": [
+        {
+          "id": "d7-xixi",
+          "name": {
+            "en": "Xixi National Wetland Park",
+            "ru": "Национальный парк Сиси",
+            "zh": "西溪国家湿地公园"
+          },
+          "time": "08:15",
+          "category": "nature",
+          "lat": 30.268056,
+          "lng": 120.06629,
+          "placeId": "ChIJi12LoKBkSzQRi81B9em3LvM",
+          "note": {
+            "en": "Canals, reeds, boat routes. Arrive at opening: part of the boats can sell out by the afternoon.",
+            "ru": "Каналы, тростники, лодочные маршруты. Приходите к открытию: после обеда часть лодок распродана.",
+            "zh": "水道、芦苇、游船线路。开门即到：午后部分船票可能售罄。"
+          },
+          "details": {
+            "en": "Admission ¥80. October–March hours: 08:00–17:30 (last entry about 17:00); some sources give 07:30–18:30. Boats are extra: shared boat from Zhoujiacun about ¥30–50 per person, routes of 1/2/3 h; a rowing boat about ¥140–180 per hour.",
+            "ru": "Вход ¥80. Часы с октября по март: 08:00–17:30 (последний вход около 17:00); некоторые источники дают 07:30–18:30. Лодки отдельно: общая от Zhoujiacun около ¥30–50 с человека, маршруты 1/2/3 ч; гребная лодка около ¥140–180 в час.",
+            "zh": "门票¥80。10月至次年3月开放8:00–17:30（约17:00停止入园），个别资料为7:30–18:30。船票另付：周家村码头合乘约¥30–50/人，线路1/2/3小时；摇橹船约¥140–180/小时。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d7-lunch",
+          "name": {
+            "en": "Lunch in the park",
+            "ru": "Обед в парке",
+            "zh": "园内午餐"
+          },
+          "time": "12:30",
+          "category": "food",
+          "lat": 30.268056,
+          "lng": 120.06629,
+          "placeId": "ChIJi12LoKBkSzQRi81B9em3LvM",
+          "note": {
+            "en": "The main meal of the day: stalls and cafés at the boat stops.",
+            "ru": "Основной приём пищи дня: лотки и кафе на остановках лодок.",
+            "zh": "当天主餐：在各码头的小摊和餐馆解决。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d7-westlake",
+          "name": {
+            "en": "West Lake (optional)",
+            "ru": "Озеро Сиху (по желанию)",
+            "zh": "西湖（可选）"
+          },
+          "time": "15:00",
+          "category": "nature",
+          "lat": 30.240094,
+          "lng": 120.14497,
+          "placeId": "ChIJQaiOXbBiSzQRzD7tLu8ik4U",
+          "note": {
+            "en": "Free time by the water: a boat or a walk along the south shore.",
+            "ru": "Свободное время у воды: лодка или пеший круг по южному берегу.",
+            "zh": "湖边自由活动：乘船或沿南岸步行。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d7-hefang",
+          "name": {
+            "en": "Hefang Street",
+            "ru": "Улица Хэфан",
+            "zh": "河坊街"
+          },
+          "time": "18:00",
+          "category": "food",
+          "lat": 30.24012,
+          "lng": 120.17249,
+          "placeId": "ChIJ-XaTcludTDQRR1IzQgmgKdQ",
+          "note": {
+            "en": "The old trading street: dinner and street snacks.",
+            "ru": "Старая торговая улица: ужин и уличные закуски.",
+            "zh": "老商业街：晚餐和街边小吃。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "date": "2026-11-03",
+      "weekday": {
+        "en": "Tue",
+        "ru": "Вт",
+        "zh": "周二"
+      },
+      "title": {
+        "en": "Move to Huangshan (Tangkou)",
+        "ru": "Переезд в Хуаншань (Танкоу)",
+        "zh": "转场黄山（汤口）"
+      },
+      "busyness": 2,
+      "focus": {
+        "en": "A morning train to Huangshan North, a bus to Tangkou at the foot of the mountain, an evening to prepare.",
+        "ru": "Утренний поезд до Huangshan North, автобус до городка Танкоу у подножия горы, вечер на подготовку.",
+        "zh": "上午乘高铁到黄山北，转大巴到山脚汤口镇，晚上做上山准备。"
+      },
+      "roads": {
+        "en": "Train Hangzhou East → Huangshan North (31 trains a day, 1 h 14 min – 1 h 58 min, second class about ¥170). From the station a bus to Tangkou takes about 50 minutes, ¥30. Use Huangshan North station, not Huangshan Railway Station. Check the last bus time on site; after 19:30 take a taxi.",
+        "ru": "Поезд Hangzhou East → Huangshan North (31 поезд в день, 1 ч 14 мин – 1 ч 58 мин, второй класс около ¥170). От вокзала автобус до Танкоу около 50 минут, ¥30. Вокзал Huangshan North, а не Huangshan Railway Station. Проверьте время последнего автобуса на месте; после 19:30 — такси.",
+        "zh": "杭州东 → 黄山北高铁（每天31趟，1小时14分–1小时58分，二等座约¥170）。出站后乘大巴到汤口约50分钟，¥30。请认准黄山北站，而不是黄山站。请到站后确认末班车时间；19:30以后打车。"
+      },
+      "clothing": {
+        "en": "Warm layers for tomorrow's climb: a jacket, gloves, a hat, a rain jacket, shoes with a good tread.",
+        "ru": "Тёплые слои для завтрашнего подъёма: куртка, перчатки, шапка, дождевик, обувь с хорошим протектором.",
+        "zh": "为明天登山准备保暖叠穿：外套、手套、帽子、雨衣、防滑好鞋。"
+      },
+      "extra": {
+        "en": "Take your original passport: it is needed to enter the mountain. The park ticket is valid for 3 days.",
+        "ru": "Возьмите оригинал паспорта: он нужен для входа на гору. Билет в парк действует 3 дня.",
+        "zh": "请带护照原件：上山需要。景区门票3天有效。"
+      },
+      "locations": [
+        {
+          "id": "d8-checkout",
+          "name": {
+            "en": "Hotel (to book): check-out in Hangzhou",
+            "ru": "Отель (выбрать): выезд из отеля в Ханчжоу",
+            "zh": "酒店（待订）：杭州酒店退房"
+          },
+          "time": "08:00",
+          "category": "hotel",
+          "lat": 30.257,
+          "lng": 120.164,
+          "placeId": null,
+          "note": {
+            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d8-train",
+          "name": {
+            "en": "Train Hangzhou East → Huangshan North",
+            "ru": "Поезд Hangzhou East → Huangshan North",
+            "zh": "高铁 杭州东 → 黄山北"
+          },
+          "time": "09:30",
+          "category": "transit",
+          "lat": 30.292859,
+          "lng": 120.215818,
+          "placeId": null,
+          "note": {
+            "en": "1 h 14 min – 1 h 58 min; about ¥170 (2nd class). Arrive early; passport required.",
+            "ru": "1 ч 14 мин – 1 ч 58 мин; около ¥170 (2 класс). Прибытие на вокзал заранее; паспорт.",
+            "zh": "1小时14分–1小时58分；约¥170（二等座）。请提前到站；需护照。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d8-bus",
+          "name": {
+            "en": "Huangshan North → Tangkou (bus)",
+            "ru": "Huangshan North → Танкоу (автобус)",
+            "zh": "黄山北 → 汤口（大巴）"
+          },
+          "time": "12:00",
+          "category": "transit",
+          "lat": 29.817857,
+          "lng": 118.267897,
+          "placeId": null,
+          "note": {
+            "en": "About 50 minutes, ¥30. Check the last bus on site; a taxi is the fallback.",
+            "ru": "Около 50 минут, ¥30. Последний автобус проверьте на месте; запасной вариант — такси.",
+            "zh": "约50分钟，¥30。到站后确认末班车；备选为打车。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d8-hotel",
+          "name": {
+            "en": "Hotel (to book): Tangkou, near the park bus station",
+            "ru": "Отель (выбрать): Танкоу, у автобусной станции горного парка",
+            "zh": "酒店（待订）：汤口镇，近景区客运站"
+          },
+          "time": "13:30",
+          "category": "hotel",
+          "lat": 30.132421,
+          "lng": 118.129927,
+          "placeId": "ChIJuSqN1wvGNTQRBc-oi2aPy8E",
+          "note": {
+            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d8-prep",
+          "name": {
+            "en": "Preparing for the climb",
+            "ru": "Подготовка к подъёму",
+            "zh": "准备上山"
+          },
+          "time": "17:00",
+          "category": "activity",
+          "lat": 30.132421,
+          "lng": 118.129927,
+          "placeId": "ChIJuSqN1wvGNTQRBc-oi2aPy8E",
+          "note": {
+            "en": "Buy water and a snack, charge your phone, go to bed early: tomorrow starts at the first cable car.",
+            "ru": "Купить воду и перекус, зарядить телефон, лечь рано: завтра подъём к первой канатной дороге.",
+            "zh": "买水和零食，给手机充电，早点休息：明天要赶第一班索道。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "date": "2026-11-04",
+      "weekday": {
+        "en": "Wed",
+        "ru": "Ср",
+        "zh": "周三"
+      },
+      "title": {
+        "en": "Huangshan: the main mountain day",
+        "ru": "Хуаншань: главный день на горе",
+        "zh": "黄山：登山主日"
+      },
+      "busyness": 5,
+      "focus": {
+        "en": "Up by the Yungu cable car (east), ridges and peaks, the Bright Summit viewpoint, down by Yuping. A night on the summit is optional.",
+        "ru": "Подъём по Yungu (восточная канатка), хребты и пики, смотровая площадка Bright Summit, спуск по Yuping. Ночёвка наверху — по желанию.",
+        "zh": "乘云谷索道（东线）上山，走山脊与奇峰，到光明顶观景，再从玉屏索道下山。是否在山顶过夜可选。"
+      },
+      "roads": {
+        "en": "A bus from the Tangkou park gate to the cable-car stations (about ¥19, around 20 minutes). Yungu cable car: about ¥65–80 per leg, Yuping: about ¥75–90; confirm exact fares and the winter schedule (from 1 November per sources) the day before. Come down before the last ride (about 16:40); the whole route takes 6–8 hours.",
+        "ru": "Автобус от входа в парк в Танкоу до станций канаток (≈¥19, около 20 минут). Канатка Yungu: около ¥65–80 за участок, Yuping: около ¥75–90; точные тарифы и зимний график (по источникам с 1 ноября) уточните накануне. Спуск до последнего рейса (около 16:40); весь маршрут 6–8 часов.",
+        "zh": "从汤口景区大门乘景区大巴到各索道站（约¥19，约20分钟）。云谷索道单程约¥65–80，玉屏索道约¥75–90；具体票价和冬季运营时间（据资料自11月1日起）请前一天核实。务必赶在末班索道前（约16:40）下山；全程约6–8小时。"
+      },
+      "clothing": {
+        "en": "A warm jacket, thermal underwear, a hat, gloves, a rain jacket, shoes with a good tread. The summit is 8–10 °C colder than the base.",
+        "ru": "Тёплая куртка, термобельё, шапка, перчатки, дождевик, обувь с хорошим протектором. На вершине на 8–10 °C холоднее, чем у подножия.",
+        "zh": "保暖外套、保暖内衣、帽子、手套、雨衣、防滑好鞋。山顶比山脚低约8–10°C。"
+      },
+      "extra": {
+        "en": "This day depends on the weather: in thick fog, do the climb on 5 November instead (the ticket is valid for 3 days). Sunrise around 06:30 and sunset around 17:10 fall outside the cable-car hours, so they are only possible with a night on the summit.",
+        "ru": "Это день с погодной оговоркой: при сплошном тумане лучше подниматься 5 ноября, билет действует 3 дня. Рассвет около 06:30 и закат около 17:10 вне графика канаток — увидеть их можно только с ночёвкой наверху.",
+        "zh": "此日受天气影响：若浓雾，可改到11月5日上山（门票3天有效）。日出约6:30、日落约17:10都在索道运营时间之外，只有在山顶过夜才能看到。"
+      },
+      "locations": [
+        {
+          "id": "d9-shuttle",
+          "name": {
+            "en": "Park shuttle bus to the cable car",
+            "ru": "Автобус от входа парка к канатке",
+            "zh": "景区大巴至索道站"
+          },
+          "time": "07:00",
+          "category": "transit",
+          "lat": 30.132421,
+          "lng": 118.129927,
+          "placeId": "ChIJuSqN1wvGNTQRBc-oi2aPy8E",
+          "note": {
+            "en": "About 20 minutes, ¥19 (mandatory shuttle). Arrive before opening: there is a queue.",
+            "ru": "Около 20 минут, ¥19 (обязательный автобус). Приезжайте до открытия: очередь.",
+            "zh": "约20分钟，¥19（必须乘坐的景区大巴）。请在开门前到达：会有排队。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d9-yungu",
+          "name": {
+            "en": "Yungu (Cloud Valley) cable car",
+            "ru": "Канатка Yungu (Cloud Valley)",
+            "zh": "云谷索道"
+          },
+          "time": "07:20",
+          "category": "activity",
+          "lat": 30.119186,
+          "lng": 118.192699,
+          "placeId": "ChIJZ0KqcqbGNTQR2BfNMKT9eio",
+          "note": {
+            "en": "About 10 minutes up; the queue peaks 09:00–11:00, so go by 07:00–08:00 or after 15:00.",
+            "ru": "Подъём около 10 минут; пик очереди 09:00–11:00 — лучше ехать до 07:00–08:00 или после 15:00.",
+            "zh": "上山约10分钟；排队高峰在9:00–11:00，建议7:00–8:00前或15:00后乘坐。"
+          },
+          "details": {
+            "en": "Park ticket ¥190 (March–November, valid 3 days), ¥150 in winter. Cable-car hours: earlier from 06:20 in peak season, about 07:20–16:40 in winter (verify). Original passport required.",
+            "ru": "Билет в парк ¥190 (с марта по ноябрь, действует 3 дня), зимой ¥150. Время работы канаток: в пик ранее с 06:20, зимой около 07:20–16:40 (проверьте). Нужен оригинал паспорта.",
+            "zh": "景区门票¥190（3–11月，3天有效），冬季¥150。索道运营时间：旺季更早，约6:20起；冬季约7:20–16:40（请核实）。需带护照原件。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d9-summit",
+          "name": {
+            "en": "Bright Summit (Guangming Ding)",
+            "ru": "Пик Bright Summit (Guangming Ding)",
+            "zh": "光明顶"
+          },
+          "time": "11:30",
+          "category": "nature",
+          "lat": 30.132375,
+          "lng": 118.169544,
+          "placeId": "ChIJoVRXxo_GNTQRMD716su4jWs",
+          "note": {
+            "en": "The main viewpoint on the summit; from here the way down leads to the Yuping cable car. The best views come after rain, with a «sea of clouds» in the valleys.",
+            "ru": "Главная смотровая точка на вершине; отсюда спуск к канатке Yuping. Лучшие виды — после дождя, когда в долинах «море облаков».",
+            "zh": "山顶主要观景点；从这里可前往玉屏索道下山。雨后最佳，山谷中常见「云海」。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d9-beihai",
+          "name": {
+            "en": "A night on the summit: Beihai Hotel (optional)",
+            "ru": "Ночёвка наверху: Beihai Hotel (по желанию)",
+            "zh": "山顶过夜：北海宾馆（可选）"
+          },
+          "time": "—",
+          "category": "hotel",
+          "lat": 30.141855,
+          "lng": 118.171377,
+          "placeId": "ChIJmQjX5orGNTQRROZ41o-eadA",
+          "note": {
+            "en": "The only way to see sunrise and sunset on the summit. Price not checked, book ahead; with a night up, 5 November becomes a descent and a free day.",
+            "ru": "Единственный способ увидеть рассвет и закат на вершине. Цена не проверена, бронировать заранее; при ночёвке 5 ноября — спуск и свободный день.",
+            "zh": "唯一能在山顶看日出日落的方式。价格未核实，需提前预订；若在山上过夜，11月5日即为下山和自由日。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d9-hotel",
+          "name": {
+            "en": "Hotel (to book): Tangkou (come down in the evening)",
+            "ru": "Отель (выбрать): Танкоу (спуск вечером)",
+            "zh": "酒店（待订）：汤口镇（傍晚下山）"
+          },
+          "time": "17:30",
+          "category": "hotel",
+          "lat": 30.132421,
+          "lng": 118.129927,
+          "placeId": "ChIJuSqN1wvGNTQRBc-oi2aPy8E",
+          "note": {
+            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "date": "2026-11-05",
+      "weekday": {
+        "en": "Thu",
+        "ru": "Чт",
+        "zh": "周四"
+      },
+      "title": {
+        "en": "Huangshan: reserve day (weather) or rest",
+        "ru": "Хуаншань: резервный день (погода) или отдых",
+        "zh": "黄山：备用日（看天气）或休息"
+      },
+      "busyness": 2,
+      "focus": {
+        "en": "If 4 November had good visibility, rest and an easy walk at the foot. If it was foggy, repeat the climb on the same ticket.",
+        "ru": "Если 4 ноября была видимость — отдых и лёгкая прогулка у подножия. Если был туман — повтор подъёма по тому же билету.",
+        "zh": "如果11月4日能见度好：休息并在山脚轻松走走。如果有雾：用同一张票再次上山。"
+      },
+      "roads": {
+        "en": "The same buses and cable cars as on 4 November. The Xihai (West Sea Canyon) cable car runs until December per sources: about ¥100.",
+        "ru": "Те же автобусы и канатки, что 4 ноября. Канатка Xihai (Западное ущелье) работает, по источникам, до декабря: около ¥100.",
+        "zh": "交通与11月4日相同。据资料，西海大峡谷索道运营至12月：约¥100。"
+      },
+      "clothing": {
+        "en": "As on 4 November: layers and a rain jacket.",
+        "ru": "Как 4 ноября: слои и дождевик.",
+        "zh": "同11月4日：叠穿并带雨衣。"
+      },
+      "extra": null,
+      "locations": [
+        {
+          "id": "d10-flex",
+          "name": {
+            "en": "Huangshan Scenic Area (reserve)",
+            "ru": "Huangshan Scenic Area (резерв)",
+            "zh": "黄山风景区（备用）"
+          },
+          "time": "08:00",
+          "category": "nature",
+          "lat": 30.132421,
+          "lng": 118.129927,
+          "placeId": "ChIJuSqN1wvGNTQRBc-oi2aPy8E",
+          "note": {
+            "en": "A reserve day for the weather. The ticket is valid for 3 consecutive days, so a second climb needs no new purchase.",
+            "ru": "Резервный день под погоду. Билет действует 3 дня подряд, второй подъём — без новой покупки.",
+            "zh": "留给天气的备用日。门票连续3天有效，再次上山无需重新购票。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d10-dinner",
+          "name": {
+            "en": "Dinner in Tangkou",
+            "ru": "Ужин в Танкоу",
+            "zh": "汤口晚餐"
+          },
+          "time": "18:30",
+          "category": "food",
+          "lat": 30.132421,
+          "lng": 118.129927,
+          "placeId": "ChIJuSqN1wvGNTQRBc-oi2aPy8E",
+          "note": {
+            "en": "Huizhou local cuisine: see the Dinner tab. An early night: tomorrow is a move.",
+            "ru": "Местная кухня Хуэйчжоу: см. вкладку «Ужин». Ранний отбой: завтра переезд.",
+            "zh": "徽州本地菜：见「晚餐」标签。早点休息：明天要转场。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "date": "2026-11-06",
+      "weekday": {
+        "en": "Fri",
+        "ru": "Пт",
+        "zh": "周五"
+      },
+      "title": {
+        "en": "Hongcun and Xidi villages → Tunxi",
+        "ru": "Деревни Хунцунь и Сиди → Тунси",
+        "zh": "宏村与西递 → 屯溪"
+      },
+      "busyness": 3,
+      "focus": {
+        "en": "Hongcun in the morning, Xidi in the afternoon, the old street in Tunxi in the evening.",
+        "ru": "Утром Хунцунь, днём Сиди, вечером старая улица Тунси.",
+        "zh": "上午宏村，下午西递，傍晚屯溪老街。"
+      },
+      "roads": {
+        "en": "Buses between Tangkou, Hongcun, Xidi and Tunxi run on timetables and may stop early. Check the last bus on site; the fallback is a car with a driver for the day (agree the price in advance).",
+        "ru": "Автобусы между Танкоу, Хунцунем, Сиди и Тунси ходят по расписанию и могут закончиться рано. Проверьте последний рейс на месте, а запасной вариант — машина с водителем на весь день (цену оговорить заранее).",
+        "zh": "汤口、宏村、西递、屯溪之间的公交按时刻表运行，可能收班较早。请到现场确认末班车；备选方案是包车一天（事先讲好价格）。"
+      },
+      "clothing": {
+        "en": "Comfortable shoes for the stone lanes; a light jacket.",
+        "ru": "Удобная обувь для каменных мостовых; лёгкая куртка.",
+        "zh": "穿适合石板路的鞋；带轻薄外套。"
+      },
+      "extra": {
+        "en": "Check the village ticket price and hours at the gate: sources differ. Hongcun first in the morning (fewer groups), then Xidi.",
+        "ru": "Часы и цену билета в деревни проверьте на кассе: источники расходятся. Сначала Хунцунь утром (меньше групп), потом Сиди.",
+        "zh": "两村门票价格与开放时间请在售票处核实：各来源说法不一。上午先去宏村（团队少），再去西递。"
+      },
+      "locations": [
+        {
+          "id": "d11-bus",
+          "name": {
+            "en": "Bus Tangkou → Hongcun",
+            "ru": "Автобус Танкоу → Хунцунь",
+            "zh": "汤口 → 宏村 大巴"
+          },
+          "time": "07:45",
+          "category": "transit",
+          "lat": 30.132421,
+          "lng": 118.129927,
+          "placeId": "ChIJuSqN1wvGNTQRBc-oi2aPy8E",
+          "note": {
+            "en": "From the bus station by the park entrance. Check the travel time and the last bus on site.",
+            "ru": "От автовокзала у входа в парк. Время в пути и последний рейс уточнить на месте.",
+            "zh": "从景区门口的客运站出发。车程和末班时间请现场确认。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d11-checkout",
+          "name": {
+            "en": "Hotel (to book): check-out in Tangkou",
+            "ru": "Отель (выбрать): выезд из отеля в Танкоу",
+            "zh": "酒店（待订）：汤口酒店退房"
+          },
+          "time": "07:30",
+          "category": "hotel",
+          "lat": 30.132421,
+          "lng": 118.129927,
+          "placeId": "ChIJuSqN1wvGNTQRBc-oi2aPy8E",
+          "note": {
+            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d11-hongcun",
+          "name": {
+            "en": "Hongcun village",
+            "ru": "Деревня Хунцунь",
+            "zh": "宏村"
+          },
+          "time": "09:30",
+          "category": "sight",
+          "lat": 30.000689,
+          "lng": 117.991443,
+          "placeId": "ChIJuWJ1l43TNTQROls6jfRl4RY",
+          "note": {
+            "en": "An old Hui-style village: a pond mirroring white walls, narrow lanes. 2–3 hours.",
+            "ru": "Старая деревня школы Хуэй: пруд с отражениями белых стен, узкие улицы. 2–3 часа.",
+            "zh": "徽派古村：池塘倒映白墙，小巷狭窄。约2–3小时。"
+          },
+          "details": {
+            "en": "A combined Hongcun + Xidi ticket is about ¥208 per sources (Xidi alone about ¥94); check price and terms at the gate. The ticket is valid for several days.",
+            "ru": "Совместный билет Хунцунь + Сиди по источникам около ¥208 (в Сиди отдельно около ¥94); цену и условия проверьте на кассе. Билет действителен несколько дней.",
+            "zh": "宏村+西递联票据资料约¥208（西递单买约¥94）；价格与条件请在售票处核实。门票数日内有效。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d11-lunch",
+          "name": {
+            "en": "Lunch in Hongcun",
+            "ru": "Обед в Хунцуне",
+            "zh": "宏村午餐"
+          },
+          "time": "12:30",
+          "category": "food",
+          "lat": 30.000689,
+          "lng": 117.991443,
+          "placeId": "ChIJuWJ1l43TNTQROls6jfRl4RY",
+          "note": {
+            "en": "The main meal of the day: Huizhou cuisine; the village has many tourist restaurants with higher prices.",
+            "ru": "Основной приём пищи дня: кухня Хуэйчжоу; в деревне много туристических столовых, цены выше.",
+            "zh": "当天主餐：徽州菜；村里游客餐馆多、价格偏高。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d11-xidi",
+          "name": {
+            "en": "Xidi village",
+            "ru": "Деревня Сиди",
+            "zh": "西递"
+          },
+          "time": "14:00",
+          "category": "sight",
+          "lat": 29.895868,
+          "lng": 117.993411,
+          "placeId": "ChIJBS1uw2d_NjQRKUnwSzoXOMU",
+          "note": {
+            "en": "A UNESCO site: archways, merchants' houses with carvings. The bus from Hongcun takes about 30 minutes, ¥6, hourly.",
+            "ru": "Объект ЮНЕСКО: арки, дома торговцев с резьбой. Автобус из Хунцуня около 30 минут, ¥6, раз в час.",
+            "zh": "世界遗产：牌坊、雕花商宅。从宏村乘公交约30分钟，¥6，每小时一班。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d11-tunxi",
+          "name": {
+            "en": "Tunxi Old Street",
+            "ru": "Старая улица Тунси",
+            "zh": "屯溪老街"
+          },
+          "time": "17:30",
+          "category": "market",
+          "lat": 29.70842,
+          "lng": 118.30732,
+          "placeId": "ChIJ4Q3J99YMNjQRVAgXQTWwsEc",
+          "note": {
+            "en": "In the evening the street is lit by lanterns; dinner by the Xin'an River.",
+            "ru": "Вечером улица освещена фонарями; ужин у реки Синьань.",
+            "zh": "傍晚老街灯笼亮起；在新安江边吃晚餐。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        },
+        {
+          "id": "d11-hotel",
+          "name": {
+            "en": "Hotel (to book): Tunxi, near the old street",
+            "ru": "Отель (выбрать): Тунси, у старой улицы",
+            "zh": "酒店（待订）：屯溪，近老街"
+          },
+          "time": "19:00",
+          "category": "hotel",
+          "lat": 29.70842,
+          "lng": 118.30732,
+          "placeId": "ChIJ4Q3J99YMNjQRVAgXQTWwsEc",
+          "note": {
+            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "date": "2026-11-07",
+      "weekday": {
+        "en": "Sat",
+        "ru": "Сб",
+        "zh": "周六"
+      },
+      "title": {
+        "en": "Move to Nanjing, evening by the Qinhuai River",
+        "ru": "Переезд в Нанкин, вечер у реки Циньхуай",
+        "zh": "转场南京，傍晚秦淮河畔"
+      },
+      "busyness": 2,
+      "focus": {
+        "en": "A morning train Huangshan North → Nanjing South (about 3 hours), the Fuzimiao and Laomendong district in the evening.",
+        "ru": "Утром поезд Huangshan North → Nanjing South (около 3 часов), вечером район Фуцзымяо и Лаоменьдун.",
+        "zh": "上午乘高铁黄山北→南京南（约3小时），傍晚逛夫子庙与老门东。"
+      },
+      "roads": {
+        "en": "From Tunxi to Huangshan North takes about 20–25 minutes by taxi/DiDi. There are 11 train pairs a day, 3–5.5 h: pick the fastest. In Nanjing you need Nanjing South (南京南站).",
+        "ru": "От Тунси до Huangshan North около 20–25 минут такси/DiDi. Прямых поездов в сутки 11 пар, время в пути 3–5,5 ч: выбирайте самый быстрый. В Нанкине нужен Nanjing South (南京南站).",
+        "zh": "屯溪到黄山北约20–25分钟（打车/滴滴）。每天11对直达列车，3–5.5小时：请选最快的。南京站名为南京南站。"
+      },
+      "clothing": {
+        "en": "A light jacket and a scarf; Nanjing is cool in the evening.",
+        "ru": "Лёгкая куртка и шарф; в Нанкине вечером прохладно.",
+        "zh": "轻薄外套和围巾；南京晚上较凉。"
+      },
+      "extra": {
+        "en": "Check train times and seats on 12306 or Trip.com; Saturday is a busy day.",
+        "ru": "Расписание поездов и места проверьте в 12306 или Trip.com; суббота — загруженный день.",
+        "zh": "请在12306或Trip.com核对车次和座位；周六客流较大。"
+      },
+      "locations": [
+        {
+          "id": "d12-checkout",
+          "name": {
+            "en": "Hotel (to book): check-out in Tunxi",
+            "ru": "Отель (выбрать): выезд из отеля в Тунси",
+            "zh": "酒店（待订）：屯溪酒店退房"
+          },
+          "time": "08:00",
+          "category": "hotel",
+          "lat": 29.70842,
+          "lng": 118.30732,
+          "placeId": "ChIJ4Q3J99YMNjQRVAgXQTWwsEc",
+          "note": {
+            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d12-train",
+          "name": {
+            "en": "Train Huangshan North → Nanjing South",
+            "ru": "Поезд Huangshan North → Nanjing South",
+            "zh": "高铁 黄山北 → 南京南"
+          },
+          "time": "09:30",
+          "category": "transit",
+          "lat": 29.817857,
+          "lng": 118.267897,
+          "placeId": null,
+          "note": {
+            "en": "About 3 hours (range 3–5.5 h); 11 train pairs a day. Arrive early; passport required.",
+            "ru": "Около 3 часов (диапазон 3–5,5 ч); 11 пар поездов в день. Прибытие на вокзал заранее; паспорт.",
+            "zh": "约3小时（3–5.5小时不等）；每天11对。请提前到站；需护照。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d12-arrive",
+          "name": {
+            "en": "Nanjing South",
+            "ru": "Nanjing South",
+            "zh": "南京南站"
+          },
+          "time": "13:30",
+          "category": "transit",
+          "lat": 31.966426,
+          "lng": 118.799902,
+          "placeId": null,
+          "note": {
+            "en": "Metro to the centre; drop your things at the hotel.",
+            "ru": "Метро в центр; сдать вещи в отель.",
+            "zh": "乘地铁进市区；把行李放到酒店。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d12-hotel",
+          "name": {
+            "en": "Hotel (to book): Fuzimiao / Laomendong area",
+            "ru": "Отель (выбрать): район Фуцзымяо/Лаоменьдун",
+            "zh": "酒店（待订）：夫子庙/老门东一带"
+          },
+          "time": "14:30",
+          "category": "hotel",
+          "lat": 32.021719,
+          "lng": 118.79187,
+          "placeId": "ChIJFbg-PV2MtTUR35zmCdj4s0c",
+          "note": {
+            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d12-fuzimiao",
+          "name": {
+            "en": "Fuzimiao and the Qinhuai River",
+            "ru": "Фуцзымяо и река Циньхуай",
+            "zh": "夫子庙与秦淮河"
+          },
+          "time": "17:00",
+          "category": "sight",
+          "lat": 32.021719,
+          "lng": 118.79187,
+          "placeId": "ChIJFbg-PV2MtTUR35zmCdj4s0c",
+          "note": {
+            "en": "The Confucius Temple, lanterns and painted boats on the river; the best time is the evening.",
+            "ru": "Храм Конфуция, фонари и расписные лодки на реке; вечером самое красивое время.",
+            "zh": "孔庙、灯笼与河上画舫；傍晚最美。"
+          },
+          "details": {
+            "en": "The streets and riverfront are free. The temple and the exam hall are separate (a combo ticket about ¥70 per sources). A Qinhuai night cruise is optional; check the price at the pier.",
+            "ru": "Улицы и берег реки бесплатны. Храм и зал экзаменов отдельно (комбо-билет около ¥70 по источникам). Ночной круиз по Циньхуай — по желанию, цену уточните на причале.",
+            "zh": "街区与河岸免费。孔庙和江南贡院另收费（据资料联票约¥70）。秦淮夜游可选，价格请在码头核实。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d12-laomendong",
+          "name": {
+            "en": "Laomendong (dinner)",
+            "ru": "Лаоменьдун (ужин)",
+            "zh": "老门东（晚餐）"
+          },
+          "time": "19:00",
+          "category": "food",
+          "lat": 32.01144,
+          "lng": 118.78711,
+          "placeId": "ChIJBV_11GqMtTURszjp7_yBLgI",
+          "note": {
+            "en": "A restored old quarter: Nanjing snacks and dinner. Zhonghua Gate is next to it.",
+            "ru": "Восстановленный старый квартал: закуски Нанкина и ужин. Рядом ворота Чжунхуа.",
+            "zh": "修复的老街区：南京小吃和晚餐。附近就是中华门。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "date": "2026-11-08",
+      "weekday": {
+        "en": "Sun",
+        "ru": "Вс",
+        "zh": "周日"
+      },
+      "title": {
+        "en": "Purple Mountain: Sun Yat-sen Mausoleum, Ming Xiaoling, Linggu",
+        "ru": "Пурпурная гора: Мавзолей Сунь Ятсена, Мин Сяолин, Линьгу",
+        "zh": "紫金山：中山陵、明孝陵、灵谷寺"
+      },
+      "busyness": 4,
+      "focus": {
+        "en": "The morning at the Sun Yat-sen Mausoleum on a pre-booked slot, then the Ming Xiaoling Mausoleum and Linggu Temple.",
+        "ru": "Утро в мавзолее Сунь Ятсена по предварительной брони, затем мавзолей Мин Сяолин и храм Линьгу.",
+        "zh": "上午凭预约参观中山陵，随后明孝陵和灵谷寺。"
+      },
+      "roads": {
+        "en": "From the centre by metro Line 2 to Muxuyuan or Ming Xiaoling; a free shuttle runs between the mausoleums (with your ticket). The climb to the mausoleum is 392 steps.",
+        "ru": "От центра метро линии 2 до станции Muxuyuan/Ming Xiaoling; между мавзолеями курсирует бесплатный автобус (по билету). Подъём к мавзолею — 392 ступени.",
+        "zh": "从市区乘地铁2号线到苜蓿园或明孝陵站；两处陵墓之间有免费接驳车（凭门票）。登中山陵共392级台阶。"
+      },
+      "clothing": {
+        "en": "Comfortable shoes, a light jacket; steps and long avenues mean a lot of walking.",
+        "ru": "Удобная обувь, лёгкая куртка; ступени и аллеи — много ходьбы.",
+        "zh": "舒适的鞋、轻薄外套；台阶和长长的神道，步行量大。"
+      },
+      "extra": {
+        "en": "The Sun Yat-sen Mausoleum is free, but a real-name slot is required (08:30–10:30, 10:30–12:30, 12:30–14:30, 14:30–16:30) and a passport is mandatory. The hall and tomb chamber are closed on Mondays: today is Sunday, so everything is open. Book in advance.",
+        "ru": "Мавзолей Сунь Ятсена — бесплатно, но нужна бронь по реальному имени на слот (08:30–10:30, 10:30–12:30, 12:30–14:30, 14:30–16:30), паспорт обязателен. По понедельникам зал и склеп закрыты: сегодня воскресенье, всё открыто. Бронь делайте заранее.",
+        "zh": "中山陵免费，但需实名预约时段（8:30–10:30、10:30–12:30、12:30–14:30、14:30–16:30），必须带护照。祭堂和墓室周一关闭：今天是周日，正常开放。请提前预约。"
+      },
+      "locations": [
+        {
+          "id": "d13-sunyat",
+          "name": {
+            "en": "Sun Yat-sen Mausoleum",
+            "ru": "Мавзолей Сунь Ятсена",
+            "zh": "中山陵"
+          },
+          "time": "08:30",
+          "category": "sight",
+          "lat": 32.062176,
+          "lng": 118.853343,
+          "placeId": "ChIJld2Dd8SMtTURNtl1GXmYbBM",
+          "note": {
+            "en": "Nanjing's main memorial. 392 steps with a view of the city; allow 2–3 hours up and down.",
+            "ru": "Главный мемориал Нанкина. 392 ступени с видом на город; на подъём и спуск уйдёт 2–3 часа.",
+            "zh": "南京的标志性纪念地。392级台阶，可俯瞰城市；上下约需2–3小时。"
+          },
+          "details": {
+            "en": "Hours 08:30–17:00. Book via WeChat (mini-program), ID type passport; a Chinese phone number may be needed (the hotel can help). A QR screenshot does not work: the code refreshes inside the app.",
+            "ru": "Часы 08:30–17:00. Бронь через WeChat (мини-программа), документ — паспорт; номер китайского телефона может понадобиться (поможет отель). Скриншот QR недопустим: код обновляется в приложении.",
+            "zh": "开放时间8:30–17:00。通过微信小程序预约，证件类型选护照；可能需要中国手机号（可请酒店协助）。二维码截图无效：需在应用内实时刷新。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d13-ming",
+          "name": {
+            "en": "Ming Xiaoling Mausoleum",
+            "ru": "Мавзолей Мин Сяолин",
+            "zh": "明孝陵"
+          },
+          "time": "11:15",
+          "category": "sight",
+          "lat": 32.058216,
+          "lng": 118.834574,
+          "placeId": "ChIJC0WmIACMtTURoHl_UDb52iU",
+          "note": {
+            "en": "The tomb of the Ming dynasty's founder; the Spirit Way with stone animals. Entry about ¥70, daily 08:30–17:00 (06:30 per Google). No reservation needed.",
+            "ru": "Гробница основателя династии Мин; Аллея каменных зверей. Вход около ¥70, ежедневно 08:30–17:00 (по Google с 06:30). Бронь не нужна.",
+            "zh": "明朝开国皇帝陵墓；石象路。门票约¥70，每日8:30–17:00（谷歌显示6:30起）。无需预约。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d13-lunch",
+          "name": {
+            "en": "Lunch in the park area",
+            "ru": "Обед в парке",
+            "zh": "景区午餐"
+          },
+          "time": "13:00",
+          "category": "food",
+          "lat": 32.058216,
+          "lng": 118.834574,
+          "placeId": "ChIJC0WmIACMtTURoHl_UDb52iU",
+          "note": {
+            "en": "The main meal of the day: a café at the mausoleum entrance. A vegetarian canteen also operates at Linggu Temple.",
+            "ru": "Основной приём пищи дня: кафе у входа в мавзолей. Рядом работает вегетарианская столовая в храме Линьгу.",
+            "zh": "当天主餐：陵园入口附近的餐馆。灵谷寺内也有素食餐厅。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d13-linggu",
+          "name": {
+            "en": "Linggu Temple",
+            "ru": "Храм Линьгу",
+            "zh": "灵谷寺"
+          },
+          "time": "14:30",
+          "category": "temple",
+          "lat": 32.054984,
+          "lng": 118.867826,
+          "placeId": "ChIJn3mSIlPttTURoGt1VBedyHA",
+          "note": {
+            "en": "A quiet old temple in the Purple Mountain forest; skip it if you are tired.",
+            "ru": "Тихий старый храм в лесу Пурпурной горы; можно пропустить, если устали.",
+            "zh": "紫金山林间的安静古寺；累了可以不去。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "date": "2026-11-09",
+      "weekday": {
+        "en": "Mon",
+        "ru": "Пн",
+        "zh": "周一"
+      },
+      "title": {
+        "en": "Suzhou: gardens and canals",
+        "ru": "Сучжоу: сады и каналы",
+        "zh": "苏州：园林与水巷"
+      },
+      "busyness": 3,
+      "focus": {
+        "en": "A day trip to Suzhou on the Monday when most Nanjing museums are closed: the Humble Administrator's Garden, Pingjiang Road, the Lingering Garden.",
+        "ru": "Дневная поездка в Сучжоу на понедельник, когда большинство музеев Нанкина закрыто: сад Чжочжэн, улица Пинцзян, сад Люйюань.",
+        "zh": "周一南京多数博物馆闭馆，因此安排苏州一日游：拙政园、平江路、留园。"
+      },
+      "roads": {
+        "en": "Direct trains Nanjing South → Suzhou; Suzhou station (苏州站) is closer to the gardens than Suzhou North. Check the travel time on 12306 or Trip.com. To Pingjiang Road: metro Line 4 to Beisita, then a 10-minute walk.",
+        "ru": "Прямые поезда Nanjing South → Suzhou; станция Suzhou (苏州站) ближе к садам, чем Suzhou North. Время в пути проверьте на 12306 или Trip.com. К улице Пинцзян — метро линии 4 до станции Beisita и 10 минут пешком.",
+        "zh": "南京南 → 苏州有直达列车；苏州站比苏州北站离园林更近。车程请在12306或Trip.com核实。去平江路：乘地铁4号线至北寺塔站，再步行约10分钟。"
+      },
+      "clothing": {
+        "en": "Comfortable shoes and a light jacket; November days in the gardens are short.",
+        "ru": "Удобная обувь и лёгкая куртка; ноябрьские дни в садах короткие.",
+        "zh": "舒适的鞋和轻薄外套；11月园林里白天较短。"
+      },
+      "extra": {
+        "en": "The Humble Administrator's Garden: a real-name online ticket (passport); November hours are 07:30–16:30/17:00 per sources with the last entry about 16:00 (verify). Arrive at opening if you can.",
+        "ru": "Сад Чжочжэн: билет по реальному имени онлайн (паспорт), по источникам ноябрьские часы 07:30–16:30/17:00 с последним входом около 16:00 (проверьте). Желательно прийти к открытию.",
+        "zh": "拙政园：线上实名购票（护照）；据资料11月开放时间为7:30–16:30/17:00，约16:00停止入园（请核实）。尽量开门即到。"
+      },
+      "locations": [
+        {
+          "id": "d14-train",
+          "name": {
+            "en": "Train Nanjing South → Suzhou",
+            "ru": "Поезд Nanjing South → Suzhou",
+            "zh": "高铁 南京南 → 苏州"
+          },
+          "time": "08:30",
+          "category": "transit",
+          "lat": 31.966426,
+          "lng": 118.799902,
+          "placeId": null,
+          "note": {
+            "en": "A direct G-train; arrive at Suzhou station. Passport, book the ticket in advance.",
+            "ru": "Прямой G-поезд; прибытие на станцию Suzhou. Паспорт, билет заранее.",
+            "zh": "直达G字头列车；到苏州站。需护照，请提前购票。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d14-hump",
+          "name": {
+            "en": "Humble Administrator's Garden",
+            "ru": "Сад скромного чиновника (Чжочжэн)",
+            "zh": "拙政园"
+          },
+          "time": "10:00",
+          "category": "garden",
+          "lat": 31.324224,
+          "lng": 120.62997,
+          "placeId": "ChIJ95Kf4M-mszUREZWApzl39cg",
+          "note": {
+            "en": "Suzhou's largest classical garden, a UNESCO site. A ticket costs about ¥70 off-season.",
+            "ru": "Крупнейший классический сад Сучжоу, объект ЮНЕСКО. Билет около ¥70 вне сезона.",
+            "zh": "苏州最大的古典园林，世界遗产。淡季门票约¥70。"
+          },
+          "details": {
+            "en": "Book online (passport); hours differ across sources, the last entry in November is about 16:00. Allow 2–3 hours.",
+            "ru": "Билет онлайн (паспорт); часы по источникам расходятся, последний вход в ноябре около 16:00. На осмотр 2–3 часа.",
+            "zh": "线上购票（护照）；各来源开放时间不一，11月约16:00停止入园。游览约2–3小时。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d14-pingjiang",
+          "name": {
+            "en": "Pingjiang Road (lunch)",
+            "ru": "Улица Пинцзян (обед)",
+            "zh": "平江路（午餐）"
+          },
+          "time": "13:00",
+          "category": "market",
+          "lat": 31.315,
+          "lng": 120.636,
+          "placeId": null,
+          "note": {
+            "en": "A canal, white walls, tea houses. The main meal of the day.",
+            "ru": "Канал, белые стены, чайные домики. Основной приём пищи дня.",
+            "zh": "河道、白墙、茶馆。当天主餐。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d14-lingering",
+          "name": {
+            "en": "Lingering Garden (optional)",
+            "ru": "Сад Люйюань (по желанию)",
+            "zh": "留园（可选）"
+          },
+          "time": "15:00",
+          "category": "garden",
+          "lat": 31.3157066,
+          "lng": 120.5925704,
+          "placeId": "ChIJ9QCvWeagszURmzdDoPCfRw4",
+          "note": {
+            "en": "Suzhou's other famous garden; the last entry in winter is about 16:30 per sources, entry about ¥45 off-season.",
+            "ru": "Второй знаменитый сад Сучжоу; по источникам зимой последний вход около 16:30, вход около ¥45 вне сезона.",
+            "zh": "苏州另一座名园；据资料冬季约16:30停止入园，淡季门票约¥45。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d14-return",
+          "name": {
+            "en": "Return to Nanjing",
+            "ru": "Возвращение в Нанкин",
+            "zh": "返回南京"
+          },
+          "time": "17:30",
+          "category": "transit",
+          "lat": 31.3306,
+          "lng": 120.6083,
+          "placeId": null,
+          "note": {
+            "en": "A train to Nanjing South; dinner in town.",
+            "ru": "Поезд до Nanjing South; ужин в городе.",
+            "zh": "乘高铁回南京南；晚餐回市区吃。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "date": "2026-11-10",
+      "weekday": {
+        "en": "Tue",
+        "ru": "Вт",
+        "zh": "周二"
+      },
+      "title": {
+        "en": "The Memorial, Xuanwu Lake, the city wall",
+        "ru": "Мемориал, озеро Сюаньу, городская стена",
+        "zh": "纪念馆、玄武湖、城墙"
+      },
+      "busyness": 3,
+      "focus": {
+        "en": "The morning at the Nanjing Massacre Memorial, in the afternoon Xuanwu Lake or the museum, at dusk Zhonghua Gate.",
+        "ru": "Утро в мемориале жертв Нанкинской резни, после обеда озеро Сюаньу или музей, на закате ворота Чжунхуа.",
+        "zh": "上午参观侵华日军南京大屠杀遇难同胞纪念馆，下午玄武湖或博物院，傍晚中华门。"
+      },
+      "roads": {
+        "en": "The memorial (Jianye) is far from the centre: take the metro; then Xuanwu Lake (Line 1, Xuanwumen station). Zhonghua Gate is in the south, next to Laomendong.",
+        "ru": "Мемориал (Jianye) далеко от центра: метро; затем озеро Сюаньу (линия 1, станция Xuanwumen). Ворота Чжунхуа — на юге, рядом с Лаоменьдуном.",
+        "zh": "纪念馆（建邺区）离市中心较远：乘地铁前往；然后去玄武湖（1号线玄武门站）。中华门在南面，紧邻老门东。"
+      },
+      "clothing": {
+        "en": "Comfortable shoes, a light jacket; muted, respectful clothing suits the memorial.",
+        "ru": "Удобная обувь, лёгкая куртка; тёмная сдержанная одежда уместна в мемориале.",
+        "zh": "舒适的鞋、轻薄外套；参观纪念馆宜着素净得体的服装。"
+      },
+      "extra": {
+        "en": "The memorial is free but requires a real-name reservation and a passport; Tuesday is an open day (closed Mondays). Last entry 16:30. Do not plan anything cheerful straight afterwards.",
+        "ru": "Мемориал бесплатный, но по правилам нужна бронь по реальному имени и паспорт; вторник — рабочий день (по понедельникам закрыто). Вход до 16:30. Не планируйте ничего «весёлого» сразу после.",
+        "zh": "纪念馆免费，但按规定需实名预约并带护照；周二开放（周一闭馆）。16:30前入馆。结束后不要立刻安排轻松娱乐。"
+      },
+      "locations": [
+        {
+          "id": "d15-memorial",
+          "name": {
+            "en": "Nanjing Massacre Memorial Hall",
+            "ru": "Мемориал жертв Нанкинской резни",
+            "zh": "侵华日军南京大屠杀遇难同胞纪念馆"
+          },
+          "time": "09:00",
+          "category": "museum",
+          "lat": 32.035535,
+          "lng": 118.743371,
+          "placeId": "ChIJQVG7g5iLtTURaY-mopzXiqw",
+          "note": {
+            "en": "The main exhibition is underground, with a memorial square. 2–3 hours, quiet and restraint.",
+            "ru": "Основная экспозиция под землёй и мемориальная площадь. 2–3 часа, тишина и сдержанность.",
+            "zh": "主展厅在地下，另有纪念广场。约2–3小时，请保持安静、庄重。"
+          },
+          "details": {
+            "en": "Address: 418 Shuiximen Dajie, Jianye. Tue–Sun 08:30–17:30, entry until 16:30, closed Mondays. A real-name booking and a passport are required; a free audio guide in WeChat. Large luggage must be left in storage.",
+            "ru": "Адрес: 418 Shuiximen Dajie, Jianye. Вт–вс 08:30–17:30, вход до 16:30, понедельник закрыто. Бронь по реальному имени и паспорт; бесплатный аудиогид в WeChat. Большой багаж сдаётся в камеру хранения.",
+            "zh": "地址：建邺区水西门大街418号。周二至周日8:30–17:30，16:30前入馆，周一闭馆。需实名预约并带护照；微信内有免费语音导览。大件行李须寄存。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d15-lunch",
+          "name": {
+            "en": "Lunch after the memorial",
+            "ru": "Обед после мемориала",
+            "zh": "纪念馆后午餐"
+          },
+          "time": "12:30",
+          "category": "food",
+          "lat": 32.035535,
+          "lng": 118.743371,
+          "placeId": "ChIJQVG7g5iLtTURaY-mopzXiqw",
+          "note": {
+            "en": "The main meal of the day; it is better to take a pause after the memorial.",
+            "ru": "Основной приём пищи дня; после мемориала лучше сделать паузу.",
+            "zh": "当天主餐；参观纪念馆后建议休息一下。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d15-xuanwu",
+          "name": {
+            "en": "Xuanwu Lake",
+            "ru": "Озеро Сюаньу",
+            "zh": "玄武湖"
+          },
+          "time": "14:30",
+          "category": "nature",
+          "lat": 32.066879,
+          "lng": 118.804326,
+          "placeId": "ChIJn4G3eM2MtTURLcosAYv2ifs",
+          "note": {
+            "en": "The largest lake park in the city; free, roughly 07:00–21:00. A slow walk by the water with a view of the wall.",
+            "ru": "Крупнейший городской парк-озеро; бесплатно, примерно 07:00–21:00. Неспешная прогулка у воды и видом на стену.",
+            "zh": "城中最大的湖泊公园；免费，约7:00–21:00。沿湖慢走，可看到城墙。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d15-museum",
+          "name": {
+            "en": "Nanjing Museum (instead of the lake, optional)",
+            "ru": "Музей Нанкина (вместо озера, по желанию)",
+            "zh": "南京博物院（可替代玄武湖，可选）"
+          },
+          "time": "14:30",
+          "category": "museum",
+          "lat": 32.041084,
+          "lng": 118.825424,
+          "placeId": "ChIJK27DixmNtTURcpXpCG1ghCk",
+          "note": {
+            "en": "Free, but a booking in WeChat and a passport are needed; slots go early (a week ahead). Open until 17:00 on Tuesdays.",
+            "ru": "Бесплатно, но нужна бронь в WeChat и паспорт; слоты разбирают заранее (за неделю). Во вторник открыто до 17:00.",
+            "zh": "免费，但需微信预约并带护照；预约时段常提前一周约满。周二开放至17:00。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d15-zhonghua",
+          "name": {
+            "en": "Zhonghua Gate (at dusk)",
+            "ru": "Ворота Чжунхуа (на закате)",
+            "zh": "中华门（黄昏）"
+          },
+          "time": "16:30",
+          "category": "sight",
+          "lat": 32.012644,
+          "lng": 118.781775,
+          "placeId": "ChIJA80NzWyMtTURYvZfhaRpHAo",
+          "note": {
+            "en": "China's largest surviving city gate. Entry about ¥50; check the opening hours on site.",
+            "ru": "Крупнейшие сохранившиеся городские ворота Китая. Вход около ¥50; часы работы проверьте на месте.",
+            "zh": "中国现存最大的城门。门票约¥50；开放时间请到现场核实。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d15-dinner",
+          "name": {
+            "en": "Dinner in Laomendong",
+            "ru": "Ужин в Лаоменьдуне",
+            "zh": "老门东晚餐"
+          },
+          "time": "18:30",
+          "category": "food",
+          "lat": 32.01144,
+          "lng": 118.78711,
+          "placeId": "ChIJBV_11GqMtTURszjp7_yBLgI",
+          "note": {
+            "en": "The last dinner in Nanjing.",
+            "ru": "Последний ужин в Нанкине.",
+            "zh": "在南京的最后一顿晚餐。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "date": "2026-11-11",
+      "weekday": {
+        "en": "Wed",
+        "ru": "Ср",
+        "zh": "周三"
+      },
+      "title": {
+        "en": "Back to Shanghai, Lujiazui",
+        "ru": "Возвращение в Шанхай, Луцзяцзуй",
+        "zh": "回上海，陆家嘴"
+      },
+      "busyness": 2,
+      "focus": {
+        "en": "A morning train to Shanghai, an easy day: the Pudong towers and last shopping. The CIIE expo ended on 10 November.",
+        "ru": "Утренний поезд в Шанхай, лёгкий день: небоскрёбы Пудуна и последние покупки. Выставка CIIE закончилась 10 ноября.",
+        "zh": "上午乘高铁回上海，轻松的一天：浦东高楼和最后的购物。进博会已于11月10日结束。"
+      },
+      "roads": {
+        "en": "Train Nanjing South → Shanghai Hongqiao: about 1–2 hours, very frequent. From Hongqiao to Lujiazui by metro.",
+        "ru": "Поезд Nanjing South → Shanghai Hongqiao: около 1–2 часов, поездов очень много. От Хунцяо до Луцзяцзуй — метро.",
+        "zh": "南京南 → 上海虹桥高铁：约1–2小时，班次非常多。从虹桥到陆家嘴乘地铁。"
+      },
+      "clothing": {
+        "en": "Layers and comfortable shoes.",
+        "ru": "Слои и удобная обувь.",
+        "zh": "叠穿并穿舒适的鞋。"
+      },
+      "extra": {
+        "en": "The flight is tomorrow: prepare the luggage and confirm the departure time and airport (PVG/SHA).",
+        "ru": "Завтра вылет: заранее подготовьте багаж и уточните время вылета и аэропорт (PVG/SHA).",
+        "zh": "明天起飞：提前收拾行李，并确认起飞时间和机场（PVG/SHA）。"
+      },
+      "locations": [
+        {
+          "id": "d16-train",
+          "name": {
+            "en": "Train Nanjing South → Shanghai Hongqiao",
+            "ru": "Поезд Nanjing South → Shanghai Hongqiao",
+            "zh": "高铁 南京南 → 上海虹桥"
+          },
+          "time": "09:30",
+          "category": "transit",
+          "lat": 31.966426,
+          "lng": 118.799902,
+          "placeId": null,
+          "note": {
+            "en": "The fastest train takes about 1 hour; typically 1–2 hours. Buy the ticket in advance; passport required.",
+            "ru": "Самый быстрый поезд около 1 часа; обычно 1–2 часа. Билет заранее; паспорт.",
+            "zh": "最快约1小时；一般1–2小时。请提前购票；需护照。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d16-hotel",
+          "name": {
+            "en": "Hotel (to book): near Hongqiao station or in Jing'an (depending on the flight time)",
+            "ru": "Отель (выбрать): рядом с вокзалом Хунцяо или в Цзинъань (по времени вылета)",
+            "zh": "酒店（待订）：虹桥站附近或静安（视航班时间而定）"
+          },
+          "time": "12:00",
+          "category": "hotel",
+          "lat": 31.194109,
+          "lng": 121.320454,
+          "placeId": null,
+          "note": {
+            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d16-shtower",
+          "name": {
+            "en": "Shanghai Tower observation deck",
+            "ru": "Shanghai Tower, смотровая площадка",
+            "zh": "上海中心大厦观光厅"
+          },
+          "time": "15:30",
+          "category": "sight",
+          "lat": 31.233518,
+          "lng": 121.505618,
+          "placeId": "ChIJcT52JmpwsjURKKp8uyIQKjU",
+          "note": {
+            "en": "A sunset view (about 16:50) from the height; daily 08:30–21:30. Check the ticket price in advance.",
+            "ru": "Вид на закат (около 16:50) с высоты; ежедневно 08:30–21:30. Цену билета проверьте заранее.",
+            "zh": "高空观赏日落（约16:50）；每日8:30–21:30。请提前确认票价。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d16-dinner",
+          "name": {
+            "en": "Farewell dinner",
+            "ru": "Прощальный ужин",
+            "zh": "告别晚餐"
+          },
+          "time": "18:30",
+          "category": "food",
+          "lat": 31.234721,
+          "lng": 121.474898,
+          "placeId": "ChIJ443NM0NwsjURrWjV1_GoGSU",
+          "note": {
+            "en": "Free choice. November is hairy-crab season in Shanghai: the males are at their best in November.",
+            "ru": "Свободный выбор. В ноябре в Шанхае сезон мохнатого краба: самцы лучше в ноябре.",
+            "zh": "自由选择。11月是上海大闸蟹季：公蟹在11月最佳。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "date": "2026-11-12",
+      "weekday": {
+        "en": "Thu",
+        "ru": "Чт",
+        "zh": "周四"
+      },
+      "title": {
+        "en": "Departure",
+        "ru": "Отлёт",
+        "zh": "离开"
+      },
+      "busyness": 1,
+      "focus": {
+        "en": "Transfer to the airport. The departure time and airport are not yet confirmed.",
+        "ru": "Трансфер в аэропорт. Время вылета и аэропорт пока не подтверждены.",
+        "zh": "前往机场。起飞时间和机场尚未确认。"
+      },
+      "roads": {
+        "en": "From Hongqiao station to Pudong airport on metro Line 2 takes about 1.5 hours; for an international flight arrive 3 hours before departure. For an early flight, a taxi/DiDi.",
+        "ru": "До аэропорта Пудун метро линии 2 с вокзала Хунцяо занимает около 1,5 часа; для международного рейса приезжайте за 3 часа до вылета. Для раннего рейса — такси/DiDi.",
+        "zh": "从虹桥站乘地铁2号线到浦东机场约1.5小时；国际航班请提前3小时到机场。早班飞机建议打车/滴滴。"
+      },
+      "clothing": {
+        "en": "Comfortable travel clothes.",
+        "ru": "Удобная дорожная одежда.",
+        "zh": "舒适的出行服装。"
+      },
+      "extra": null,
+      "locations": [
+        {
+          "id": "d17-departure",
+          "name": {
+            "en": "Departure from Shanghai (PVG or SHA)",
+            "ru": "Вылет из Шанхая (PVG или SHA)",
+            "zh": "从上海出发（浦东PVG或虹桥SHA）"
+          },
+          "time": "по рейсу",
+          "category": "transit",
+          "lat": 31.1443,
+          "lng": 121.8083,
+          "placeId": null,
+          "note": {
+            "en": "Check out, reach the airport with time to spare, keep your passport and boarding pass at hand.",
+            "ru": "Сдать номер, добраться до аэропорта с запасом по времени, паспорт и посадочный талон под рукой.",
+            "zh": "退房，提前到机场，护照和登机牌随身携带。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        }
+      ]
+    }
+  ],
+  "dining": {
+    "title": {
+      "en": "Dinner options",
+      "ru": "Опции для ужина",
+      "zh": "晚餐推荐"
+    },
+    "intro": {
+      "en": "Food areas by city on the trip. Choose specific places on the spot by current reviews.",
+      "ru": "Районы с едой по городам поездки. Конкретные заведения выбирайте на месте по актуальным отзывам.",
+      "zh": "按行程城市整理的美食区域。具体餐厅请到现场根据最新评价选择。"
+    },
+    "places": [
+      {
+        "id": "din-yuyuan",
+        "name": {
+          "en": "Yuyuan Bazaar (Shanghai)",
+          "ru": "Рынок Юйюань (Шанхай)",
+          "zh": "豫园商城（上海）"
+        },
+        "time": null,
+        "category": "food",
+        "lat": 31.2262,
+        "lng": 121.493,
+        "placeId": null,
+        "note": {
+          "en": "Xiaolongbao, sheng jian bao, snacks. Come outside peak hours.",
+          "ru": "Сяолунбао, шэнцзянь-бао, закуски. Приходите вне пиковых часов.",
+          "zh": "小笼包、生煎包、小吃。请避开高峰时段。"
+        },
+        "details": {
+          "en": "In the Old Town next to Yu Garden; November is hairy-crab season in Shanghai.",
+          "ru": "Район Старого города рядом с садом Юйюань; в ноябре в Шанхае сезон мохнатого краба.",
+          "zh": "位于老城豫园旁；11月是上海大闸蟹季。"
+        },
+        "optional": false,
+        "meal": null,
+        "warn": false
+      },
+      {
+        "id": "din-hefang",
+        "name": {
+          "en": "Hefang Street (Hangzhou)",
+          "ru": "Улица Хэфан (Ханчжоу)",
+          "zh": "河坊街（杭州）"
+        },
+        "time": null,
+        "category": "food",
+        "lat": 30.24012,
+        "lng": 120.17249,
+        "placeId": "ChIJ-XaTcludTDQRR1IzQgmgKdQ",
+        "note": {
+          "en": "Hangzhou cuisine: Dongpo pork, West Lake fish, street snacks.",
+          "ru": "Ханчжоуская кухня: свинина по-дунпо, рыба из озера, закуски на улице.",
+          "zh": "杭帮菜：东坡肉、西湖醋鱼、街边小吃。"
+        },
+        "details": {
+          "en": "The old trading street; crowded in the evening.",
+          "ru": "Старая торговая улица; вечером людно.",
+          "zh": "老商业街；晚上人多。"
+        },
+        "optional": false,
+        "meal": null,
+        "warn": false
+      },
+      {
+        "id": "din-tunxi",
+        "name": {
+          "en": "Tunxi Old Street (Huangshan)",
+          "ru": "Старая улица Тунси (Хуаншань)",
+          "zh": "屯溪老街（黄山）"
+        },
+        "time": null,
+        "category": "food",
+        "lat": 29.70842,
+        "lng": 118.30732,
+        "placeId": "ChIJ4Q3J99YMNjQRVAgXQTWwsEc",
+        "note": {
+          "en": "Huizhou cuisine: hairy tofu, Hui-style fish, bamboo shoots.",
+          "ru": "Кухня Хуэйчжоу: «мохнатый» тофу, рыба по-хуэйски, бамбуковые побеги.",
+          "zh": "徽菜：毛豆腐、臭鳜鱼、笋干等。"
+        },
+        "details": {
+          "en": "Many restaurants by the Xin'an River; the street is lit by lanterns in the evening.",
+          "ru": "Много ресторанов у реки Синьань; вечером улица освещена фонарями.",
+          "zh": "新安江边餐馆很多；晚上老街灯笼亮起。"
+        },
+        "optional": false,
+        "meal": null,
+        "warn": false
+      },
+      {
+        "id": "din-laomen",
+        "name": {
+          "en": "Laomendong (Nanjing)",
+          "ru": "Лаоменьдун (Нанкин)",
+          "zh": "老门东（南京）"
+        },
+        "time": null,
+        "category": "food",
+        "lat": 32.01144,
+        "lng": 118.78711,
+        "placeId": "ChIJBV_11GqMtTURszjp7_yBLgI",
+        "note": {
+          "en": "Duck blood and vermicelli soup, salted duck, local snacks.",
+          "ru": "Суп из утиной крови с вермишелью, солёная утка, местные закуски.",
+          "zh": "鸭血粉丝汤、盐水鸭、本地小吃。"
+        },
+        "details": {
+          "en": "A restored quarter by Zhonghua Gate; many cafés and restaurants.",
+          "ru": "Восстановленный квартал у ворот Чжунхуа; много кафе и ресторанов.",
+          "zh": "中华门旁的修复街区；咖啡馆和餐馆众多。"
+        },
+        "optional": false,
+        "meal": null,
+        "warn": false
+      },
+      {
+        "id": "din-fuzimiao",
+        "name": {
+          "en": "Fuzimiao (Nanjing)",
+          "ru": "Фуцзымяо (Нанкин)",
+          "zh": "夫子庙（南京）"
+        },
+        "time": null,
+        "category": "food",
+        "lat": 32.021719,
+        "lng": 118.79187,
+        "placeId": "ChIJFbg-PV2MtTUR35zmCdj4s0c",
+        "note": {
+          "en": "Snacks by the Qinhuai River, plum-blossom cakes.",
+          "ru": "Закуски у реки Циньхуай, пирожные «сливовый цветок».",
+          "zh": "秦淮河边的小吃、梅花糕。"
+        },
+        "details": {
+          "en": "A tourist area; the evening is the best time.",
+          "ru": "Туристический район; самое красивое время — вечер.",
+          "zh": "游客区；傍晚最美。"
+        },
+        "optional": false,
+        "meal": null,
+        "warn": false
+      },
+      {
+        "id": "din-pingjiang",
+        "name": {
+          "en": "Pingjiang Road (Suzhou)",
+          "ru": "Улица Пинцзян (Сучжоу)",
+          "zh": "平江路（苏州）"
+        },
+        "time": null,
+        "category": "food",
+        "lat": 31.315,
+        "lng": 120.636,
+        "placeId": null,
+        "note": {
+          "en": "Noodles, tea houses, desserts along the canal.",
+          "ru": "Лапша, чайные домики, десерты вдоль канала.",
+          "zh": "沿河的面馆、茶馆、甜点。"
+        },
+        "details": {
+          "en": "Used for lunch on the Suzhou day trip.",
+          "ru": "Используется для обеда в день поездки в Сучжоу.",
+          "zh": "苏州一日游当天用作午餐。"
+        },
+        "optional": false,
+        "meal": null,
+        "warn": false
+      }
+    ]
+  },
+  "general": {
+    "title": {
+      "en": "About the trip",
+      "ru": "О поездке",
+      "zh": "关于行程"
+    },
+    "items": [
+      {
+        "label": {
+          "en": "Entry",
+          "ru": "Въезд",
+          "zh": "入境"
+        },
+        "text": {
+          "en": "Visa-free entry for Russian citizens until 31 December 2027, up to 30 days (per sources). Confirm on the PRC MFA website before departure.",
+          "ru": "Безвизовый въезд для граждан РФ до 31 декабря 2027 года, до 30 дней (по источникам). Подтвердите на сайте МИД КНР перед вылетом.",
+          "zh": "俄罗斯公民免签入境至2027年12月31日，最长30天（据资料）。出发前请在中国外交部网站确认。"
+        }
+      },
+      {
+        "label": {
+          "en": "Expo in Shanghai",
+          "ru": "Выставка в Шанхае",
+          "zh": "上海展会"
+        },
+        "text": {
+          "en": "The CIIE expo runs 5–10 November in Shanghai: the route keeps you outside Shanghai for those days.",
+          "ru": "С 5 по 10 ноября в Шанхае проходит выставка CIIE: маршрут построен так, что вы в это время вне Шанхая.",
+          "zh": "11月5日至10日上海举办进博会：路线安排使您在此期间不在上海。"
+        }
+      },
+      {
+        "label": {
+          "en": "Train tickets",
+          "ru": "Билеты на поезд",
+          "zh": "火车票"
+        },
+        "text": {
+          "en": "Book on the 12306 app (English version, passport-linked) or Trip.com. Arrive at stations early: entry is by passport.",
+          "ru": "Бронируйте в приложении 12306 (английская версия, привязка паспорта) или на Trip.com. На вокзал приезжайте заранее: вход по паспорту.",
+          "zh": "可通过12306（英文版，绑定护照）或Trip.com购票。请提前到站：进站需验护照。"
+        }
+      },
+      {
+        "label": {
+          "en": "Book in advance",
+          "ru": "Бронь заранее",
+          "zh": "需提前预约"
+        },
+        "text": {
+          "en": "Sun Yat-sen Mausoleum, the Nanjing memorial, Nanjing Museum, Lingyin (Hangzhou), the Humble Administrator's Garden (Suzhou), the Haichang ticket.",
+          "ru": "Мавзолей Сунь Ятсена, мемориал в Нанкине, музей Нанкина, Линъинь (Ханчжоу), сад Чжочжэн (Сучжоу), билет в Haichang.",
+          "zh": "中山陵、南京纪念馆、南京博物院、灵隐寺（杭州）、拙政园（苏州）、海昌门票。"
+        }
+      },
+      {
+        "label": {
+          "en": "Weather",
+          "ru": "Погода",
+          "zh": "天气"
+        },
+        "text": {
+          "en": "Shanghai and Hangzhou: dry and cool, about +14…+20 °C. Huangshan: about 0…+10 °C on the summit, fog and rain or snow possible.",
+          "ru": "Шанхай и Ханчжоу: сухо и прохладно, около +14…+20 °C. Хуаншань: на вершине около 0…+10 °C, возможны туман и дождь или снег.",
+          "zh": "上海和杭州：干燥微凉，约14–20°C。黄山：山顶约0–10°C，可能有雾和雨雪。"
+        }
+      },
+      {
+        "label": {
+          "en": "Huangshan in winter",
+          "ru": "Хуаншань зимой",
+          "zh": "黄山冬季"
+        },
+        "text": {
+          "en": "From November the cable cars follow the winter schedule; sunrise and sunset on the summit need a night up there.",
+          "ru": "С ноября канатки работают по зимнему графику, рассвет и закат на вершине возможны только с ночёвкой.",
+          "zh": "11月起索道按冬季时间运行，山顶看日出日落需要在山上过夜。"
+        }
+      },
+      {
+        "label": {
+          "en": "Payments",
+          "ru": "Оплата",
+          "zh": "支付"
+        },
+        "text": {
+          "en": "Set up Alipay or WeChat Pay before the trip and carry some cash; cards are not accepted everywhere.",
+          "ru": "Подключите Alipay или WeChat Pay до поездки и держите немного наличных; карты принимают не везде.",
+          "zh": "出发前开通支付宝或微信支付，并带少量现金；并非处处能刷卡。"
+        }
+      },
+      {
+        "label": {
+          "en": "Hotels",
+          "ru": "Отели",
+          "zh": "酒店"
+        },
+        "text": {
+          "en": "No hotels are booked yet: make sure the hotel accepts foreigners and pick a place near the metro or the station.",
+          "ru": "Бронирования пока нет: убедитесь, что отель принимает иностранцев, и ищите место рядом с метро или вокзалом.",
+          "zh": "酒店尚未预订：请确认可接待外籍住客，并选靠近地铁或车站的位置。"
+        }
+      }
+    ]
+  },
+  "legend": [
+    {
+      "symbol": "★",
+      "text": {
+        "en": "Day load: 1 to 5 stars",
+        "ru": "Нагрузка дня: от 1 до 5 звёзд",
+        "zh": "当天强度：1至5颗星"
+      }
+    },
+    {
+      "symbol": "◇",
+      "text": {
+        "en": "Optional stop: drop it first",
+        "ru": "Опциональная точка: снимается первой",
+        "zh": "可选项目：时间不够时优先取消"
+      }
+    },
+    {
+      "symbol": "⚠",
+      "text": {
+        "en": "Warning or unconfirmed",
+        "ru": "Предупреждение или не подтверждено",
+        "zh": "提醒或尚未确认"
+      }
+    },
+    {
+      "symbol": "🍴",
+      "text": {
+        "en": "A meal: main, dinner or snack",
+        "ru": "Приём пищи: основной, ужин или перекус",
+        "zh": "用餐：主餐、晚餐或小吃"
+      }
+    }
+  ],
+  "appGuide": {
+    "title": {
+      "en": "How to use",
+      "ru": "Как пользоваться",
+      "zh": "使用说明"
+    },
+    "steps": [
+      {
+        "en": "Pick a language with the switcher: RU, EN or ZH.",
+        "ru": "Выберите язык в переключателе: RU, EN или ZH.",
+        "zh": "用语言切换器选择RU、EN或ZH。"
+      },
+      {
+        "en": "Itinerary tab: pick a day; each day has a summary, roads, clothing and load stars.",
+        "ru": "Вкладка «Маршрут»: выберите день, у каждого дня есть описание, дорога, одежда и звёзды нагрузки.",
+        "zh": "「行程」标签：选择某一天，每天有概述、交通、着装和强度星级。"
+      },
+      {
+        "en": "The Directions button on a stop opens Google Maps navigation; View on map shows the place.",
+        "ru": "Кнопка «Маршрут» на точке открывает навигацию в Google Maps, «На карте» показывает место.",
+        "zh": "点位上的「路线」按钮会打开谷歌地图导航，「在地图上查看」会显示该地点。"
+      },
+      {
+        "en": "The Dinner tab lists food areas by city.",
+        "ru": "Вкладка «Ужин» содержит районы еды по городам.",
+        "zh": "「晚餐」标签列出各城市的美食区域。"
+      },
+      {
+        "en": "Open the app once online; then it works offline. Google Maps needs a connection.",
+        "ru": "Один раз откройте приложение с сетью, потом оно работает офлайн; переход в Google Maps требует сети.",
+        "zh": "先联网打开一次应用，之后可离线使用；跳转谷歌地图需要网络。"
+      }
+    ]
+  }
+}

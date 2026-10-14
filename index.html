@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>East China Trip 2026</title>
+  <meta name="theme-color" content="#9F1239">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="China Trip">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icons/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    /* Тема по времени суток телефона: светлая днём, тёмная ночью.
+       Инлайн в <head> — иначе ночью успевает мигнуть светлый фон до загрузки app.js. */
+    (function () {
+      var DAY_START = 7;   /* с 07:00 — светлая тема */
+      var DAY_END = 19;    /* с 19:00 — тёмная тема */
+
+      function apply() {
+        var hour = new Date().getHours();
+        var daytime = hour >= DAY_START && hour < DAY_END;
+        document.documentElement.setAttribute("data-theme", daytime ? "light" : "dark");
+      }
+
+      apply();
+      setInterval(apply, 60000);
+      document.addEventListener("visibilitychange", function () {
+        if (!document.hidden) apply(); /* приложение могли свернуть до заката */
+      });
+    })();
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__row">
+      <h1 id="trip-title" class="topbar__title">East China Trip</h1>
+    </div>
+    <nav id="section-tabs" class="sections" role="tablist"></nav>
+    <nav id="day-tabs" class="tabs" aria-label="Days"></nav>
+  </header>
+
+  <main aria-live="polite">
+    <section id="view-itinerary" class="page">
+      <p id="loading" class="loading">Loading…</p>
+    </section>
+    <section id="view-info" class="page" hidden></section>
+    <section id="view-dining" class="page" hidden></section>
+    <section id="view-guide" class="page" hidden></section>
+  </main>
+
+  <footer class="footer">
+    <p id="footer-note"></p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

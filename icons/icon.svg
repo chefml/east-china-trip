@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Источник иконок PWA. Растеризуется в icon-192.png и icon-512.png:
+       rsvg-convert -w 192 -h 192 icons/icon.svg -o icons/icon-192.png -->
+  <rect width="512" height="512" fill="#9F1239"/>
+  <g fill="#FFFFFF" font-family="Helvetica, Arial, sans-serif" font-weight="bold"
+     font-size="118" text-anchor="middle">
+    <text x="256" y="185">East</text>
+    <text x="256" y="295">China</text>
+    <text x="256" y="405">2026</text>
+  </g>
+</svg>
