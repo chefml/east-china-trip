@@ -21,6 +21,8 @@
       dataHint: "Open the app over a local server (npx serve) or HTTPS — file:// is not supported.",
       noDays: "No days in the dataset.",
       footer: "Offline trip plan. Navigation opens in Google Maps.",
+      amap: "Amap",
+      photoAlt: "Photo: ",
       months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     },
     ru: {
@@ -34,6 +36,8 @@
       dataHint: "Откройте приложение через локальный сервер (npx serve) или по HTTPS — file:// не поддерживается.",
       noDays: "В данных нет дней.",
       footer: "Офлайн-план поездки. Навигация — в Google Maps.",
+      amap: "Amap",
+      photoAlt: "Фото: ",
       months: ["янв", "фев", "мар", "апр", "мая", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"]
     },
     zh: {
@@ -47,6 +51,8 @@
       dataHint: "请通过本地服务器（npx serve）或 HTTPS 打开应用——不支持 file://。",
       noDays: "数据中没有日程。",
       footer: "离线行程计划。导航将在 Google Maps 中打开。",
+      amap: "高德地图",
+      photoAlt: "照片：",
       months: null /* zh использует числовой формат: 2026年8月8日 */
     }
   };
@@ -185,6 +191,19 @@
     return url;
   }
 
+  /* Amap (高德): координаты датасета уже в GCJ-02, как у Google в Китае, поэтому
+     coordinate=gaode — без пересчёта. Имя всегда китайское: так Amap находит POI. */
+  function amapUrl(loc) {
+    var name = (loc.name && loc.name.zh) || localized(loc.name);
+    if (!hasCoords(loc)) {
+      return "https://uri.amap.com/search?keyword=" + encodeURIComponent(name) +
+        "&callnative=1&src=east-china-trip";
+    }
+    return "https://uri.amap.com/marker?position=" + loc.lng + "," + loc.lat +
+      "&name=" + encodeURIComponent(name) +
+      "&coordinate=gaode&callnative=1&src=east-china-trip";
+  }
+
   /* Точка как параметр маршрута: координаты, иначе название */
   function waypointOf(loc) {
     return hasCoords(loc) ? loc.lat + "," + loc.lng : localized(loc.name);
@@ -309,10 +328,42 @@
     return box;
   }
 
+  /* Фото достопримечательности грузится прямо с Wikimedia и нигде не сохраняется
+     (SW чужие домены не кэширует). Не загрузилось — карточка просто без фото.
+     Тап открывает точку в Amap, подпись — автор и лицензия. */
+  function renderPhoto(loc) {
+    var fig = el("figure", "loc__photo");
+    var img = document.createElement("img");
+    img.src = loc.photo.src;
+    img.alt = t("photoAlt") + localized(loc.name);
+    img.loading = "lazy";
+    img.decoding = "async";
+    img.referrerPolicy = "no-referrer";
+    img.addEventListener("error", function () { fig.remove(); });
+
+    if (isMappable(loc)) {
+      var link = mapsLink("loc__photo-link", null, amapUrl(loc));
+      link.appendChild(img);
+      fig.appendChild(link);
+    } else {
+      fig.appendChild(img);
+    }
+
+    if (loc.photo.credit) {
+      var cap = el("figcaption", "loc__photo-credit");
+      cap.appendChild(loc.photo.source
+        ? mapsLink(null, loc.photo.credit, loc.photo.source)
+        : document.createTextNode(loc.photo.credit));
+      fig.appendChild(cap);
+    }
+    return fig;
+  }
+
   function renderLocation(loc) {
     var item = el("li", "loc");
     if (loc.optional) item.classList.add("loc--optional");
     if (loc.warn) item.classList.add("loc--warn");
+    if (loc.photo && loc.photo.src) item.appendChild(renderPhoto(loc));
 
     var head = el("div", "loc__head");
     /* Места из «Ужина» не привязаны ко времени — чип просто не рисуем.
@@ -357,6 +408,7 @@
       var actions = el("div", "loc__actions");
       actions.appendChild(mapsLink("btn btn--primary", t("directions"), directionsUrl(loc)));
       actions.appendChild(mapsLink("btn btn--ghost", t("viewOnMap"), searchUrl(loc)));
+      actions.appendChild(mapsLink("btn btn--ghost btn--amap", t("amap"), amapUrl(loc)));
       item.appendChild(actions);
     }
 
