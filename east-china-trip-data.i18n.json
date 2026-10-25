@@ -18,9 +18,9 @@
     ],
     "defaultLanguage": "ru",
     "overview": {
-      "en": "16 days by high-speed train, no backtracking: Shanghai (French Concession, Yu Garden by night, the Bund by night with the ¥2 ferry to Lujiazui, Nanjing Road neon, Haichang) → Wuzhen Xizha (a night in the water town) → Hangzhou (West Lake, Lingyin, Qingshan Lake water forest, AI Town, the Gongyan banquet, Hanggang Park) → Huangshan (a night on the summit) → Nanjing (Purple Mountain, the Memorial, Nanjing Museum, the Qinhuai River) → Suzhou (gardens, Suzhou Museum) → Zhouzhuang (Life Mystery Museum) → Pudong airport. Autumn: dry and cool; cold on the mountain.",
-      "ru": "16 дней по скоростным поездам без возвратов: Шанхай (Французская концессия, вечерний Юйюань, вечерний Бунд с паромом за ¥2 на Луцзяцзуй, неоновая Нанкин-роуд, Haichang) → Учжэнь, Сичжа (ночь в водном городке) → Ханчжоу (Сиху, Линъинь, водный лес Циншаньху, AI Town, ужин «Гунъянь», парк Ханган) → Хуаншань (ночь на вершине) → Нанкин (Пурпурная гора, мемориал, музей Нанкина, река Циньхуай) → Сучжоу (сады, музей Сучжоу) → Чжоучжуан (Музей тайн жизни) → аэропорт Пудун. Сезон — осень, сухо и прохладно; на горе холодно.",
-      "zh": "16天高铁环线，不走回头路：上海（法租界、夜游豫园、外滩夜景及¥2轮渡到陆家嘴、南京路霓虹、海昌）→ 乌镇西栅（夜宿水乡）→ 杭州（西湖、灵隐寺、青山湖水上森林、人工智能小镇、宫宴、杭钢公园）→ 黄山（山顶过夜）→ 南京（紫金山、纪念馆、南京博物院、秦淮河）→ 苏州（园林、苏州博物馆）→ 周庄（生命奥秘博物馆）→ 浦东机场。秋季：干燥微凉；山上寒冷。"
+      "en": "16 days by high-speed train, no backtracking: Shanghai (French Concession, Yu Garden by night, the Bund by night with the ¥2 ferry to Lujiazui, Nanjing Road neon, Haichang) → Wuzhen Xizha (a night in the water town) → Hangzhou (West Lake, Lingyin, Qingshan Lake water forest, AI Town, the Gongyan banquet, Hanggang Park) → Huangshan (a night on the summit) → Nanjing (Purple Mountain, the Memorial, Nanjing Museum, the Qinhuai River) → Suzhou (gardens, Suzhou Museum, Pingjiang Road and Shantang Street by night) → Pudong airport. Autumn: dry and cool; cold on the mountain.",
+      "ru": "16 дней по скоростным поездам без возвратов: Шанхай (Французская концессия, вечерний Юйюань, вечерний Бунд с паромом за ¥2 на Луцзяцзуй, неоновая Нанкин-роуд, Haichang) → Учжэнь, Сичжа (ночь в водном городке) → Ханчжоу (Сиху, Линъинь, водный лес Циншаньху, AI Town, ужин «Гунъянь», парк Ханган) → Хуаншань (ночь на вершине) → Нанкин (Пурпурная гора, мемориал, музей Нанкина, река Циньхуай) → Сучжоу (сады, музей Сучжоу, вечерние Пинцзян-лу и улица Шаньтан) → аэропорт Пудун. Сезон — осень, сухо и прохладно; на горе холодно.",
+      "zh": "16天高铁环线，不走回头路：上海（法租界、夜游豫园、外滩夜景及¥2轮渡到陆家嘴、南京路霓虹、海昌）→ 乌镇西栅（夜宿水乡）→ 杭州（西湖、灵隐寺、青山湖水上森林、人工智能小镇、宫宴、杭钢公园）→ 黄山（山顶过夜）→ 南京（紫金山、纪念馆、南京博物院、秦淮河）→ 苏州（园林、苏州博物馆、平江路、山塘街夜景）→ 浦东机场。秋季：干燥微凉；山上寒冷。"
     }
   },
   "ui": {
@@ -1315,20 +1315,20 @@
         "zh": "周日"
       },
       "title": {
-        "en": "Wuzhen at dawn, then West Lake",
-        "ru": "Учжэнь на рассвете, затем озеро Сиху",
-        "zh": "清晨乌镇，下午西湖"
+        "en": "Wuzhen at dawn, West Lake by wooden tea boat",
+        "ru": "Учжэнь на рассвете, Сиху на деревянной лодке с чаем",
+        "zh": "清晨乌镇，下午西湖手划船品茶"
       },
       "busyness": 3,
       "focus": {
-        "en": "Xizha at sunrise before the crowds, a short train to Hangzhou, Bai Causeway and Gushan in the afternoon, sunset from Xiling Bridge and dinner at Louwailou.",
-        "ru": "Сичжа на рассвете до наплыва людей, короткий поезд в Ханчжоу, днём дамба Бай и остров Гушань, закат с моста Силин и ужин в Louwailou.",
-        "zh": "清晨日出时趁人少逛西栅，乘高铁到杭州，下午走白堤、游孤山，西泠桥看日落，晚上楼外楼晚餐。"
+        "en": "Xizha at sunrise, a short train to Hangzhou and check-in on Dingan Road. In the afternoon, no 14 km lake loop on foot: cross West Lake in a hand-rowed wooden boat with a pot of Longjing tea, then a short walk along Bai Causeway to Gushan, sunset from Xiling Bridge and dinner at Louwailou.",
+        "ru": "Сичжа на рассвете, короткий поезд в Ханчжоу и заселение на Динъань-лу. Днём — без 14-километрового круга вокруг озера пешком: пересекаете Сиху на деревянной гребной лодке с чайником чая лунцзин, затем короткая прогулка по дамбе Бай до Гушаня, закат с моста Силин и ужин в Louwailou.",
+        "zh": "清晨日出时逛西栅，乘高铁到杭州，入住定安路。下午不步行环湖14公里，而是乘西湖手划木船，边喝龙井边游湖，上岸后沿白堤短程步行到孤山，西泠桥看日落，晚上楼外楼晚餐。"
       },
       "roads": {
-        "en": "Taxi/DiDi from Xizha to Tongxiang station (20–30 minutes), then a G-train Tongxiang → Hangzhou East, about 25 minutes, about ¥25. The fallback is a direct bus Wuzhen → Hangzhou (about 1.5 h). From Hangzhou East to the lake by metro or taxi.",
-        "ru": "Такси/DiDi из Сичжа до вокзала Тунсян (20–30 минут), затем поезд Тунсян → Ханчжоу-Восточный, около 25 минут, около ¥25. Запасной вариант — прямой автобус Учжэнь → Ханчжоу (около 1,5 ч). От вокзала до озера — метро или такси.",
-        "zh": "西栅打车/滴滴到桐乡站（20–30分钟），乘高铁桐乡 → 杭州东，约25分钟，约¥25。备选：乌镇直达杭州大巴（约1.5小时）。杭州东站到西湖乘地铁或打车。"
+        "en": "Taxi/DiDi from Xizha to Tongxiang station (20–30 minutes), then a G-train Tongxiang → Hangzhou East, about 25 minutes, about ¥25. From Hangzhou East to the hotel: metro Line 1 straight to Dingan Road (about 20 minutes). From the hotel to the Hubin boat piers is a 10–15 minute walk; after dinner at Louwailou a taxi back takes about 10 minutes.",
+        "ru": "Такси/DiDi из Сичжа до вокзала Тунсян (20–30 минут), затем поезд Тунсян → Ханчжоу-Восточный, около 25 минут, около ¥25. От вокзала до отеля: метро линии 1 без пересадок до Dingan Road (около 20 минут). От отеля до лодочных причалов Хубинь — 10–15 минут пешком; после ужина в Louwailou обратно на такси около 10 минут.",
+        "zh": "西栅打车/滴滴到桐乡站（20–30分钟），乘高铁桐乡 → 杭州东，约25分钟，约¥25。杭州东站到酒店：地铁1号线直达定安路站（约20分钟）。酒店步行10–15分钟到湖滨码头；楼外楼晚餐后打车回酒店约10分钟。"
       },
       "clothing": {
         "en": "Layers: chilly at dawn by the water, about +18 °C by the lake in the afternoon; comfortable shoes.",
@@ -1336,9 +1336,9 @@
         "zh": "叠穿：清晨水边较冷，下午西湖边约18°C；穿舒适的鞋。"
       },
       "extra": {
-        "en": "Sunday: West Lake is busy, keep to the side paths by the water. Do not trust the so-called tourist information desks in the station: they sell tours. Check that the Gongyan booking for 3 November is confirmed.",
-        "ru": "Воскресенье: на Сиху многолюдно, держитесь боковых дорожек у воды. Не доверяйте так называемым туристическим стойкам на вокзале: там продают туры. Проверьте, что бронь «Гунъянь» на 3 ноября подтверждена.",
-        "zh": "周日西湖人多，尽量走沿湖小路。车站里所谓的「旅游咨询台」多为卖团，不要轻信。请确认11月3日宫宴预订已成功。"
+        "en": "Sunday: West Lake is busy. The long stretch is done by boat, so today's walking is only about 2 km (Bai Causeway and Gushan). Board hand-rowed boats only at official piers and agree on the route, drop-off point and price before you get in. Check that the Gongyan booking for 3 November is confirmed.",
+        "ru": "Воскресенье: на Сиху многолюдно. Длинный отрезок проходите на лодке, поэтому пешком сегодня всего около 2 км (дамба Бай и Гушань). Садитесь в гребные лодки только на официальных причалах и до посадки договоритесь о маршруте, месте высадки и цене. Проверьте, что бронь «Гунъянь» на 3 ноября подтверждена.",
+        "zh": "周日西湖人多。长距离交给游船，今天步行只有约2公里（白堤和孤山）。手划船请只在官方码头上船，上船前谈好路线、上岸地点和价格。请确认11月3日宫宴预订已成功。"
       },
       "locations": [
         {
@@ -1438,23 +1438,28 @@
         {
           "id": "d6-hotel",
           "name": {
-            "en": "Hotel (to book): east shore of West Lake (Hubin/Wulin)",
-            "ru": "Отель (выбрать): восточный берег Сиху (Хубинь/Улинь)",
-            "zh": "酒店（待订）：西湖东岸（湖滨/武林）"
+            "en": "Hotel (to book): Dingan Road area",
+            "ru": "Отель (выбрать): район Динъань-лу",
+            "zh": "酒店（待订）：定安路一带"
           },
-          "time": "11:45",
+          "time": "11:30",
           "category": "hotel",
-          "lat": 30.257,
-          "lng": 120.164,
+          "lat": 30.2455,
+          "lng": 120.169,
           "placeId": null,
           "note": {
-            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
-            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
-            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+            "en": "Booking not confirmed. Recommended area: around Dingan Road metro (Line 1). The lake at Hubin is a 10–15 minute walk, Damanong and the Southern Song Imperial Street are next door, and Line 1 runs direct to Hangzhou East and Wulin Square. Check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена. Рекомендуемый район — у метро Dingan Road (линия 1). До озера у Хубинь 10–15 минут пешком, рядом Дамалун и Императорская улица Южной Сун, линия 1 идёт без пересадок до Ханчжоу-Восточного и Wulin Square. Проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订。推荐区域：地铁1号线定安路站一带。步行10–15分钟到湖滨西湖边，紧邻大马弄和南宋御街，地铁1号线直达杭州东站和武林广场。订房前请确认可接待外籍住客。"
           },
           "optional": false,
           "meal": null,
-          "warn": true
+          "warn": true,
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          }
         },
         {
           "id": "d6-lunch",
@@ -1483,30 +1488,56 @@
           "warn": false
         },
         {
+          "id": "d6-boat",
+          "name": {
+            "en": "West Lake by hand-rowed wooden boat, with tea",
+            "ru": "Сиху на деревянной гребной лодке с чаем",
+            "zh": "西湖手划船（船上品茶）"
+          },
+          "time": "13:45",
+          "category": "activity",
+          "lat": 30.256,
+          "lng": 120.16,
+          "placeId": null,
+          "note": {
+            "en": "Instead of walking the 14 km loop: a small wooden boat with a canopy and a low table, rowed by a boatman, about 1 hour on the water. Sip Longjing tea as the hills, causeways and pagodas go by. Ask to be dropped at Broken Bridge to continue on foot.",
+            "ru": "Вместо 14-километрового круга пешком — маленькая деревянная лодка с навесом и столиком, на вёслах лодочник, около часа на воде. Пейте чай лунцзин, пока мимо проплывают холмы, дамбы и пагоды. Попросите высадить вас у Сломанного моста, чтобы продолжить пешком.",
+            "zh": "代替步行环湖14公里：带篷顶和小桌的木船，由船工摇桨，在湖上约1小时。边喝龙井边看青山、长堤和塔影。请船工把你送到断桥上岸，接着步行。"
+          },
+          "details": {
+            "en": "Board at an official pier at Hubin (or Broken Bridge). Per sources, about ¥150–200 per boat per hour for a small group; prices change, so check the board at the pier and agree on the route and drop-off before boarding. Many boatmen can provide a pot of West Lake Longjing for a small extra charge; or bring your own tea and a thermos. Avoid touts on the shore. The large covered ferries to Three Pools Mirroring the Moon (about ¥55–70) are an optional extra. The map pin is approximate.",
+            "ru": "Посадка на официальном причале у Хубинь (или у Сломанного моста). По источникам, около ¥150–200 за лодку в час для небольшой группы; цены меняются — смотрите табличку на причале и до посадки договоритесь о маршруте и месте высадки. Многие лодочники за небольшую доплату предложат чайник западноозёрного лунцзина; или возьмите свой чай и термос. Не связывайтесь с зазывалами на берегу. Большие крытые паромы к «Трём бассейнам, отражающим луну» (около ¥55–70) — по желанию. Точка на карте приблизительная.",
+            "zh": "在湖滨（或断桥）官方码头上船。据资料，小团体每船每小时约¥150–200；价格可能调整，请看码头公示牌，上船前谈好路线和上岸点。不少船工可加少量费用提供一壶西湖龙井；也可自带茶叶和保温杯。不要理会岸边揽客的人。去三潭印月的大型画舫（约¥55–70）可选。地图定位为大致位置。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false,
+          "photo": {
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/West_Lake%2C_Hangzhou_2025.jpg/960px-West_Lake%2C_Hangzhou_2025.jpg",
+            "credit": "Takashishin · CC BY 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:West_Lake,_Hangzhou_2025.jpg"
+          }
+        },
+        {
           "id": "d6-brokenbridge",
           "name": {
             "en": "Broken Bridge and Bai Causeway",
             "ru": "Мост Дуаньцяо и дамба Бай",
             "zh": "断桥与白堤"
           },
-          "time": "14:00",
+          "time": "15:00",
           "category": "sight",
           "lat": 30.259271,
           "lng": 120.15238,
           "placeId": "ChIJLX_GQptiSzQR6_YUSZJHm1A",
           "note": {
-            "en": "Walk along the north shore: Broken Bridge, the willows of Bai Causeway, Gushan island. Boats leave from here for Three Pools Mirroring the Moon.",
-            "ru": "Прогулка по северному берегу: Сломанный мост, ивы дамбы Бай, остров Гушань. Отсюда отходят лодки к «Трём бассейнам, отражающим луну».",
-            "zh": "沿北岸漫步：断桥、白堤垂柳、孤山。可在此乘船前往三潭印月。"
+            "en": "A short walk only: from Broken Bridge along the willows of Bai Causeway (about 1 km) to Gushan.",
+            "ru": "Только короткая прогулка: от Сломанного моста по ивовой дамбе Бай (около 1 км) до Гушаня.",
+            "zh": "只需短程步行：从断桥沿白堤垂柳走约1公里到孤山。"
           },
           "optional": false,
           "meal": null,
           "warn": false,
-          "details": {
-            "en": "The lake is free. Lake boats with a landing at Three Pools Mirroring the Moon cost about ¥55–70 at the official piers.",
-            "ru": "Озеро бесплатно. Лодки с высадкой на «Трёх бассейнах» около ¥55–70 на официальных причалах.",
-            "zh": "西湖免费。官方码头游船（含三潭印月登岛）约¥55–70。"
-          },
           "photo": {
             "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/West_Lake_%E8%A5%BF%E6%B9%96_-_panoramio_%2810%29.jpg/960px-West_Lake_%E8%A5%BF%E6%B9%96_-_panoramio_%2810%29.jpg",
             "credit": "lienyuan lee · CC BY 3.0",
@@ -1520,7 +1551,7 @@
             "ru": "Остров Гушань",
             "zh": "孤山"
           },
-          "time": "15:30",
+          "time": "15:45",
           "category": "sight",
           "lat": 30.2565,
           "lng": 120.144,
@@ -1590,6 +1621,32 @@
           "optional": false,
           "meal": "dinner",
           "warn": false
+        },
+        {
+          "id": "d6-hefang",
+          "name": {
+            "en": "Hefang Street",
+            "ru": "Улица Хэфан",
+            "zh": "河坊街"
+          },
+          "time": "19:30",
+          "category": "food",
+          "lat": 30.24012,
+          "lng": 120.17249,
+          "placeId": "ChIJ-XaTcludTDQRR1IzQgmgKdQ",
+          "note": {
+            "en": "Touristy: go only if you have spare energy. About 10 minutes on foot from the hotel; the Southern Song Imperial Street alongside is calmer.",
+            "ru": "Туристично: только если остались силы. Около 10 минут пешком от отеля; соседняя Императорская улица Южной Сун спокойнее.",
+            "zh": "游客较多：有余力再去。离酒店步行约10分钟；旁边的南宋御街较安静。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false,
+          "photo": {
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Hefang_Street.jpg/960px-Hefang_Street.jpg",
+            "credit": "钉钉 · CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Hefang_Street.jpg"
+          }
         }
       ]
     },
@@ -1602,20 +1659,20 @@
         "zh": "周一"
       },
       "title": {
-        "en": "Lingyin Temple, tea village, sunset at Leifeng Pagoda",
-        "ru": "Линъинь, чайная деревня, закат у пагоды Лэйфэн",
-        "zh": "灵隐寺、茶村、雷峰塔日落"
+        "en": "Lingyin, tea village, Leifeng at sunset from Changqiao Park, Wulin Night Market",
+        "ru": "Линъинь, чайная деревня, Лэйфэн на закате из парка Чанцяо, ночной рынок Улинь",
+        "zh": "灵隐寺、茶村、长桥公园拍雷峰夕照、武林夜市"
       },
       "busyness": 3,
       "focus": {
-        "en": "A morning at Lingyin Temple at opening, then the tea village and sunset on the lake's south shore.",
-        "ru": "Утро в храме Линъинь у открытия, затем чайная деревня и закат у западного берега озера.",
-        "zh": "清晨开门即到灵隐寺，随后去茶村，傍晚在西湖南岸看日落。"
+        "en": "Lingyin Temple at opening and the tea village, then sunset at Changqiao Park on the south-east shore, where Leifeng Pagoda stands in silhouette across the water. Dinner on street food at Wulin Night Market.",
+        "ru": "Храм Линъинь к открытию и чайная деревня, затем закат в парке Чанцяо на юго-восточном берегу, откуда пагода Лэйфэн видна силуэтом за водой. Ужин уличной едой на ночном рынке Улинь.",
+        "zh": "早上开门即进灵隐寺，之后去茶村；傍晚到东南岸的长桥公园，隔水拍雷峰塔剪影夕照；晚上去武林夜市吃小吃当晚餐。"
       },
       "roads": {
-        "en": "City buses run from West Lake to the Lingyin entrance; taxi/DiDi as the fallback. Meijiawu is a short ride from Lingyin.",
-        "ru": "От Сиху до Линъинь ходят городские автобусы до входа в зону; такси/DiDi — запасной вариант. Между Линъинь и Meijiawu — короткий проезд.",
-        "zh": "西湖到灵隐有公交直达景区入口；打车/滴滴作备选。灵隐到梅家坞车程很短。"
+        "en": "City buses run from the lake to Lingyin; taxi/DiDi as the fallback. Meijiawu is a short ride from Lingyin. To Changqiao Park: taxi/DiDi, or about 10 minutes on foot from Leifeng Pagoda. Changqiao Park → Wulin Night Market: taxi/DiDi about 20 minutes. Back to the hotel: metro Line 1 from Wulin Square to Dingan Road (three stops).",
+        "ru": "До Линъиня от озера ходят городские автобусы; запасной вариант — такси/DiDi. От Линъиня до Мэйцзяу недалеко. До парка Чанцяо: такси/DiDi или около 10 минут пешком от пагоды Лэйфэн. Парк Чанцяо → ночной рынок Улинь: такси/DiDi около 20 минут. Обратно в отель: метро линии 1 от Wulin Square до Dingan Road (три остановки).",
+        "zh": "从西湖边有公交到灵隐寺，也可打车。灵隐到梅家坞很近。去长桥公园：打车，或从雷峰塔步行约10分钟。长桥公园 → 武林夜市：打车约20分钟。回酒店：地铁1号线武林广场站到定安路站（3站）。"
       },
       "clothing": {
         "en": "Comfortable shoes for stairs and trails; a light jacket.",
@@ -1623,9 +1680,9 @@
         "zh": "穿适合台阶和山路的鞋；带轻薄外套。"
       },
       "extra": {
-        "en": "Monday: quieter at Lingyin than at the weekend, but the 07:30 start still pays off. The Feilai Feng area requires a real-name reservation in advance; check the current rules the day before.",
-        "ru": "Понедельник: в Линъине тише, чем в выходные, но старт в 07:30 всё равно оправдан. Для зоны Фэйлайфэн нужна предварительная бронь по имени; проверьте актуальные правила накануне.",
-        "zh": "周一灵隐寺比周末人少，但7:30出发依然值得。飞来峰景区需提前实名预约，前一天请确认最新规定。"
+        "en": "Monday: quieter at Lingyin than at the weekend, but the 07:30 start still pays off; the Feilai Feng area needs a real-name reservation the day before. Sunset is about 17:05: reach Changqiao Park by 16:30 for a spot on the shore with the pagoda across the water, and stay until it lights up. Going inside Leifeng Pagoda is optional. Wulin Night Market has moved before: confirm its current location and hours on Dianping.",
+        "ru": "Понедельник: в Линъине тише, чем в выходные, но старт в 07:30 всё равно оправдан; для зоны Фэйлайфэн нужна бронь по имени накануне. Закат около 17:05: будьте в парке Чанцяо к 16:30, чтобы занять место на берегу с пагодой за водой, и оставайтесь до включения подсветки. Подниматься в пагоду Лэйфэн — по желанию. Ночной рынок Улинь уже переезжал: уточните текущий адрес и часы в Dianping.",
+        "zh": "周一灵隐寺比周末人少，但7:30出发依然值得；飞来峰需前一天实名预约。日落约17:05：16:30前到长桥公园岸边占位，隔水拍雷峰塔，等到塔亮灯再走。进雷峰塔可选。武林夜市曾搬迁过：请在大众点评确认当前地址和营业时间。"
       },
       "locations": [
         {
@@ -1637,8 +1694,8 @@
           },
           "time": "06:45",
           "category": "food",
-          "lat": 30.257,
-          "lng": 120.164,
+          "lat": 30.2455,
+          "lng": 120.169,
           "placeId": null,
           "note": {
             "en": "An early start for Lingyin: Xinfeng Xiaochi (新丰小吃), a Hangzhou chain, for xiaolongbao and wontons, or breakfast at the hotel.",
@@ -1765,17 +1822,17 @@
             "ru": "Пагода Лэйфэн",
             "zh": "雷峰塔"
           },
-          "time": "15:45",
+          "time": "15:00",
           "category": "sight",
           "lat": 30.231568,
           "lng": 120.149695,
           "placeId": "ChIJcZiMplJ9SzQRbdkqb6FKxzM",
           "note": {
-            "en": "Arrive by 16:00, climb to the top and watch the sun set over the lake (about 17:05). Ticket about ¥40, open until about 20:00 (verify).",
-            "ru": "Приходите к 16:00, поднимитесь наверх и смотрите закат над озером (около 17:05). Билет около ¥40, открыто примерно до 20:00 (проверьте).",
-            "zh": "16:00前到，登塔看西湖日落（约17:05）。门票约¥40，约开放到20:00（请核实）。"
+            "en": "Optional: go in only if you want the view from the top or the remains of the old pagoda's base; ticket about ¥40. Then walk about 10 minutes to Changqiao Park before 16:30.",
+            "ru": "По желанию: заходите, только если хотите вид сверху или остатки основания старой пагоды; билет около ¥40. Затем около 10 минут пешком до парка Чанцяо к 16:30.",
+            "zh": "可选：想登顶看湖景或看古塔遗址才需要进去，门票约¥40。之后步行约10分钟，16:30前到长桥公园。"
           },
-          "optional": false,
+          "optional": true,
           "meal": null,
           "warn": false,
           "photo": {
@@ -1785,35 +1842,56 @@
           }
         },
         {
-          "id": "d7-hefang",
+          "id": "d7-changqiao",
           "name": {
-            "en": "Hefang Street",
-            "ru": "Улица Хэфан",
-            "zh": "河坊街"
+            "en": "Changqiao Park: Leifeng Pagoda at sunset",
+            "ru": "Парк Чанцяо: пагода Лэйфэн на закате",
+            "zh": "长桥公园：雷峰夕照"
           },
-          "time": "18:30",
-          "category": "food",
-          "lat": 30.24012,
-          "lng": 120.17249,
-          "placeId": "ChIJ-XaTcludTDQRR1IzQgmgKdQ",
+          "time": "16:30",
+          "category": "sight",
+          "lat": 30.237,
+          "lng": 120.16,
+          "placeId": null,
           "note": {
-            "en": "The old trading street and the Southern Song Imperial Street: dinner and street snacks. Nearby Kuiyuanguan (奎元馆) on Jiefang Road is a century-old noodle house known for shrimp-and-eel noodles.",
-            "ru": "Старая торговая улица и Императорская улица Южной Сун: ужин и уличные закуски. Рядом на Цзефан-лу — столетняя лапшичная Kuiyuanguan (奎元馆), известная лапшой с креветками и угрём.",
-            "zh": "河坊街和南宋御街：晚餐和街头小吃。附近解放路上的百年面馆奎元馆以虾爆鳝面闻名。"
+            "en": "The spot for photographing Leifeng Pagoda: from the lakeside here the pagoda sits on its hill across the water with the sun going down behind it (about 17:05). Free. Stay a little longer: the pagoda is lit after dark.",
+            "ru": "Место для фото пагоды Лэйфэн: с берега здесь пагода стоит на холме за водой, а солнце садится за ней (около 17:05). Бесплатно. Задержитесь: после заката пагоду подсвечивают.",
+            "zh": "拍雷峰塔的最佳机位：从这里的湖岸望去，雷峰塔立于对面山头，夕阳从塔后落下（约17:05）。免费。多留一会儿，天黑后塔身亮灯。"
+          },
+          "details": {
+            "en": "A wide-angle shot works from the shore path; a longer lens compresses the pagoda against the sunset. Weekends get crowded with photographers. The map pin is approximate.",
+            "ru": "С береговой дорожки подойдёт широкий угол; длиннофокусный объектив прижмёт пагоду к закату. В выходные много фотографов. Точка на карте приблизительная.",
+            "zh": "湖边步道可用广角拍；长焦能把塔和夕阳压缩在一起。周末摄影的人多。地图定位为大致位置。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d7-wulin",
+          "name": {
+            "en": "Wulin Night Market (dinner)",
+            "ru": "Ночной рынок Улинь (ужин)",
+            "zh": "武林夜市（晚餐）"
+          },
+          "time": "18:45",
+          "category": "market",
+          "lat": 30.2745,
+          "lng": 120.163,
+          "placeId": null,
+          "note": {
+            "en": "Hangzhou's local night market: skewers, stinky tofu, Hangzhou snacks and bargain stalls. Tonight's dinner is street food here.",
+            "ru": "Местный ночной рынок Ханчжоу: шашлычки, вонючий тофу, ханчжоуские закуски и недорогие лотки. Ужин сегодня — уличная еда здесь.",
+            "zh": "杭州本地夜市：烤串、臭豆腐、杭州小吃和平价摊位。今晚就在这里吃小吃当晚餐。"
+          },
+          "details": {
+            "en": "Usually from about 18:00 until late (verify). It has moved before, so confirm the current location on Dianping. The map pin is approximate.",
+            "ru": "Обычно примерно с 18:00 до позднего вечера (проверьте). Рынок уже переезжал, поэтому текущий адрес уточните в Dianping. Точка на карте приблизительная.",
+            "zh": "通常约18:00营业到深夜（请核实）。曾搬迁过，请在大众点评确认当前地址。地图定位为大致位置。"
           },
           "optional": false,
           "meal": "dinner",
-          "warn": false,
-          "details": {
-            "en": "Suggested from general knowledge, not checked live: confirm the address, hours and queue on Dianping (大众点评) or Amap. The map pin marks the area, so navigate by the restaurant name.",
-            "ru": "Рекомендация по общим сведениям, не проверена в реальном времени: адрес, часы и очередь уточните в Dianping (大众点评) или Amap. Точка на карте отмечает район — ищите по названию ресторана.",
-            "zh": "根据常识推荐，未实时核实：地址、营业时间和排队情况请在大众点评或高德确认。地图定位为大致区域，请按店名导航。"
-          },
-          "photo": {
-            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Hefang_Street.jpg/960px-Hefang_Street.jpg",
-            "credit": "钉钉 · CC BY-SA 4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Hefang_Street.jpg"
-          }
+          "warn": false
         }
       ]
     },
@@ -1861,8 +1939,8 @@
           },
           "time": "07:00",
           "category": "food",
-          "lat": 30.257,
-          "lng": 120.164,
+          "lat": 30.2455,
+          "lng": 120.169,
           "placeId": null,
           "note": {
             "en": "At the hotel or a breakfast stall nearby, before the metro to Qingshan Lake.",
@@ -2004,20 +2082,20 @@
         "zh": "周三"
       },
       "title": {
-        "en": "Hanggang Park, then on to Huangshan",
-        "ru": "Парк Ханган и переезд в Хуаншань",
-        "zh": "杭钢公园，转场黄山"
+        "en": "Damanong morning market, Hanggang Park, on to Huangshan",
+        "ru": "Утренний рынок Дамалун, парк Ханган, переезд на Хуаншань",
+        "zh": "大马弄早市、杭钢公园，转场黄山"
       },
       "busyness": 3,
       "focus": {
-        "en": "A morning in the industrial park on the site of the former steelworks, a midday train to Huangshan North, a bus to Tangkou at the foot of the mountain, an evening to prepare.",
-        "ru": "Утро в индустриальном парке на месте сталелитейного завода, дневной поезд до Huangshan North, автобус до Танкоу у подножия горы, вечер на подготовку.",
-        "zh": "上午游原杭钢厂区改建的工业遗址公园，中午乘高铁到黄山北，转大巴到山脚汤口镇，晚上做上山准备。"
+        "en": "Breakfast in Damanong, the old-town food lane a few minutes from the hotel, an optional stop at Hanggang Park, a midday train to Huangshan North and a bus to Tangkou at the foot of the mountain.",
+        "ru": "Завтрак в Дамалуне — старой продуктовой улочке в нескольких минутах от отеля, по желанию парк Ханган, поезд в середине дня до Хуаншань-Северного и автобус до Танкоу у подножия горы.",
+        "zh": "在离酒店几分钟的老城美食小巷大马弄吃早餐，可选去杭钢公园，中午乘高铁到黄山北，再坐大巴到山脚汤口。"
       },
       "roads": {
-        "en": "Metro from the hotel to Hangzhou East; leave the luggage at the station's left-luggage office (行李寄存). Metro Line 4 north to 独城生态公园 (Ducheng Ecological Park, opened in July 2025); the east exit is about 200 m from the park; or a DiDi. Then back to the station. Train Hangzhou East → Huangshan North (31 trains a day, 1 h 14 min – 1 h 58 min, second class about ¥170). From the station a bus to Tangkou takes about 50 minutes, ¥30. Use Huangshan North station, not Huangshan Railway Station.",
-        "ru": "Из отеля на метро до Hangzhou East, багаж — в камеру хранения вокзала (行李寄存). Метро линии 4 на север до станции 独城生态公园 (Ducheng Ecological Park, открыта в июле 2025), восточный выход — около 200 м до парка; либо DiDi. Затем обратно на вокзал. Поезд Hangzhou East → Huangshan North (31 поезд в день, 1 ч 14 мин – 1 ч 58 мин, второй класс около ¥170). От вокзала автобус до Танкоу около 50 минут, ¥30. Вокзал Huangshan North, а не Huangshan Railway Station.",
-        "zh": "从酒店乘地铁到杭州东站，行李寄存在车站。乘地铁4号线往北到独城生态公园站（2025年7月开通），东侧出口距公园约200米；也可打滴滴。之后返回车站。杭州东 → 黄山北高铁（每天31趟，1小时14分–1小时58分，二等座约¥170）。出站后乘大巴到汤口约50分钟，¥30。请认准黄山北站，而不是黄山站。"
+        "en": "Damanong is 5–10 minutes on foot from Dingan Road. Metro from the hotel to Hangzhou East; leave the luggage at the station's left-luggage office (行李寄存). Metro Line 4 north to 独城生态公园 (Ducheng Ecological Park, opened in July 2025); the east exit is about 200 m from the park; or a DiDi. Then back to the station. Train Hangzhou East → Huangshan North (31 trains a day, 1 h 14 min – 1 h 58 min, second class about ¥170). From the station a bus to Tangkou takes about 50 minutes, ¥30. Use Huangshan North station, not Huangshan Railway Station.",
+        "ru": "До Дамалуна от Dingan Road 5–10 минут пешком. Из отеля на метро до Hangzhou East, багаж — в камеру хранения вокзала (行李寄存). Метро линии 4 на север до станции 独城生态公园 (Ducheng Ecological Park, открыта в июле 2025), восточный выход — около 200 м до парка; либо DiDi. Затем обратно на вокзал. Поезд Hangzhou East → Huangshan North (31 поезд в день, 1 ч 14 мин – 1 ч 58 мин, второй класс около ¥170). От вокзала автобус до Танкоу около 50 минут, ¥30. Вокзал Huangshan North, а не Huangshan Railway Station.",
+        "zh": "大马弄距定安路步行5–10分钟。从酒店乘地铁到杭州东站，行李寄存在车站。乘地铁4号线往北到独城生态公园站（2025年7月开通），东侧出口距公园约200米；也可打滴滴。之后返回车站。杭州东 → 黄山北高铁（每天31趟，1小时14分–1小时58分，二等座约¥170）。出站后乘大巴到汤口约50分钟，¥30。请认准黄山北站，而不是黄山站。"
       },
       "clothing": {
         "en": "Warm layers for tomorrow's climb: a jacket, gloves, a hat, a rain jacket, shoes with a good tread.",
@@ -2031,21 +2109,26 @@
       },
       "locations": [
         {
-          "id": "d9-breakfast",
+          "id": "d9-damanong",
           "name": {
-            "en": "Breakfast",
-            "ru": "Завтрак",
-            "zh": "早餐"
+            "en": "Damanong (大马弄): morning food lane",
+            "ru": "Дамалун (大马弄): утренняя продуктовая улочка",
+            "zh": "大马弄：老杭州早市"
           },
-          "time": "07:30",
-          "category": "food",
-          "lat": 30.257,
-          "lng": 120.164,
+          "time": "07:15",
+          "category": "market",
+          "lat": 30.2485,
+          "lng": 120.1715,
           "placeId": null,
           "note": {
-            "en": "At the hotel before check-out.",
-            "ru": "В отеле перед выездом.",
-            "zh": "退房前在酒店吃早餐。"
+            "en": "A narrow old-town lane of food stalls and a wet market, at its most local in the morning: scallion-wrapped fried dough (葱包桧), braised meats, rice cakes, fresh noodles. Breakfast as you walk.",
+            "ru": "Узкая улочка старого города с едой и рынком, самая настоящая утром: жареное тесто в лепёшке с луком (葱包桧), тушёное мясо, рисовые пирожки, свежая лапша. Завтракайте на ходу.",
+            "zh": "老城区窄巷里的美食摊和菜场，早上最有本地味：葱包桧、卤味、糕点、鲜面。边走边吃当早餐。"
+          },
+          "details": {
+            "en": "Free to walk. Many stalls wind down by early afternoon. The map pin is approximate.",
+            "ru": "Вход свободный. Многие лотки сворачиваются к началу дня. Точка на карте приблизительная.",
+            "zh": "免费逛。不少摊位午后就收摊。地图定位为大致位置。"
           },
           "optional": false,
           "meal": "breakfast",
@@ -2058,10 +2141,10 @@
             "ru": "Отель (выбрать): выезд из отеля в Ханчжоу",
             "zh": "酒店（待订）：杭州酒店退房"
           },
-          "time": "08:00",
+          "time": "08:30",
           "category": "hotel",
-          "lat": 30.257,
-          "lng": 120.164,
+          "lat": 30.2455,
+          "lng": 120.169,
           "placeId": null,
           "note": {
             "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
@@ -2079,7 +2162,7 @@
             "ru": "Hangzhou East: багаж в камеру хранения",
             "zh": "杭州东站：寄存行李"
           },
-          "time": "08:45",
+          "time": "09:00",
           "category": "transit",
           "lat": 30.292859,
           "lng": 120.215818,
@@ -2100,7 +2183,7 @@
             "ru": "Парк Ханган (大运河杭钢公园)",
             "zh": "大运河杭钢公园"
           },
-          "time": "09:30",
+          "time": "09:45",
           "category": "sight",
           "lat": 30.3507,
           "lng": 120.1779,
@@ -3207,9 +3290,9 @@
         "zh": "周一"
       },
       "title": {
-        "en": "Jiming Temple and Xuanwu Lake, train to Suzhou, Pingjiang Road",
-        "ru": "Храм Цзимин и озеро Сюаньу, поезд в Сучжоу, Пинцзян-лу",
-        "zh": "鸡鸣寺、玄武湖，转场苏州，夜游平江路"
+        "en": "Jiming Temple and Xuanwu Lake, train to Suzhou, Pingjiang Road at dusk",
+        "ru": "Храм Цзимин и озеро Сюаньу, поезд в Сучжоу, Пинцзян-лу в сумерках",
+        "zh": "鸡鸣寺、玄武湖，转场苏州，黄昏平江路"
       },
       "busyness": 3,
       "focus": {
@@ -3371,9 +3454,9 @@
           "lng": 120.636,
           "placeId": null,
           "note": {
-            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
-            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
-            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+            "en": "Booking not confirmed: 2 nights (9–11 November). Before booking, check that the hotel accepts foreign guests.",
+            "ru": "Бронь не подтверждена: 2 ночи (9–11 ноября). Перед бронированием проверьте, что отель принимает иностранных гостей.",
+            "zh": "尚未预订：住2晚（11月9日至11日）。订房前请确认酒店可接待外籍住客。"
           },
           "optional": false,
           "meal": null,
@@ -3430,37 +3513,6 @@
           "optional": false,
           "meal": "dinner",
           "warn": false
-        },
-        {
-          "id": "d14-shantang",
-          "name": {
-            "en": "Shantang Street by night",
-            "ru": "Улица Шаньтан вечером",
-            "zh": "山塘街夜景"
-          },
-          "time": "19:45",
-          "category": "sight",
-          "lat": 31.3198,
-          "lng": 120.599,
-          "placeId": null,
-          "note": {
-            "en": "Lanterns along a canal street of the old town, about 15 minutes by taxi from Pingjiang Road; free.",
-            "ru": "Фонари вдоль улицы-канала в старом городе, около 15 минут на такси от Пинцзян-лу; бесплатно.",
-            "zh": "古城河街的灯笼夜景，距平江路打车约15分钟，免费。"
-          },
-          "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
-          },
-          "optional": true,
-          "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/1_shantang_street_canal_2023.jpg/960px-1_shantang_street_canal_2023.jpg",
-            "credit": "Chensiyuan · CC BY-SA 4.0",
-            "source": "https://commons.wikimedia.org/wiki/File:1_shantang_street_canal_2023.jpg"
-          }
         }
       ]
     },
@@ -3473,30 +3525,30 @@
         "zh": "周二"
       },
       "title": {
-        "en": "Suzhou gardens, then the Life Mystery Museum and Zhouzhuang",
-        "ru": "Сады Сучжоу, затем Музей тайн жизни и Чжоучжуан",
-        "zh": "苏州园林，下午生命奥秘博物馆与周庄"
+        "en": "Suzhou gardens by day, Shantang Street by night",
+        "ru": "Сады Сучжоу днём, улица Шаньтан вечером",
+        "zh": "白天苏州园林，晚上山塘街"
       },
       "busyness": 4,
       "focus": {
-        "en": "The Humble Administrator's Garden at opening, Suzhou Museum and the Lion Grove next door, then a taxi to Zhouzhuang: the Life Mystery Museum and the water town at dusk. The night in Zhouzhuang, closer to Pudong airport.",
-        "ru": "Сад Чжочжэн к открытию, рядом музей Сучжоу и сад Шицзылинь, затем такси в Чжоучжуан: Музей тайн жизни и водный городок в сумерках. Ночёвка в Чжоучжуане, ближе к аэропорту Пудун.",
-        "zh": "拙政园开门即入，随后参观相邻的苏州博物馆和狮子林，下午打车去周庄：生命奥秘博物馆和黄昏古镇。当晚住周庄，离浦东机场更近。"
+        "en": "The Humble Administrator's Garden at opening, Suzhou Museum and the Lion Grove next door, an optional Lingering Garden in the afternoon, then Shantang Street at dusk: dinner along the canal and the lantern-lit street after dark.",
+        "ru": "Сад Чжочжэн к открытию, рядом музей Сучжоу и сад Шицзылинь, днём по желанию сад Люйюань, затем улица Шаньтан в сумерках: ужин у канала и улица в фонарях после заката.",
+        "zh": "拙政园开门即入，随后参观相邻的苏州博物馆和狮子林，下午可选留园，黄昏到山塘街：沿河晚餐，天黑后看灯笼夜景。"
       },
       "roads": {
-        "en": "The three morning sights are within 10 minutes' walk of each other. From Suzhou old town to Zhouzhuang a taxi/DiDi takes about 1 hour (roughly ¥150–200: check the estimate in the app). In Zhouzhuang the museum and the old town are within walking distance.",
-        "ru": "Три утренних места в 10 минутах ходьбы друг от друга. Из старого города Сучжоу в Чжоучжуан такси/DiDi около 1 часа (примерно ¥150–200: проверьте оценку в приложении). В Чжоучжуане музей и старый город рядом, пешком.",
-        "zh": "上午三处景点彼此步行10分钟内。苏州古城打车/滴滴到周庄约1小时（约¥150–200，以App预估为准）。周庄的博物馆与古镇步行可达。"
+        "en": "The three morning sights are within 10 minutes' walk of each other. To the Lingering Garden: taxi/DiDi about 15 minutes. From the Lingering Garden to the Changmen end of Shantang Street: taxi about 10 minutes or about 20 minutes on foot. Back to the hotel near Pingjiang Road: taxi/DiDi about 15 minutes.",
+        "ru": "Три утренних места в 10 минутах ходьбы друг от друга. До сада Люйюань: такси/DiDi около 15 минут. От Люйюаня до начала улицы Шаньтан у ворот Чанмэнь: такси около 10 минут или около 20 минут пешком. Обратно в отель у Пинцзян-лу: такси/DiDi около 15 минут.",
+        "zh": "上午三处景点彼此步行10分钟内。去留园：打车约15分钟。留园到山塘街阊门一端：打车约10分钟或步行约20分钟。回平江路附近的酒店：打车约15分钟。"
       },
       "clothing": {
-        "en": "Layers and comfortable shoes: garden paths in the morning, cobbles and little bridges in the water town.",
-        "ru": "Слои и удобная обувь: утром садовые дорожки, днём брусчатка и мостики водного городка.",
-        "zh": "叠穿，穿舒适的鞋：上午园林小径，下午古镇石板路和小桥。"
+        "en": "Comfortable shoes and layers: garden paths by day, a cool evening by the canal.",
+        "ru": "Удобная обувь и слои: днём садовые дорожки, вечером прохладно у канала.",
+        "zh": "舒适的鞋，叠穿：白天走园林小径，晚上河边较凉。"
       },
       "extra": {
-        "en": "Suzhou Museum is free but needs a slot in its mini-program (opens 7 days ahead, closed Mondays). The Life Mystery Museum shows plastinated human and animal specimens: not everyone is comfortable with that. Zhouzhuang is a water town like Wuzhen: if you are short of time, see the museum and skip the town ticket. The CIIE expo in Shanghai ends today.",
-        "ru": "Музей Сучжоу бесплатный, но нужен слот в его мини-приложении (открывается за 7 дней, по понедельникам закрыт). Музей тайн жизни показывает пластинированные образцы людей и животных: это подходит не всем. Чжоучжуан — водный городок, как Учжэнь: если времени мало, посетите музей и не покупайте билет в городок. Выставка CIIE в Шанхае сегодня заканчивается.",
-        "zh": "苏州博物馆免费，但需在其小程序预约（提前7天放票，周一闭馆）。生命奥秘博物馆展出塑化人体和动物标本，并非人人都能接受。周庄与乌镇同为水乡：时间紧可只看博物馆，不买古镇门票。上海进博会今天闭幕。"
+        "en": "Suzhou Museum is free but needs a slot in its mini-program (opens 7 days ahead, closed Mondays). Shantang Street is free; the lanterns come on after sunset (about 17:00). The CIIE expo in Shanghai ends today. Pack in the evening: tomorrow is the flight.",
+        "ru": "Музей Сучжоу бесплатный, но нужен слот в его мини-приложении (открывается за 7 дней, по понедельникам закрыт). Улица Шаньтан бесплатна; фонари зажигаются после заката (около 17:00). Выставка CIIE в Шанхае сегодня заканчивается. Вечером соберите вещи: завтра вылет.",
+        "zh": "苏州博物馆免费，但需在其小程序预约（提前7天放票，周一闭馆）。山塘街免费，日落（约17:00）后灯笼亮起。上海进博会今天闭幕。晚上收拾行李，明天回程。"
       },
       "locations": [
         {
@@ -3621,9 +3673,9 @@
         {
           "id": "d15-lunch",
           "name": {
-            "en": "Lunch: Yaba Shengjian (哑巴生煎), then check-out",
-            "ru": "Обед: Yaba Shengjian (哑巴生煎), затем выезд",
-            "zh": "午餐：哑巴生煎，之后退房"
+            "en": "Lunch: Yaba Shengjian (哑巴生煎)",
+            "ru": "Обед: Yaba Shengjian (哑巴生煎)",
+            "zh": "午餐：哑巴生煎"
           },
           "time": "12:00",
           "category": "food",
@@ -3631,9 +3683,9 @@
           "lng": 120.636,
           "placeId": null,
           "note": {
-            "en": "Pan-fried buns at Yaba Shengjian on Lindun Road, a short walk from the gardens; then collect the luggage and take a DiDi to Zhouzhuang (about 1 hour).",
-            "ru": "Жареные пирожки в Yaba Shengjian на Линьдунь-лу, недалеко от садов; затем заберите багаж и DiDi в Чжоучжуан (около 1 часа).",
-            "zh": "临顿路哑巴生煎，离园林步行不远；之后取行李打车去周庄（约1小时）。"
+            "en": "Pan-fried buns at Yaba Shengjian on Lindun Road, a short walk from the gardens.",
+            "ru": "Жареные пирожки в Yaba Shengjian на Линьдунь-лу, недалеко от садов.",
+            "zh": "临顿路哑巴生煎，离园林步行不远。"
           },
           "optional": false,
           "meal": "main",
@@ -3645,103 +3697,108 @@
           }
         },
         {
-          "id": "d15-lifemuseum",
+          "id": "d15-lingering",
           "name": {
-            "en": "Life Mystery Museum (Zhouzhuang)",
-            "ru": "Музей «Тайны жизни» (Чжоучжуан)",
-            "zh": "周庄生命奥秘博物馆"
+            "en": "Lingering Garden",
+            "ru": "Сад Люйюань",
+            "zh": "留园"
           },
-          "time": "14:00",
-          "category": "museum",
-          "lat": 31.12229,
-          "lng": 120.84656,
-          "placeId": "ChIJsW1fZNIDszURw6eVCxDJxao",
+          "time": "13:30",
+          "category": "garden",
+          "lat": 31.3157066,
+          "lng": 120.5925704,
+          "placeId": "ChIJ9QCvWeagszURmzdDoPCfRw4",
           "note": {
-            "en": "Plastinated specimens of people, marine and land animals on three floors; one of the chain's four museums in China. Per reviews, part of the display is showing its age.",
-            "ru": "Пластинированные препараты людей, морских и наземных животных на трёх этажах; один из четырёх музеев этой сети в Китае. По отзывам, часть экспозиции уже выглядит устаревшей.",
-            "zh": "三层展厅陈列人体及海洋、陆地动物的塑化标本，是国内四家同系列博物馆之一。据游客反馈，部分展品已显陈旧。"
-          },
-          "details": {
-            "en": "Address: 82 Daqiao Road, Zhouzhuang, Kunshan (江苏省昆山市周庄镇大桥路82号). Open all year, 09:00–17:00 (per a ticketing site). Check the ticket price on Trip.com or Dianping. Allow about 1–1.5 hours.",
-            "ru": "Адрес: 82 Daqiao Road, Zhouzhuang, Kunshan (江苏省昆山市周庄镇大桥路82号). Открыт круглый год 09:00–17:00 (по данным билетного сайта). Цену билета проверьте на Trip.com или Dianping. На осмотр около 1–1,5 часа.",
-            "zh": "地址：江苏省昆山市周庄镇大桥路82号。全年开放9:00–17:00（据票务网站）。票价请在Trip.com或大众点评查询。参观约1–1.5小时。"
-          },
-          "optional": false,
-          "meal": null,
-          "warn": false
-        },
-        {
-          "id": "d15-zhouzhuang",
-          "name": {
-            "en": "Zhouzhuang ancient water town",
-            "ru": "Древний водный городок Чжоучжуан",
-            "zh": "周庄古镇"
-          },
-          "time": "15:30",
-          "category": "sight",
-          "lat": 31.124254,
-          "lng": 120.845657,
-          "placeId": "ChIJs1Lr-NIDszURqYWIo0ExnR0",
-          "note": {
-            "en": "One of the best-known water towns of Jiangnan: canals, stone bridges, old houses. Walk it at dusk, when the lanterns come on and the day groups have gone.",
-            "ru": "Один из самых известных водных городков Цзяннани: каналы, каменные мосты, старые дома. Гуляйте в сумерках, когда зажигаются фонари и уезжают дневные группы.",
-            "zh": "江南最知名的水乡之一：河道、石桥、老宅。黄昏后灯笼亮起、一日游团离开时最好逛。"
-          },
-          "details": {
-            "en": "The ancient town charges admission (about ¥100, check when buying); the boat is extra. 2–2.5 hours is enough for the main loop.",
-            "ru": "Вход в древний городок платный (около ¥100, проверьте при покупке); лодка — отдельно. Для основного круга достаточно 2–2,5 часа.",
-            "zh": "古镇需购票（约¥100，购票时请核实）；摇橹船另付。主要景点游览2–2.5小时即可。"
+            "en": "Suzhou's other famous garden; the last entry in winter is about 16:30 per sources, entry about ¥45 off-season.",
+            "ru": "Второй знаменитый сад Сучжоу; по источникам зимой последний вход около 16:30, вход около ¥45 вне сезона.",
+            "zh": "苏州另一座名园；据资料冬季约16:30停止入园，淡季门票约¥45。"
           },
           "optional": true,
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Zhouzhuang_2.jpg/960px-Zhouzhuang_2.jpg",
-            "credit": "ngader · CC BY 2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Zhouzhuang_2.jpg"
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Lingering_Garden.jpg/960px-Lingering_Garden.jpg",
+            "credit": "钉钉 · CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Lingering_Garden.jpg"
           }
         },
         {
           "id": "d15-dinner",
           "name": {
-            "en": "Dinner in Zhouzhuang",
-            "ru": "Ужин в Чжоучжуане",
-            "zh": "周庄晚餐"
+            "en": "Dinner on Shantang Street",
+            "ru": "Ужин на улице Шаньтан",
+            "zh": "山塘街晚餐"
           },
-          "time": "18:00",
+          "time": "17:30",
           "category": "food",
-          "lat": 31.124254,
-          "lng": 120.845657,
-          "placeId": "ChIJs1Lr-NIDszURqYWIo0ExnR0",
+          "lat": 31.3198,
+          "lng": 120.599,
+          "placeId": null,
           "note": {
-            "en": "Local food by the canals; the town's signature dish is the braised Wansan pork knuckle.",
-            "ru": "Местная кухня у каналов; фирменное блюдо городка — тушёная свиная рулька «Ваньсань».",
-            "zh": "在河边品尝本地菜；周庄招牌是万三蹄。"
+            "en": "Suzhou snacks and small restaurants along the canal: noodles, soup dumplings, sweet osmanthus desserts. Pick any busy local place.",
+            "ru": "Сучжоуские закуски и небольшие ресторанчики вдоль канала: лапша, суповые пельмени, сладости с османтусом. Выбирайте любое людное местное заведение.",
+            "zh": "沿河的苏州小吃和小馆：汤面、汤包、桂花甜品。挑人多的本地店即可。"
           },
           "optional": false,
           "meal": "dinner",
           "warn": false
         },
         {
-          "id": "d15-hotel",
+          "id": "d15-shantang",
           "name": {
-            "en": "Hotel (to book): Zhouzhuang",
-            "ru": "Отель (выбрать): Чжоучжуан",
-            "zh": "酒店（待订）：周庄"
+            "en": "Shantang Street by night",
+            "ru": "Улица Шаньтан вечером",
+            "zh": "山塘街夜景"
           },
-          "time": "19:30",
-          "category": "hotel",
-          "lat": 31.124254,
-          "lng": 120.845657,
-          "placeId": "ChIJs1Lr-NIDszURqYWIo0ExnR0",
+          "time": "18:30",
+          "category": "sight",
+          "lat": 31.3198,
+          "lng": 120.599,
+          "placeId": null,
           "note": {
-            "en": "Booking not confirmed. Before booking, check that the hotel accepts foreign guests.",
-            "ru": "Бронь не подтверждена. Перед бронированием проверьте, что отель принимает иностранных гостей.",
-            "zh": "尚未预订。订房前请确认酒店可接待外籍住客。"
+            "en": "The old canal street that runs from Changmen toward Tiger Hill. After dark the restored first stretch is lit with red lanterns reflected in the water: walk the canal-side lane and cross the arched bridges.",
+            "ru": "Старая улица вдоль канала от ворот Чанмэнь к Тигровому холму. После заката отреставрированный первый участок освещён красными фонарями, отражающимися в воде: пройдитесь вдоль канала и по горбатым мостикам.",
+            "zh": "从阊门通往虎丘的古老河街。天黑后修复的前段挂满红灯笼，倒映在水中：沿河走一走，过几座拱桥。"
+          },
+          "details": {
+            "en": "Free. The lantern-lit section is the first stretch near Changmen. The map pin is approximate.",
+            "ru": "Бесплатно. Участок с фонарями — первый, у ворот Чанмэнь. Точка на карте приблизительная.",
+            "zh": "免费。灯笼最集中的是靠近阊门的前段。地图定位为大致位置。"
           },
           "optional": false,
           "meal": null,
-          "warn": true
+          "warn": false,
+          "photo": {
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/1_shantang_street_canal_2023.jpg/960px-1_shantang_street_canal_2023.jpg",
+            "credit": "Chensiyuan · CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:1_shantang_street_canal_2023.jpg"
+          }
+        },
+        {
+          "id": "d15-boat",
+          "name": {
+            "en": "Shantang River evening boat",
+            "ru": "Вечерняя лодка по реке Шаньтан",
+            "zh": "山塘河夜游船"
+          },
+          "time": "19:15",
+          "category": "activity",
+          "lat": 31.3198,
+          "lng": 120.599,
+          "placeId": null,
+          "note": {
+            "en": "A short boat ride under the lanterns. Per sources about ¥50–60 per person; check the price and the last boat at the pier.",
+            "ru": "Короткая прогулка на лодке под фонарями. По источникам, около ¥50–60 с человека; цену и последний рейс уточните на причале.",
+            "zh": "在灯笼下坐船游一小段。据资料每人约¥50–60，票价和末班请在码头确认。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false,
+          "photo": {
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Shantang_Street.jpg/960px-Shantang_Street.jpg",
+            "credit": "钉钉 · CC BY-SA 4.0",
+            "source": "https://commons.wikimedia.org/wiki/File:Shantang_Street.jpg"
+          }
         }
       ]
     },
@@ -3760,14 +3817,14 @@
       },
       "busyness": 1,
       "focus": {
-        "en": "Transfer from Zhouzhuang to Pudong airport for the flight to Kuala Lumpur. The departure time is not yet confirmed.",
-        "ru": "Трансфер из Чжоучжуана в аэропорт Пудун на рейс в Куала-Лумпур. Время вылета пока не подтверждено.",
-        "zh": "从周庄前往浦东机场，搭乘返回吉隆坡的航班。航班时间待确认。"
+        "en": "From Suzhou to Pudong airport for the flight to Kuala Lumpur. The departure time is not yet confirmed, so the times below are placeholders.",
+        "ru": "Из Сучжоу в аэропорт Пудун на рейс в Куала-Лумпур. Время вылета пока не подтверждено, поэтому время ниже ориентировочное.",
+        "zh": "从苏州前往浦东机场，搭乘返回吉隆坡的航班。航班时间待确认，以下时间仅供参考。"
       },
       "roads": {
-        "en": "Easiest with luggage: a DiDi from Zhouzhuang straight to Pudong airport, about 1.5–2 hours. By rail: a DiDi to Kunshan South (about 40 minutes), a train to Shanghai Hongqiao (20–30 minutes), then the Airport Link line to Pudong (about 40 minutes). For an international flight arrive 3 hours before departure.",
-        "ru": "Проще всего с багажом: DiDi из Чжоучжуана прямо в аэропорт Пудун, около 1,5–2 часов. Поездом: DiDi до Куньшань-Южного (около 40 минут), поезд до Шанхай-Хунцяо (20–30 минут), затем линия Airport Link до Пудуна (около 40 минут). На международный рейс приезжайте за 3 часа.",
-        "zh": "带行李最方便：周庄打车/滴滴直达浦东机场，约1.5–2小时。铁路方案：打车到昆山南站（约40分钟）→ 高铁到上海虹桥（20–30分钟）→ 机场联络线到浦东机场（约40分钟）。国际航班请提前3小时到达。"
+        "en": "Train Suzhou station → Shanghai Hongqiao, about 25–30 minutes, about ¥40. At Hongqiao change to the Airport Link line to Pudong airport, about 40 minutes. Fallbacks: a DiDi straight to Pudong (about 2 hours) or metro Line 2 from Hongqiao (about 1.5 hours). For an international flight arrive 3 hours before departure; allow about 2.5 hours door to door.",
+        "ru": "Поезд Сучжоу → Шанхай-Хунцяо, около 25–30 минут, около ¥40. На Хунцяо пересадка на линию Airport Link до аэропорта Пудун, около 40 минут. Запасные варианты: DiDi прямо в Пудун (около 2 часов) или метро линии 2 от Хунцяо (около 1,5 часа). На международный рейс приезжайте за 3 часа; закладывайте около 2,5 часа от двери до двери.",
+        "zh": "高铁苏州站 → 上海虹桥，约25–30分钟，约¥40。在虹桥换乘机场联络线到浦东机场，约40分钟。备选：打车直达浦东（约2小时），或从虹桥乘地铁2号线（约1.5小时）。国际航班请提前3小时到达；门到门预留约2.5小时。"
       },
       "clothing": {
         "en": "Comfortable travel clothes; Kuala Lumpur is about +32 °C.",
@@ -3775,9 +3832,9 @@
         "zh": "穿舒适的旅行服装；吉隆坡约32°C。"
       },
       "extra": {
-        "en": "The CIIE expo ended on 10 November. Keep your passport and boarding pass at hand.",
-        "ru": "Выставка CIIE закончилась 10 ноября. Паспорт и посадочный держите под рукой.",
-        "zh": "进博会已于11月10日闭幕。护照和登机牌随身携带。"
+        "en": "Buy the Suzhou → Hongqiao ticket in advance and pick a train that leaves at least 5 hours before the flight. Keep your passport and boarding pass at hand.",
+        "ru": "Билет Сучжоу → Хунцяо купите заранее и выбирайте поезд не позднее чем за 5 часов до рейса. Паспорт и посадочный держите под рукой.",
+        "zh": "提前购买苏州 → 虹桥的高铁票，车次请选在航班起飞前至少5小时。护照和登机牌随身携带。"
       },
       "locations": [
         {
@@ -3787,15 +3844,15 @@
             "ru": "Завтрак",
             "zh": "早餐"
           },
-          "time": "08:00",
+          "time": "07:30",
           "category": "food",
-          "lat": 31.124254,
-          "lng": 120.845657,
-          "placeId": "ChIJs1Lr-NIDszURqYWIo0ExnR0",
+          "lat": 31.315,
+          "lng": 120.636,
+          "placeId": null,
           "note": {
-            "en": "In the old town before leaving: local noodles or rice dumplings.",
-            "ru": "В старом городе перед отъездом: местная лапша или рисовые цзунцзы.",
-            "zh": "出发前在古镇吃早餐：本地面条或粽子。"
+            "en": "A last bowl of Suzhou noodles near the hotel.",
+            "ru": "Последняя миска сучжоуской лапши рядом с отелем.",
+            "zh": "在酒店附近再吃一碗苏式汤面。"
           },
           "optional": false,
           "meal": "breakfast",
@@ -3804,19 +3861,61 @@
         {
           "id": "d16-checkout",
           "name": {
-            "en": "Check-out: Zhouzhuang",
-            "ru": "Выезд: Чжоучжуан",
-            "zh": "周庄退房"
+            "en": "Check-out: Pingjiang Road hotel",
+            "ru": "Выезд: отель у Пинцзян-лу",
+            "zh": "平江路酒店退房"
           },
-          "time": "09:00",
+          "time": "08:30",
           "category": "hotel",
-          "lat": 31.124254,
-          "lng": 120.845657,
-          "placeId": "ChIJs1Lr-NIDszURqYWIo0ExnR0",
+          "lat": 31.315,
+          "lng": 120.636,
+          "placeId": null,
           "note": {
-            "en": "Leave at least 5 hours before the flight.",
-            "ru": "Выезжайте не позже чем за 5 часов до рейса.",
-            "zh": "请至少在航班起飞前5小时出发。"
+            "en": "Leave at least 5 hours before the flight; taxi/DiDi to Suzhou station about 15 minutes.",
+            "ru": "Выезжайте не позже чем за 5 часов до рейса; такси/DiDi до вокзала Сучжоу около 15 минут.",
+            "zh": "请至少在航班起飞前5小时出发；打车到苏州站约15分钟。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d16-train",
+          "name": {
+            "en": "Train Suzhou → Shanghai Hongqiao",
+            "ru": "Поезд Сучжоу → Шанхай-Хунцяо",
+            "zh": "高铁 苏州站 → 上海虹桥"
+          },
+          "time": "09:15",
+          "category": "transit",
+          "lat": 31.3306,
+          "lng": 120.6083,
+          "placeId": null,
+          "note": {
+            "en": "About 25–30 minutes, about ¥40 (2nd class). Passport required.",
+            "ru": "Около 25–30 минут, около ¥40 (2-й класс). Нужен паспорт.",
+            "zh": "约25–30分钟，二等座约¥40。进站需护照。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d16-airportlink",
+          "name": {
+            "en": "Airport Link: Hongqiao → Pudong Airport",
+            "ru": "Airport Link: Хунцяо → аэропорт Пудун",
+            "zh": "机场联络线：虹桥 → 浦东机场"
+          },
+          "time": "10:00",
+          "category": "transit",
+          "lat": 31.194109,
+          "lng": 121.320454,
+          "placeId": null,
+          "note": {
+            "en": "About 40 minutes. Inside Hongqiao station follow the signs for 机场联络线. Fallback: metro Line 2 (about 1.5 hours).",
+            "ru": "Около 40 минут. Внутри вокзала Хунцяо идите по указателям 机场联络线. Запасной вариант: метро линии 2 (около 1,5 часа).",
+            "zh": "约40分钟。在虹桥站内按「机场联络线」指示换乘。备选：地铁2号线（约1.5小时）。"
           },
           "optional": false,
           "meal": null,
@@ -3963,6 +4062,58 @@
         "warn": false
       },
       {
+        "id": "din-damanong",
+        "name": {
+          "en": "Damanong (Hangzhou)",
+          "ru": "Дамалун (Ханчжоу)",
+          "zh": "大马弄（杭州）"
+        },
+        "time": null,
+        "category": "food",
+        "lat": 30.2485,
+        "lng": 120.1715,
+        "placeId": null,
+        "note": {
+          "en": "Old-town food lane next to Dingan Road: 葱包桧, braised meats, rice cakes. Best in the morning.",
+          "ru": "Старая продуктовая улочка у Динъань-лу: 葱包桧, тушёное мясо, рисовые пирожки. Лучше всего утром.",
+          "zh": "定安路旁的老城美食巷：葱包桧、卤味、糕点。早上最好。"
+        },
+        "details": {
+          "en": "The map pin is approximate: navigate by the name.",
+          "ru": "Точка на карте приблизительная: ищите по названию.",
+          "zh": "地图定位为大致位置，请按名称导航。"
+        },
+        "optional": false,
+        "meal": null,
+        "warn": false
+      },
+      {
+        "id": "din-wulin",
+        "name": {
+          "en": "Wulin Night Market (Hangzhou)",
+          "ru": "Ночной рынок Улинь (Ханчжоу)",
+          "zh": "武林夜市（杭州）"
+        },
+        "time": null,
+        "category": "food",
+        "lat": 30.2745,
+        "lng": 120.163,
+        "placeId": null,
+        "note": {
+          "en": "Evening street food: skewers, stinky tofu, Hangzhou snacks. Confirm the current location on Dianping.",
+          "ru": "Вечерняя уличная еда: шашлычки, вонючий тофу, ханчжоуские закуски. Текущий адрес уточните в Dianping.",
+          "zh": "夜间小吃：烤串、臭豆腐、杭州小吃。请在大众点评确认当前地址。"
+        },
+        "details": {
+          "en": "The map pin is approximate: navigate by the name.",
+          "ru": "Точка на карте приблизительная: ищите по названию.",
+          "zh": "地图定位为大致位置，请按名称导航。"
+        },
+        "optional": false,
+        "meal": null,
+        "warn": false
+      },
+      {
         "id": "din-hefang",
         "name": {
           "en": "Hefang Street (Hangzhou)",
@@ -3975,16 +4126,16 @@
         "lng": 120.17249,
         "placeId": "ChIJ-XaTcludTDQRR1IzQgmgKdQ",
         "note": {
-          "en": "Hangzhou cuisine: Dongpo pork, West Lake fish, street snacks.",
-          "ru": "Ханчжоуская кухня: свинина по-дунпо, рыба из озера, закуски на улице.",
-          "zh": "杭帮菜：东坡肉、西湖醋鱼、街边小吃。"
+          "en": "Touristy; go only with spare time. Hangzhou dishes and street snacks.",
+          "ru": "Туристично; только если есть лишнее время. Ханчжоуская кухня и уличные закуски.",
+          "zh": "游客较多，有空再去。杭帮菜和街头小吃。"
         },
         "details": {
           "en": "The old trading street; crowded in the evening.",
           "ru": "Старая торговая улица; вечером людно.",
           "zh": "老商业街；晚上人多。"
         },
-        "optional": false,
+        "optional": true,
         "meal": null,
         "warn": false
       },
@@ -4067,27 +4218,6 @@
         "warn": false
       },
       {
-        "id": "din-zhouzhuang",
-        "name": {
-          "en": "Zhouzhuang",
-          "ru": "Чжоучжуан",
-          "zh": "周庄"
-        },
-        "time": null,
-        "category": "food",
-        "lat": 31.124254,
-        "lng": 120.845657,
-        "placeId": "ChIJs1Lr-NIDszURqYWIo0ExnR0",
-        "note": {
-          "en": "Local food by the canals; the town's signature dish is the braised Wansan pork knuckle.",
-          "ru": "Местная кухня у каналов; фирменное блюдо городка — тушёная свиная рулька «Ваньсань».",
-          "zh": "在河边品尝本地菜；周庄招牌是万三蹄。"
-        },
-        "optional": false,
-        "meal": null,
-        "warn": false
-      },
-      {
         "id": "din-guanqian",
         "name": {
           "en": "Guanqian Street (Suzhou)",
@@ -4108,6 +4238,27 @@
           "en": "Suggested from general knowledge, not checked live: confirm the address, hours and queue on Dianping (大众点评) or Amap. The map pin marks the area, so navigate by the restaurant name.",
           "ru": "Рекомендация по общим сведениям, не проверена в реальном времени: адрес, часы и очередь уточните в Dianping (大众点评) или Amap. Точка на карте отмечает район — ищите по названию ресторана.",
           "zh": "根据常识推荐，未实时核实：地址、营业时间和排队情况请在大众点评或高德确认。地图定位为大致区域，请按店名导航。"
+        },
+        "optional": false,
+        "meal": null,
+        "warn": false
+      },
+      {
+        "id": "din-shantang",
+        "name": {
+          "en": "Shantang Street (Suzhou)",
+          "ru": "Улица Шаньтан (Сучжоу)",
+          "zh": "山塘街（苏州）"
+        },
+        "time": null,
+        "category": "food",
+        "lat": 31.3198,
+        "lng": 120.599,
+        "placeId": null,
+        "note": {
+          "en": "Canal-side snacks and small restaurants under the lanterns; best after dark.",
+          "ru": "Закуски и ресторанчики у канала под фонарями; лучше всего после заката.",
+          "zh": "灯笼下沿河的小吃和小馆，天黑后最好。"
         },
         "optional": false,
         "meal": null,
