@@ -527,20 +527,20 @@
         "zh": "周四"
       },
       "title": {
-        "en": "Jing'an Temple, the Bund by night, ferry to Lujiazui, Nanjing Road neon",
-        "ru": "Храм Цзинъань, Бунд вечером, паром на Луцзяцзуй, неон Нанкин-роуд",
-        "zh": "静安寺、外滩夜景、轮渡到陆家嘴、南京路霓虹"
+        "en": "Jing'an Temple, a work café, the Bund at sunset, ferry to Lujiazui",
+        "ru": "Храм Цзинъань, кафе для работы, Бунд на закате, паром на Луцзяцзуй",
+        "zh": "静安寺、咖啡馆办公、外滩日落、轮渡到陆家嘴"
       },
-      "busyness": 4,
+      "busyness": 3,
       "focus": {
-        "en": "An easy morning at Jing'an Temple and along Nanjing West Road, an optional afternoon at the Shanghai Museum, sunset on the Bund and the lights after dark, the ¥2 city ferry across the Huangpu to the Lujiazui riverside and back, and Nanjing Road's neon at the end of the evening.",
-        "ru": "Спокойное утро в храме Цзинъань и на Нанкин-роуд Западной, днём по желанию Шанхайский музей, закат и вечерняя подсветка на Бунде, городской паром за ¥2 через Хуанпу к набережной Луцзяцзуй и обратно, а в конце вечера — неоновая Нанкин-роуд.",
-        "zh": "上午轻松游静安寺和南京西路，下午可选上海博物馆，傍晚在外滩看日落和亮灯，乘¥2城市轮渡过黄浦江到陆家嘴滨江再返回，最后逛南京路步行街霓虹夜景。"
+        "en": "A 9:00 start: Jing'an Temple in the calm morning, Nanjing West Road and lunch at Wangjiasha, then a few hours of laptop work in a café nearby. In the late afternoon to the Bund for sunset, dinner close by, the ¥2 ferry to the Lujiazui riverside, and Nanjing Road's neon only if you still have energy.",
+        "ru": "Старт в 9:00: храм Цзинъань спокойным утром, Нанкин-роуд Западная и обед в Wangjiasha, затем несколько часов работы с ноутбуком в кафе рядом. Ближе к вечеру — на Бунд к закату, ужин неподалёку, паром за ¥2 к набережной Луцзяцзуй, а неоновая Нанкин-роуд — только если останутся силы.",
+        "zh": "9:00出发：上午人少时游静安寺，逛南京西路，王家沙午餐，之后在附近咖啡馆用电脑办公几小时。傍晚到外滩看日落，就近晚餐，乘¥2轮渡到陆家嘴滨江，有余力再逛南京路夜景。"
       },
       "roads": {
-        "en": "Hotel → Jing'an Temple: taxi/DiDi 10–15 minutes or metro Line 7. Jing'an Temple → People's Square: metro Line 2. People's Square → the Bund: walk along Nanjing Road East (about 1.2 km) or metro Line 2/10 to East Nanjing Road. The ferry: step-by-step directions are on the ferry stop. Back to the hotel: metro Line 10 from East Nanjing Road to Shaanxi South Road, or a taxi of about 20 minutes.",
-        "ru": "Отель → храм Цзинъань: такси/DiDi 10–15 минут или метро линии 7. Храм → Народная площадь: метро линии 2. Народная площадь → Бунд: пешком по Нанкин-роуд Восточной (около 1,2 км) или метро линии 2/10 до East Nanjing Road. Паром: пошаговая инструкция — в точке парома. Обратно в отель: метро линии 10 от East Nanjing Road до Shaanxi South Road или такси около 20 минут.",
-        "zh": "酒店 → 静安寺：打车10–15分钟或地铁7号线。静安寺 → 人民广场：地铁2号线。人民广场 → 外滩：沿南京东路步行约1.2公里，或地铁2/10号线到南京东路站。轮渡怎么坐：见「轮渡」点位的分步说明。回酒店：地铁10号线南京东路站到陕西南路站，或打车约20分钟。"
+        "en": "Hotel → Jing'an Temple: taxi/DiDi 10–15 minutes or metro Line 7. Jing'an Temple → Nanjing West Road and the café: on foot (about 1 km). Café → the Bund: metro Line 2 from Nanjing West Road to East Nanjing Road (about 10 minutes), then 5 minutes on foot to the river. The ferry: step-by-step directions are on the ferry stop. Back to the hotel: metro Line 10 from East Nanjing Road to Shaanxi South Road. If you skip Nanjing Road, go straight from Lujiazui: metro Line 2 to East Nanjing Road, change to Line 10, or a taxi of about 25 minutes.",
+        "ru": "Отель → храм Цзинъань: такси/DiDi 10–15 минут или метро линии 7. Храм → Нанкин-роуд Западная и кафе: пешком (около 1 км). Кафе → Бунд: метро линии 2 от Nanjing West Road до East Nanjing Road (около 10 минут), затем 5 минут пешком к реке. Паром: пошаговая инструкция — в точке парома. Обратно в отель: метро линии 10 от East Nanjing Road до Shaanxi South Road. Если пропускаете Нанкин-роуд, езжайте сразу из Луцзяцзуя: метро линии 2 до East Nanjing Road с пересадкой на линию 10 или такси около 25 минут.",
+        "zh": "酒店 → 静安寺：打车10–15分钟或地铁7号线。静安寺 → 南京西路和咖啡馆：步行约1公里。咖啡馆 → 外滩：地铁2号线南京西路站到南京东路站（约10分钟），再步行5分钟到江边。轮渡怎么坐：见「轮渡」点位的分步说明。回酒店：地铁10号线南京东路站到陕西南路站。若不逛南京路，可从陆家嘴直接回：地铁2号线到南京东路站换10号线，或打车约25分钟。"
       },
       "clothing": {
         "en": "Light layers: about +18…+20 °C by day, windy and cooler by the river in the evening; comfortable shoes, lots of walking.",
@@ -548,9 +548,9 @@
         "zh": "轻便叠穿：白天约18–20°C，晚上江边有风较凉；穿舒适的鞋，步行较多。"
       },
       "extra": {
-        "en": "Sunset is about 17:10; the Bund and Lujiazui lights usually come on around 18:00–18:30 and go off around 22:00, so a crossing after 19:00 shows both banks lit. For the ferry keep a Shanghai transport card, the Alipay transport QR code or some coins. Shanghai Museum (People's Square) is free with a booking and closed on Mondays.",
-        "ru": "Закат около 17:10; подсветка Бунда и Луцзяцзуя обычно включается около 18:00–18:30 и гаснет около 22:00, поэтому переправа после 19:00 — с обоими берегами в огнях. Для парома держите транспортную карту Шанхая, транспортный QR-код в Alipay или монеты. Шанхайский музей (Народная площадь) бесплатный по брони, по понедельникам закрыт.",
-        "zh": "日落约17:10；外滩和陆家嘴灯光通常18:00–18:30亮起、22:00左右熄灭，19:00后过江能看到两岸灯光。乘轮渡请备好上海交通卡、支付宝乘车码或零钱。上海博物馆（人民广场馆）免费需预约，周一闭馆。"
+        "en": "For the café work: public Wi-Fi in China usually needs a Chinese phone number for the SMS code, and Google, Gmail, WhatsApp and Slack are blocked on local networks. A Malaysian roaming plan or a travel eSIM normally gets around both, so tether the laptop to your phone. Sunset is about 17:10; the Bund and Lujiazui lights usually come on around 18:00–18:30 and go off around 22:00. For the ferry keep a Shanghai transport card, the Alipay transport QR code or some coins.",
+        "ru": "Для работы в кафе: публичный Wi-Fi в Китае обычно требует китайский номер для SMS-кода, а Google, Gmail, WhatsApp и Slack в местных сетях заблокированы. Малайзийский роуминг или туристическая eSIM обычно решают обе проблемы — раздайте интернет с телефона на ноутбук. Закат около 17:10; подсветка Бунда и Луцзяцзуя обычно включается около 18:00–18:30 и гаснет около 22:00. Для парома держите транспортную карту Шанхая, транспортный QR-код в Alipay или монеты.",
+        "zh": "咖啡馆办公提示：国内公共Wi-Fi通常需中国手机号收验证码，且本地网络无法使用Google、Gmail、WhatsApp、Slack。马来西亚漫游或旅行eSIM一般可解决这两个问题，用手机给电脑开热点即可。日落约17:10；外滩和陆家嘴灯光通常18:00–18:30亮起、22:00左右熄灭。乘轮渡请备好上海交通卡、支付宝乘车码或零钱。"
       },
       "locations": [
         {
@@ -560,7 +560,7 @@
             "ru": "Завтрак",
             "zh": "早餐"
           },
-          "time": "08:30",
+          "time": "09:00",
           "category": "food",
           "lat": 31.2085,
           "lng": 121.4523,
@@ -581,15 +581,15 @@
             "ru": "Храм Цзинъань",
             "zh": "静安寺"
           },
-          "time": "09:30",
+          "time": "09:45",
           "category": "temple",
           "lat": 31.223519,
           "lng": 121.445284,
           "placeId": "ChIJVV1KHv5vsjURQgiHHZfGW3o",
           "note": {
-            "en": "A golden temple among skyscrapers; calmer in the morning. Entry ¥50, daily 07:30–17:00.",
-            "ru": "Золотой храм среди небоскрёбов; утром спокойнее. Вход ¥50, ежедневно 07:30–17:00.",
-            "zh": "高楼间的金色寺庙，上午较清静。门票¥50，每日7:30–17:00。"
+            "en": "The golden-roofed temple in the middle of the business district; the morning is the calmest time, with incense smoke and fewer visitors. Entry about ¥50; allow about 45 minutes.",
+            "ru": "Храм с золотыми крышами посреди делового района; утро — самое спокойное время: дым благовоний и меньше посетителей. Вход около ¥50; около 45 минут.",
+            "zh": "位于商务区中心的金顶古寺，上午香火袅袅、人最少。门票约¥50，游览约45分钟。"
           },
           "optional": false,
           "meal": null,
@@ -607,7 +607,7 @@
             "ru": "Нанкин-роуд Западная",
             "zh": "南京西路"
           },
-          "time": "10:30",
+          "time": "10:45",
           "category": "market",
           "lat": 31.229,
           "lng": 121.458,
@@ -653,35 +653,30 @@
           "warn": false
         },
         {
-          "id": "d3-museum",
+          "id": "d3-workcafe",
           "name": {
-            "en": "Shanghai Museum (People's Square)",
-            "ru": "Шанхайский музей (Народная площадь)",
-            "zh": "上海博物馆（人民广场馆）"
+            "en": "Work café near Nanjing West Road",
+            "ru": "Кафе для работы у Нанкин-роуд Западной",
+            "zh": "南京西路附近咖啡馆办公"
           },
-          "time": "13:30",
-          "category": "museum",
-          "lat": 31.2283,
-          "lng": 121.4753,
+          "time": "13:00",
+          "category": "cafe",
+          "lat": 31.23,
+          "lng": 121.4585,
           "placeId": null,
           "note": {
-            "en": "Bronzes, ceramics, painting and calligraphy; a calm afternoon before the evening walk. 1.5–2 hours.",
-            "ru": "Бронза, керамика, живопись и каллиграфия; спокойный день перед вечерней прогулкой. 1,5–2 часа.",
-            "zh": "青铜器、陶瓷、书画，傍晚出发前的轻松安排，约1.5–2小时。"
+            "en": "About 3 hours of laptop work. The Starbucks Reserve Roastery in HKRI Taikoo Hui (789 Nanjing West Road), next to Wangjiasha, is the landmark for a coffee and a look, but it is busy and loud; for working, pick a quieter café in Taikoo Hui or the Jing'an Kerry Centre around the corner.",
+            "ru": "Около 3 часов работы с ноутбуком. Starbucks Reserve Roastery в HKRI Taikoo Hui (Нанкин-роуд Западная, 789), рядом с Wangjiasha, — знаковое место, чтобы выпить кофе и посмотреть, но там людно и шумно; для работы выберите более тихое кафе в Taikoo Hui или в Jing'an Kerry Centre за углом.",
+            "zh": "用电脑办公约3小时。王家沙旁兴业太古汇（南京西路789号）的星巴克臻选烘焙工坊适合打卡喝杯咖啡，但人多嘈杂；办公建议选太古汇或旁边静安嘉里中心里较安静的咖啡馆。"
           },
           "details": {
-            "en": "Free with a real-name booking (passport) in the official WeChat or mini-program; closed Mondays; last entry about 16:00 (verify). The map pin is approximate.",
-            "ru": "Бесплатно по брони по имени (паспорт) в официальном WeChat или мини-приложении; по понедельникам закрыто; последний вход около 16:00 (проверьте). Точка на карте приблизительная.",
-            "zh": "免费，需在官方微信或小程序凭护照实名预约；周一闭馆；约16:00停止入场（请核实）。地图定位为大致位置。"
+            "en": "On Dianping, filter for cafés tagged as laptop-friendly with power sockets (办公友好、有插座). Use mobile data or a phone hotspot rather than the café Wi-Fi (see the day notes). Suggested from general knowledge, not checked live. The map pin marks the area.",
+            "ru": "В Dianping ищите кафе с пометками «удобно для работы» и «есть розетки» (办公友好、有插座). Пользуйтесь мобильным интернетом или раздачей с телефона, а не Wi-Fi кафе (см. заметки дня). Рекомендация по общим сведениям, не проверена в реальном времени. Точка на карте отмечает район.",
+            "zh": "在大众点评筛选标有「办公友好、有插座」的咖啡馆。建议用手机流量或热点，不要用店内Wi-Fi（见当日提示）。根据常识推荐，未实时核实。地图定位为大致区域。"
           },
-          "optional": true,
+          "optional": false,
           "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Shanghai_Museum_exterior_1.jpg/960px-Shanghai_Museum_exterior_1.jpg",
-            "credit": "Hanjiang 2009 (寒江2009) · CC BY 2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Museum_exterior_1.jpg"
-          }
+          "warn": false
         },
         {
           "id": "d3-bund",
@@ -690,15 +685,15 @@
             "ru": "Бунд на закате",
             "zh": "外滩日落"
           },
-          "time": "16:45",
+          "time": "16:30",
           "category": "sight",
           "lat": 31.240261,
           "lng": 121.490577,
           "placeId": "ChIJYUiHi1dwsjURZK_REO37Vk0",
           "note": {
-            "en": "Walk down Nanjing Road East to the river and take the raised promenade for sunset (about 17:10), then stay while the Pudong towers and the Bund buildings light up around 18:00–18:30.",
-            "ru": "Пройдите по Нанкин-роуд Восточной к реке и поднимитесь на верхнюю набережную к закату (около 17:10), затем оставайтесь, пока около 18:00–18:30 не загорится подсветка башен Пудуна и зданий Бунда.",
-            "zh": "沿南京东路走到江边，登上观景平台看日落（约17:10），等到18:00–18:30浦东高楼和外滩建筑亮灯。"
+            "en": "From East Nanjing Road metro walk 5 minutes to the raised promenade. Take a spot for sunset (about 17:10) and stay while the Pudong towers and the Bund buildings light up around 18:00–18:30.",
+            "ru": "От метро East Nanjing Road 5 минут пешком до верхней набережной. Займите место к закату (около 17:10) и оставайтесь, пока около 18:00–18:30 не загорится подсветка башен Пудуна и зданий Бунда.",
+            "zh": "从南京东路地铁站步行5分钟到观景平台，占好位置看日落（约17:10），等到18:00–18:30浦东高楼和外滩建筑亮灯。"
           },
           "details": {
             "en": "The promenade is free and open round the clock. The best view of the Pudong towers is from the west bank.",
@@ -721,7 +716,7 @@
             "ru": "Ужин: Dexingguan (德兴馆)",
             "zh": "晚餐：德兴馆"
           },
-          "time": "18:30",
+          "time": "18:15",
           "category": "food",
           "lat": 31.235,
           "lng": 121.484,
@@ -741,47 +736,21 @@
           "warn": false
         },
         {
-          "id": "d3-bundnight",
-          "name": {
-            "en": "The Bund by night",
-            "ru": "Бунд вечером",
-            "zh": "外滩夜景"
-          },
-          "time": "19:15",
-          "category": "sight",
-          "lat": 31.240261,
-          "lng": 121.490577,
-          "placeId": "ChIJYUiHi1dwsjURZK_REO37Vk0",
-          "note": {
-            "en": "Both banks are now lit: the old façades behind you, the Pudong skyline across the river. Then walk south along the promenade to the ferry terminal (about 10–15 minutes).",
-            "ru": "Теперь оба берега в огнях: старые фасады за спиной, панорама Пудуна за рекой. Затем идите на юг вдоль набережной к паромному причалу (около 10–15 минут).",
-            "zh": "此时两岸都已亮灯：身后是万国建筑群，对岸是浦东天际线。之后沿观景平台向南步行约10–15分钟到轮渡站。"
-          },
-          "optional": false,
-          "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/A_picture_from_China_every_day_101.jpg/960px-A_picture_from_China_every_day_101.jpg",
-            "credit": "Carsten Ullrich from Shanghai, China · CC BY-SA 2.0",
-            "source": "https://commons.wikimedia.org/wiki/File:A_picture_from_China_every_day_101.jpg"
-          }
-        },
-        {
           "id": "d3-ferry",
           "name": {
             "en": "Ferry: Jinling East Road → Dongchang Road (¥2)",
             "ru": "Паром: Jinling East Road → Dongchang Road (¥2)",
             "zh": "轮渡：金陵东路 → 东昌路（¥2）"
           },
-          "time": "19:45",
+          "time": "19:30",
           "category": "transit",
           "lat": 31.2322505,
           "lng": 121.4930694,
           "placeId": "ChIJW7bgdvZwsjURVgVAMpJIYJ4",
           "note": {
-            "en": "The cheapest way across: the city ferry line 东金线, ¥2, about 5–10 minutes on the water with both lit banks around you.",
-            "ru": "Самый дешёвый способ на другой берег: городской паром линии 东金线, ¥2, 5–10 минут по воде среди огней обоих берегов.",
-            "zh": "最便宜的过江方式：城市轮渡东金线，¥2，在江上约5–10分钟，两岸灯光环绕。"
+            "en": "After dinner walk south along the lit Bund promenade to the Jinling East Road terminal (about 10–15 minutes). The city ferry line 东金线 costs ¥2: about 5–10 minutes on the water with both lit banks around you.",
+            "ru": "После ужина идите на юг по подсвеченной набережной Бунда до причала Jinling East Road (около 10–15 минут). Городской паром линии 东金线 стоит ¥2: 5–10 минут по воде среди огней обоих берегов.",
+            "zh": "晚餐后沿亮灯的外滩观景平台向南走到金陵东路轮渡站（约10–15分钟）。城市轮渡东金线¥2，在江上约5–10分钟，两岸灯光环绕。"
           },
           "optional": false,
           "meal": null,
@@ -799,7 +768,7 @@
             "ru": "Набережная Луцзяцзуй",
             "zh": "陆家嘴滨江"
           },
-          "time": "20:00",
+          "time": "19:45",
           "category": "sight",
           "lat": 31.230108,
           "lng": 121.503211,
@@ -831,16 +800,16 @@
           "lng": 121.499,
           "placeId": null,
           "note": {
-            "en": "The same line back to the Bund side, ¥2. Fallback: metro Line 2 Lujiazui → East Nanjing Road, one stop, ¥3.",
-            "ru": "Та же линия обратно на сторону Бунда, ¥2. Запасной вариант: метро линии 2 Lujiazui → East Nanjing Road, одна остановка, ¥3.",
-            "zh": "同一条线路返回外滩一侧，¥2。备选：地铁2号线陆家嘴站到南京东路站，一站，¥3。"
+            "en": "Only if you continue to Nanjing Road: the same line back to the Bund side, ¥2. Otherwise go home from Lujiazui by metro Line 2 (change to Line 10 at East Nanjing Road) or taxi.",
+            "ru": "Только если идёте дальше на Нанкин-роуд: та же линия обратно на сторону Бунда, ¥2. Иначе возвращайтесь из Луцзяцзуя на метро линии 2 (пересадка на линию 10 на East Nanjing Road) или на такси.",
+            "zh": "仅在继续去南京路时乘坐：同一条线路返回外滩一侧，¥2。否则从陆家嘴乘地铁2号线（南京东路站换10号线）或打车回酒店。"
           },
           "details": {
             "en": "Dongchang Road ferry terminal (东昌路轮渡站). Check the last boat (about 22:00). The map pin is approximate.",
             "ru": "Паромный причал Dongchang Road (东昌路轮渡站). Проверьте время последнего парома (около 22:00). Точка на карте приблизительная.",
             "zh": "东昌路轮渡站。请确认末班船时间（约22:00）。地图定位为大致位置。"
           },
-          "optional": false,
+          "optional": true,
           "meal": null,
           "warn": false
         },
@@ -857,11 +826,11 @@
           "lng": 121.474898,
           "placeId": "ChIJ443NM0NwsjURrWjV1_GoGSU",
           "note": {
-            "en": "The neon signs and the lit department-store façades are the point here, so it comes last: from the ferry walk north to the Bund end of the street and west to the East Nanjing Road metro. Shops close around 22:00.",
-            "ru": "Здесь главное — неоновые вывески и подсвеченные фасады универмагов, поэтому улица в конце: от парома идите на север к началу улицы у Бунда и на запад к метро East Nanjing Road. Магазины закрываются около 22:00.",
-            "zh": "南京路的看点是霓虹招牌和亮灯的百货大楼，所以放在最后：下船后向北走到南京路外滩端，再向西走到南京东路地铁站。商店约22:00关门。"
+            "en": "If you still have energy: the neon signs and lit department-store façades, walking west from the Bund end to the East Nanjing Road metro. Shops close around 22:00.",
+            "ru": "Если остались силы: неоновые вывески и подсвеченные фасады универмагов — идите на запад от Бунда к метро East Nanjing Road. Магазины закрываются около 22:00.",
+            "zh": "有余力再去：霓虹招牌和亮灯的百货大楼，从外滩端向西走到南京东路地铁站。商店约22:00关门。"
           },
-          "optional": false,
+          "optional": true,
           "meal": null,
           "warn": false,
           "photo": {
