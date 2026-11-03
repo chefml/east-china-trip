@@ -1578,20 +1578,20 @@
         "zh": "周三"
       },
       "title": {
-        "en": "Rainy day: Grand Canal museums, work at Hangzhou Library",
-        "ru": "Дождливый день: музеи Великого канала, работа в библиотеке Ханчжоу",
-        "zh": "雨天：大运河博物馆群，杭州图书馆办公"
+        "en": "Rainy day: work at the hotel, afternoon at the Grand Canal",
+        "ru": "Дождливый день: работа в отеле, после обеда Великий канал",
+        "zh": "雨天：上午酒店办公，下午大运河"
       },
       "busyness": 2,
       "focus": {
-        "en": "Rain is forecast all day, so no West Lake. Breakfast at the hotel at 9:00, then one indoor sight: the museums by the Grand Canal at Gongchen Bridge. Lunch there, an afternoon of work at Hangzhou Library, dinner next door and the Qianjiang lights if the rain eases.",
-        "ru": "Весь день обещают дождь, поэтому без Сиху. Завтрак в отеле в 9:00, затем одна крытая достопримечательность — музеи у Великого канала у моста Гунчэнь. Обед там же, после обеда работа в библиотеке Ханчжоу, ужин рядом и огни Цяньцзяна, если дождь стихнет.",
-        "zh": "全天有雨，不去西湖。9:00酒店早餐，之后去一个室内景点：拱宸桥边的大运河博物馆群。附近午餐，下午在杭州图书馆办公，旁边晚餐，雨小的话看钱江新城灯光。"
+        "en": "Rain all day, so no West Lake. Breakfast and work at the hotel through the morning, then out at about 14:00: a late lunch in the Qiaoxi lanes by the Grand Canal, the indoor Grand Canal Museum, Gongchen Bridge, and the canal lanes as the lights come on, with dinner there.",
+        "ru": "Весь день дождь, поэтому без Сиху. Завтрак и работа в отеле всё утро, выход около 14:00: поздний обед в переулках Цяоси у Великого канала, крытый музей Великого канала, мост Гунчэнь и переулки у канала, когда загораются огни, там же ужин.",
+        "zh": "全天有雨，不去西湖。上午在酒店早餐、办公，约14:00出门：在大运河边桥西街区吃午饭，参观室内的大运河博物馆，走拱宸桥，傍晚运河边亮灯后就在那里吃晚饭。"
       },
       "roads": {
-        "en": "In rain, taxi/DiDi is easiest. Hotel → Gongchen Bridge: about 25–30 minutes (metro: Line 5, 拱宸桥东 station is closest; check Amap). Gongchen Bridge → Hangzhou Library (Citizen Centre, 解放东路58号): taxi about 30 minutes. Library → City Balcony (城市阳台) on the river: about 10 minutes on foot. Back to the hotel: taxi 15–20 minutes.",
-        "ru": "В дождь проще всего такси/DiDi. Отель → мост Гунчэнь: около 25–30 минут (метро: ближайшая станция 拱宸桥东 линии 5; сверьтесь с Amap). Мост → библиотека Ханчжоу (Гражданский центр, 解放东路58号): такси около 30 минут. Библиотека → «Городской балкон» (城市阳台) на реке: около 10 минут пешком. Обратно в отель: такси 15–20 минут.",
-        "zh": "下雨天打车最方便。酒店 → 拱宸桥：约25–30分钟（地铁最近为5号线拱宸桥东站，请以高德为准）。拱宸桥 → 杭州图书馆（市民中心，解放东路58号）：打车约30分钟。图书馆 → 江边城市阳台：步行约10分钟。回酒店：打车15–20分钟。"
+        "en": "In rain, taxi/DiDi is easiest. Hotel → Gongchen Bridge / Qiaoxi: about 25–30 minutes (metro: Line 5, 拱宸桥东 is the closest station; check Amap). Everything there is within 10 minutes on foot. Back to the hotel: taxi about 25–30 minutes.",
+        "ru": "В дождь проще всего такси/DiDi. Отель → мост Гунчэнь / Цяоси: около 25–30 минут (метро: ближайшая станция 拱宸桥东 линии 5; сверьтесь с Amap). Всё на месте в пределах 10 минут пешком. Обратно в отель: такси около 25–30 минут.",
+        "zh": "下雨天打车最方便。酒店 → 拱宸桥/桥西：约25–30分钟（地铁最近为5号线拱宸桥东站，请以高德为准）。景点之间步行10分钟内。回酒店：打车约25–30分钟。"
       },
       "clothing": {
         "en": "Umbrella, a waterproof jacket and shoes that cope with wet stone.",
@@ -1599,9 +1599,9 @@
         "zh": "雨伞、防水外套、适合湿滑石板路的鞋。"
       },
       "extra": {
-        "en": "Hangzhou Library and the canal museums close on Mondays; Wednesday is fine. Bring your passport. The fountain (19:15) and light show (19:30) pause in heavy rain. Tonight's bookings: Suzhou Museum for 11 Nov (slots open 7 days ahead); check your Nanjing Museum, Memorial and Sun Yat-sen Mausoleum slots for 7–8 Nov.",
-        "ru": "Библиотека Ханчжоу и музеи канала закрыты по понедельникам; в среду открыты. Возьмите паспорт. Фонтан (19:15) и световое шоу (19:30) отменяют в сильный дождь. Брони на сегодня: музей Сучжоу на 11 ноября (слоты открываются за 7 дней); проверьте слоты в музей Нанкина, мемориал и мавзолей Сунь Ятсена на 7–8 ноября.",
-        "zh": "杭州图书馆和运河博物馆周一闭馆，周三正常开放。请带护照。大雨时音乐喷泉（19:15）和灯光秀（19:30）会暂停。今晚要办的预约：11月11日苏州博物馆（提前7天放票）；确认7–8日南京博物院、纪念馆、中山陵的预约。"
+        "en": "The Grand Canal Museum's last entry is about 16:00, so go there straight after lunch. The canal museums close on Mondays; Wednesday is fine. Bring your passport. Tonight's bookings: Suzhou Museum for 11 Nov (slots open 7 days ahead); check your Nanjing Museum, Memorial and Sun Yat-sen Mausoleum slots for 7–8 Nov.",
+        "ru": "Последний вход в музей Великого канала около 16:00, поэтому идите туда сразу после обеда. Музеи канала закрыты по понедельникам; в среду открыты. Возьмите паспорт. Брони на сегодня: музей Сучжоу на 11 ноября (слоты открываются за 7 дней); проверьте слоты в музей Нанкина, мемориал и мавзолей Сунь Ятсена на 7–8 ноября.",
+        "zh": "大运河博物馆约16:00停止入馆，所以午饭后直接去。运河博物馆周一闭馆，周三正常开放。请带护照。今晚要办的预约：11月11日苏州博物馆（提前7天放票）；确认7–8日南京博物院、纪念馆、中山陵的预约。"
       },
       "locations": [
         {
@@ -1617,35 +1617,108 @@
           "lng": 120.169,
           "placeId": null,
           "note": {
-            "en": "A slow start; leave around 09:45.",
-            "ru": "Неспешное утро; выезд около 09:45.",
-            "zh": "慢慢吃，约9:45出发。"
+            "en": "At the hotel, then straight into work.",
+            "ru": "В отеле, затем сразу за работу.",
+            "zh": "酒店早餐后直接办公。"
           },
           "optional": false,
           "meal": "breakfast",
           "warn": false
         },
         {
+          "id": "d9-work",
+          "name": {
+            "en": "Work at the hotel",
+            "ru": "Работа в отеле",
+            "zh": "酒店办公"
+          },
+          "time": "09:45",
+          "category": "work",
+          "lat": 30.2455,
+          "lng": 120.169,
+          "placeId": null,
+          "note": {
+            "en": "About 4 hours, 09:45–13:45, while the rain is heaviest. A small snack keeps you going until the late lunch.",
+            "ru": "Около 4 часов, 09:45–13:45, пока дождь сильнее всего. Небольшой перекус поможет дотянуть до позднего обеда.",
+            "zh": "约4小时，9:45–13:45，正好避开雨势最大的时段。可以吃点小零食撑到较晚的午饭。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d9-lunch",
+          "name": {
+            "en": "Late lunch in the Qiaoxi lanes",
+            "ru": "Поздний обед в переулках Цяоси",
+            "zh": "桥西街区午餐"
+          },
+          "time": "14:30",
+          "category": "food",
+          "lat": 30.3185,
+          "lng": 120.139,
+          "placeId": null,
+          "note": {
+            "en": "Leave the hotel around 14:00. Small Hangzhou eateries along the canal: noodles, wontons, braised dishes; pick a busy one.",
+            "ru": "Выход из отеля около 14:00. Небольшие ханчжоуские закусочные вдоль канала: лапша, вонтоны, тушёные блюда; выбирайте людную.",
+            "zh": "约14:00出门。运河边的杭州小馆：面、馄饨、红烧菜，挑人多的。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
           "id": "d9-canalmuseum",
           "name": {
-            "en": "China Grand Canal Museum and Gongchen Bridge",
-            "ru": "Музей Великого канала и мост Гунчэнь",
-            "zh": "中国京杭大运河博物馆与拱宸桥"
+            "en": "China Grand Canal Museum",
+            "ru": "Музей Великого канала",
+            "zh": "中国京杭大运河博物馆"
           },
-          "time": "10:15",
+          "time": "15:15",
           "category": "museum",
           "lat": 30.3196,
           "lng": 120.1424,
           "placeId": null,
           "note": {
-            "en": "The main sight today and fully indoors: the story of the 1,794 km canal, with a full-size grain barge in the lobby. Then cross the 1631 Gongchen Bridge, the canal's southern landmark (short and open-air). About 1.5 hours.",
-            "ru": "Главная точка дня, полностью под крышей: история канала длиной 1794 км, в холле — полноразмерная зерновая барка. Затем перейдите мост Гунчэнь 1631 года — южный символ канала (недолго, на открытом воздухе). Около 1,5 часа.",
-            "zh": "今天的主要景点，全程室内：讲述全长1794公里的大运河，序厅有一艘实大漕船。之后走一下1631年建的拱宸桥（运河最南端地标，露天，很快）。约1.5小时。"
+            "en": "The main sight today and fully indoors: the story of the 1,794 km canal, with a full-size grain barge in the lobby. About 1 hour; last entry about 16:00.",
+            "ru": "Главная точка дня, полностью под крышей: история канала длиной 1794 км, в холле — полноразмерная зерновая барка. Около часа; последний вход около 16:00.",
+            "zh": "今天的主要景点，全程室内：讲述全长1794公里的大运河，序厅有一艘实大漕船。约1小时，约16:00停止入馆。"
           },
           "details": {
             "en": "Free; hours about 09:00–16:30, last entry 16:00, closed Mondays (verify). Reservations via the museum's WeChat account; walk-ins usually work on a rainy weekday. 金华路34号. The map pin is approximate.",
             "ru": "Бесплатно; часы примерно 09:00–16:30, вход до 16:00, по понедельникам закрыто (проверьте). Запись через WeChat-аккаунт музея; в дождливый будний день обычно пускают и так. 金华路34号. Точка на карте приблизительная.",
             "zh": "免费；开放时间约9:00–16:30，16:00停止入馆，周一闭馆（请核实）。可通过博物馆微信公众号预约，雨天工作日一般可直接进。金华路34号。地图定位为大致位置。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d9-gongchen",
+          "name": {
+            "en": "Gongchen Bridge (拱宸桥)",
+            "ru": "Мост Гунчэнь (拱宸桥)",
+            "zh": "拱宸桥"
+          },
+          "time": "16:20",
+          "category": "sight",
+          "lat": 30.3188,
+          "lng": 120.141,
+          "placeId": null,
+          "note": {
+            "en": "The 1631 stone arch at the canal's southern end, right outside the museum. A short walk over it, umbrella up.",
+            "ru": "Каменная арка 1631 года на южном конце канала, прямо у музея. Короткая прогулка по нему под зонтом.",
+            "zh": "大运河最南端1631年的石拱桥，就在博物馆门口。打着伞走过去即可。"
+          },
+          "details": {
+            "en": "Free. The map pin is approximate.",
+            "ru": "Бесплатно. Точка на карте приблизительная.",
+            "zh": "免费。地图定位为大致位置。"
           },
           "optional": false,
           "meal": null,
@@ -1658,15 +1731,15 @@
             "ru": "Музеи зонтов, вееров, ножей и мечей",
             "zh": "伞博物馆、扇博物馆、刀剪剑博物馆"
           },
-          "time": "11:30",
+          "time": "16:30",
           "category": "museum",
           "lat": 30.3188,
           "lng": 120.1385,
           "placeId": null,
           "note": {
-            "en": "Across the bridge in old canal-side factories, connected indoor halls. The Umbrella Museum suits a rainy day and has a hands-on corner. About 1 hour.",
-            "ru": "За мостом, в старых фабричных корпусах у канала, соединённые крытые залы. Музей зонтов как раз для дождя, есть интерактивный уголок. Около часа.",
-            "zh": "过桥后在运河边老厂房里，几个馆室内相通。伞博物馆正应雨天，还有互动体验区。约1小时。"
+            "en": "Across the bridge in old canal-side factories, connected indoor halls; the Umbrella Museum suits a rainy day. Only if they are still open: they may close around 16:30.",
+            "ru": "За мостом, в старых фабричных корпусах у канала, соединённые крытые залы; музей зонтов как раз для дождя. Только если ещё открыты: могут закрываться около 16:30.",
+            "zh": "过桥后在运河边老厂房里，几个馆室内相通；伞博物馆正应雨天。可能约16:30闭馆，还开着再进。"
           },
           "details": {
             "en": "In the Qiaoxi historic block (桥西历史街区). Usually free, closed Mondays (verify). The map pin is approximate.",
@@ -1678,52 +1751,26 @@
           "warn": false
         },
         {
-          "id": "d9-lunch",
+          "id": "d9-qiaoxi",
           "name": {
-            "en": "Lunch in the Qiaoxi lanes",
-            "ru": "Обед в переулках Цяоси",
-            "zh": "桥西街区午餐"
+            "en": "Qiaoxi and Xiaohe Zhijie at dusk",
+            "ru": "Цяоси и Сяохэ-чжицзе в сумерках",
+            "zh": "黄昏桥西与小河直街"
           },
-          "time": "12:30",
-          "category": "food",
+          "time": "17:00",
+          "category": "sight",
           "lat": 30.3185,
           "lng": 120.139,
           "placeId": null,
           "note": {
-            "en": "Small Hangzhou eateries along the canal: noodles, wontons, braised dishes. Pick a busy one.",
-            "ru": "Небольшие ханчжоуские закусочные вдоль канала: лапша, вонтоны, тушёные блюда. Выбирайте людную.",
-            "zh": "运河边的杭州小馆：面、馄饨、红烧菜。挑人多的。"
+            "en": "The canal-side lanes of old warehouses and shophouses as the lanterns and the bridge lights come on (sunset about 17:00). Wet stone reflects the lights nicely in the rain.",
+            "ru": "Переулки у канала со старыми складами и лавками, когда загораются фонари и подсветка моста (закат около 17:00). Мокрый камень красиво отражает огни.",
+            "zh": "运河边老仓库和老街铺，灯笼和桥灯亮起时最好看（日落约17:00）。雨天湿石板倒映灯光很漂亮。"
           },
           "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
-          },
-          "optional": false,
-          "meal": "main",
-          "warn": false
-        },
-        {
-          "id": "d9-work",
-          "name": {
-            "en": "Work: Hangzhou Library (Citizen Centre)",
-            "ru": "Работа: библиотека Ханчжоу (Гражданский центр)",
-            "zh": "办公：杭州图书馆（市民中心总馆）"
-          },
-          "time": "14:00",
-          "category": "work",
-          "lat": 30.2436,
-          "lng": 120.2105,
-          "placeId": null,
-          "note": {
-            "en": "Instead of 35mm: a large, quiet public library with long tables and power sockets, free. Work until about 18:00.",
-            "ru": "Вместо 35mm: большая тихая публичная библиотека с длинными столами и розетками, бесплатно. Работа примерно до 18:00.",
-            "zh": "代替35mm：大型安静的公共图书馆，长桌、有插座，免费。办公到约18:00。"
-          },
-          "details": {
-            "en": "解放东路58号. Main reading halls usually 08:30–20:30, closed Mondays (verify current hours). Bring your passport for entry/registration. Popular with students; if it is full, the cafés in Raffles City (来福士) next door are the fallback. Use your own data/hotspot. The map pin is approximate.",
-            "ru": "解放东路58号. Основные залы обычно 08:30–20:30, по понедельникам закрыто (проверьте актуальные часы). Возьмите паспорт для входа/регистрации. Популярна у студентов; если мест нет — кафе в Raffles City (来福士) по соседству. Интернет — свой/раздача. Точка на карте приблизительная.",
-            "zh": "解放东路58号。主阅览区一般8:30–20:30，周一闭馆（请核实最新时间）。入馆/登记请带护照。学生多，没座位可去旁边来福士的咖啡馆。用自己的流量/热点。地图定位为大致位置。"
+            "en": "Free. Xiaohe Zhijie (小河直街) is about 15 minutes' walk south-west along the canal; skip it if the rain is heavy. The map pin is approximate.",
+            "ru": "Бесплатно. Сяохэ-чжицзе (小河直街) — около 15 минут пешком на юго-запад вдоль канала; при сильном дожде пропустите. Точка на карте приблизительная.",
+            "zh": "免费。小河直街沿运河往西南步行约15分钟，雨大可不去。地图定位为大致位置。"
           },
           "optional": false,
           "meal": null,
@@ -1732,53 +1779,27 @@
         {
           "id": "d9-dinner",
           "name": {
-            "en": "Dinner around Citizen Centre",
-            "ru": "Ужин у Гражданского центра",
-            "zh": "市民中心附近晚餐"
+            "en": "Dinner by the canal",
+            "ru": "Ужин у канала",
+            "zh": "运河边晚餐"
           },
-          "time": "18:15",
+          "time": "18:00",
           "category": "food",
-          "lat": 30.245,
-          "lng": 120.212,
+          "lat": 30.3185,
+          "lng": 120.139,
           "placeId": null,
           "note": {
-            "en": "Raffles City and the malls next to the library have Hangzhou chains; Grandma's Home (外婆家) and Xinbailu (新白鹿) are local classics at local prices.",
-            "ru": "В Raffles City и соседних ТЦ есть ханчжоуские сети; Grandma's Home (外婆家) и Xinbailu (新白鹿) — местная классика по местным ценам.",
-            "zh": "图书馆旁来福士等商场有杭州连锁店；外婆家、新白鹿是实惠的本地老牌。"
+            "en": "Any busy local restaurant in the Qiaoxi lanes, then a taxi back to the hotel.",
+            "ru": "Любой людный местный ресторан в переулках Цяоси, затем такси в отель.",
+            "zh": "在桥西街区找家人多的本地馆子，之后打车回酒店。"
           },
           "details": {
-            "en": "Suggested from general knowledge, not checked live: confirm the address, hours and queue on Dianping (大众点评) or Amap. The map pin marks the area, so navigate by the name.",
-            "ru": "Рекомендация по общим сведениям, не проверена в реальном времени: адрес, часы и очередь уточните в Dianping (大众点评) или Amap. Точка на карте отмечает район — ищите по названию.",
-            "zh": "根据常识推荐，未实时核实：地址、营业时间和排队情况请在大众点评或高德确认。地图定位为大致区域，请按名称导航。"
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
           },
           "optional": false,
           "meal": "dinner",
-          "warn": false
-        },
-        {
-          "id": "d9-lights",
-          "name": {
-            "en": "Qianjiang New City fountain and light show",
-            "ru": "Фонтан и световое шоу Цяньцзян",
-            "zh": "钱江新城音乐喷泉与灯光秀"
-          },
-          "time": "19:15",
-          "category": "sight",
-          "lat": 30.2445,
-          "lng": 120.2145,
-          "placeId": null,
-          "note": {
-            "en": "Only if the rain eases: the music fountain at 19:15 and the light show on the skyscrapers at 19:30 (one show Sunday–Thursday under the 2026 autumn–winter schedule). Watch from the City Balcony (城市阳台).",
-            "ru": "Только если дождь стихнет: музыкальный фонтан в 19:15 и световое шоу на небоскрёбах в 19:30 (по осенне-зимнему графику 2026 — один сеанс с воскресенья по четверг). Смотреть с «Городского балкона» (城市阳台).",
-            "zh": "雨小再去：19:15音乐喷泉，19:30高楼灯光秀（2026秋冬安排周日至周四各1场）。在城市阳台观看。"
-          },
-          "details": {
-            "en": "Free. Paused in strong wind or heavy rain. The map pin is approximate.",
-            "ru": "Бесплатно. В сильный ветер или ливень отменяют. Точка на карте приблизительная.",
-            "zh": "免费。大风或暴雨会暂停。地图定位为大致位置。"
-          },
-          "optional": true,
-          "meal": null,
           "warn": false
         }
       ]
