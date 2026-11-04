@@ -1813,30 +1813,30 @@
         "zh": "周四"
       },
       "title": {
-        "en": "West Lake walk, Yue Fei Temple, Green Tea lunch, 2 h work, lakeside fountain",
-        "ru": "Прогулка по Сиху, храм Юэ Фэя, обед в Green Tea, 2 ч работы, фонтан",
-        "zh": "西湖漫步、岳王庙、绿茶午餐、办公2小时、西湖音乐喷泉"
+        "en": "Morning work, then West Lake from Green Tea to the fountain",
+        "ru": "Утром работа, затем Сиху: от Green Tea до фонтана",
+        "zh": "上午办公，下午到晚上西湖：从绿茶船宴到音乐喷泉"
       },
       "busyness": 3,
       "focus": {
-        "en": "Walk the north shore of West Lake: Broken Bridge, Bai Causeway, Gushan, Xiling Bridge and Yue Fei Temple. Lunch at the original Green Tea restaurant with its boat seating on Longjing Road. Back to Hubin for two hours of work, sunset over the lake, dinner and the West Lake musical fountain at 19:30.",
-        "ru": "Прогулка по северному берегу Сиху: Сломанный мост, дамба Бай, Гушань, мост Силин и храм Юэ Фэя. Обед в первом ресторане Green Tea на Лунцзин-лу со столиками в лодках. Затем в Хубинь: два часа работы, закат над озером, ужин и музыкальный фонтан Сиху в 19:30.",
-        "zh": "西湖北线漫步：断桥、白堤、孤山、西泠桥、岳王庙。午餐去龙井路绿茶总店坐花船。回湖滨办公2小时，看湖上日落，晚餐后19:30看西湖音乐喷泉。"
+        "en": "Work at the hotel until 12:00 and leave at 13:00. Late lunch on a boat at the original Green Tea, then Yue Fei Temple and a walk east along the north shore: Xiling Bridge, Gushan, Bai Causeway and Broken Bridge at sunset. Dinner at Hubin and the West Lake musical fountain at 19:30.",
+        "ru": "Работа в отеле до 12:00, выход в 13:00. Поздний обед в лодке в первом ресторане Green Tea, затем храм Юэ Фэя и прогулка на восток по северному берегу: мост Силин, Гушань, дамба Бай и Сломанный мост на закате. Ужин в Хубинь и музыкальный фонтан Сиху в 19:30.",
+        "zh": "上午在酒店办公到12:00，13:00出发。先去绿茶总店坐花船吃午饭，再去岳王庙，然后沿北线往东走：西泠桥、孤山、白堤，日落时到断桥。湖滨吃晚饭，19:30看西湖音乐喷泉。"
       },
       "roads": {
-        "en": "Hotel → Broken Bridge: about 20 minutes on foot along the lake, or taxi 10 minutes. Broken Bridge → Yue Fei Temple: about 3 km on foot. Yue Fei Temple → Green Tea (龙井路83号): taxi/DiDi about 10 minutes. Green Tea → Hubin: taxi about 15–20 minutes. The fountain is at Hubin, walking distance from the hotel.",
-        "ru": "Отель → Сломанный мост: около 20 минут пешком вдоль озера или 10 минут на такси. Сломанный мост → храм Юэ Фэя: около 3 км пешком. Храм → Green Tea (龙井路83号): такси/DiDi около 10 минут. Green Tea → Хубинь: такси 15–20 минут. Фонтан в Хубинь, пешком от отеля.",
-        "zh": "酒店 → 断桥：沿湖步行约20分钟或打车10分钟。断桥 → 岳王庙：步行约3公里。岳王庙 → 绿茶（龙井路83号）：打车约10分钟。绿茶 → 湖滨：打车15–20分钟。音乐喷泉在湖滨，从酒店步行可达。"
+        "en": "Hotel → Green Tea (龙井路83号): taxi/DiDi about 20 minutes. Green Tea → Yue Fei Temple (北山路80号): taxi about 10 minutes. From Yue Fei Temple everything is on foot, west to east: Xiling Bridge 5 minutes, Gushan 10 minutes, Bai Causeway and Broken Bridge about 1.5 km, then 20 minutes along the lake to Hubin. About 4 km of walking in all. The fountain is at Hubin, walking distance from the hotel.",
+        "ru": "Отель → Green Tea (龙井路83号): такси/DiDi около 20 минут. Green Tea → храм Юэ Фэя (北山路80号): такси около 10 минут. От храма всё пешком с запада на восток: мост Силин 5 минут, Гушань 10 минут, дамба Бай и Сломанный мост около 1,5 км, затем 20 минут вдоль озера до Хубинь. Всего около 4 км пешком. Фонтан в Хубинь, пешком от отеля.",
+        "zh": "酒店 → 绿茶（龙井路83号）：打车约20分钟。绿茶 → 岳王庙（北山路80号）：打车约10分钟。从岳王庙开始一路往东步行：西泠桥5分钟，孤山10分钟，白堤到断桥约1.5公里，再沿湖走20分钟到湖滨。全程步行约4公里。音乐喷泉在湖滨，从酒店步行可达。"
       },
       "clothing": {
-        "en": "Comfortable walking shoes; an umbrella in case showers linger after yesterday's rain.",
-        "ru": "Удобная обувь для ходьбы; зонт на случай остаточных дождей.",
-        "zh": "舒适的步行鞋；带伞以防阵雨未停。"
+        "en": "Comfortable walking shoes and a light jacket for the evening by the water; an umbrella in case of showers.",
+        "ru": "Удобная обувь для ходьбы и лёгкая куртка на вечер у воды; зонт на случай дождя.",
+        "zh": "舒适的步行鞋，晚上湖边带件薄外套；带伞以防阵雨。"
       },
       "extra": {
-        "en": "About 4 km of walking in total. Green Tea is a popular chain: arrive before 11:45 or use online queueing (取号) on Dianping/Meituan if the restaurant offers it. A newer Green Tea opened by Broken Bridge in October 2026: the fallback if the Longjing Road queue is long, but the boat seats are at the original. The fountain runs daily at 19:30 under the 2026 autumn–winter schedule; it pauses in strong wind or heavy rain.",
-        "ru": "Всего около 4 км пешком. Green Tea — популярная сеть: приходите до 11:45 или возьмите электронную очередь (取号) в Dianping/Meituan, если ресторан это предлагает. В октябре 2026 у Сломанного моста открылся новый Green Tea — запасной вариант при длинной очереди, но столики в лодках есть в исходном ресторане. Фонтан по осенне-зимнему графику 2026 работает ежедневно в 19:30; в сильный ветер или ливень отменяют.",
-        "zh": "全天步行约4公里。绿茶很火：11:45前到，或在大众点评/美团线上取号（如有）。2026年10月断桥边新开了一家绿茶，排队太久可作备选，但花船座位在龙井路总店。按2026秋冬安排，西湖音乐喷泉每天19:30；大风或大雨会暂停。"
+        "en": "West Lake must-dos, all in today's route: lunch on a boat at Green Tea; Yue Fei Temple; Gushan and Xiling Bridge; the Bai Causeway willows; Broken Bridge at sunset; the musical fountain. If you have time or energy, the optional extras are a hand-rowed boat on the lake, Louwailou's West Lake vinegar fish, and the Southern Song Imperial Street at night. Yue Fei Temple closes about 17:30, so it comes straight after lunch. Arriving at Green Tea after 13:00 misses the lunch peak; ask for a boat table (船座). The fountain pauses in strong wind or heavy rain.",
+        "ru": "Обязательное на Сиху, всё в сегодняшнем маршруте: обед в лодке в Green Tea; храм Юэ Фэя; Гушань и мост Силин; ивы дамбы Бай; Сломанный мост на закате; музыкальный фонтан. По желанию, если хватит времени и сил: лодка с гребцом по озеру, рыба в уксусном соусе в Louwailou и Императорская улица Южной Сун вечером. Храм Юэ Фэя закрывается около 17:30, поэтому он сразу после обеда. Приход в Green Tea после 13:00 — мимо обеденного пика; попросите столик в лодке (船座). Фонтан отменяют в сильный ветер или ливень.",
+        "zh": "西湖必做，今天路线全包含：绿茶花船午餐、岳王庙、孤山与西泠桥、白堤垂柳、断桥日落、音乐喷泉。有时间和体力再加：西湖手划船、楼外楼西湖醋鱼、夜逛南宋御街。岳王庙约17:30关门，所以午饭后先去。13:00后到绿茶能避开饭点高峰；可要求坐船座。大风或大雨时音乐喷泉暂停。"
       },
       "locations": [
         {
@@ -1846,96 +1846,65 @@
             "ru": "Завтрак",
             "zh": "早餐"
           },
-          "time": "08:00",
+          "time": "08:30",
           "category": "food",
           "lat": 30.2455,
           "lng": 120.169,
           "placeId": null,
           "note": {
-            "en": "Xinfeng Xiaochi (新丰小吃) for xiaolongbao and wontons, or the hotel.",
-            "ru": "Xinfeng Xiaochi (新丰小吃) — сяолунбао и вонтоны, или отель.",
-            "zh": "新丰小吃（小笼包、馄饨）或酒店早餐。"
-          },
-          "details": {
-            "en": "Suggested from general knowledge, not checked live: confirm the address, hours and queue on Dianping (大众点评) or Amap. The map pin marks the area, so navigate by the name.",
-            "ru": "Рекомендация по общим сведениям, не проверена в реальном времени: адрес, часы и очередь уточните в Dianping (大众点评) или Amap. Точка на карте отмечает район — ищите по названию.",
-            "zh": "根据常识推荐，未实时核实：地址、营业时间和排队情况请在大众点评或高德确认。地图定位为大致区域，请按名称导航。"
+            "en": "At the hotel, or Xinfeng Xiaochi (新丰小吃) for xiaolongbao.",
+            "ru": "В отеле или Xinfeng Xiaochi (新丰小吃) — сяолунбао.",
+            "zh": "酒店早餐，或新丰小吃（小笼包）。"
           },
           "optional": false,
           "meal": "breakfast",
           "warn": false
         },
         {
-          "id": "d10-brokenbridge",
+          "id": "d10-work",
           "name": {
-            "en": "Broken Bridge and Bai Causeway",
-            "ru": "Мост Дуаньцяо и дамба Бай",
-            "zh": "断桥与白堤"
+            "en": "Work at the hotel",
+            "ru": "Работа в отеле",
+            "zh": "酒店办公"
           },
-          "time": "08:45",
-          "category": "sight",
-          "lat": 30.259271,
-          "lng": 120.15238,
-          "placeId": "ChIJLX_GQptiSzQR6_YUSZJHm1A",
+          "time": "09:00",
+          "category": "work",
+          "lat": 30.2455,
+          "lng": 120.169,
+          "placeId": null,
           "note": {
-            "en": "Start of the north-shore walk: Broken Bridge, then the willows of Bai Causeway (about 1 km) to Gushan.",
-            "ru": "Начало прогулки по северному берегу: Сломанный мост, затем ивовая дамба Бай (около 1 км) до Гушаня.",
-            "zh": "北线步行起点：断桥，再沿白堤垂柳走约1公里到孤山。"
+            "en": "09:00–12:00. Then an hour to get ready; skip a snack, lunch is the main meal.",
+            "ru": "09:00–12:00. Затем час на сборы; не перекусывайте, обед будет основательным.",
+            "zh": "9:00–12:00。之后一小时准备出门；别吃零食，午饭要吃好。"
           },
           "optional": false,
           "meal": null,
           "warn": false
         },
         {
-          "id": "d10-gushan",
+          "id": "d10-greentea",
           "name": {
-            "en": "Gushan island",
-            "ru": "Остров Гушань",
-            "zh": "孤山"
+            "en": "Lunch: Green Tea, Longjing Road flagship (boat seating)",
+            "ru": "Обед: Green Tea, флагман на Лунцзин-лу (столики в лодках)",
+            "zh": "午餐：绿茶餐厅（龙井船宴·品牌总店）"
           },
-          "time": "09:30",
-          "category": "sight",
-          "lat": 30.2565,
-          "lng": 120.144,
+          "time": "13:20",
+          "category": "food",
+          "lat": 30.2475,
+          "lng": 120.129,
           "placeId": null,
           "note": {
-            "en": "The island at the end of Bai Causeway, with the Xiling Seal Society gardens on its slope and quiet paths by the water.",
-            "ru": "Остров в конце дамбы Бай: на склоне сады общества Силинь, у воды тихие дорожки.",
-            "zh": "白堤尽头的小岛，西泠印社依山而建，沿水小路安静。"
+            "en": "The brand's first restaurant (2008), on a lotus pond with tables in old-style painted boats. Order the green-tea grilled pork, Longjing shrimp and the «bread temptation» dessert. About 1 hour.",
+            "ru": "Первый ресторан сети (2008), на пруду с лотосами, столики в старинных расписных лодках. Закажите свинину на гриле с зелёным чаем, креветки лунцзин и десерт «искушение хлебом». Около часа.",
+            "zh": "品牌首店（2008年），荷花池上，座位设在仿古花船里。推荐绿茶烤肉、龙井虾仁、面包诱惑。约1小时。"
           },
           "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
+            "en": "龙井路83号, across from the Zhejiang Hotel near 双峰. Ask for a boat table (船座); expect a wait at peak times. Confirm hours and queue on Dianping. The map pin is approximate.",
+            "ru": "龙井路83号, напротив Zhejiang Hotel у 双峰. Попросите столик в лодке (船座); в пик придётся подождать. Часы и очередь уточните в Dianping. Точка на карте приблизительная.",
+            "zh": "龙井路83号，浙江宾馆对面，近双峰。可要求坐船座；饭点需等位。营业时间和排队请在大众点评确认。地图定位为大致位置。"
           },
-          "optional": true,
-          "meal": null,
-          "warn": false
-        },
-        {
-          "id": "d10-xiling",
-          "name": {
-            "en": "Xiling Bridge and Xiling Seal Society",
-            "ru": "Мост Силин и общество Силинь",
-            "zh": "西泠桥与西泠印社"
-          },
-          "time": "10:15",
-          "category": "sight",
-          "lat": 30.2585,
-          "lng": 120.142,
-          "placeId": null,
-          "note": {
-            "en": "At the west end of Gushan; the Seal Society's terraced garden climbs the slope. Then 5 minutes on to Yue Fei Temple.",
-            "ru": "У западного края Гушаня; сад общества Силинь поднимается по склону. Оттуда 5 минут до храма Юэ Фэя.",
-            "zh": "孤山西端；西泠印社依山而建。再走5分钟到岳王庙。"
-          },
-          "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
-          },
-          "optional": true,
-          "meal": null,
+          "optional": false,
+          "meal": "main",
           "warn": false
         },
         {
@@ -1945,7 +1914,7 @@
             "ru": "Храм Юэ Фэя (岳王庙)",
             "zh": "岳王庙"
           },
-          "time": "10:30",
+          "time": "14:40",
           "category": "temple",
           "lat": 30.2594,
           "lng": 120.1395,
@@ -1965,78 +1934,177 @@
           "warn": false
         },
         {
-          "id": "d10-greentea",
+          "id": "d10-xiling",
           "name": {
-            "en": "Lunch: Green Tea, Longjing Road flagship (boat seating)",
-            "ru": "Обед: Green Tea, флагман на Лунцзин-лу (столики в лодках)",
-            "zh": "午餐：绿茶餐厅（龙井船宴·品牌总店）"
+            "en": "Xiling Bridge and Xiling Seal Society",
+            "ru": "Мост Силин и общество Силинь",
+            "zh": "西泠桥与西泠印社"
           },
-          "time": "11:45",
-          "category": "food",
-          "lat": 30.2475,
-          "lng": 120.129,
-          "placeId": null,
-          "note": {
-            "en": "The brand's first restaurant (2008), set on a lotus pond with tables in old-style painted boats. Hangzhou dishes: green-tea grilled pork, Longjing shrimp, the «bread temptation» dessert.",
-            "ru": "Первый ресторан сети (2008), на пруду с лотосами, столики в старинных расписных лодках. Ханчжоуская кухня: свинина на гриле с зелёным чаем, креветки лунцзин, десерт «искушение хлебом».",
-            "zh": "品牌首店（2008年），荷花池上，座位设在仿古花船里。杭帮菜：绿茶烤肉、龙井虾仁、面包诱惑。"
-          },
-          "details": {
-            "en": "龙井路83号, across from the Zhejiang Hotel near 双峰. Ask for a boat table (船座); expect a wait at peak times. Confirm hours and queue on Dianping. The map pin is approximate.",
-            "ru": "龙井路83号, напротив Zhejiang Hotel у 双峰. Попросите столик в лодке (船座); в пик придётся подождать. Часы и очередь уточните в Dianping. Точка на карте приблизительная.",
-            "zh": "龙井路83号，浙江宾馆对面，近双峰。可要求坐船座；饭点需等位。营业时间和排队请在大众点评确认。地图定位为大致位置。"
-          },
-          "optional": false,
-          "meal": "main",
-          "warn": false
-        },
-        {
-          "id": "d10-work",
-          "name": {
-            "en": "Work: café at Hubin (2 h)",
-            "ru": "Работа: кафе в Хубинь (2 ч)",
-            "zh": "办公：湖滨咖啡馆（2小时）"
-          },
-          "time": "14:00",
-          "category": "work",
+          "time": "15:45",
+          "category": "sight",
           "lat": 30.2585,
-          "lng": 120.164,
+          "lng": 120.142,
           "placeId": null,
           "note": {
-            "en": "Two hours of laptop work, 14:00–16:00, near the hotel so the evening flows: a quiet café around Hubin Yintai / In77, or the hotel.",
-            "ru": "Два часа работы с ноутбуком, 14:00–16:00, рядом с отелем, чтобы вечер шёл без переездов: тихое кафе у Hubin Yintai / In77 или отель.",
-            "zh": "14:00–16:00办公2小时，就在酒店附近方便晚上活动：湖滨银泰/In77一带安静的咖啡馆，或回酒店。"
+            "en": "Next to Yue Fei Temple, at the west end of Gushan. The Seal Society's terraced garden climbs the hill; the top gives one of the best views over the lake.",
+            "ru": "Рядом с храмом Юэ Фэя, у западного края Гушаня. Сад общества Силинь поднимается террасами на холм; с вершины один из лучших видов на озеро.",
+            "zh": "紧邻岳王庙，在孤山西端。西泠印社依山而建，山顶是看西湖的最佳视角之一。"
           },
           "details": {
-            "en": "Use mobile data or a phone hotspot rather than public Wi-Fi (it usually needs a Chinese number, and Google/Slack/WhatsApp are blocked on local networks). On Dianping, filter cafés tagged 办公友好、有插座 (laptop-friendly, power sockets).",
-            "ru": "Пользуйтесь мобильным интернетом или раздачей с телефона, а не публичным Wi-Fi (обычно нужен китайский номер, а Google/Slack/WhatsApp в местных сетях заблокированы). В Dianping ищите кафе с пометками 办公友好、有插座 (удобно для работы, есть розетки).",
-            "zh": "建议用手机流量或热点，不用公共Wi-Fi（通常需中国手机号，本地网络无法使用Google/Slack/WhatsApp）。在大众点评筛选「办公友好、有插座」的咖啡馆。"
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
           },
           "optional": false,
           "meal": null,
           "warn": false
         },
         {
-          "id": "d10-sunset",
+          "id": "d10-gushan",
           "name": {
-            "en": "Sunset on the Hubin promenade",
-            "ru": "Закат на набережной Хубинь",
-            "zh": "湖滨步道看日落"
+            "en": "Gushan island",
+            "ru": "Остров Гушань",
+            "zh": "孤山"
           },
-          "time": "16:30",
+          "time": "16:15",
           "category": "sight",
-          "lat": 30.2575,
-          "lng": 120.1625,
+          "lat": 30.2565,
+          "lng": 120.144,
           "placeId": null,
           "note": {
-            "en": "The east shore faces west across the lake to the hills: sunset about 17:00.",
-            "ru": "Восточный берег смотрит на запад через озеро на холмы: закат около 17:00.",
-            "zh": "湖滨在东岸，隔湖西望群山，日落约17:00。"
+            "en": "The island at the end of Bai Causeway, with the Xiling Seal Society gardens on its slope and quiet paths by the water.",
+            "ru": "Остров в конце дамбы Бай: на склоне сады общества Силинь, у воды тихие дорожки.",
+            "zh": "白堤尽头的小岛，西泠印社依山而建，沿水小路安静。"
           },
           "details": {
             "en": "The map pin is approximate: navigate by the name.",
             "ru": "Точка на карте приблизительная: ищите по названию.",
             "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d10-louwailou",
+          "name": {
+            "en": "Louwailou (楼外楼) snack stop",
+            "ru": "Louwailou (楼外楼): перекус",
+            "zh": "楼外楼小憩"
+          },
+          "time": "16:30",
+          "category": "food",
+          "lat": 30.2545,
+          "lng": 120.1462,
+          "placeId": null,
+          "note": {
+            "en": "The 1848 restaurant on Gushan, famous for West Lake vinegar fish and Dongpo pork. A small plate here only if you are still hungry; otherwise keep walking.",
+            "ru": "Ресторан 1848 года на Гушане, знаменит рыбой в уксусном соусе Сиху и свининой Дунпо. Небольшое блюдо здесь, только если ещё голодны; иначе идите дальше.",
+            "zh": "孤山上1848年的老字号，以西湖醋鱼、东坡肉闻名。还饿的话点一两道，不饿就继续走。"
+          },
+          "details": {
+            "en": "孤山路30号. The map pin is approximate.",
+            "ru": "孤山路30号. Точка на карте приблизительная.",
+            "zh": "孤山路30号。地图定位为大致位置。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d10-baidi",
+          "name": {
+            "en": "Bai Causeway (白堤)",
+            "ru": "Дамба Бай (白堤)",
+            "zh": "白堤"
+          },
+          "time": "16:40",
+          "category": "sight",
+          "lat": 30.2585,
+          "lng": 120.1505,
+          "placeId": null,
+          "note": {
+            "en": "The 1 km willow-lined causeway from Gushan to Broken Bridge, with the lake on both sides. Walk it as the light turns gold before sunset (about 17:00).",
+            "ru": "Дамба длиной 1 км с ивами от Гушаня до Сломанного моста, вода с обеих сторон. Пройдите её, когда свет становится золотым перед закатом (около 17:00).",
+            "zh": "从孤山到断桥约1公里的垂柳长堤，两边都是湖。日落（约17:00）前光线变金时走最美。"
+          },
+          "details": {
+            "en": "Free. The map pin is approximate.",
+            "ru": "Бесплатно. Точка на карте приблизительная.",
+            "zh": "免费。地图定位为大致位置。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d10-brokenbridge",
+          "name": {
+            "en": "Broken Bridge (断桥) at sunset",
+            "ru": "Сломанный мост (断桥) на закате",
+            "zh": "断桥日落"
+          },
+          "time": "17:05",
+          "category": "sight",
+          "lat": 30.259271,
+          "lng": 120.15238,
+          "placeId": "ChIJLX_GQptiSzQR6_YUSZJHm1A",
+          "note": {
+            "en": "The end of the walk, at dusk: Broken Bridge, from the Legend of the White Snake, with the lake and Baochu Pagoda behind you.",
+            "ru": "Конец прогулки, в сумерках: Сломанный мост из «Легенды о Белой Змее», позади озеро и пагода Баочу.",
+            "zh": "日落时走到断桥收尾：白蛇传中的断桥，身后是湖和保俶塔。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d10-boat",
+          "name": {
+            "en": "Hand-rowed boat on the lake",
+            "ru": "Лодка с гребцом по озеру",
+            "zh": "西湖手划船"
+          },
+          "time": "17:20",
+          "category": "activity",
+          "lat": 30.259,
+          "lng": 120.153,
+          "placeId": null,
+          "note": {
+            "en": "A quiet 40-minute row on the water at dusk, from the piers near Broken Bridge / Beishan Road. Optional.",
+            "ru": "Тихие 40 минут на воде в сумерках, от причалов у Сломанного моста / Бэйшань-лу. По желанию.",
+            "zh": "黄昏时从断桥/北山路一带码头坐40分钟手划船，很安静。可选。"
+          },
+          "details": {
+            "en": "Price is per boat (fits several people): agree it with the boatman before boarding, or buy on Trip.com/Meituan. Boats usually stop around dusk: check on the day. The map pin is approximate.",
+            "ru": "Цена за лодку (на несколько человек): договоритесь с лодочником до посадки или купите на Trip.com/Meituan. Обычно катают до сумерек: уточните на месте. Точка на карте приблизительная.",
+            "zh": "价格按船算（可坐几人）：上船前和船工谈好，或在Trip.com/美团购买。通常天黑前停航，当天请确认。地图定位为大致位置。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d10-hubin",
+          "name": {
+            "en": "Walk to Hubin",
+            "ru": "Прогулка до Хубинь",
+            "zh": "步行到湖滨"
+          },
+          "time": "17:45",
+          "category": "sight",
+          "lat": 30.2575,
+          "lng": 120.1625,
+          "placeId": null,
+          "note": {
+            "en": "20 minutes along the lake from Broken Bridge to Hubin as the lights come on.",
+            "ru": "20 минут вдоль озера от Сломанного моста до Хубинь, когда загораются огни.",
+            "zh": "从断桥沿湖走20分钟到湖滨，正好华灯初上。"
+          },
+          "details": {
+            "en": "The map pin is approximate.",
+            "ru": "Точка на карте приблизительная.",
+            "zh": "地图定位为大致位置。"
           },
           "optional": false,
           "meal": null,
@@ -2049,7 +2117,7 @@
             "ru": "Ужин: Zhiweiguan (知味观)",
             "zh": "晚餐：知味观"
           },
-          "time": "17:45",
+          "time": "18:15",
           "category": "food",
           "lat": 30.258,
           "lng": 120.165,
@@ -2081,9 +2149,9 @@
           "lng": 120.1625,
           "placeId": null,
           "note": {
-            "en": "About 20 minutes on the water off Hubin Park No. 3; free. Arrive by 19:00 for a spot by the rail; there is a security check.",
-            "ru": "Около 20 минут на воде у парка Хубинь № 3; бесплатно. Приходите к 19:00, чтобы встать у перил; на входе досмотр.",
-            "zh": "湖滨三公园湖面，约20分钟，免费。19:00前到栏杆边占位；需安检。"
+            "en": "About 20 minutes on the water off Hubin Park No. 3; free. Get to the rail by 19:00; there is a security check.",
+            "ru": "Около 20 минут на воде у парка Хубинь № 3; бесплатно. Будьте у перил к 19:00; на входе досмотр.",
+            "zh": "湖滨三公园湖面，约20分钟，免费。19:00前到栏杆边；需安检。"
           },
           "details": {
             "en": "Daily at 19:30 under the 2026 autumn–winter schedule; paused in strong wind or heavy rain. The map pin is approximate.",
