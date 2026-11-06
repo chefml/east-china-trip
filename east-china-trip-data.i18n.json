@@ -3477,9 +3477,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou_Gate_of_the_Orient.jpg?width=1200",
+            "src": "photos/d15-jinji.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Suzhou_Gate_of_the_Orient.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou_Gate_of_the_Orient.jpg?width=1200"
           }
         },
         {

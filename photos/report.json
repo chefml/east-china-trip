@@ -1,36 +1,6 @@
 {
   "ok": [
-    "d11-fuzimiao",
-    "d11-boat",
-    "d11-laomendong",
-    "d12-memorial",
-    "d13-sunyat",
-    "d13-ming",
-    "d13-tangshan",
-    "d13-1912",
-    "d14-jiming",
-    "d14-wall",
-    "d14-xuanwu",
-    "d14-pingjiang",
-    "d14-shantang",
-    "d14-boat",
-    "d15-hump",
-    "d15-lion",
-    "d15-work",
-    "d15-jinji",
-    "d16-lingering",
-    "d16-szmuseum",
-    "d16-zhangyuan",
-    "d17-millfun",
-    "d17-duolun",
-    "d17-northbund",
-    "d18-shmuseum",
-    "d18-work",
-    "d18-tower",
-    "d19-work",
-    "d19-longmuseum",
-    "d20-yangpu",
-    "d21-departure"
+    "d15-jinji"
   ],
   "failed": []
 }
