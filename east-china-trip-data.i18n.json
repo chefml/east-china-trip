@@ -3477,10 +3477,9 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "photos/d15-jinji.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:Jinji_Lake_66686-Suzhou_(49176972326).jpg",
-            "credit": "Wikimedia Commons",
-            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Jinji_Lake_66686-Suzhou_(49176972326).jpg?width=1200"
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou_Gate_of_the_Orient.jpg?width=1200",
+            "source": "https://commons.wikimedia.org/wiki/File:Suzhou_Gate_of_the_Orient.jpg",
+            "credit": "Wikimedia Commons"
           }
         },
         {
