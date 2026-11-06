@@ -23,6 +23,10 @@
       footer: "Offline trip plan. Navigation opens in Google Maps.",
       amap: "Amap",
       photoAlt: "Photo: ",
+      checklistTitle: "Book ahead",
+      checklistHint: "Tick off what is done; ticks stay on this phone.",
+      booking: "Book ahead",
+      altFor: "If not working",
       photoSearch: "Photos of this place",
       months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     },
@@ -39,6 +43,10 @@
       footer: "Офлайн-план поездки. Навигация — в Google Maps.",
       amap: "Amap",
       photoAlt: "Фото: ",
+      checklistTitle: "Забронировать заранее",
+      checklistHint: "Отмечайте сделанное; отметки хранятся на этом телефоне.",
+      booking: "Нужна бронь",
+      altFor: "Если без работы",
       photoSearch: "Фото этого места",
       months: ["янв", "фев", "мар", "апр", "мая", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"]
     },
@@ -55,6 +63,10 @@
       footer: "离线行程计划。导航将在 Google Maps 中打开。",
       amap: "高德地图",
       photoAlt: "照片：",
+      checklistTitle: "需提前预约",
+      checklistHint: "办好的打勾，勾选会保存在这台手机上。",
+      booking: "需预约",
+      altFor: "不办公可去",
       photoSearch: "查看这里的照片",
       months: null /* zh использует числовой формат: 2026年8月8日 */
     }
@@ -327,6 +339,8 @@
     if (loc.meal) box.appendChild(el("span", "badge badge--meal", label("meals", loc.meal)));
     if (loc.optional) box.appendChild(el("span", "badge badge--optional", t("optional")));
     if (loc.warn) box.appendChild(el("span", "badge badge--warn", t("warn")));
+    if (loc.booking) box.appendChild(el("span", "badge badge--booking", t("booking")));
+    if (loc.altFor) box.appendChild(el("span", "badge badge--alt", t("altFor")));
 
     return box;
   }
@@ -473,6 +487,59 @@
     return box;
   }
 
+  /* Чек-лист броней дня. Начальное состояние — из данных (done), отметки
+     пользователя — в localStorage; без хранилища чек-лист просто не запоминается. */
+  var CHECKS_STORAGE_KEY = "ec-trip-checks";
+
+  function loadChecks() {
+    try { return JSON.parse(window.localStorage.getItem(CHECKS_STORAGE_KEY)) || {}; }
+    catch (e) { return {}; }
+  }
+
+  function saveCheck(id, value) {
+    var all = loadChecks();
+    all[id] = value;
+    try { window.localStorage.setItem(CHECKS_STORAGE_KEY, JSON.stringify(all)); } catch (e) { /* no storage */ }
+  }
+
+  function renderChecklist(day) {
+    var items = day.checklist || [];
+    if (!items.length) return null;
+    var saved = loadChecks();
+
+    var box = el("section", "checklist");
+    var title = el("h3", "checklist__title", t("checklistTitle"));
+    var count = el("span", "checklist__count");
+    title.appendChild(count);
+    box.appendChild(title);
+
+    var list = el("ul", "checklist__list");
+    function updateCount() {
+      var done = list.querySelectorAll("input:checked").length;
+      count.textContent = " " + done + "/" + items.length;
+      box.classList.toggle("checklist--done", done === items.length);
+    }
+    items.forEach(function (item) {
+      var li = el("li", "checklist__item");
+      var label = document.createElement("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.checked = Object.prototype.hasOwnProperty.call(saved, item.id) ? !!saved[item.id] : !!item.done;
+      input.addEventListener("change", function () {
+        saveCheck(item.id, input.checked);
+        updateCount();
+      });
+      label.appendChild(input);
+      label.appendChild(el("span", null, localized(item.text)));
+      li.appendChild(label);
+      list.appendChild(li);
+    });
+    box.appendChild(list);
+    box.appendChild(el("p", "checklist__hint", t("checklistHint")));
+    updateCount();
+    return box;
+  }
+
   function renderDay(index) {
     var day = days[index];
 
@@ -496,6 +563,9 @@
     head.appendChild(busy);
 
     viewEl.appendChild(head);
+
+    var checklist = renderChecklist(day);
+    if (checklist) viewEl.appendChild(checklist);
 
     var locations = day.locations || [];
 

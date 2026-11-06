@@ -1,7 +1,7 @@
 {
   "_instructions": {
-    "en": "Multilingual dataset for the East China trip PWA (27 Oct – 16 Nov 2026). Text fields (trip.title, trip.overview, day.title/weekday/focus/roads/clothing/extra, location.name/note/details, general, legend, appGuide, dining) are objects {en,ru,zh}: pick the active language. UI strings live in 'ui' keyed by language code. 'location.category' and 'location.meal' are language-independent codes; look up display labels in ui[lang].categories / ui[lang].meals. New categories compared with the Chiang Mai file: transit, museum, sight, work (a laptop work block or work spot). Google Maps links use lat/lng + placeId (name is cosmetic only); placeId may be null. A top-level 'dining' object holds standalone dinner options: {title, intro, places[]} (same schema as a location, time=null, meal=null) and is rendered as the 4th tab (ui[lang].tabDining). 'day.day' is the sequential trip day (1..21), 'day.date' is the calendar date. 'location.details' is an optional expanded reference. Build a language switcher over trip.languages; default = trip.defaultLanguage. 'location.photo' is optional: {src, source, credit}. src is a repo-relative file in photos/ (downloaded from Wikimedia Commons by .github/workflows/photos.yml) or, until the download has run, the remote Commons URL; source is the Commons file page and credit the credit line. Stops without a photo get a photo-search link instead.",
-    "ru": "Мультиязычный датасет для PWA поездки по Восточному Китаю (27 октября – 16 ноября 2026). Текстовые поля — объекты {en,ru,zh}. Строки интерфейса — в 'ui' по коду языка. Коды 'category'/'meal' языконезависимы, подписи берутся из ui[lang]. Новые категории относительно файла Чиангмая: transit, museum, sight, work (рабочий блок или место для работы). Ссылки Google Maps строятся по lat/lng + placeId (placeId может быть null). Верхнеуровневый объект 'dining' — отдельные опции для ужина {title, intro, places[]}, выводится 4-й вкладкой (ui[lang].tabDining). 'day.day' — сквозной номер дня поездки (1..21), 'day.date' — календарная дата. 'location.details' — необязательный расширенный справочник. Переключатель языка — по trip.languages, по умолчанию trip.defaultLanguage. 'location.photo' необязателен: {src, source, credit}. src — файл в photos/ внутри репозитория (его скачивает с Wikimedia Commons .github/workflows/photos.yml) или, пока скачивание не прошло, исходный URL Commons; source — страница файла на Commons, credit — подпись. Для точек без фото показывается ссылка на поиск фотографий."
+    "en": "Multilingual dataset for the East China trip PWA (27 Oct – 16 Nov 2026). Text fields (trip.title, trip.overview, day.title/weekday/focus/roads/clothing/extra, location.name/note/details, general, legend, appGuide, dining) are objects {en,ru,zh}: pick the active language. UI strings live in 'ui' keyed by language code. 'location.category' and 'location.meal' are language-independent codes; look up display labels in ui[lang].categories / ui[lang].meals. New categories compared with the Chiang Mai file: transit, museum, sight, work (a laptop work block or work spot). Google Maps links use lat/lng + placeId (name is cosmetic only); placeId may be null. A top-level 'dining' object holds standalone dinner options: {title, intro, places[]} (same schema as a location, time=null, meal=null) and is rendered as the 4th tab (ui[lang].tabDining). 'day.day' is the sequential trip day (1..21), 'day.date' is the calendar date. 'location.details' is an optional expanded reference. Build a language switcher over trip.languages; default = trip.defaultLanguage. 'location.photo' is optional: {src, source, credit}. src is a repo-relative file in photos/ (downloaded from Wikimedia Commons by .github/workflows/photos.yml) or, until the download has run, the remote Commons URL; source is the Commons file page and credit the credit line. Stops without a photo get a photo-search link instead. 'day.checklist' (from day 11, Nanjing) is an optional list of {id, done, text}: bookings and tickets to sort out, shown at the top of the day; done is the initial state and the viewer's ticks are kept on the device. 'location.booking' = true marks a stop that needs a ticket or booking in advance. 'location.altFor' = true marks an optional stop to do instead of the work block just before it.",
+    "ru": "Мультиязычный датасет для PWA поездки по Восточному Китаю (27 октября – 16 ноября 2026). Текстовые поля — объекты {en,ru,zh}. Строки интерфейса — в 'ui' по коду языка. Коды 'category'/'meal' языконезависимы, подписи берутся из ui[lang]. Новые категории относительно файла Чиангмая: transit, museum, sight, work (рабочий блок или место для работы). Ссылки Google Maps строятся по lat/lng + placeId (placeId может быть null). Верхнеуровневый объект 'dining' — отдельные опции для ужина {title, intro, places[]}, выводится 4-й вкладкой (ui[lang].tabDining). 'day.day' — сквозной номер дня поездки (1..21), 'day.date' — календарная дата. 'location.details' — необязательный расширенный справочник. Переключатель языка — по trip.languages, по умолчанию trip.defaultLanguage. 'location.photo' необязателен: {src, source, credit}. src — файл в photos/ внутри репозитория (его скачивает с Wikimedia Commons .github/workflows/photos.yml) или, пока скачивание не прошло, исходный URL Commons; source — страница файла на Commons, credit — подпись. Для точек без фото показывается ссылка на поиск фотографий. 'day.checklist' (с 11-го дня, Нанкин) — необязательный список {id, done, text}: брони и билеты, которые нужно оформить; показывается вверху дня, done — начальное состояние, отметки пользователя хранятся на устройстве. 'location.booking' = true — точка, куда нужен билет или бронь заранее. 'location.altFor' = true — необязательная точка вместо рабочего блока перед ней."
   },
   "trip": {
     "title": {
@@ -2281,7 +2281,8 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false
+          "warn": false,
+          "booking": true
         },
         {
           "id": "d11-arrive",
@@ -2416,6 +2417,35 @@
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Laomendong,_Nanjing.jpg?width=1200"
           }
         }
+      ],
+      "checklist": [
+        {
+          "id": "c06-train",
+          "done": true,
+          "text": {
+            "en": "High-speed train Hangzhou East 13:20 → Nanjing South 14:44 (bring your passport)",
+            "ru": "Поезд Ханчжоу-Восточный 13:20 → Нанкин-Южный 14:44 (паспорт с собой)",
+            "zh": "高铁 杭州东13:20 → 南京南14:44（带护照）"
+          }
+        },
+        {
+          "id": "c06-hotel",
+          "done": false,
+          "text": {
+            "en": "Nanjing hotel near Daxinggong, 3 nights (6–9 Nov)",
+            "ru": "Отель в Нанкине у Daxinggong, 3 ночи (6–9 ноября)",
+            "zh": "南京大行宫附近酒店，3晚（6–9日）"
+          }
+        },
+        {
+          "id": "c06-memorial",
+          "done": false,
+          "text": {
+            "en": "Try the Nanjing Massacre Memorial for 7 Nov (its WeChat account only)",
+            "ru": "Попробуйте забронировать мемориал на 7 ноября (только через его WeChat)",
+            "zh": "试约7日南京大屠杀纪念馆（只能在其官方微信公众号）"
+          }
+        }
       ]
     },
     {
@@ -2504,7 +2534,8 @@
             "source": "https://commons.wikimedia.org/wiki/File:Memorial_Hall_to_the_Victims_in_Nanjing_Massacre.jpg",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Memorial_Hall_to_the_Victims_in_Nanjing_Massacre.jpg?width=1200"
-          }
+          },
+          "booking": true
         },
         {
           "id": "d12-niushou",
@@ -2530,7 +2561,8 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false
+          "warn": false,
+          "booking": true
         },
         {
           "id": "d12-lunch",
@@ -2683,6 +2715,35 @@
             "zh": "根据常识推荐，未实时核实：地址、营业时间和排队情况请在大众点评或高德确认。地图定位为大致区域，请按店名导航。"
           }
         }
+      ],
+      "checklist": [
+        {
+          "id": "c07-memorial",
+          "done": false,
+          "text": {
+            "en": "Memorial: real-name slot booked? If not, skip it and go to Niushoushan at 10:00",
+            "ru": "Мемориал: слот на имя есть? Если нет — пропустите и езжайте на Нюшоушань к 10:00",
+            "zh": "纪念馆：约到实名时段了吗？约不到就不去，10:00直接去牛首山"
+          }
+        },
+        {
+          "id": "c07-niushou",
+          "done": false,
+          "text": {
+            "en": "Niushoushan ticket online (cheaper than ¥98 at the gate)",
+            "ru": "Билет на Нюшоушань онлайн (дешевле ¥98 в кассе)",
+            "zh": "网上买牛首山门票（比现场¥98便宜）"
+          }
+        },
+        {
+          "id": "c07-nantang",
+          "done": false,
+          "text": {
+            "en": "Call the Southern Tang tombs (025-52741826): are the chambers open?",
+            "ru": "Позвоните в гробницы Южной Тан (025-52741826): открыты ли камеры?",
+            "zh": "致电南唐二陵（025-52741826）确认墓室是否开放"
+          }
+        }
       ]
     },
     {
@@ -2771,7 +2832,8 @@
             "source": "https://commons.wikimedia.org/wiki/File:Sun_Yat-sen_Mausoleum_-_54400198691.jpg",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Sun_Yat-sen_Mausoleum_-_54400198691.jpg?width=1200"
-          }
+          },
+          "booking": true
         },
         {
           "id": "d13-meiling",
@@ -2797,7 +2859,8 @@
           },
           "optional": true,
           "meal": null,
-          "warn": false
+          "warn": false,
+          "booking": true
         },
         {
           "id": "d13-ming",
@@ -2914,6 +2977,35 @@
             "source": "https://commons.wikimedia.org/wiki/File:The_1912_Commercial_Street_in_Nanjing_06_2012-09.JPG",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/The_1912_Commercial_Street_in_Nanjing_06_2012-09.JPG?width=1200"
+          }
+        }
+      ],
+      "checklist": [
+        {
+          "id": "c08-sunyat",
+          "done": true,
+          "text": {
+            "en": "Sun Yat-sen Mausoleum: booked. Check the slot; open the QR live in WeChat (no screenshot)",
+            "ru": "Мавзолей Сунь Ятсена: забронирован. Проверьте слот; QR открывать в WeChat (не скриншот)",
+            "zh": "中山陵：已约。核对时段；二维码在微信里实时打开（截图无效）"
+          }
+        },
+        {
+          "id": "c08-meiling",
+          "done": false,
+          "text": {
+            "en": "Meiling Palace and Ming Xiaoling tickets (online or at the gate)",
+            "ru": "Билеты в дворец Мэйлин и Мин Сяолин (онлайн или в кассе)",
+            "zh": "美龄宫、明孝陵门票（网上或现场）"
+          }
+        },
+        {
+          "id": "c08-train",
+          "done": false,
+          "text": {
+            "en": "Buy tomorrow's train Nanjing station (南京站) → Suzhou, about 12:30",
+            "ru": "Купите поезд на завтра Нанкин (南京站) → Сучжоу, около 12:30",
+            "zh": "买明天约12:30 南京站 → 苏州站的车票"
           }
         }
       ]
@@ -3126,7 +3218,8 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false
+          "warn": false,
+          "booking": true
         },
         {
           "id": "d14-hotel",
@@ -3266,6 +3359,35 @@
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/1_shantang_street_canal_2023.jpg?width=1200"
           }
         }
+      ],
+      "checklist": [
+        {
+          "id": "c09-train",
+          "done": false,
+          "text": {
+            "en": "Train Nanjing station (南京站, not Nanjing South) → Suzhou about 12:30",
+            "ru": "Поезд Нанкин (南京站, не Нанкин-Южный) → Сучжоу около 12:30",
+            "zh": "约12:30 南京站（不是南京南站）→ 苏州站"
+          }
+        },
+        {
+          "id": "c09-hotel",
+          "done": false,
+          "text": {
+            "en": "Suzhou hotel near Pingjiang Road, 2 nights (9–11 Nov)",
+            "ru": "Отель в Сучжоу у Пинцзян-лу, 2 ночи (9–11 ноября)",
+            "zh": "苏州平江路附近酒店，2晚（9–11日）"
+          }
+        },
+        {
+          "id": "c09-hump",
+          "done": false,
+          "text": {
+            "en": "Book tomorrow's Humble Administrator's Garden (real-name, passport) for 07:30",
+            "ru": "Забронируйте на завтра сад Чжочжэн (по имени, паспорт) на 07:30",
+            "zh": "预约明天7:30的拙政园（实名，护照）"
+          }
+        }
       ]
     },
     {
@@ -3359,7 +3481,8 @@
             "source": "https://commons.wikimedia.org/wiki/File:Suzhou,_Humble_Administrator%27s_Garden_(03).JPG",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou,_Humble_Administrator%27s_Garden_(03).JPG?width=1200"
-          }
+          },
+          "booking": true
         },
         {
           "id": "d15-lion",
@@ -3391,7 +3514,8 @@
             "source": "https://commons.wikimedia.org/wiki/File:Lion_Grove_Garden_Suzhou_November_2017_008.jpg",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion_Grove_Garden_Suzhou_November_2017_008.jpg?width=1200"
-          }
+          },
+          "booking": true
         },
         {
           "id": "d15-lunch",
@@ -3452,6 +3576,34 @@
           }
         },
         {
+          "id": "d15-alt-tigerhill",
+          "name": {
+            "en": "If not working: Tiger Hill (虎丘)",
+            "ru": "Если без работы: Тигровый холм (虎丘)",
+            "zh": "不办公的话：虎丘"
+          },
+          "time": "13:00",
+          "category": "sight",
+          "lat": 31.3375,
+          "lng": 120.5795,
+          "placeId": null,
+          "note": {
+            "en": "Instead of the Eslite work block: Suzhou's leaning 10th-century pagoda and Sword Pool, about 2 hours, then a taxi east to Jinji Lake (about 40 minutes) for sunset.",
+            "ru": "Вместо работы в Eslite: «падающая» пагода X века и Пруд мечей, около 2 часов, затем такси на восток к озеру Цзиньцзи (около 40 минут) на закат.",
+            "zh": "代替诚品办公：苏州的10世纪斜塔和剑池，约2小时，之后打车往东约40分钟到金鸡湖看日落。"
+          },
+          "details": {
+            "en": "Ticket about ¥70–80; book online with your passport (Trip.com or the scenic area's WeChat). Taxi from the gardens about 20 minutes. The map pin is approximate.",
+            "ru": "Билет около ¥70–80; бронь онлайн по паспорту (Trip.com или WeChat парка). Такси от садов около 20 минут. Точка на карте приблизительная.",
+            "zh": "门票约¥70–80，凭护照网上预约（Trip.com或景区微信）。从园林打车约20分钟。地图定位为大致位置。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false,
+          "altFor": true,
+          "booking": true
+        },
+        {
           "id": "d15-jinji",
           "name": {
             "en": "Jinji Lake at sunset",
@@ -3508,6 +3660,44 @@
           "optional": false,
           "meal": "dinner",
           "warn": false
+        }
+      ],
+      "checklist": [
+        {
+          "id": "c10-hump",
+          "done": false,
+          "text": {
+            "en": "Humble Administrator's Garden 07:30 entry booked",
+            "ru": "Сад Чжочжэн, вход 07:30, забронирован",
+            "zh": "拙政园7:30入园已预约"
+          }
+        },
+        {
+          "id": "c10-lion",
+          "done": false,
+          "text": {
+            "en": "Lion Grove ticket (online)",
+            "ru": "Билет в сад Шицзылинь (онлайн)",
+            "zh": "狮子林门票（网上）"
+          }
+        },
+        {
+          "id": "c10-tiger",
+          "done": false,
+          "text": {
+            "en": "Only if not working: Tiger Hill ticket online",
+            "ru": "Только если без работы: билет на Тигровый холм онлайн",
+            "zh": "不办公才需要：网上买虎丘门票"
+          }
+        },
+        {
+          "id": "c10-train",
+          "done": false,
+          "text": {
+            "en": "Buy tomorrow's train Suzhou → Shanghai Hongqiao about 14:15",
+            "ru": "Купите поезд на завтра Сучжоу → Шанхай-Хунцяо около 14:15",
+            "zh": "买明天约14:15 苏州 → 上海虹桥的车票"
+          }
         }
       ]
     },
@@ -3592,7 +3782,8 @@
             "source": "https://commons.wikimedia.org/wiki/File:Lingering_Garden2.jpg",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Lingering_Garden2.jpg?width=1200"
-          }
+          },
+          "booking": true
         },
         {
           "id": "d16-checkout",
@@ -3645,7 +3836,8 @@
             "source": "https://commons.wikimedia.org/wiki/File:Suzhou_Museum_-_new_buildings.jpg",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou_Museum_-_new_buildings.jpg?width=1200"
-          }
+          },
+          "booking": true
         },
         {
           "id": "d16-lunch",
@@ -3687,7 +3879,8 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false
+          "warn": false,
+          "booking": true
         },
         {
           "id": "d16-hotel",
@@ -3773,6 +3966,53 @@
           "meal": "dinner",
           "warn": false
         }
+      ],
+      "checklist": [
+        {
+          "id": "c11-szm",
+          "done": true,
+          "text": {
+            "en": "Suzhou Museum 11:00: booked (bring the same passport)",
+            "ru": "Музей Сучжоу 11:00: забронирован (тот же паспорт)",
+            "zh": "苏州博物馆11:00：已约（带同一本护照）"
+          }
+        },
+        {
+          "id": "c11-lingering",
+          "done": false,
+          "text": {
+            "en": "Lingering Garden ticket (online)",
+            "ru": "Билет в сад Люйюань (онлайн)",
+            "zh": "留园门票（网上）"
+          }
+        },
+        {
+          "id": "c11-train",
+          "done": false,
+          "text": {
+            "en": "Train Suzhou → Shanghai Hongqiao about 14:15",
+            "ru": "Поезд Сучжоу → Шанхай-Хунцяо около 14:15",
+            "zh": "约14:15 苏州 → 上海虹桥"
+          }
+        },
+        {
+          "id": "c11-hotel",
+          "done": false,
+          "text": {
+            "en": "Shanghai hotel near a Line 2 station at Jing'an Temple, 5 nights (11–16 Nov)",
+            "ru": "Отель в Шанхае у станции линии 2 Jing'an Temple, 5 ночей (11–16 ноября)",
+            "zh": "上海静安寺2号线附近酒店，5晚（11–16日）"
+          }
+        },
+        {
+          "id": "c11-shm",
+          "done": false,
+          "text": {
+            "en": "Book Shanghai Museum East (13 Nov, morning slot) and a Shanghai Tower sunset ticket",
+            "ru": "Забронируйте восточный музей Шанхая (13 ноября, утро) и билет на закат в Шанхайскую башню",
+            "zh": "预约上博东馆（13日上午）和上海中心日落时段门票"
+          }
+        }
       ]
     },
     {
@@ -3851,6 +4091,34 @@
           "optional": false,
           "meal": null,
           "warn": false
+        },
+        {
+          "id": "d17-alt-nhm",
+          "name": {
+            "en": "If not working: Shanghai Natural History Museum",
+            "ru": "Если без работы: Шанхайский музей естествознания",
+            "zh": "不办公的话：上海自然博物馆"
+          },
+          "time": "09:00",
+          "category": "sight",
+          "lat": 31.2385,
+          "lng": 121.4555,
+          "placeId": null,
+          "note": {
+            "en": "Instead of the morning work: dinosaurs, a spiral building around a garden, 15 minutes from the hotel. About 2.5 hours.",
+            "ru": "Вместо утренней работы: динозавры, спиральное здание вокруг сада, 15 минут от отеля. Около 2,5 часа.",
+            "zh": "代替上午办公：恐龙、环绕庭院的螺旋形建筑，离酒店15分钟。约2.5小时。"
+          },
+          "details": {
+            "en": "Metro Line 13, Natural History Museum station. Closed Mondays; real-name booking in its WeChat account (bring your passport). The map pin is approximate.",
+            "ru": "Метро линии 13, станция Natural History Museum. По понедельникам закрыто; бронь по имени в его WeChat (возьмите паспорт). Точка на карте приблизительная.",
+            "zh": "地铁13号线自然博物馆站。周一闭馆；需在其微信公众号实名预约（带护照）。地图定位为大致位置。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false,
+          "altFor": true,
+          "booking": true
         },
         {
           "id": "d17-lunch",
@@ -3995,6 +4263,17 @@
           "meal": "dinner",
           "warn": false
         }
+      ],
+      "checklist": [
+        {
+          "id": "c12-nhm",
+          "done": false,
+          "text": {
+            "en": "Only if not working: Shanghai Natural History Museum (WeChat real-name booking)",
+            "ru": "Только если без работы: Шанхайский музей естествознания (бронь по имени в WeChat)",
+            "zh": "不办公才需要：上海自然博物馆（微信实名预约）"
+          }
+        }
       ]
     },
     {
@@ -4083,7 +4362,8 @@
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Museum_East.jpg",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Museum_East.jpg?width=1200"
-          }
+          },
+          "booking": true
         },
         {
           "id": "d18-lunch",
@@ -4144,6 +4424,33 @@
           }
         },
         {
+          "id": "d18-alt-century",
+          "name": {
+            "en": "If not working: Century Park (世纪公园)",
+            "ru": "Если без работы: парк Века (世纪公园)",
+            "zh": "不办公的话：世纪公园"
+          },
+          "time": "13:30",
+          "category": "sight",
+          "lat": 31.2195,
+          "lng": 121.5515,
+          "placeId": null,
+          "note": {
+            "en": "Instead of working at the library: Shanghai's largest park, right next to the museum, with a lake and autumn colours; a slow 1.5–2 hours before the Shanghai Tower.",
+            "ru": "Вместо работы в библиотеке: самый большой парк Шанхая, прямо рядом с музеем, с озером и осенними красками; неспешные 1,5–2 часа перед Шанхайской башней.",
+            "zh": "代替图书馆办公：上海最大的公园，就在博物馆旁，有湖和秋色；悠闲走1.5–2小时再去上海中心。"
+          },
+          "details": {
+            "en": "Ticket about ¥10 (verify). The map pin is approximate.",
+            "ru": "Билет около ¥10 (проверьте). Точка на карте приблизительная.",
+            "zh": "门票约¥10（请核实）。地图定位为大致位置。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false,
+          "altFor": true
+        },
+        {
           "id": "d18-tower",
           "name": {
             "en": "Shanghai Tower, Top of Shanghai (118F)",
@@ -4173,7 +4480,8 @@
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Tower_Night_View.jpg",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Tower_Night_View.jpg?width=1200"
-          }
+          },
+          "booking": true
         },
         {
           "id": "d18-dinner",
@@ -4200,6 +4508,26 @@
           "optional": false,
           "meal": "dinner",
           "warn": false
+        }
+      ],
+      "checklist": [
+        {
+          "id": "c13-shm",
+          "done": false,
+          "text": {
+            "en": "Shanghai Museum East timed slot (closed Tuesdays)",
+            "ru": "Слот в восточный музей Шанхая (по вторникам закрыто)",
+            "zh": "上博东馆分时段预约（周二闭馆）"
+          }
+        },
+        {
+          "id": "c13-tower",
+          "done": false,
+          "text": {
+            "en": "Shanghai Tower timed ticket around 16:45 (Trip.com or «上海之巅观光厅»)",
+            "ru": "Билет со временем в Шанхайскую башню около 16:45 (Trip.com или «上海之巅观光厅»)",
+            "zh": "上海中心约16:45时段门票（Trip.com或「上海之巅观光厅」）"
+          }
         }
       ]
     },
@@ -4323,6 +4651,33 @@
           }
         },
         {
+          "id": "d19-alt-xujiahui",
+          "name": {
+            "en": "If not working: Xujiahui Cathedral and Xujiahui Library",
+            "ru": "Если без работы: собор и библиотека Сюйцзяхуэй",
+            "zh": "不办公的话：徐家汇天主堂与徐家汇书院"
+          },
+          "time": "12:30",
+          "category": "sight",
+          "lat": 31.1945,
+          "lng": 121.4365,
+          "placeId": null,
+          "note": {
+            "en": "Instead of working at the library: the 1910 twin-spired cathedral and the new library-in-a-garden across the road, on the way to the West Bund. About 1.5 hours.",
+            "ru": "Вместо работы в библиотеке: собор 1910 года с двумя шпилями и новая библиотека-в-саду через дорогу, по пути к West Bund. Около 1,5 часа.",
+            "zh": "代替图书馆办公：1910年建的双尖塔天主堂，以及马路对面的园林式新书院，正好在去徐汇滨江的路上。约1.5小时。"
+          },
+          "details": {
+            "en": "Metro Line 1/9/11, Xujiahui. Cathedral visiting hours vary; the library may ask for a passport (verify both). The map pin is approximate.",
+            "ru": "Метро линий 1/9/11, Xujiahui. Часы посещения собора меняются; в библиотеке могут попросить паспорт (проверьте). Точка на карте приблизительная.",
+            "zh": "地铁1/9/11号线徐家汇站。天主堂开放时间不定；书院可能需出示护照（请核实）。地图定位为大致位置。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false,
+          "altFor": true
+        },
+        {
           "id": "d19-longmuseum",
           "name": {
             "en": "Long Museum West Bund",
@@ -4352,7 +4707,8 @@
             "source": "https://commons.wikimedia.org/wiki/File:20251129_Long_Museum_West_Bund_(II).jpg",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/20251129_Long_Museum_West_Bund_(II).jpg?width=1200"
-          }
+          },
+          "booking": true
         },
         {
           "id": "d19-westbund",
@@ -4405,6 +4761,26 @@
           "optional": false,
           "meal": "dinner",
           "warn": false
+        }
+      ],
+      "checklist": [
+        {
+          "id": "c14-long",
+          "done": false,
+          "text": {
+            "en": "Long Museum West Bund ticket, if the current show appeals",
+            "ru": "Билет в Long Museum West Bund, если нравится выставка",
+            "zh": "龙美术馆西岸馆门票（如对展览感兴趣）"
+          }
+        },
+        {
+          "id": "c14-shuiguo",
+          "done": false,
+          "text": {
+            "en": "Buy tomorrow's Shuiguo Tangquan package (Dianping/Meituan or Trip.com)",
+            "ru": "Купите пакет Shuiguo Tangquan на завтра (Dianping/Meituan или Trip.com)",
+            "zh": "购买明天的水裹汤泉套餐（大众点评/美团或Trip.com）"
+          }
         }
       ]
     },
@@ -4520,7 +4896,8 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false
+          "warn": false,
+          "booking": true
         },
         {
           "id": "d20-lunch",
@@ -4570,6 +4947,33 @@
           "warn": false
         },
         {
+          "id": "d20-alt-soak",
+          "name": {
+            "en": "If not working: soak, sauna and nap",
+            "ru": "Если без работы: купальни, сауна и сон",
+            "zh": "不办公的话：泡汤、汗蒸、午睡"
+          },
+          "time": "14:00",
+          "category": "sight",
+          "lat": 31.299,
+          "lng": 121.514,
+          "placeId": null,
+          "note": {
+            "en": "Stay in the pools and the four saunas, nap in a rest pod or watch a film in the cinema; it is all in the ticket.",
+            "ru": "Оставайтесь в купальнях и четырёх саунах, поспите в капсуле или посмотрите фильм в кинозале — всё входит в билет.",
+            "zh": "继续泡池子、四种汗蒸轮着来，去休息舱睡一觉或在影院看电影，都含在门票里。"
+          },
+          "details": {
+            "en": "Included in the bathhouse ticket.",
+            "ru": "Входит в билет в бани.",
+            "zh": "含在汤泉门票内。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false,
+          "altFor": true
+        },
+        {
           "id": "d20-massage",
           "name": {
             "en": "Massage or TCM treatment",
@@ -4610,6 +5014,26 @@
           "optional": false,
           "meal": "dinner",
           "warn": false
+        }
+      ],
+      "checklist": [
+        {
+          "id": "c15-shuiguo",
+          "done": false,
+          "text": {
+            "en": "Shuiguo Tangquan package bought; passport for check-in",
+            "ru": "Пакет Shuiguo Tangquan куплен; паспорт для входа",
+            "zh": "水裹汤泉套餐已买；入场带护照"
+          }
+        },
+        {
+          "id": "c15-checkin",
+          "done": false,
+          "text": {
+            "en": "Online check-in for tomorrow's flight to Kuala Lumpur",
+            "ru": "Онлайн-регистрация на завтрашний рейс в Куала-Лумпур",
+            "zh": "办理明天回吉隆坡航班的网上值机"
+          }
         }
       ]
     },
@@ -4736,6 +5160,17 @@
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Pudong_International_Airport.jpg",
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Pudong_International_Airport.jpg?width=1200"
+          }
+        }
+      ],
+      "checklist": [
+        {
+          "id": "c16-flight",
+          "done": false,
+          "text": {
+            "en": "Leave the hotel 4.5 hours before the flight; passport and boarding pass at hand",
+            "ru": "Выезд из отеля за 4,5 часа до рейса; паспорт и посадочный под рукой",
+            "zh": "航班前4.5小时离开酒店；护照、登机牌随身"
           }
         }
       ]
