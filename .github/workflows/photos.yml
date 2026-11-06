@@ -1,0 +1,33 @@
+name: Fetch photos
+
+on:
+  push:
+    branches: [main]
+    paths: ["east-china-trip-data.i18n.json", "scripts/fetch_photos.py"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-photos
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - run: python scripts/fetch_photos.py
+      - name: Commit downloaded photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add photos east-china-trip-data.i18n.json
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "Download trip photos to photos/"
+          git push

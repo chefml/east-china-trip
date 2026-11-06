@@ -456,6 +456,23 @@ body {
 
 .loc__photo-credit a { color: #fff; text-decoration: none; }
 
+/* Точка без фото: ссылка на поиск фотографий на месте фото */
+.loc__photo-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: -12px -14px 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: var(--border);
+  color: inherit;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.loc__photo-search::before { content: "📷"; }
+
 .btn--wide {
   width: 100%;
 }

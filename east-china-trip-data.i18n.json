@@ -1,7 +1,7 @@
 {
   "_instructions": {
-    "en": "Multilingual dataset for the East China trip PWA (27 Oct – 16 Nov 2026). Text fields (trip.title, trip.overview, day.title/weekday/focus/roads/clothing/extra, location.name/note/details, general, legend, appGuide, dining) are objects {en,ru,zh}: pick the active language. UI strings live in 'ui' keyed by language code. 'location.category' and 'location.meal' are language-independent codes; look up display labels in ui[lang].categories / ui[lang].meals. New categories compared with the Chiang Mai file: transit, museum, sight, work (a laptop work block or work spot). Google Maps links use lat/lng + placeId (name is cosmetic only); placeId may be null. A top-level 'dining' object holds standalone dinner options: {title, intro, places[]} (same schema as a location, time=null, meal=null) and is rendered as the 4th tab (ui[lang].tabDining). 'day.day' is the sequential trip day (1..21), 'day.date' is the calendar date. 'location.details' is an optional expanded reference. Build a language switcher over trip.languages; default = trip.defaultLanguage. 'location.image' (from day 11, Nanjing, onward) is either null or {url, source, credit}: url is a Wikimedia Commons Special:FilePath link scaled to 1200 px wide, to show as the stop's photo; source is the Commons file page (license and author), which the app should link from the credit line.",
-    "ru": "Мультиязычный датасет для PWA поездки по Восточному Китаю (27 октября – 16 ноября 2026). Текстовые поля — объекты {en,ru,zh}. Строки интерфейса — в 'ui' по коду языка. Коды 'category'/'meal' языконезависимы, подписи берутся из ui[lang]. Новые категории относительно файла Чиангмая: transit, museum, sight, work (рабочий блок или место для работы). Ссылки Google Maps строятся по lat/lng + placeId (placeId может быть null). Верхнеуровневый объект 'dining' — отдельные опции для ужина {title, intro, places[]}, выводится 4-й вкладкой (ui[lang].tabDining). 'day.day' — сквозной номер дня поездки (1..21), 'day.date' — календарная дата. 'location.details' — необязательный расширенный справочник. Переключатель языка — по trip.languages, по умолчанию trip.defaultLanguage. 'location.image' (с 11-го дня, Нанкин) — null или {url, source, credit}: url — ссылка Wikimedia Commons Special:FilePath шириной 1200 px для фото точки; source — страница файла на Commons (лицензия и автор), на неё должна вести подпись с источником."
+    "en": "Multilingual dataset for the East China trip PWA (27 Oct – 16 Nov 2026). Text fields (trip.title, trip.overview, day.title/weekday/focus/roads/clothing/extra, location.name/note/details, general, legend, appGuide, dining) are objects {en,ru,zh}: pick the active language. UI strings live in 'ui' keyed by language code. 'location.category' and 'location.meal' are language-independent codes; look up display labels in ui[lang].categories / ui[lang].meals. New categories compared with the Chiang Mai file: transit, museum, sight, work (a laptop work block or work spot). Google Maps links use lat/lng + placeId (name is cosmetic only); placeId may be null. A top-level 'dining' object holds standalone dinner options: {title, intro, places[]} (same schema as a location, time=null, meal=null) and is rendered as the 4th tab (ui[lang].tabDining). 'day.day' is the sequential trip day (1..21), 'day.date' is the calendar date. 'location.details' is an optional expanded reference. Build a language switcher over trip.languages; default = trip.defaultLanguage. 'location.photo' is optional: {src, source, credit}. src is a repo-relative file in photos/ (downloaded from Wikimedia Commons by .github/workflows/photos.yml) or, until the download has run, the remote Commons URL; source is the Commons file page and credit the credit line. Stops without a photo get a photo-search link instead.",
+    "ru": "Мультиязычный датасет для PWA поездки по Восточному Китаю (27 октября – 16 ноября 2026). Текстовые поля — объекты {en,ru,zh}. Строки интерфейса — в 'ui' по коду языка. Коды 'category'/'meal' языконезависимы, подписи берутся из ui[lang]. Новые категории относительно файла Чиангмая: transit, museum, sight, work (рабочий блок или место для работы). Ссылки Google Maps строятся по lat/lng + placeId (placeId может быть null). Верхнеуровневый объект 'dining' — отдельные опции для ужина {title, intro, places[]}, выводится 4-й вкладкой (ui[lang].tabDining). 'day.day' — сквозной номер дня поездки (1..21), 'day.date' — календарная дата. 'location.details' — необязательный расширенный справочник. Переключатель языка — по trip.languages, по умолчанию trip.defaultLanguage. 'location.photo' необязателен: {src, source, credit}. src — файл в photos/ внутри репозитория (его скачивает с Wikimedia Commons .github/workflows/photos.yml) или, пока скачивание не прошло, исходный URL Commons; source — страница файла на Commons, credit — подпись. Для точек без фото показывается ссылка на поиск фотографий."
   },
   "trip": {
     "title": {
@@ -2239,8 +2239,7 @@
           },
           "optional": false,
           "meal": "main",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d11-checkout",
@@ -2261,8 +2260,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d11-train",
@@ -2283,8 +2281,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d11-arrive",
@@ -2305,8 +2302,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d11-hotel",
@@ -2332,8 +2328,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": true,
-          "image": null
+          "warn": true
         },
         {
           "id": "d11-fuzimiao",
@@ -2360,8 +2355,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Temple_and_Qinhuai_River,_Nanjing_Night.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Temple_and_Qinhuai_River,_Nanjing_Night.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Confucius_Temple_and_Qinhuai_River,_Nanjing_Night.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -2386,8 +2381,8 @@
           "optional": true,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Qinhuai_River_Night.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Qinhuai_River_Night.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Qinhuai_River_Night.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -2412,8 +2407,8 @@
           "optional": false,
           "meal": "dinner",
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Laomendong,_Nanjing.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Laomendong,_Nanjing.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Laomendong,_Nanjing.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -2474,8 +2469,7 @@
           },
           "optional": false,
           "meal": "breakfast",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d12-memorial",
@@ -2502,8 +2496,8 @@
           "optional": true,
           "meal": null,
           "warn": true,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Memorial_Hall_to_the_Victims_in_Nanjing_Massacre.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Memorial_Hall_to_the_Victims_in_Nanjing_Massacre.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Memorial_Hall_to_the_Victims_in_Nanjing_Massacre.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -2532,8 +2526,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d12-lunch",
@@ -2559,8 +2552,7 @@
           },
           "optional": false,
           "meal": "main",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d12-foding",
@@ -2586,8 +2578,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d12-pagoda",
@@ -2613,8 +2604,7 @@
           },
           "optional": true,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d12-nantang",
@@ -2640,8 +2630,7 @@
           },
           "optional": true,
           "meal": null,
-          "warn": true,
-          "image": null
+          "warn": true
         },
         {
           "id": "d12-back",
@@ -2662,8 +2651,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d12-dinner",
@@ -2689,8 +2677,7 @@
             "en": "Suggested from general knowledge, not checked live: confirm the address, hours and queue on Dianping (大众点评) or Amap. The map pin marks the area, so navigate by the restaurant name.",
             "ru": "Рекомендация по общим сведениям, не проверена в реальном времени: адрес, часы и очередь уточните в Dianping (大众点评) или Amap. Точка на карте отмечает район — ищите по названию ресторана.",
             "zh": "根据常识推荐，未实时核实：地址、营业时间和排队情况请在大众点评或高德确认。地图定位为大致区域，请按店名导航。"
-          },
-          "image": null
+          }
         }
       ]
     },
@@ -2748,8 +2735,7 @@
           },
           "optional": false,
           "meal": "breakfast",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d13-sunyat",
@@ -2776,8 +2762,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sun_Yat-sen_Mausoleum_-_54400198691.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sun_Yat-sen_Mausoleum_-_54400198691.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Sun_Yat-sen_Mausoleum_-_54400198691.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -2806,8 +2792,7 @@
           },
           "optional": true,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d13-ming",
@@ -2829,8 +2814,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Elephant_Road_-_elephants_-_P1060469.JPG?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Elephant_Road_-_elephants_-_P1060469.JPG?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Stone_Elephant_Road_-_elephants_-_P1060469.JPG",
             "credit": "Wikimedia Commons"
           }
@@ -2859,8 +2844,7 @@
           },
           "optional": false,
           "meal": "main",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d13-tangshan",
@@ -2887,8 +2871,8 @@
           "optional": true,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skull_of_Nanjingren.JPG?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Skull_of_Nanjingren.JPG?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Skull_of_Nanjingren.JPG",
             "credit": "Wikimedia Commons"
           }
@@ -2918,8 +2902,8 @@
           "optional": false,
           "meal": "dinner",
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_1912_Commercial_Street_in_Nanjing_06_2012-09.JPG?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_1912_Commercial_Street_in_Nanjing_06_2012-09.JPG?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:The_1912_Commercial_Street_in_Nanjing_06_2012-09.JPG",
             "credit": "Wikimedia Commons"
           }
@@ -2980,8 +2964,7 @@
           },
           "optional": false,
           "meal": "breakfast",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d14-jiming",
@@ -3008,8 +2991,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jiming_Temple_Nanjing,_2019.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jiming_Temple_Nanjing,_2019.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Jiming_Temple_Nanjing,_2019.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3039,8 +3022,8 @@
           "optional": true,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/City_Wall_of_Nanjing.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/City_Wall_of_Nanjing.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:City_Wall_of_Nanjing.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3065,8 +3048,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/XuanWuLake_all.JPG?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/XuanWuLake_all.JPG?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:XuanWuLake_all.JPG",
             "credit": "Wikimedia Commons"
           }
@@ -3090,8 +3073,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d14-lunch",
@@ -3112,8 +3094,7 @@
           },
           "optional": false,
           "meal": "main",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d14-train",
@@ -3134,8 +3115,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d14-hotel",
@@ -3161,8 +3141,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": true,
-          "image": null
+          "warn": true
         },
         {
           "id": "d14-pingjiang",
@@ -3184,8 +3163,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_of_Pingjiang_Road,_Gusu,_Suzhou,_Jiangsu,_China,_215000.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_of_Pingjiang_Road,_Gusu,_Suzhou,_Jiangsu,_China,_215000.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Riverside_of_Pingjiang_Road,_Gusu,_Suzhou,_Jiangsu,_China,_215000.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3214,8 +3193,7 @@
           },
           "optional": false,
           "meal": "dinner",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d14-shantang",
@@ -3242,8 +3220,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/1_shantang_street_canal_2023.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1_shantang_street_canal_2023.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:1_shantang_street_canal_2023.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3268,8 +3246,8 @@
           "optional": true,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/1_shantang_street_canal_2023.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1_shantang_street_canal_2023.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:1_shantang_street_canal_2023.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3335,8 +3313,7 @@
           },
           "optional": false,
           "meal": "breakfast",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d15-hump",
@@ -3363,8 +3340,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou,_Humble_Administrator%27s_Garden_(03).JPG?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou,_Humble_Administrator%27s_Garden_(03).JPG?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Suzhou,_Humble_Administrator%27s_Garden_(03).JPG",
             "credit": "Wikimedia Commons"
           }
@@ -3394,8 +3371,8 @@
           "optional": true,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion_Grove_Garden_Suzhou_November_2017_008.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion_Grove_Garden_Suzhou_November_2017_008.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Lion_Grove_Garden_Suzhou_November_2017_008.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3424,8 +3401,7 @@
             "en": "Suggested from general knowledge, not checked live: confirm the address, hours and queue on Dianping (大众点评) or Amap. The map pin marks the area, so navigate by the restaurant name.",
             "ru": "Рекомендация по общим сведениям, не проверена в реальном времени: адрес, часы и очередь уточните в Dianping (大众点评) или Amap. Точка на карте отмечает район — ищите по названию ресторана.",
             "zh": "根据常识推荐，未实时核实：地址、营业时间和排队情况请在大众点评或高德确认。地图定位为大致区域，请按店名导航。"
-          },
-          "image": null
+          }
         },
         {
           "id": "d15-work",
@@ -3452,8 +3428,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eslite_Bookstore_Suzhou_Store.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Eslite_Bookstore_Suzhou_Store.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Eslite_Bookstore_Suzhou_Store.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3483,8 +3459,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jinji_Lake_66686-Suzhou_(49176972326).jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jinji_Lake_66686-Suzhou_(49176972326).jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Jinji_Lake_66686-Suzhou_(49176972326).jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3513,8 +3489,7 @@
           },
           "optional": false,
           "meal": "dinner",
-          "warn": false,
-          "image": null
+          "warn": false
         }
       ]
     },
@@ -3572,8 +3547,7 @@
           },
           "optional": false,
           "meal": "breakfast",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d16-lingering",
@@ -3595,8 +3569,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lingering_Garden2.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lingering_Garden2.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Lingering_Garden2.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3620,8 +3594,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d16-szmuseum",
@@ -3648,8 +3621,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou_Museum_-_new_buildings.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou_Museum_-_new_buildings.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Suzhou_Museum_-_new_buildings.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3673,8 +3646,7 @@
           },
           "optional": false,
           "meal": "main",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d16-train",
@@ -3695,8 +3667,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d16-hotel",
@@ -3722,8 +3693,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": true,
-          "image": null
+          "warn": true
         },
         {
           "id": "d16-zhangyuan",
@@ -3750,8 +3720,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/A_Type_of_Shikumen_Gable_in_ZhangYuan_Shanghai.JPG?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/A_Type_of_Shikumen_Gable_in_ZhangYuan_Shanghai.JPG?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:A_Type_of_Shikumen_Gable_in_ZhangYuan_Shanghai.JPG",
             "credit": "Wikimedia Commons"
           }
@@ -3780,8 +3750,7 @@
           },
           "optional": false,
           "meal": "dinner",
-          "warn": false,
-          "image": null
+          "warn": false
         }
       ]
     },
@@ -3839,8 +3808,7 @@
           },
           "optional": false,
           "meal": "breakfast",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d17-work",
@@ -3861,8 +3829,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d17-lunch",
@@ -3883,8 +3850,7 @@
           },
           "optional": false,
           "meal": "main",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d17-millfun",
@@ -3911,8 +3877,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2024-Apr_Shanghai_1933_Old_Millfun_(Old_Slaughterhouse)_1933%E8%80%81%E5%9C%BA%E5%9D%8A_-_img_12.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2024-Apr_Shanghai_1933_Old_Millfun_(Old_Slaughterhouse)_1933%E8%80%81%E5%9C%BA%E5%9D%8A_-_img_12.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:2024-Apr_Shanghai_1933_Old_Millfun_(Old_Slaughterhouse)_1933%E8%80%81%E5%9C%BA%E5%9D%8A_-_img_12.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -3942,8 +3908,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/250_Duolun_Rd._Shanghai.JPG?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/250_Duolun_Rd._Shanghai.JPG?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:250_Duolun_Rd._Shanghai.JPG",
             "credit": "Wikimedia Commons"
           }
@@ -3973,8 +3939,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Waibaidu_Bridge_Shanghai.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Waibaidu_Bridge_Shanghai.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Waibaidu_Bridge_Shanghai.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -4003,8 +3969,7 @@
           },
           "optional": false,
           "meal": "dinner",
-          "warn": false,
-          "image": null
+          "warn": false
         }
       ]
     },
@@ -4062,8 +4027,7 @@
           },
           "optional": false,
           "meal": "breakfast",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d18-shmuseum",
@@ -4090,8 +4054,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Museum_East.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Museum_East.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Museum_East.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -4120,8 +4084,7 @@
           },
           "optional": false,
           "meal": "main",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d18-work",
@@ -4148,8 +4111,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Library_East-Exterior_East-20250430.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Library_East-Exterior_East-20250430.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Library_East-Exterior_East-20250430.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -4179,8 +4142,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Tower_Night_View.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Tower_Night_View.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Tower_Night_View.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -4209,8 +4172,7 @@
           },
           "optional": false,
           "meal": "dinner",
-          "warn": false,
-          "image": null
+          "warn": false
         }
       ]
     },
@@ -4273,8 +4235,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d19-brunch",
@@ -4300,8 +4261,7 @@
           },
           "optional": false,
           "meal": "main",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d19-work",
@@ -4328,8 +4288,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Library_2.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Library_2.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Library_2.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -4359,8 +4319,8 @@
           "optional": true,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/20251129_Long_Museum_West_Bund_(II).jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/20251129_Long_Museum_West_Bund_(II).jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:20251129_Long_Museum_West_Bund_(II).jpg",
             "credit": "Wikimedia Commons"
           }
@@ -4389,8 +4349,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d19-dinner",
@@ -4416,8 +4375,7 @@
           },
           "optional": false,
           "meal": "dinner",
-          "warn": false,
-          "image": null
+          "warn": false
         }
       ]
     },
@@ -4475,8 +4433,7 @@
           },
           "optional": false,
           "meal": "breakfast",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d20-yangpu",
@@ -4503,8 +4460,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/HUANGPU-RIVER_FROM_YANGPU-OFFICE_by_NIX-SUNYATA,_2018.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/HUANGPU-RIVER_FROM_YANGPU-OFFICE_by_NIX-SUNYATA,_2018.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:HUANGPU-RIVER_FROM_YANGPU-OFFICE_by_NIX-SUNYATA,_2018.jpg",
             "credit": "Wikimedia Commons"
           }
@@ -4533,8 +4490,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d20-lunch",
@@ -4555,8 +4511,7 @@
           },
           "optional": false,
           "meal": "main",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d20-work",
@@ -4582,8 +4537,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d20-massage",
@@ -4604,8 +4558,7 @@
           },
           "optional": true,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d20-dinner",
@@ -4626,8 +4579,7 @@
           },
           "optional": false,
           "meal": "dinner",
-          "warn": false,
-          "image": null
+          "warn": false
         }
       ]
     },
@@ -4685,8 +4637,7 @@
           },
           "optional": false,
           "meal": "breakfast",
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d21-checkout",
@@ -4707,8 +4658,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d21-metro",
@@ -4729,8 +4679,7 @@
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "image": null
+          "warn": false
         },
         {
           "id": "d21-departure",
@@ -4752,8 +4701,8 @@
           "optional": false,
           "meal": null,
           "warn": false,
-          "image": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Pudong_International_Airport.jpg?width=1200",
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Pudong_International_Airport.jpg?width=1200",
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Pudong_International_Airport.jpg",
             "credit": "Wikimedia Commons"
           }

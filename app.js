@@ -23,6 +23,7 @@
       footer: "Offline trip plan. Navigation opens in Google Maps.",
       amap: "Amap",
       photoAlt: "Photo: ",
+      photoSearch: "Photos of this place",
       months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     },
     ru: {
@@ -38,6 +39,7 @@
       footer: "Офлайн-план поездки. Навигация — в Google Maps.",
       amap: "Amap",
       photoAlt: "Фото: ",
+      photoSearch: "Фото этого места",
       months: ["янв", "фев", "мар", "апр", "мая", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"]
     },
     zh: {
@@ -53,6 +55,7 @@
       footer: "离线行程计划。导航将在 Google Maps 中打开。",
       amap: "高德地图",
       photoAlt: "照片：",
+      photoSearch: "查看这里的照片",
       months: null /* zh использует числовой формат: 2026年8月8日 */
     }
   };
@@ -328,9 +331,10 @@
     return box;
   }
 
-  /* Фото достопримечательности грузится прямо с Wikimedia и нигде не сохраняется
-     (SW чужие домены не кэширует). Не загрузилось — карточка просто без фото.
-     Тап открывает точку в Amap, подпись — автор и лицензия. */
+  /* Фото достопримечательности: photos/<id>.jpg в самом репозитории (скачивает
+     .github/workflows/photos.yml; Wikimedia в Китае заблокирован, а SW кэширует только
+     свой домен — так фото работают и офлайн). До скачивания src — URL Commons.
+     Не загрузилось — карточка просто без фото. Тап открывает точку в Amap, подпись — автор и лицензия. */
   function renderPhoto(loc) {
     var fig = el("figure", "loc__photo");
     var img = document.createElement("img");
@@ -359,11 +363,27 @@
     return fig;
   }
 
+  /* Для точки без собственного фото — ссылка на поиск фотографий на её месте.
+     Baidu, а не Google: Google в материковом Китае заблокирован. Ищем по китайскому
+     названию без пометок в скобках («（如开放）» и т. п.). */
+  var NO_PHOTO_SEARCH = { transit: 1, hotel: 1, work: 1 };
+
+  function photoSearchUrl(loc) {
+    var name = (loc.name && (loc.name.zh || loc.name.en)) || localized(loc.name) || "";
+    name = name.replace(/[（(][^）)]*[）)]/g, "").replace(/^[^：:]*[：:]/, "").trim();
+    return "https://image.baidu.com/search/index?tn=baiduimage&word=" + encodeURIComponent(name);
+  }
+
+  function renderPhotoSearch(loc) {
+    return mapsLink("loc__photo-search", t("photoSearch"), photoSearchUrl(loc));
+  }
+
   function renderLocation(loc) {
     var item = el("li", "loc");
     if (loc.optional) item.classList.add("loc--optional");
     if (loc.warn) item.classList.add("loc--warn");
     if (loc.photo && loc.photo.src) item.appendChild(renderPhoto(loc));
+    else if (!loc.meal && !NO_PHOTO_SEARCH[loc.category]) item.appendChild(renderPhotoSearch(loc));
 
     var head = el("div", "loc__head");
     /* Места из «Ужина» не привязаны ко времени — чип просто не рисуем.
