@@ -2356,9 +2356,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Temple_and_Qinhuai_River,_Nanjing_Night.jpg?width=1200",
+            "src": "photos/d11-fuzimiao.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Confucius_Temple_and_Qinhuai_River,_Nanjing_Night.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Temple_and_Qinhuai_River,_Nanjing_Night.jpg?width=1200"
           }
         },
         {
@@ -2382,9 +2383,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Qinhuai_River_Night.jpg?width=1200",
+            "src": "photos/d11-boat.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Qinhuai_River_Night.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Qinhuai_River_Night.jpg?width=1200"
           }
         },
         {
@@ -2408,9 +2410,10 @@
           "meal": "dinner",
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Laomendong,_Nanjing.jpg?width=1200",
+            "src": "photos/d11-laomendong.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Laomendong,_Nanjing.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Laomendong,_Nanjing.jpg?width=1200"
           }
         }
       ]
@@ -2497,9 +2500,10 @@
           "meal": null,
           "warn": true,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Memorial_Hall_to_the_Victims_in_Nanjing_Massacre.jpg?width=1200",
+            "src": "photos/d12-memorial.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Memorial_Hall_to_the_Victims_in_Nanjing_Massacre.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Memorial_Hall_to_the_Victims_in_Nanjing_Massacre.jpg?width=1200"
           }
         },
         {
@@ -2763,9 +2767,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sun_Yat-sen_Mausoleum_-_54400198691.jpg?width=1200",
+            "src": "photos/d13-sunyat.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Sun_Yat-sen_Mausoleum_-_54400198691.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Sun_Yat-sen_Mausoleum_-_54400198691.jpg?width=1200"
           }
         },
         {
@@ -2815,9 +2820,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Elephant_Road_-_elephants_-_P1060469.JPG?width=1200",
+            "src": "photos/d13-ming.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Stone_Elephant_Road_-_elephants_-_P1060469.JPG",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Stone_Elephant_Road_-_elephants_-_P1060469.JPG?width=1200"
           }
         },
         {
@@ -2872,9 +2878,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Skull_of_Nanjingren.JPG?width=1200",
+            "src": "photos/d13-tangshan.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Skull_of_Nanjingren.JPG",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Skull_of_Nanjingren.JPG?width=1200"
           }
         },
         {
@@ -2903,9 +2910,10 @@
           "meal": "dinner",
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_1912_Commercial_Street_in_Nanjing_06_2012-09.JPG?width=1200",
+            "src": "photos/d13-1912.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:The_1912_Commercial_Street_in_Nanjing_06_2012-09.JPG",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/The_1912_Commercial_Street_in_Nanjing_06_2012-09.JPG?width=1200"
           }
         }
       ]
@@ -2992,9 +3000,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jiming_Temple_Nanjing,_2019.jpg?width=1200",
+            "src": "photos/d14-jiming.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Jiming_Temple_Nanjing,_2019.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Jiming_Temple_Nanjing,_2019.jpg?width=1200"
           }
         },
         {
@@ -3023,9 +3032,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/City_Wall_of_Nanjing.jpg?width=1200",
+            "src": "photos/d14-wall.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:City_Wall_of_Nanjing.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/City_Wall_of_Nanjing.jpg?width=1200"
           }
         },
         {
@@ -3049,9 +3059,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/XuanWuLake_all.JPG?width=1200",
+            "src": "photos/d14-xuanwu.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:XuanWuLake_all.JPG",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/XuanWuLake_all.JPG?width=1200"
           }
         },
         {
@@ -3164,9 +3175,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_of_Pingjiang_Road,_Gusu,_Suzhou,_Jiangsu,_China,_215000.jpg?width=1200",
+            "src": "photos/d14-pingjiang.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Riverside_of_Pingjiang_Road,_Gusu,_Suzhou,_Jiangsu,_China,_215000.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Riverside_of_Pingjiang_Road,_Gusu,_Suzhou,_Jiangsu,_China,_215000.jpg?width=1200"
           }
         },
         {
@@ -3221,9 +3233,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1_shantang_street_canal_2023.jpg?width=1200",
+            "src": "photos/d14-shantang.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:1_shantang_street_canal_2023.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/1_shantang_street_canal_2023.jpg?width=1200"
           }
         },
         {
@@ -3247,9 +3260,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1_shantang_street_canal_2023.jpg?width=1200",
+            "src": "photos/d14-boat.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:1_shantang_street_canal_2023.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/1_shantang_street_canal_2023.jpg?width=1200"
           }
         }
       ]
@@ -3341,9 +3355,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou,_Humble_Administrator%27s_Garden_(03).JPG?width=1200",
+            "src": "photos/d15-hump.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Suzhou,_Humble_Administrator%27s_Garden_(03).JPG",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou,_Humble_Administrator%27s_Garden_(03).JPG?width=1200"
           }
         },
         {
@@ -3372,9 +3387,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion_Grove_Garden_Suzhou_November_2017_008.jpg?width=1200",
+            "src": "photos/d15-lion.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Lion_Grove_Garden_Suzhou_November_2017_008.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion_Grove_Garden_Suzhou_November_2017_008.jpg?width=1200"
           }
         },
         {
@@ -3429,9 +3445,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Eslite_Bookstore_Suzhou_Store.jpg?width=1200",
+            "src": "photos/d15-work.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Eslite_Bookstore_Suzhou_Store.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Eslite_Bookstore_Suzhou_Store.jpg?width=1200"
           }
         },
         {
@@ -3460,9 +3477,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jinji_Lake_66686-Suzhou_(49176972326).jpg?width=1200",
+            "src": "photos/d15-jinji.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Jinji_Lake_66686-Suzhou_(49176972326).jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Jinji_Lake_66686-Suzhou_(49176972326).jpg?width=1200"
           }
         },
         {
@@ -3570,9 +3588,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lingering_Garden2.jpg?width=1200",
+            "src": "photos/d16-lingering.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Lingering_Garden2.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Lingering_Garden2.jpg?width=1200"
           }
         },
         {
@@ -3622,9 +3641,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou_Museum_-_new_buildings.jpg?width=1200",
+            "src": "photos/d16-szmuseum.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Suzhou_Museum_-_new_buildings.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou_Museum_-_new_buildings.jpg?width=1200"
           }
         },
         {
@@ -3721,9 +3741,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/A_Type_of_Shikumen_Gable_in_ZhangYuan_Shanghai.JPG?width=1200",
+            "src": "photos/d16-zhangyuan.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:A_Type_of_Shikumen_Gable_in_ZhangYuan_Shanghai.JPG",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/A_Type_of_Shikumen_Gable_in_ZhangYuan_Shanghai.JPG?width=1200"
           }
         },
         {
@@ -3878,9 +3899,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2024-Apr_Shanghai_1933_Old_Millfun_(Old_Slaughterhouse)_1933%E8%80%81%E5%9C%BA%E5%9D%8A_-_img_12.jpg?width=1200",
+            "src": "photos/d17-millfun.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:2024-Apr_Shanghai_1933_Old_Millfun_(Old_Slaughterhouse)_1933%E8%80%81%E5%9C%BA%E5%9D%8A_-_img_12.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/2024-Apr_Shanghai_1933_Old_Millfun_(Old_Slaughterhouse)_1933%E8%80%81%E5%9C%BA%E5%9D%8A_-_img_12.jpg?width=1200"
           }
         },
         {
@@ -3909,9 +3931,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/250_Duolun_Rd._Shanghai.JPG?width=1200",
+            "src": "photos/d17-duolun.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:250_Duolun_Rd._Shanghai.JPG",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/250_Duolun_Rd._Shanghai.JPG?width=1200"
           }
         },
         {
@@ -3940,9 +3963,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Waibaidu_Bridge_Shanghai.jpg?width=1200",
+            "src": "photos/d17-northbund.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Waibaidu_Bridge_Shanghai.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Waibaidu_Bridge_Shanghai.jpg?width=1200"
           }
         },
         {
@@ -4055,9 +4079,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Museum_East.jpg?width=1200",
+            "src": "photos/d18-shmuseum.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Museum_East.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Museum_East.jpg?width=1200"
           }
         },
         {
@@ -4112,9 +4137,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Library_East-Exterior_East-20250430.jpg?width=1200",
+            "src": "photos/d18-work.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Library_East-Exterior_East-20250430.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Library_East-Exterior_East-20250430.jpg?width=1200"
           }
         },
         {
@@ -4143,9 +4169,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Tower_Night_View.jpg?width=1200",
+            "src": "photos/d18-tower.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Tower_Night_View.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Tower_Night_View.jpg?width=1200"
           }
         },
         {
@@ -4289,9 +4316,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Library_2.jpg?width=1200",
+            "src": "photos/d19-work.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Library_2.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Library_2.jpg?width=1200"
           }
         },
         {
@@ -4320,9 +4348,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/20251129_Long_Museum_West_Bund_(II).jpg?width=1200",
+            "src": "photos/d19-longmuseum.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:20251129_Long_Museum_West_Bund_(II).jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/20251129_Long_Museum_West_Bund_(II).jpg?width=1200"
           }
         },
         {
@@ -4461,9 +4490,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/HUANGPU-RIVER_FROM_YANGPU-OFFICE_by_NIX-SUNYATA,_2018.jpg?width=1200",
+            "src": "photos/d20-yangpu.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:HUANGPU-RIVER_FROM_YANGPU-OFFICE_by_NIX-SUNYATA,_2018.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/HUANGPU-RIVER_FROM_YANGPU-OFFICE_by_NIX-SUNYATA,_2018.jpg?width=1200"
           }
         },
         {
@@ -4702,9 +4732,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Pudong_International_Airport.jpg?width=1200",
+            "src": "photos/d21-departure.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Pudong_International_Airport.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Pudong_International_Airport.jpg?width=1200"
           }
         }
       ]
