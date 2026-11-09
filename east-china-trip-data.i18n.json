@@ -1,7 +1,7 @@
 {
   "_instructions": {
-    "en": "Multilingual dataset for the East China trip PWA (27 Oct – 16 Nov 2026). Text fields (trip.title, trip.overview, day.title/weekday/focus/roads/clothing/extra, location.name/note/details, general, legend, appGuide, dining) are objects {en,ru,zh}: pick the active language. UI strings live in 'ui' keyed by language code. 'location.category' and 'location.meal' are language-independent codes; look up display labels in ui[lang].categories / ui[lang].meals. New categories compared with the Chiang Mai file: transit, museum, sight, work (a laptop work block or work spot). Google Maps links use lat/lng + placeId (name is cosmetic only); placeId may be null. A top-level 'dining' object holds standalone dinner options: {title, intro, places[]} (same schema as a location, time=null, meal=null) and is rendered as the 4th tab (ui[lang].tabDining). 'day.day' is the sequential trip day (1..21), 'day.date' is the calendar date. 'location.details' is an optional expanded reference. Build a language switcher over trip.languages; default = trip.defaultLanguage. 'location.photo' is optional: {src, source, credit}. src is a repo-relative file in photos/ (downloaded from Wikimedia Commons by .github/workflows/photos.yml) or, until the download has run, the remote Commons URL; source is the Commons file page and credit the credit line. Stops without a photo get a photo-search link instead. 'day.checklist' (from day 11, Nanjing) is an optional list of {id, done, text}: bookings and tickets to sort out, shown at the top of the day; done is the initial state and the viewer's ticks are kept on the device. 'location.booking' = true marks a stop that needs a ticket or booking in advance. 'location.altFor' = true marks an optional stop to do instead of the work block just before it.",
-    "ru": "Мультиязычный датасет для PWA поездки по Восточному Китаю (27 октября – 16 ноября 2026). Текстовые поля — объекты {en,ru,zh}. Строки интерфейса — в 'ui' по коду языка. Коды 'category'/'meal' языконезависимы, подписи берутся из ui[lang]. Новые категории относительно файла Чиангмая: transit, museum, sight, work (рабочий блок или место для работы). Ссылки Google Maps строятся по lat/lng + placeId (placeId может быть null). Верхнеуровневый объект 'dining' — отдельные опции для ужина {title, intro, places[]}, выводится 4-й вкладкой (ui[lang].tabDining). 'day.day' — сквозной номер дня поездки (1..21), 'day.date' — календарная дата. 'location.details' — необязательный расширенный справочник. Переключатель языка — по trip.languages, по умолчанию trip.defaultLanguage. 'location.photo' необязателен: {src, source, credit}. src — файл в photos/ внутри репозитория (его скачивает с Wikimedia Commons .github/workflows/photos.yml) или, пока скачивание не прошло, исходный URL Commons; source — страница файла на Commons, credit — подпись. Для точек без фото показывается ссылка на поиск фотографий. 'day.checklist' (с 11-го дня, Нанкин) — необязательный список {id, done, text}: брони и билеты, которые нужно оформить; показывается вверху дня, done — начальное состояние, отметки пользователя хранятся на устройстве. 'location.booking' = true — точка, куда нужен билет или бронь заранее. 'location.altFor' = true — необязательная точка вместо рабочего блока перед ней."
+    "en": "Multilingual dataset for the East China trip PWA (27 Oct – 15 Nov 2026). Text fields (trip.title, trip.overview, day.title/weekday/focus/roads/clothing/extra, location.name/note/details, general, legend, appGuide, dining) are objects {en,ru,zh}: pick the active language. UI strings live in 'ui' keyed by language code. 'location.category' and 'location.meal' are language-independent codes; look up display labels in ui[lang].categories / ui[lang].meals. New categories compared with the Chiang Mai file: transit, museum, sight, work (a laptop work block or work spot). Google Maps links use lat/lng + placeId (name is cosmetic only); placeId may be null. A top-level 'dining' object holds standalone dinner options: {title, intro, places[]} (same schema as a location, time=null, meal=null) and is rendered as the 4th tab (ui[lang].tabDining). 'day.day' is the sequential trip day (1..20), 'day.date' is the calendar date. 'location.details' is an optional expanded reference. Build a language switcher over trip.languages; default = trip.defaultLanguage. 'location.photo' is optional: {src, source, credit}. src is a repo-relative file in photos/ (downloaded from Wikimedia Commons by .github/workflows/photos.yml) or, until the download has run, the remote Commons URL; source is the Commons file page and credit the credit line. Stops without a photo get a photo-search link instead. 'day.checklist' (from day 11, Nanjing) is an optional list of {id, done, text}: bookings and tickets to sort out, shown at the top of the day; done is the initial state and the viewer's ticks are kept on the device. 'location.booking' = true marks a stop that needs a ticket or booking in advance. 'location.altFor' = true marks an optional stop to do instead of the work block just before it.",
+    "ru": "Мультиязычный датасет для PWA поездки по Восточному Китаю (27 октября – 15 ноября 2026). Текстовые поля — объекты {en,ru,zh}. Строки интерфейса — в 'ui' по коду языка. Коды 'category'/'meal' языконезависимы, подписи берутся из ui[lang]. Новые категории относительно файла Чиангмая: transit, museum, sight, work (рабочий блок или место для работы). Ссылки Google Maps строятся по lat/lng + placeId (placeId может быть null). Верхнеуровневый объект 'dining' — отдельные опции для ужина {title, intro, places[]}, выводится 4-й вкладкой (ui[lang].tabDining). 'day.day' — сквозной номер дня поездки (1..20), 'day.date' — календарная дата. 'location.details' — необязательный расширенный справочник. Переключатель языка — по trip.languages, по умолчанию trip.defaultLanguage. 'location.photo' необязателен: {src, source, credit}. src — файл в photos/ внутри репозитория (его скачивает с Wikimedia Commons .github/workflows/photos.yml) или, пока скачивание не прошло, исходный URL Commons; source — страница файла на Commons, credit — подпись. Для точек без фото показывается ссылка на поиск фотографий. 'day.checklist' (с 11-го дня, Нанкин) — необязательный список {id, done, text}: брони и билеты, которые нужно оформить; показывается вверху дня, done — начальное состояние, отметки пользователя хранятся на устройстве. 'location.booking' = true — точка, куда нужен билет или бронь заранее. 'location.altFor' = true — необязательная точка вместо рабочего блока перед ней."
   },
   "trip": {
     "title": {
@@ -9,7 +9,7 @@
       "ru": "Восточный Китай — Шанхай, Учжэнь, Ханчжоу, Нанкин, Сучжоу, Шанхай",
       "zh": "华东 — 上海、乌镇、杭州、南京、苏州、上海"
     },
-    "dates": "2026-10-27 … 2026-11-16",
+    "dates": "2026-10-27 … 2026-11-15",
     "brandColor": "#9F1239",
     "languages": [
       "en",
@@ -18,9 +18,9 @@
     ],
     "defaultLanguage": "ru",
     "overview": {
-      "en": "21 days by high-speed train, working on the road: Shanghai (27–31 Oct) → Wuzhen Xizha (a night in the water town) → Hangzhou (1–6 Nov: work days, Hanggang Park, the Gongyan banquet, Grand Canal museums, West Lake and Yue Fei Temple) → Nanjing (6–9 Nov: the Qinhuai, Niushoushan's Usnisa Palace, Purple Mountain, the Tangshan ape-man cave) → Suzhou (9–11 Nov: gardens, Suzhou Museum, Pingjiang Road, Shantang Street, Jinji Lake) → Shanghai again (11–16 Nov: the North Bund, Shanghai Museum East, Shanghai Tower, Zhangyuan, Columbia Circle, West Bund, a bathhouse day at Shuiguo Tangquan). Nanjing has no work blocks; elsewhere most days have a 3-hour work block.",
-      "ru": "21 день на скоростных поездах с работой в дороге: Шанхай (27–31 октября) → Учжэнь, Сичжа (ночь в водном городке) → Ханчжоу (1–6 ноября: рабочие дни, парк Ханган, ужин «Гунъянь», музеи Великого канала, Сиху и храм Юэ Фэя) → Нанкин (6–9 ноября: Циньхуай, дворец Фодин на Нюшоушане, Пурпурная гора, пещера Тангшань) → Сучжоу (9–11 ноября: сады, музей Сучжоу, Пинцзян-лу, улица Шаньтан, озеро Цзиньцзи) → снова Шанхай (11–16 ноября: Северный Бунд, восточный музей Шанхая, Шанхайская башня, Чжанъюань, Columbia Circle, West Bund, a bathhouse day at Shuiguo Tangquan). В Нанкине без рабочих блоков; в остальных городах в большинстве дней 3-часовой рабочий блок.",
-      "zh": "21天高铁行程，边旅行边办公：上海（10月27–31日）→ 乌镇西栅（夜宿水乡）→ 杭州（11月1–6日：办公日、杭钢公园、宫宴、大运河博物馆、西湖与岳王庙）→ 南京（11月6–9日：秦淮河、牛首山佛顶宫、紫金山、汤山猿人洞）→ 苏州（11月9–11日：园林、苏州博物馆、平江路、山塘街、金鸡湖）→ 再回上海（11月11–16日：北外滩、上博东馆、上海中心、张园、上生新所、徐汇滨江、水裹汤泉）。南京不安排办公；其他城市大多数日子安排3小时办公。"
+      "en": "20 days by high-speed train, working on the road: Shanghai (27–31 Oct) → Wuzhen Xizha (a night in the water town) → Hangzhou (1–6 Nov: work days, Hanggang Park, the Gongyan banquet, Grand Canal museums, West Lake and Yue Fei Temple) → Nanjing (6–9 Nov: the Qinhuai, Niushoushan's Usnisa Palace, Purple Mountain, the Tangshan ape-man cave) → Suzhou (9–12 Nov: Shuangta Market, Shiquan Street, Jinji Lake, the Humble Administrator's Garden, Suzhou Museum, Lion Grove) → Shanghai again (12–15 Nov, only places new to you: Hongkou's 1933 Old Millfun, Duolun Road and the North Bund, Zhangyuan, Columbia Circle, Xujiahui, the West Bund, a bathhouse day) → fly to Phuket on 15 Nov. Nanjing has no work blocks; elsewhere most days have a 3-hour work block.",
+      "ru": "20 дней на скоростных поездах с работой в дороге: Шанхай (27–31 октября) → Учжэнь, Сичжа (ночь в водном городке) → Ханчжоу (1–6 ноября: рабочие дни, парк Ханган, ужин «Гунъянь», музеи Великого канала, Сиху и храм Юэ Фэя) → Нанкин (6–9 ноября: Циньхуай, дворец Фодин на Нюшоушане, Пурпурная гора, пещера Тангшань) → Сучжоу (9–12 ноября: рынок Шуанта, улица Шицюань, озеро Цзиньцзи, сад Чжочжэн, музей Сучжоу, Шицзылинь) → снова Шанхай (12–15 ноября, только новые места: 1933 Old Millfun, Дуолунь-лу и Северный Бунд в Хункоу, Чжанъюань, Columbia Circle, Сюйцзяхуэй, West Bund, день в банях) → вылет на Пхукет 15 ноября. В Нанкине без рабочих блоков; в остальных городах в большинстве дней 3-часовой рабочий блок.",
+      "zh": "20天高铁行程，边旅行边办公：上海（10月27–31日）→ 乌镇西栅（夜宿水乡）→ 杭州（11月1–6日：办公日、杭钢公园、宫宴、大运河博物馆、西湖与岳王庙）→ 南京（11月6–9日：秦淮河、牛首山佛顶宫、紫金山、汤山猿人洞）→ 苏州（11月9–12日：双塔市集、十全街、金鸡湖、拙政园、苏州博物馆、狮子林）→ 再回上海（11月12–15日，只去没去过的地方：虹口的1933老场坊、多伦路、北外滩，张园、上生新所、徐家汇、徐汇滨江、汤泉日）→ 15日飞普吉岛。南京不安排办公；其他城市大多数日子安排3小时办公。"
     }
   },
   "ui": {
@@ -3040,9 +3040,9 @@
         "zh": "舒适的鞋；苏州运河边晚上较凉。"
       },
       "extra": {
-        "en": "Buy a train around 12:30 from Nanjing station (南京站) to Suzhou (苏州站). Suzhou is 2 nights (9–11 Nov).",
-        "ru": "Купите поезд около 12:30 от вокзала Нанкин (南京站) до Сучжоу (苏州站). Сучжоу — 2 ночи (9–11 ноября).",
-        "zh": "请买12:30左右南京站 → 苏州站的车票。苏州住2晚（11月9–11日）。"
+        "en": "Buy a train around 12:30 from Nanjing station (南京站) to Suzhou (苏州站). Suzhou is 3 nights (9–12 Nov).",
+        "ru": "Купите поезд около 12:30 от вокзала Нанкин (南京站) до Сучжоу (苏州站). Сучжоу — 3 ночи (9–12 ноября).",
+        "zh": "请买12:30左右南京站 → 苏州站的车票。苏州住3晚（11月9–12日）。"
       },
       "locations": [
         {
@@ -3224,9 +3224,9 @@
         {
           "id": "d14-hotel",
           "name": {
-            "en": "Hotel (to book): near Pingjiang Road, Suzhou (9–11 Nov)",
-            "ru": "Отель (выбрать): у Пинцзян-лу, Сучжоу (9–11 ноября)",
-            "zh": "酒店（待订）：苏州平江路附近（11月9–11日）"
+            "en": "Hotel: near Pingjiang Road, Suzhou (9–12 Nov)",
+            "ru": "Отель: у Пинцзян-лу, Сучжоу (9–12 ноября)",
+            "zh": "酒店：苏州平江路附近（11月9–12日）"
           },
           "time": "14:15",
           "category": "hotel",
@@ -3234,9 +3234,9 @@
           "lng": 120.636,
           "placeId": null,
           "note": {
-            "en": "2 nights. Rest a little before the evening.",
-            "ru": "2 ночи. Немного отдохните перед вечером.",
-            "zh": "住2晚。晚上出门前先休息一下。"
+            "en": "3 nights. Rest a little before the evening.",
+            "ru": "3 ночи. Немного отдохните перед вечером.",
+            "zh": "住3晚。晚上出门前先休息一下。"
           },
           "details": {
             "en": "The map pin is approximate: navigate by the name.",
@@ -3374,9 +3374,9 @@
           "id": "c09-hotel",
           "done": false,
           "text": {
-            "en": "Suzhou hotel near Pingjiang Road, 2 nights (9–11 Nov)",
-            "ru": "Отель в Сучжоу у Пинцзян-лу, 2 ночи (9–11 ноября)",
-            "zh": "苏州平江路附近酒店，2晚（9–11日）"
+            "en": "Suzhou hotel near Pingjiang Road, 3 nights (9–12 Nov)",
+            "ru": "Отель в Сучжоу у Пинцзян-лу, 3 ночи (9–12 ноября)",
+            "zh": "苏州平江路附近酒店，3晚（9–12日）"
           }
         }
       ]
@@ -3411,9 +3411,9 @@
         "zh": "舒适的鞋；晚上湖边带外套。"
       },
       "extra": {
-        "en": "Pack tonight: tomorrow is the move to Shanghai. Buy the 16:00 Suzhou → Shanghai Hongqiao train for 11 Nov.",
-        "ru": "Вечером соберите вещи: завтра переезд в Шанхай. Купите поезд 11 ноября в 16:00 Сучжоу → Шанхай-Хунцяо.",
-        "zh": "今晚收拾行李，明天去上海。请购买11月11日16:00 苏州 → 上海虹桥的车票。"
+        "en": "Suzhou now has one more night: tomorrow is the gardens and the museum, and you move to Shanghai on 12 Nov.",
+        "ru": "В Сучжоу теперь на ночь больше: завтра сады и музей, переезд в Шанхай 12 ноября.",
+        "zh": "苏州多住一晚：明天逛园林和博物馆，12日再去上海。"
       },
       "locations": [
         {
@@ -3581,12 +3581,21 @@
       ],
       "checklist": [
         {
-          "id": "c10-train",
+          "id": "c10-hump",
           "done": false,
           "text": {
-            "en": "Buy tomorrow's 16:00 train Suzhou → Shanghai Hongqiao",
-            "ru": "Купите поезд на завтра 16:00 Сучжоу → Шанхай-Хунцяо",
-            "zh": "买明天16:00 苏州 → 上海虹桥的车票"
+            "en": "Book tomorrow's Humble Administrator's Garden (real-name, passport) for 09:00",
+            "ru": "Забронируйте на завтра сад Чжочжэн (по имени, паспорт) на 09:00",
+            "zh": "预约明天9:00的拙政园（实名，护照）"
+          }
+        },
+        {
+          "id": "c10-lion",
+          "done": false,
+          "text": {
+            "en": "Lion Grove ticket for tomorrow (online)",
+            "ru": "Билет в Шицзылинь на завтра (онлайн)",
+            "zh": "网上买明天狮子林门票"
           }
         }
       ]
@@ -3600,52 +3609,85 @@
         "zh": "周三"
       },
       "title": {
-        "en": "Free morning, Suzhou Museum at 11:00, 16:00 train to Shanghai, Zhangyuan by night",
-        "ru": "Свободное утро, музей Сучжоу в 11:00, поезд в 16:00 в Шанхай, Чжанъюань вечером",
-        "zh": "上午自由，11:00苏州博物馆，16:00高铁去上海，夜游张园"
+        "en": "Humble Administrator's Garden, Suzhou Museum, Lion Grove",
+        "ru": "Сад Чжочжэн, музей Сучжоу, Шицзылинь",
+        "zh": "拙政园、苏州博物馆、狮子林"
       },
       "busyness": 3,
       "focus": {
-        "en": "No plans in the morning. Suzhou Museum on your 11:00 booking, lunch and a slow afternoon around Pingjiang Road, then the 16:00 train to Shanghai. Check in at Jing'an Temple and walk to Zhangyuan as its lanes light up.",
-        "ru": "Утром ничего не запланировано. Музей Сучжоу по брони на 11:00, обед и неспешный день у Пинцзян-лу, затем поезд в 16:00 в Шанхай. Заселение у Jing'an Temple и прогулка в Чжанъюань, когда в переулках горят огни.",
-        "zh": "上午不安排。11:00按预约参观苏州博物馆，午饭后在平江路一带慢慢逛，16:00坐高铁去上海。静安寺入住后，晚上步行去亮灯的张园。"
+        "en": "The three neighbours in one walk: the Humble Administrator's Garden at 09:00, Suzhou Museum on your 11:00 booking right next door, lunch, then Lion Grove five minutes away. A free evening in Pingjiang Road.",
+        "ru": "Три соседа за одну прогулку: сад Чжочжэн в 09:00, музей Сучжоу по брони на 11:00 прямо рядом, обед, затем Шицзылинь в пяти минутах. Свободный вечер на Пинцзян-лу.",
+        "zh": "三处挨在一起，一次走完：9:00拙政园，11:00按预约参观旁边的苏州博物馆，午饭后去5分钟外的狮子林。晚上在平江路自由活动。"
       },
       "roads": {
-        "en": "Hotel → Suzhou Museum: about 15 minutes on foot, or a short taxi. Hotel → Suzhou station: taxi about 15 minutes. Train to Shanghai Hongqiao: about 25–30 minutes, about ¥40. Hongqiao → Jing'an Temple: metro Line 2 direct, about 35 minutes. Hotel → Zhangyuan: about 15 minutes on foot.",
-        "ru": "Отель → музей Сучжоу: около 15 минут пешком или короткое такси. Отель → вокзал Сучжоу: такси около 15 минут. Поезд до Шанхай-Хунцяо: около 25–30 минут, около ¥40. Хунцяо → Jing'an Temple: метро линии 2 без пересадок, около 35 минут. Отель → Чжанъюань: около 15 минут пешком.",
-        "zh": "酒店 → 苏州博物馆：步行约15分钟或短程打车。酒店 → 苏州站：打车约15分钟。高铁到上海虹桥：约25–30分钟，约¥40。虹桥 → 静安寺：地铁2号线直达约35分钟。酒店 → 张园：步行约15分钟。"
+        "en": "All on foot: hotel (Pingjiang Road) → Humble Administrator's Garden about 10 minutes; → Suzhou Museum 2 minutes; → lunch on Lindun Road / Guanqian Street about 10 minutes; → Lion Grove about 5 minutes; back to the hotel about 10 minutes.",
+        "ru": "Всё пешком: отель (Пинцзян-лу) → сад Чжочжэн около 10 минут; → музей Сучжоу 2 минуты; → обед на Линьдунь-лу / Гуаньцянь-цзе около 10 минут; → Шицзылинь около 5 минут; обратно в отель около 10 минут.",
+        "zh": "全程步行：酒店（平江路）→ 拙政园约10分钟 → 苏州博物馆2分钟 → 临顿路/观前街午饭约10分钟 → 狮子林约5分钟 → 回酒店约10分钟。"
       },
       "clothing": {
-        "en": "Light layers; Shanghai about +11…+18 °C.",
-        "ru": "Лёгкие слои; в Шанхае около +11…+18 °C.",
-        "zh": "轻便叠穿；上海约11–18°C。"
+        "en": "Comfortable shoes.",
+        "ru": "Удобная обувь.",
+        "zh": "穿舒适的鞋。"
       },
       "extra": {
-        "en": "Why Jing'an Temple: Line 2 runs direct to Hongqiao (today), Lujiazui and Shanghai Museum East and Pudong airport (departure). The CIIE expo ended on 10 Nov, so hotel prices are back to normal.",
-        "ru": "Почему Jing'an Temple: линия 2 идёт без пересадок до Хунцяо (сегодня), Луцзяцзуя, восточного музея Шанхая и аэропорта Пудун (вылет). Выставка CIIE закончилась 10 ноября, цены на отели вернулись к обычным.",
-        "zh": "选静安寺的原因：2号线直达虹桥（今天）、陆家嘴、上博东馆和浦东机场（返程）。进博会已于10日结束，酒店价格恢复正常。"
+        "en": "Pack tonight: tomorrow morning is the move to Shanghai. Buy the 10:30 Suzhou → Shanghai Hongqiao train.",
+        "ru": "Вечером соберите вещи: завтра утром переезд в Шанхай. Купите поезд 10:30 Сучжоу → Шанхай-Хунцяо.",
+        "zh": "今晚收拾行李，明早去上海。请买10:30 苏州 → 上海虹桥的车票。"
       },
       "locations": [
         {
-          "id": "d16-checkout",
+          "id": "d16-breakfast",
           "name": {
-            "en": "Check out, bags at the desk",
-            "ru": "Выезд, вещи на ресепшен",
-            "zh": "退房，行李寄存前台"
+            "en": "Breakfast",
+            "ru": "Завтрак",
+            "zh": "早餐"
           },
-          "time": "10:30",
-          "category": "hotel",
+          "time": "08:15",
+          "category": "food",
           "lat": 31.315,
           "lng": 120.636,
           "placeId": null,
           "note": {
-            "en": "A free morning until then. Check out and leave the bags at the hotel desk; the museum is about 15 minutes' walk from Pingjiang Road.",
-            "ru": "До этого утро свободно. Выезд, вещи на ресепшен; до музея около 15 минут пешком от Пинцзян-лу.",
-            "zh": "此前上午自由安排。退房后把行李寄存在前台；从平江路步行到博物馆约15分钟。"
+            "en": "Suzhou noodles near the hotel.",
+            "ru": "Сучжоуская лапша у отеля.",
+            "zh": "酒店附近吃碗苏式汤面。"
+          },
+          "optional": false,
+          "meal": "breakfast",
+          "warn": false
+        },
+        {
+          "id": "d16-hump",
+          "name": {
+            "en": "Humble Administrator's Garden",
+            "ru": "Сад скромного чиновника (Чжочжэн)",
+            "zh": "拙政园"
+          },
+          "time": "09:00",
+          "category": "garden",
+          "lat": 31.324224,
+          "lng": 120.62997,
+          "placeId": "ChIJ95Kf4M-mszUREZWApzl39cg",
+          "note": {
+            "en": "Suzhou's largest classical garden, a UNESCO site. Enter at 09:00 and allow about 1 h 45 min, then walk 2 minutes to the museum next door. Ticket about ¥70–90.",
+            "ru": "Крупнейший классический сад Сучжоу, объект ЮНЕСКО. Вход в 09:00, около 1 ч 45 мин, затем 2 минуты пешком до соседнего музея. Билет около ¥70–90.",
+            "zh": "苏州最大的古典园林，世界文化遗产。9:00入园，游览约1小时45分钟，再步行2分钟到隔壁博物馆。门票约¥70–90。"
+          },
+          "details": {
+            "en": "Book online (passport); hours differ across sources, the last entry in November is about 16:00. Allow 2–3 hours.",
+            "ru": "Билет онлайн (паспорт); часы по источникам расходятся, последний вход в ноябре около 16:00. На осмотр 2–3 часа.",
+            "zh": "线上购票（护照）；各来源开放时间不一，11月约16:00停止入园。游览约2–3小时。"
           },
           "optional": false,
           "meal": null,
-          "warn": false
+          "warn": false,
+          "photo": {
+            "src": "photos/d15-hump.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Suzhou,_Humble_Administrator%27s_Garden_(03).JPG",
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou,_Humble_Administrator%27s_Garden_(03).JPG?width=1200"
+          },
+          "booking": true
         },
         {
           "id": "d16-szmuseum",
@@ -3660,9 +3702,9 @@
           "lng": 120.629,
           "placeId": null,
           "note": {
-            "en": "I. M. Pei's building next to the Humble Administrator's Garden: the architecture alone is worth it. Booked for 11:00; allow 1–1.5 hours.",
-            "ru": "Здание И. М. Пэя рядом с садом Чжочжэн: одна архитектура уже стоит визита. Бронь на 11:00; заложите 1–1,5 часа.",
-            "zh": "贝聿铭设计，紧邻拙政园，建筑本身就值得一看。已预约11:00入馆，预留1–1.5小时。"
+            "en": "I. M. Pei's building, right next to the Humble Administrator's Garden. Booked for 11:00; allow about 1.5 hours.",
+            "ru": "Здание И. М. Пэя, прямо рядом с садом Чжочжэн. Бронь на 11:00; около 1,5 часа.",
+            "zh": "贝聿铭设计，紧挨拙政园。已预约11:00，游览约1.5小时。"
           },
           "details": {
             "en": "Bring the passport used for the booking. The map pin is approximate.",
@@ -3683,53 +3725,201 @@
         {
           "id": "d16-lunch",
           "name": {
-            "en": "Lunch near the museum",
-            "ru": "Обед у музея",
-            "zh": "博物馆附近午餐"
+            "en": "Lunch on Lindun Road",
+            "ru": "Обед на Линьдунь-лу",
+            "zh": "临顿路午餐"
           },
-          "time": "12:30",
+          "time": "12:45",
           "category": "food",
-          "lat": 31.315,
-          "lng": 120.636,
+          "lat": 31.3175,
+          "lng": 120.6295,
           "placeId": null,
           "note": {
-            "en": "Around Pingjiang Road or Guanqian Street, then a slow afternoon nearby (Pingjiang Road's lanes, a teahouse) before collecting the bags.",
-            "ru": "У Пинцзян-лу или Гуаньцянь-цзе, затем неспешный день рядом (переулки Пинцзян-лу, чайная) перед тем, как забрать вещи.",
-            "zh": "在平江路或观前街一带吃，之后在附近慢慢逛（平江路小巷、茶馆），再回酒店取行李。"
+            "en": "Yaba Shengjian's pan-fried buns if they are not sold out, or noodles nearby.",
+            "ru": "Жареные баоцзы Yaba Shengjian, если ещё не раскупили, или лапша рядом.",
+            "zh": "哑巴生煎（如还没卖完），或附近吃面。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
           },
           "optional": false,
           "meal": "main",
           "warn": false
         },
         {
-          "id": "d16-bags",
+          "id": "d16-lion",
           "name": {
-            "en": "Collect the bags, taxi to Suzhou station",
-            "ru": "Забрать вещи, такси до вокзала Сучжоу",
-            "zh": "取行李，打车去苏州站"
+            "en": "Lion Grove Garden",
+            "ru": "Сад Львиной рощи (Шицзылинь)",
+            "zh": "狮子林"
           },
-          "time": "15:00",
+          "time": "14:00",
+          "category": "garden",
+          "lat": 31.3228,
+          "lng": 120.6245,
+          "placeId": null,
+          "note": {
+            "en": "A garden of rockery labyrinths, about 5 minutes' walk from the museum. Allow about 1 hour; afternoons are quieter than mornings.",
+            "ru": "Сад каменных лабиринтов, около 5 минут пешком от музея. Около часа; после обеда спокойнее, чем утром.",
+            "zh": "假山迷宫式园林，离博物馆步行约5分钟。游览约1小时，下午比上午人少。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false,
+          "photo": {
+            "src": "photos/d15-lion.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Lion_Grove_Garden_Suzhou_November_2017_008.jpg",
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion_Grove_Garden_Suzhou_November_2017_008.jpg?width=1200"
+          },
+          "booking": true
+        },
+        {
+          "id": "d16-evening",
+          "name": {
+            "en": "Free evening on Pingjiang Road",
+            "ru": "Свободный вечер на Пинцзян-лу",
+            "zh": "平江路自由活动"
+          },
+          "time": "16:00",
+          "category": "sight",
+          "lat": 31.3175,
+          "lng": 120.637,
+          "placeId": null,
+          "note": {
+            "en": "Rest at the hotel, then dinner and a last walk along the canal.",
+            "ru": "Отдых в отеле, затем ужин и последняя прогулка вдоль канала.",
+            "zh": "回酒店休息，之后吃晚饭、沿河再走走。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        }
+      ],
+      "checklist": [
+        {
+          "id": "c11-hump",
+          "done": false,
+          "text": {
+            "en": "Humble Administrator's Garden 09:00 slot booked",
+            "ru": "Сад Чжочжэн: слот на 09:00 забронирован",
+            "zh": "拙政园9:00时段已预约"
+          }
+        },
+        {
+          "id": "c11-szm",
+          "done": true,
+          "text": {
+            "en": "Suzhou Museum 11:00: booked (bring the same passport)",
+            "ru": "Музей Сучжоу 11:00: забронирован (тот же паспорт)",
+            "zh": "苏州博物馆11:00：已约（带同一本护照）"
+          }
+        },
+        {
+          "id": "c11-lion",
+          "done": false,
+          "text": {
+            "en": "Lion Grove ticket",
+            "ru": "Билет в Шицзылинь",
+            "zh": "狮子林门票"
+          }
+        },
+        {
+          "id": "c11-train",
+          "done": false,
+          "text": {
+            "en": "Buy tomorrow's 10:30 train Suzhou → Shanghai Hongqiao",
+            "ru": "Купите поезд на завтра 10:30 Сучжоу → Шанхай-Хунцяо",
+            "zh": "买明天10:30 苏州 → 上海虹桥的车票"
+          }
+        },
+        {
+          "id": "c11-shhotel",
+          "done": false,
+          "text": {
+            "en": "Shanghai hotel near a Line 2 station at Jing'an Temple, 3 nights (12–15 Nov)",
+            "ru": "Отель в Шанхае у станции линии 2 Jing'an Temple, 3 ночи (12–15 ноября)",
+            "zh": "上海静安寺2号线附近酒店，3晚（12–15日）"
+          }
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "date": "2026-11-12",
+      "weekday": {
+        "en": "Thu",
+        "ru": "Чт",
+        "zh": "周四"
+      },
+      "title": {
+        "en": "Train to Shanghai, 1933 Old Millfun, Duolun Road, North Bund, Zhangyuan",
+        "ru": "Поезд в Шанхай, 1933 Old Millfun, Дуолунь-лу, Северный Бунд, Чжанъюань",
+        "zh": "转场上海：1933老场坊、多伦路、北外滩、张园"
+      },
+      "busyness": 3,
+      "focus": {
+        "en": "A morning train to Shanghai and an afternoon in Hongkou, a district you have not seen: the 1930s concrete slaughterhouse, Duolun Road, then the North Bund riverside at sunset (the old Bund from the north side, not Lujiazui). Zhangyuan's lit shikumen lanes after dinner, near the hotel.",
+        "ru": "Утренний поезд в Шанхай и день в Хункоу, где вы ещё не были: бетонная бойня 1930-х, Дуолунь-лу, затем набережная Северного Бунда на закате (старый Бунд с северной стороны, не Луцзяцзуй). После ужина — освещённые переулки Чжанъюаня рядом с отелем.",
+        "zh": "上午坐高铁去上海，下午逛还没去过的虹口：1930年代的老场坊、多伦路，傍晚在北外滩看日落（从北边看老外滩，不是陆家嘴）。晚饭后去酒店附近亮灯的张园。"
+      },
+      "roads": {
+        "en": "Suzhou hotel → Suzhou station: taxi about 15 minutes. Train to Shanghai Hongqiao: about 25–30 minutes, about ¥40. Hongqiao → Jing'an Temple: Line 2 direct, about 35 minutes. Hotel → 1933 Old Millfun: taxi about 20 minutes. Millfun → Duolun Road: taxi 10 minutes. Duolun Road → North Bund: taxi about 10 minutes. Back to Jing'an: taxi 20–25 minutes; Zhangyuan is 15 minutes on foot from the hotel.",
+        "ru": "Отель в Сучжоу → вокзал: такси около 15 минут. Поезд до Шанхай-Хунцяо: около 25–30 минут, около ¥40. Хунцяо → Jing'an Temple: линия 2 без пересадок, около 35 минут. Отель → 1933 Old Millfun: такси около 20 минут. Millfun → Дуолунь-лу: такси 10 минут. Дуолунь-лу → Северный Бунд: такси около 10 минут. Обратно в Цзинъань: такси 20–25 минут; Чжанъюань в 15 минутах пешком от отеля.",
+        "zh": "苏州酒店 → 苏州站：打车约15分钟。高铁到上海虹桥：约25–30分钟，约¥40。虹桥 → 静安寺：2号线直达约35分钟。酒店 → 1933老场坊：打车约20分钟。老场坊 → 多伦路：打车10分钟。多伦路 → 北外滩：打车约10分钟。回静安打车20–25分钟；张园离酒店步行15分钟。"
+      },
+      "clothing": {
+        "en": "Layers; it is windy by the river in the evening.",
+        "ru": "Слои; вечером у реки ветрено.",
+        "zh": "叠穿；晚上江边有风。"
+      },
+      "extra": {
+        "en": "Shanghai is now 3 nights (12–15 Nov) and you fly to Phuket on Sunday 15 Nov. Places you already visited (French Concession, Yu Garden, Jing'an Temple, the Bund, Lujiazui, Nanjing Road) are left out.",
+        "ru": "Шанхай теперь 3 ночи (12–15 ноября), вылет на Пхукет в воскресенье 15 ноября. Места, где вы уже были (Французская концессия, сад Юйюань, храм Цзинъань, Бунд, Луцзяцзуй, Нанкин-роуд), не включены.",
+        "zh": "上海改为3晚（11月12–15日），15日周日飞普吉岛。已经去过的地方（法租界、豫园、静安寺、外滩、陆家嘴、南京路）都不再安排。"
+      },
+      "locations": [
+        {
+          "id": "d17-checkout",
+          "name": {
+            "en": "Check out in Suzhou",
+            "ru": "Выезд из отеля в Сучжоу",
+            "zh": "苏州退房"
+          },
+          "time": "09:45",
           "category": "hotel",
           "lat": 31.315,
           "lng": 120.636,
           "placeId": null,
           "note": {
-            "en": "Taxi about 15 minutes; be at the station by 15:30.",
-            "ru": "Такси около 15 минут; будьте на вокзале к 15:30.",
-            "zh": "打车约15分钟，15:30前到站。"
+            "en": "Taxi about 15 minutes to Suzhou station.",
+            "ru": "Такси около 15 минут до вокзала Сучжоу.",
+            "zh": "打车约15分钟到苏州站。"
           },
           "optional": false,
           "meal": null,
           "warn": false
         },
         {
-          "id": "d16-train",
+          "id": "d17-train",
           "name": {
-            "en": "Train 16:00 Suzhou → Shanghai Hongqiao",
-            "ru": "Поезд 16:00 Сучжоу → Шанхай-Хунцяо",
-            "zh": "16:00高铁 苏州站 → 上海虹桥"
+            "en": "Train 10:30 Suzhou → Shanghai Hongqiao",
+            "ru": "Поезд 10:30 Сучжоу → Шанхай-Хунцяо",
+            "zh": "10:30高铁 苏州站 → 上海虹桥"
           },
-          "time": "16:00",
+          "time": "10:30",
           "category": "transit",
           "lat": 31.3306,
           "lng": 120.6083,
@@ -3745,21 +3935,21 @@
           "booking": true
         },
         {
-          "id": "d16-hotel",
+          "id": "d17-hotel",
           "name": {
-            "en": "Hotel (to book): Jing'an Temple, Shanghai (11–16 Nov)",
-            "ru": "Отель (выбрать): Jing'an Temple, Шанхай (11–16 ноября)",
-            "zh": "酒店（待订）：上海静安寺（11月11–16日）"
+            "en": "Hotel (to book): Jing'an Temple, Shanghai (12–15 Nov)",
+            "ru": "Отель (выбрать): Jing'an Temple, Шанхай (12–15 ноября)",
+            "zh": "酒店（待订）：上海静安寺（11月12–15日）"
           },
-          "time": "17:15",
+          "time": "11:45",
           "category": "hotel",
           "lat": 31.2236,
           "lng": 121.4466,
           "placeId": null,
           "note": {
-            "en": "5 nights. Line 2 from Hongqiao, about 35 minutes. Pick a hotel within 5 minutes of a Line 2 station (Jing'an Temple or West Nanjing Road); check that it accepts foreign guests.",
-            "ru": "5 ночей. Линия 2 от Хунцяо, около 35 минут. Ищите отель в 5 минутах от станции линии 2 (Jing'an Temple или West Nanjing Road); проверьте, что принимает иностранцев.",
-            "zh": "住5晚。从虹桥坐2号线约35分钟。选距2号线站点（静安寺或南京西路）5分钟内的酒店；确认可接待外籍住客。"
+            "en": "3 nights. Line 2 from Hongqiao, about 35 minutes. Drop the bags (early check-in is not guaranteed). Pick a hotel within 5 minutes of a Line 2 station; check that it accepts foreign guests.",
+            "ru": "3 ночи. Линия 2 от Хунцяо, около 35 минут. Оставьте вещи (ранний заезд не гарантирован). Ищите отель в 5 минутах от станции линии 2; проверьте, что принимает иностранцев.",
+            "zh": "住3晚。从虹桥坐2号线约35分钟。先寄存行李（不一定能提前入住）。选距2号线站点5分钟内的酒店；确认可接待外籍住客。"
           },
           "details": {
             "en": "The map pin is approximate: navigate by the name.",
@@ -3769,209 +3959,6 @@
           "optional": false,
           "meal": null,
           "warn": true
-        },
-        {
-          "id": "d16-zhangyuan",
-          "name": {
-            "en": "Zhangyuan (张园) by night",
-            "ru": "Чжанъюань (张园) вечером",
-            "zh": "夜游张园"
-          },
-          "time": "18:00",
-          "category": "sight",
-          "lat": 31.2302,
-          "lng": 121.4589,
-          "placeId": null,
-          "note": {
-            "en": "Shanghai's largest shikumen lane complex, restored and reopened with shops and cafés in the old houses; best as the lanes light up. Free.",
-            "ru": "Крупнейший в Шанхае комплекс переулков-шикумэнь, отреставрирован, в старых домах магазины и кафе; лучше всего, когда зажигается свет. Бесплатно.",
-            "zh": "上海规模最大的石库门里弄群，修缮后开放，老房子里有商店和咖啡馆，亮灯时最好看。免费。"
-          },
-          "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
-          },
-          "optional": false,
-          "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "photos/d16-zhangyuan.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:A_Type_of_Shikumen_Gable_in_ZhangYuan_Shanghai.JPG",
-            "credit": "Wikimedia Commons",
-            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/A_Type_of_Shikumen_Gable_in_ZhangYuan_Shanghai.JPG?width=1200"
-          }
-        },
-        {
-          "id": "d16-dinner",
-          "name": {
-            "en": "Dinner around West Nanjing Road",
-            "ru": "Ужин у Нанкин-роуд Западной",
-            "zh": "南京西路一带晚餐"
-          },
-          "time": "18:45",
-          "category": "food",
-          "lat": 31.2302,
-          "lng": 121.4589,
-          "placeId": null,
-          "note": {
-            "en": "Plenty of choice in and around Zhangyuan and Wujiang Road (吴江路).",
-            "ru": "Большой выбор в Чжанъюане и на Уцзян-лу (吴江路).",
-            "zh": "张园和吴江路一带选择多。"
-          },
-          "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
-          },
-          "optional": false,
-          "meal": "dinner",
-          "warn": false
-        }
-      ],
-      "checklist": [
-        {
-          "id": "c11-szm",
-          "done": true,
-          "text": {
-            "en": "Suzhou Museum 11:00: booked (bring the same passport)",
-            "ru": "Музей Сучжоу 11:00: забронирован (тот же паспорт)",
-            "zh": "苏州博物馆11:00：已约（带同一本护照）"
-          }
-        },
-        {
-          "id": "c11-train",
-          "done": false,
-          "text": {
-            "en": "Train 16:00 Suzhou → Shanghai Hongqiao",
-            "ru": "Поезд 16:00 Сучжоу → Шанхай-Хунцяо",
-            "zh": "16:00 苏州 → 上海虹桥"
-          }
-        },
-        {
-          "id": "c11-hotel",
-          "done": false,
-          "text": {
-            "en": "Shanghai hotel near a Line 2 station at Jing'an Temple, 5 nights (11–16 Nov)",
-            "ru": "Отель в Шанхае у станции линии 2 Jing'an Temple, 5 ночей (11–16 ноября)",
-            "zh": "上海静安寺2号线附近酒店，5晚（11–16日）"
-          }
-        },
-        {
-          "id": "c11-shm",
-          "done": false,
-          "text": {
-            "en": "Book Shanghai Museum East (13 Nov, morning slot) and a Shanghai Tower sunset ticket",
-            "ru": "Забронируйте восточный музей Шанхая (13 ноября, утро) и билет на закат в Шанхайскую башню",
-            "zh": "预约上博东馆（13日上午）和上海中心日落时段门票"
-          }
-        }
-      ]
-    },
-    {
-      "day": 17,
-      "date": "2026-11-12",
-      "weekday": {
-        "en": "Thu",
-        "ru": "Чт",
-        "zh": "周四"
-      },
-      "title": {
-        "en": "Shanghai: morning work, 1933 Old Millfun, Duolun Road, North Bund at sunset",
-        "ru": "Шанхай: работа утром, 1933 Old Millfun, Дуолунь-лу, Северный Бунд на закате",
-        "zh": "上海：上午办公，1933老场坊、多伦路、北外滩日落"
-      },
-      "busyness": 2,
-      "focus": {
-        "en": "An extra Shanghai day after Nanjing became 3 nights, in a district you have not seen: Hongkou. Work in the morning, then the 1930s concrete slaughterhouse turned design hub, the old Duolun Road culture street, and the North Bund riverside for a different angle on the Bund and Lujiazui at sunset.",
-        "ru": "Дополнительный день в Шанхае после сокращения Нанкина до 3 ночей, в районе, где вы ещё не были: Хункоу. Утром работа, затем бетонная бойня 1930-х, ставшая центром дизайна, старая культурная улица Дуолунь-лу и набережная Северного Бунда — другой ракурс на Бунд и Луцзяцзуй на закате.",
-        "zh": "南京改为3晚后多出的一天上海行程，去还没去过的虹口：上午办公，下午去1930年代屠宰场改造的创意园区1933老场坊、老街多伦路文化名人街，傍晚在北外滩换个角度看外滩和陆家嘴的日落。"
-      },
-      "roads": {
-        "en": "Hotel → 1933 Old Millfun (沙泾路10号): taxi about 20 minutes, or Line 10 to Hailun Road (海伦路) then 10 minutes on foot. Old Millfun → Duolun Road: taxi 10 minutes. Duolun Road → North Bund riverside: taxi about 10 minutes. Back to the hotel: taxi about 20–25 minutes.",
-        "ru": "Отель → 1933 Old Millfun (沙泾路10号): такси около 20 минут или линия 10 до Hailun Road (海伦路), затем 10 минут пешком. Old Millfun → Дуолунь-лу: такси 10 минут. Дуолунь-лу → набережная Северного Бунда: такси около 10 минут. Обратно в отель: такси 20–25 минут.",
-        "zh": "酒店 → 1933老场坊（沙泾路10号）：打车约20分钟，或10号线海伦路站步行10分钟。老场坊 → 多伦路：打车10分钟。多伦路 → 北外滩滨江：打车约10分钟。回酒店：打车20–25分钟。"
-      },
-      "clothing": {
-        "en": "Layers; it is windy by the river in the evening.",
-        "ru": "Слои; вечером у реки ветрено.",
-        "zh": "叠穿；晚上江边有风。"
-      },
-      "extra": {
-        "en": "A light, flexible day: if you would rather rest after Suzhou, skip any stop.",
-        "ru": "Лёгкий гибкий день: если после Сучжоу хочется отдохнуть, пропускайте что угодно.",
-        "zh": "轻松灵活的一天：苏州回来想休息的话，任何一站都可以不去。"
-      },
-      "locations": [
-        {
-          "id": "d17-breakfast",
-          "name": {
-            "en": "Breakfast",
-            "ru": "Завтрак",
-            "zh": "早餐"
-          },
-          "time": "08:30",
-          "category": "food",
-          "lat": 31.2236,
-          "lng": 121.4466,
-          "placeId": null,
-          "note": {
-            "en": "Near the hotel.",
-            "ru": "Рядом с отелем.",
-            "zh": "酒店附近。"
-          },
-          "optional": false,
-          "meal": "breakfast",
-          "warn": false
-        },
-        {
-          "id": "d17-work",
-          "name": {
-            "en": "Work at the hotel or a Jing'an café (3 h)",
-            "ru": "Работа в отеле или кафе в Цзинъане (3 ч)",
-            "zh": "酒店或静安咖啡馆办公（3小时）"
-          },
-          "time": "09:00",
-          "category": "work",
-          "lat": 31.2236,
-          "lng": 121.4466,
-          "placeId": null,
-          "note": {
-            "en": "09:00–12:00.",
-            "ru": "09:00–12:00.",
-            "zh": "9:00–12:00。"
-          },
-          "optional": false,
-          "meal": null,
-          "warn": false
-        },
-        {
-          "id": "d17-alt-nhm",
-          "name": {
-            "en": "If not working: Shanghai Natural History Museum",
-            "ru": "Если без работы: Шанхайский музей естествознания",
-            "zh": "不办公的话：上海自然博物馆"
-          },
-          "time": "09:00",
-          "category": "sight",
-          "lat": 31.2385,
-          "lng": 121.4555,
-          "placeId": null,
-          "note": {
-            "en": "Instead of the morning work: dinosaurs, a spiral building around a garden, 15 minutes from the hotel. About 2.5 hours.",
-            "ru": "Вместо утренней работы: динозавры, спиральное здание вокруг сада, 15 минут от отеля. Около 2,5 часа.",
-            "zh": "代替上午办公：恐龙、环绕庭院的螺旋形建筑，离酒店15分钟。约2.5小时。"
-          },
-          "details": {
-            "en": "Metro Line 13, Natural History Museum station. Closed Mondays; real-name booking in its WeChat account (bring your passport). The map pin is approximate.",
-            "ru": "Метро линии 13, станция Natural History Museum. По понедельникам закрыто; бронь по имени в его WeChat (возьмите паспорт). Точка на карте приблизительная.",
-            "zh": "地铁13号线自然博物馆站。周一闭馆；需在其微信公众号实名预约（带护照）。地图定位为大致位置。"
-          },
-          "optional": true,
-          "meal": null,
-          "warn": false,
-          "altFor": true,
-          "booking": true
         },
         {
           "id": "d17-lunch",
@@ -4115,16 +4102,66 @@
           "optional": false,
           "meal": "dinner",
           "warn": false
+        },
+        {
+          "id": "d17-zhangyuan",
+          "name": {
+            "en": "Zhangyuan (张园) by night",
+            "ru": "Чжанъюань (张园) вечером",
+            "zh": "夜游张园"
+          },
+          "time": "19:30",
+          "category": "sight",
+          "lat": 31.2302,
+          "lng": 121.4589,
+          "placeId": null,
+          "note": {
+            "en": "Shanghai's largest shikumen lane complex, restored and reopened with shops and cafés in the old houses; best as the lanes light up. Free.",
+            "ru": "Крупнейший в Шанхае комплекс переулков-шикумэнь, отреставрирован, в старых домах магазины и кафе; лучше всего, когда зажигается свет. Бесплатно.",
+            "zh": "上海规模最大的石库门里弄群，修缮后开放，老房子里有商店和咖啡馆，亮灯时最好看。免费。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false,
+          "photo": {
+            "src": "photos/d16-zhangyuan.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:A_Type_of_Shikumen_Gable_in_ZhangYuan_Shanghai.JPG",
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/A_Type_of_Shikumen_Gable_in_ZhangYuan_Shanghai.JPG?width=1200"
+          }
         }
       ],
       "checklist": [
         {
-          "id": "c12-nhm",
+          "id": "c12-train",
           "done": false,
           "text": {
-            "en": "Only if not working: Shanghai Natural History Museum (WeChat real-name booking)",
-            "ru": "Только если без работы: Шанхайский музей естествознания (бронь по имени в WeChat)",
-            "zh": "不办公才需要：上海自然博物馆（微信实名预约）"
+            "en": "Train 10:30 Suzhou → Shanghai Hongqiao",
+            "ru": "Поезд 10:30 Сучжоу → Шанхай-Хунцяо",
+            "zh": "10:30 苏州 → 上海虹桥"
+          }
+        },
+        {
+          "id": "c12-hotel",
+          "done": false,
+          "text": {
+            "en": "Shanghai hotel, 3 nights (12–15 Nov)",
+            "ru": "Отель в Шанхае, 3 ночи (12–15 ноября)",
+            "zh": "上海酒店，3晚（12–15日）"
+          }
+        },
+        {
+          "id": "c12-shuiguo",
+          "done": false,
+          "text": {
+            "en": "Buy the Shuiguo Tangquan package for Sat 14 Nov (Dianping/Meituan or Trip.com)",
+            "ru": "Купите пакет Shuiguo Tangquan на субботу 14 ноября (Dianping/Meituan или Trip.com)",
+            "zh": "购买14日（周六）的水裹汤泉套餐（大众点评/美团或Trip.com）"
           }
         }
       ]
@@ -4138,30 +4175,30 @@
         "zh": "周五"
       },
       "title": {
-        "en": "Shanghai Museum East, work at Shanghai Library East, Shanghai Tower at sunset",
-        "ru": "Восточный музей Шанхая, работа в Восточной библиотеке, Шанхайская башня на закате",
-        "zh": "上博东馆，上图东馆办公，上海中心看日落"
+        "en": "Morning work, Columbia Circle, Xujiahui, West Bund at sunset",
+        "ru": "Работа утром, Columbia Circle, Сюйцзяхуэй, West Bund на закате",
+        "zh": "上午办公，上生新所、徐家汇、徐汇滨江日落"
       },
-      "busyness": 4,
+      "busyness": 3,
       "focus": {
-        "en": "One Line 2 run, west to east: the new Shanghai Museum East in the morning, three hours of work in Shanghai Library East next door, then up the Shanghai Tower for sunset and the lights.",
-        "ru": "Один маршрут по линии 2 с запада на восток: утром новый восточный музей Шанхая, затем три часа работы в Восточной библиотеке по соседству, и на закат — на Шанхайскую башню.",
-        "zh": "沿2号线一路向东：上午新开的上海博物馆东馆，之后在隔壁上海图书馆东馆办公3小时，傍晚登上海中心看日落和夜景。"
+        "en": "Work at the hotel in the morning, then the west and south-west of the city, all new to you: Columbia Circle (a 1920s country club turned creative quarter), Xujiahui, the Long Museum and the West Bund riverside for sunset.",
+        "ru": "Утром работа в отеле, затем запад и юго-запад города, всё новое: Columbia Circle (загородный клуб 1920-х, ставший креативным кварталом), Сюйцзяхуэй, Long Museum и набережная West Bund на закате.",
+        "zh": "上午在酒店办公，下午去还没去过的城西和西南：上生新所（1920年代乡村俱乐部改造的创意街区）、徐家汇、龙美术馆，傍晚在徐汇滨江看日落。"
       },
       "roads": {
-        "en": "Jing'an Temple → Shanghai Science and Technology Museum station (上海科技馆): Line 2, about 25 minutes; the museum and the library are a short walk. Then Line 2 back three stops to Lujiazui, exit 6, about 8 minutes on foot to the Shanghai Tower. Back to the hotel: Line 2, about 15 minutes.",
-        "ru": "Jing'an Temple → станция Shanghai Science and Technology Museum (上海科技馆): линия 2, около 25 минут; до музея и библиотеки недалеко пешком. Затем линия 2 назад три остановки до Lujiazui, выход 6, около 8 минут пешком до Шанхайской башни. Обратно в отель: линия 2, около 15 минут.",
-        "zh": "静安寺 → 上海科技馆站：2号线约25分钟，步行可到博物馆和图书馆。之后2号线往回3站到陆家嘴，6号口步行约8分钟到上海中心。回酒店：2号线约15分钟。"
+        "en": "Hotel → Columbia Circle (延安西路1262号): taxi about 15 minutes. → Xujiahui: taxi about 10 minutes, or Line 10/11. → Long Museum / West Bund riverside: taxi about 15 minutes. Back to the hotel: taxi about 25 minutes.",
+        "ru": "Отель → Columbia Circle (延安西路1262号): такси около 15 минут. → Сюйцзяхуэй: такси около 10 минут или линии 10/11. → Long Museum / набережная West Bund: такси около 15 минут. Обратно в отель: такси около 25 минут.",
+        "zh": "酒店 → 上生新所（延安西路1262号）：打车约15分钟 → 徐家汇：打车约10分钟或10/11号线 → 龙美术馆/徐汇滨江：打车约15分钟。回酒店打车约25分钟。"
       },
       "clothing": {
-        "en": "Comfortable shoes; it is cooler up on the riverside in the evening.",
-        "ru": "Удобная обувь; вечером у реки прохладнее.",
-        "zh": "舒适的鞋；晚上江边较凉。"
+        "en": "Layers; windy by the river in the evening.",
+        "ru": "Слои; вечером у реки ветрено.",
+        "zh": "叠穿；晚上江边有风。"
       },
       "extra": {
-        "en": "Shanghai Museum East is closed on Tuesdays (not Mondays); Friday is fine. Book its timed slot and check the Shanghai Tower sunset slot on Trip.com or the «上海之巅观光厅» mini-program.",
-        "ru": "Восточный музей Шанхая закрыт по вторникам (не по понедельникам); пятница подходит. Забронируйте слот в музей и проверьте слот на закат в Шанхайской башне на Trip.com или в мини-приложении «上海之巅观光厅».",
-        "zh": "上博东馆周二闭馆（不是周一），周五正常开放。请预约东馆时段，并在Trip.com或「上海之巅观光厅」小程序查看日落时段门票。"
+        "en": "If you are not working, start at Columbia Circle at 10:00 and add the Shanghai Natural History Museum (Line 13, real-name booking in its WeChat) in the morning.",
+        "ru": "Если без работы, начните с Columbia Circle в 10:00 и утром добавьте Шанхайский музей естествознания (линия 13, бронь по имени в WeChat).",
+        "zh": "不办公的话，可以10:00就去上生新所，上午再加上海自然博物馆（13号线，微信实名预约）。"
       },
       "locations": [
         {
@@ -4186,273 +4223,34 @@
           "warn": false
         },
         {
-          "id": "d18-shmuseum",
+          "id": "d18-work",
           "name": {
-            "en": "Shanghai Museum East",
-            "ru": "Восточный музей Шанхая",
-            "zh": "上海博物馆东馆"
+            "en": "Work at the hotel or a Jing'an café (3 h)",
+            "ru": "Работа в отеле или кафе в Цзинъане (3 ч)",
+            "zh": "酒店或静安咖啡馆办公（3小时）"
           },
-          "time": "09:45",
-          "category": "museum",
-          "lat": 31.2186,
-          "lng": 121.547,
+          "time": "09:00",
+          "category": "work",
+          "lat": 31.2236,
+          "lng": 121.4466,
           "placeId": null,
           "note": {
-            "en": "Opened fully in December 2024: China's ancient art from bronzes and sculpture to painting and calligraphy, in 20 galleries. Allow 2.5 hours and pick a few halls.",
-            "ru": "Полностью открыт в декабре 2024: древнее искусство Китая от бронзы и скульптуры до живописи и каллиграфии в 20 залах. Заложите 2,5 часа и выберите несколько залов.",
-            "zh": "2024年12月全面开放：从青铜、雕塑到书画，20个展厅展示中国古代艺术。预留2.5小时，挑几个馆重点看。"
-          },
-          "details": {
-            "en": "世纪大道1952号. Opened with hours 10:00–18:00 (last entry 17:00), closed Tuesdays; timed real-name booking with a passport (verify current rules). The museum restaurant exists but is pricey; the Poly mall behind it has cheaper food. The map pin is approximate.",
-            "ru": "世纪大道1952号. При открытии часы 10:00–18:00 (вход до 17:00), по вторникам закрыто; бронь слота по имени с паспортом (проверьте актуальные правила). В музее есть ресторан, но дорогой; в ТЦ Poly за ним дешевле. Точка на карте приблизительная.",
-            "zh": "世纪大道1952号。开馆时公布10:00–18:00（17:00停止入场），周二闭馆；凭护照分时段实名预约（请核实最新规定）。馆内有餐厅但偏贵，后面的保利商场更实惠。地图定位为大致位置。"
+            "en": "09:00–12:00.",
+            "ru": "09:00–12:00.",
+            "zh": "9:00–12:00。"
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "photos/d18-shmuseum.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Museum_East.jpg",
-            "credit": "Wikimedia Commons",
-            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Museum_East.jpg?width=1200"
-          },
-          "booking": true
+          "warn": false
         },
         {
           "id": "d18-lunch",
           "name": {
-            "en": "Lunch",
-            "ru": "Обед",
-            "zh": "午餐"
+            "en": "Lunch at Columbia Circle",
+            "ru": "Обед в Columbia Circle",
+            "zh": "上生新所午餐"
           },
-          "time": "12:30",
-          "category": "food",
-          "lat": 31.2178,
-          "lng": 121.5475,
-          "placeId": null,
-          "note": {
-            "en": "In the mall right behind the museum.",
-            "ru": "В торговом центре прямо за музеем.",
-            "zh": "在博物馆后面的商场吃。"
-          },
-          "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
-          },
-          "optional": false,
-          "meal": "main",
-          "warn": false
-        },
-        {
-          "id": "d18-work",
-          "name": {
-            "en": "Work: Shanghai Library East (3 h)",
-            "ru": "Работа: Восточная библиотека Шанхая (3 ч)",
-            "zh": "办公：上海图书馆东馆（3小时）"
-          },
-          "time": "13:30",
-          "category": "work",
-          "lat": 31.217,
-          "lng": 121.5495,
-          "placeId": null,
-          "note": {
-            "en": "13:30–16:30 in China's largest single library building (opened 2022), next to the museum: close to 6,000 seats, quiet zones and study rooms. Free.",
-            "ru": "13:30–16:30 в крупнейшем в Китае здании библиотеки (открыто в 2022), рядом с музеем: около 6000 мест, тихие зоны и учебные комнаты. Бесплатно.",
-            "zh": "13:30–16:30，在国内单体面积最大的图书馆（2022年开馆）办公，就在博物馆旁：近6000个座位，有静音区和学习室，免费。"
-          },
-          "details": {
-            "en": "Hours and passport rules not checked live: confirm before you go. Use your own data/hotspot. The map pin is approximate.",
-            "ru": "Часы и правила входа по паспорту не проверены: уточните заранее. Интернет — свой/раздача. Точка на карте приблизительная.",
-            "zh": "开放时间和凭护照入馆规定未核实，去前请确认。用自己的流量/热点。地图定位为大致位置。"
-          },
-          "optional": false,
-          "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "photos/d18-work.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Library_East-Exterior_East-20250430.jpg",
-            "credit": "Wikimedia Commons",
-            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Library_East-Exterior_East-20250430.jpg?width=1200"
-          }
-        },
-        {
-          "id": "d18-alt-century",
-          "name": {
-            "en": "If not working: Century Park (世纪公园)",
-            "ru": "Если без работы: парк Века (世纪公园)",
-            "zh": "不办公的话：世纪公园"
-          },
-          "time": "13:30",
-          "category": "sight",
-          "lat": 31.2195,
-          "lng": 121.5515,
-          "placeId": null,
-          "note": {
-            "en": "Instead of working at the library: Shanghai's largest park, right next to the museum, with a lake and autumn colours; a slow 1.5–2 hours before the Shanghai Tower.",
-            "ru": "Вместо работы в библиотеке: самый большой парк Шанхая, прямо рядом с музеем, с озером и осенними красками; неспешные 1,5–2 часа перед Шанхайской башней.",
-            "zh": "代替图书馆办公：上海最大的公园，就在博物馆旁，有湖和秋色；悠闲走1.5–2小时再去上海中心。"
-          },
-          "details": {
-            "en": "Ticket about ¥10 (verify). The map pin is approximate.",
-            "ru": "Билет около ¥10 (проверьте). Точка на карте приблизительная.",
-            "zh": "门票约¥10（请核实）。地图定位为大致位置。"
-          },
-          "optional": true,
-          "meal": null,
-          "warn": false,
-          "altFor": true
-        },
-        {
-          "id": "d18-tower",
-          "name": {
-            "en": "Shanghai Tower, Top of Shanghai (118F)",
-            "ru": "Шанхайская башня, смотровая 118-го этажа",
-            "zh": "上海中心·上海之巅观光厅（118层）"
-          },
-          "time": "16:45",
-          "category": "sight",
-          "lat": 31.2335,
-          "lng": 121.5055,
-          "placeId": null,
-          "note": {
-            "en": "546 m up, China's highest observation deck: watch the sunset (about 17:00) and stay as the Bund and Lujiazui light up below.",
-            "ru": "На высоте 546 м, самая высокая смотровая Китая: встретьте закат (около 17:00) и оставайтесь, пока внизу загораются Бунд и Луцзяцзуй.",
-            "zh": "546米高，中国最高观光厅：看日落（约17:00），再等外滩和陆家嘴亮灯。"
-          },
-          "details": {
-            "en": "Standard ticket ¥180 (118F); open about 08:30–22:00, last entry 21:30. Buy a timed ticket on Trip.com or the «上海之巅观光厅» mini-program. Metro Line 2 Lujiazui, exit 6. The map pin is approximate.",
-            "ru": "Стандартный билет ¥180 (118-й этаж); примерно 08:30–22:00, вход до 21:30. Билет со временем — на Trip.com или в мини-приложении «上海之巅观光厅». Метро линии 2 Lujiazui, выход 6. Точка на карте приблизительная.",
-            "zh": "标准票¥180（118层）；约8:30–22:00开放，21:30停止入场。可在Trip.com或「上海之巅观光厅」小程序购买。地铁2号线陆家嘴站6号口。地图定位为大致位置。"
-          },
-          "optional": false,
-          "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "photos/d18-tower.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Tower_Night_View.jpg",
-            "credit": "Wikimedia Commons",
-            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Tower_Night_View.jpg?width=1200"
-          },
-          "booking": true
-        },
-        {
-          "id": "d18-dinner",
-          "name": {
-            "en": "Dinner in Lujiazui",
-            "ru": "Ужин в Луцзяцзуе",
-            "zh": "陆家嘴晚餐"
-          },
-          "time": "18:30",
-          "category": "food",
-          "lat": 31.236,
-          "lng": 121.502,
-          "placeId": null,
-          "note": {
-            "en": "The IFC mall and Super Brand Mall next to the towers have many choices; or Line 2 back to Jing'an.",
-            "ru": "В ТЦ IFC и Super Brand Mall рядом с башнями большой выбор; или линия 2 обратно в Цзинъань.",
-            "zh": "上海中心旁的国金中心、正大广场选择很多；或乘2号线回静安。"
-          },
-          "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
-          },
-          "optional": false,
-          "meal": "dinner",
-          "warn": false
-        }
-      ],
-      "checklist": [
-        {
-          "id": "c13-shm",
-          "done": false,
-          "text": {
-            "en": "Shanghai Museum East timed slot (closed Tuesdays)",
-            "ru": "Слот в восточный музей Шанхая (по вторникам закрыто)",
-            "zh": "上博东馆分时段预约（周二闭馆）"
-          }
-        },
-        {
-          "id": "c13-tower",
-          "done": false,
-          "text": {
-            "en": "Shanghai Tower timed ticket around 16:45 (Trip.com or «上海之巅观光厅»)",
-            "ru": "Билет со временем в Шанхайскую башню около 16:45 (Trip.com или «上海之巅观光厅»)",
-            "zh": "上海中心约16:45时段门票（Trip.com或「上海之巅观光厅」）"
-          }
-        }
-      ]
-    },
-    {
-      "day": 19,
-      "date": "2026-11-14",
-      "weekday": {
-        "en": "Sat",
-        "ru": "Сб",
-        "zh": "周六"
-      },
-      "title": {
-        "en": "Columbia Circle, work at Shanghai Library, West Bund riverside at sunset",
-        "ru": "Columbia Circle, работа в библиотеке Шанхая, набережная West Bund на закате",
-        "zh": "上生新所，上海图书馆办公，徐汇滨江日落"
-      },
-      "busyness": 3,
-      "focus": {
-        "en": "The western side of the city you have not seen: Columbia Circle (a 1920s country club turned into a creative quarter), three hours of work at Shanghai Library on Huaihai Road, then the West Bund riverside for the last sunset.",
-        "ru": "Западная часть города, которую вы ещё не видели: Columbia Circle (загородный клуб 1920-х, ставший креативным кварталом), три часа работы в библиотеке Шанхая на Хуайхай-роуд и набережная West Bund на последнем закате.",
-        "zh": "还没去过的城西：上生新所（1920年代乡村俱乐部改造的创意街区），在淮海路上海图书馆办公3小时，最后在徐汇滨江看日落。"
-      },
-      "roads": {
-        "en": "Hotel → Columbia Circle (延安西路1262号): taxi about 15 minutes. Columbia Circle → Shanghai Library (淮海中路1555号): about 1.5 km, 20 minutes on foot or a short taxi. Library → West Bund riverside: taxi/DiDi about 15–20 minutes. Back to the hotel: taxi about 25 minutes.",
-        "ru": "Отель → Columbia Circle (延安西路1262号): такси около 15 минут. Columbia Circle → библиотека Шанхая (淮海中路1555号): около 1,5 км, 20 минут пешком или короткое такси. Библиотека → набережная West Bund: такси/DiDi 15–20 минут. Обратно в отель: такси около 25 минут.",
-        "zh": "酒店 → 上生新所（延安西路1262号）：打车约15分钟。上生新所 → 上海图书馆（淮海中路1555号）：约1.5公里，步行20分钟或短程打车。图书馆 → 徐汇滨江：打车15–20分钟。回酒店：打车约25分钟。"
-      },
-      "clothing": {
-        "en": "Layers; windy by the river in the evening.",
-        "ru": "Слои; вечером у реки ветрено.",
-        "zh": "叠穿；晚上江边有风。"
-      },
-      "extra": {
-        "en": "Saturday: Columbia Circle and the riverside are busier in the afternoon, so Columbia Circle goes first. Tomorrow is the bathhouse day; the flight is on Monday.",
-        "ru": "Суббота: в Columbia Circle и на набережной во второй половине дня многолюднее, поэтому Columbia Circle первым. Завтра день в банях; вылет в понедельник.",
-        "zh": "周六上生新所和滨江下午人多，所以先去上生新所。明天泡汤泉，周一回程。"
-      },
-      "locations": [
-        {
-          "id": "d19-columbia",
-          "name": {
-            "en": "Columbia Circle (上生新所)",
-            "ru": "Columbia Circle (上生新所)",
-            "zh": "上生新所"
-          },
-          "time": "10:00",
-          "category": "sight",
-          "lat": 31.2066,
-          "lng": 121.4225,
-          "placeId": null,
-          "note": {
-            "en": "The former Columbia Country Club: a Spanish-style clubhouse, a 1920s swimming pool under a colonnade and Sun Ke's villa, now cafés, bookshops and exhibitions. Free; about 1.5 hours with brunch.",
-            "ru": "Бывший Columbia Country Club: клуб в испанском стиле, бассейн 1920-х под колоннадой и вилла Сунь Кэ, теперь кафе, книжные и выставки. Бесплатно; около 1,5 часа с бранчем.",
-            "zh": "原哥伦比亚乡村俱乐部：西班牙式会所、廊柱环绕的1920年代泳池、孙科住宅，如今是咖啡馆、书店和展览。免费；连早午餐约1.5小时。"
-          },
-          "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
-          },
-          "optional": false,
-          "meal": null,
-          "warn": false
-        },
-        {
-          "id": "d19-brunch",
-          "name": {
-            "en": "Brunch at Columbia Circle",
-            "ru": "Бранч в Columbia Circle",
-            "zh": "上生新所早午餐"
-          },
-          "time": "11:15",
+          "time": "12:45",
           "category": "cafe",
           "lat": 31.2066,
           "lng": 121.4225,
@@ -4472,53 +4270,47 @@
           "warn": false
         },
         {
-          "id": "d19-work",
+          "id": "d18-columbia",
           "name": {
-            "en": "Work: Shanghai Library, Huaihai Road (3 h)",
-            "ru": "Работа: библиотека Шанхая, Хуайхай-роуд (3 ч)",
-            "zh": "办公：上海图书馆淮海路馆（3小时）"
+            "en": "Columbia Circle (上生新所)",
+            "ru": "Columbia Circle (上生新所)",
+            "zh": "上生新所"
           },
-          "time": "12:30",
-          "category": "work",
-          "lat": 31.2075,
-          "lng": 121.4447,
+          "time": "13:00",
+          "category": "sight",
+          "lat": 31.2066,
+          "lng": 121.4225,
           "placeId": null,
           "note": {
-            "en": "12:30–15:30 in the city's main library, near Wukang Road; reading rooms with power.",
-            "ru": "12:30–15:30 в главной библиотеке города, недалеко от Укан-лу; читальные залы с розетками.",
-            "zh": "12:30–15:30，在武康路附近的上海图书馆办公；阅览室有插座。"
+            "en": "The former Columbia Country Club: a Spanish-style clubhouse, a 1920s swimming pool under a colonnade and Sun Ke's villa, now cafés, bookshops and exhibitions. Free; about 1.5 hours with brunch.",
+            "ru": "Бывший Columbia Country Club: клуб в испанском стиле, бассейн 1920-х под колоннадой и вилла Сунь Кэ, теперь кафе, книжные и выставки. Бесплатно; около 1,5 часа с бранчем.",
+            "zh": "原哥伦比亚乡村俱乐部：西班牙式会所、廊柱环绕的1920年代泳池、孙科住宅，如今是咖啡馆、书店和展览。免费；连早午餐约1.5小时。"
           },
           "details": {
-            "en": "淮海中路1555号, metro Line 10 Shanghai Library. Hours and passport rules not checked live: confirm before you go; fallback is a café back at Columbia Circle. The map pin is approximate.",
-            "ru": "淮海中路1555号, метро линии 10 Shanghai Library. Часы и правила входа по паспорту не проверены: уточните заранее; запасной вариант — кафе в Columbia Circle. Точка на карте приблизительная.",
-            "zh": "淮海中路1555号，地铁10号线上海图书馆站。开放时间和凭护照入馆规定未核实，去前请确认；备选回上生新所的咖啡馆。地图定位为大致位置。"
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "photos/d19-work.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:Shanghai_Library_2.jpg",
-            "credit": "Wikimedia Commons",
-            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Library_2.jpg?width=1200"
-          }
+          "warn": false
         },
         {
-          "id": "d19-alt-xujiahui",
+          "id": "d18-xujiahui",
           "name": {
-            "en": "If not working: Xujiahui Cathedral and Xujiahui Library",
-            "ru": "Если без работы: собор и библиотека Сюйцзяхуэй",
-            "zh": "不办公的话：徐家汇天主堂与徐家汇书院"
+            "en": "Xujiahui Cathedral and Xujiahui Library",
+            "ru": "Собор и библиотека Сюйцзяхуэй",
+            "zh": "徐家汇天主堂与徐家汇书院"
           },
-          "time": "12:30",
+          "time": "14:30",
           "category": "sight",
           "lat": 31.1945,
           "lng": 121.4365,
           "placeId": null,
           "note": {
-            "en": "Instead of working at the library: the 1910 twin-spired cathedral and the new library-in-a-garden across the road, on the way to the West Bund. About 1.5 hours.",
-            "ru": "Вместо работы в библиотеке: собор 1910 года с двумя шпилями и новая библиотека-в-саду через дорогу, по пути к West Bund. Около 1,5 часа.",
-            "zh": "代替图书馆办公：1910年建的双尖塔天主堂，以及马路对面的园林式新书院，正好在去徐汇滨江的路上。约1.5小时。"
+            "en": "The 1910 twin-spired cathedral and the new library-in-a-garden across the road, on the way to the West Bund. About 1 hour.",
+            "ru": "Собор 1910 года с двумя шпилями и новая библиотека-в-саду через дорогу, по пути к West Bund. Около часа.",
+            "zh": "1910年的双尖塔天主堂和马路对面的园林式新书院，正好在去徐汇滨江的路上。约1小时。"
           },
           "details": {
             "en": "Metro Line 1/9/11, Xujiahui. Cathedral visiting hours vary; the library may ask for a passport (verify both). The map pin is approximate.",
@@ -4527,11 +4319,10 @@
           },
           "optional": true,
           "meal": null,
-          "warn": false,
-          "altFor": true
+          "warn": false
         },
         {
-          "id": "d19-longmuseum",
+          "id": "d18-longmuseum",
           "name": {
             "en": "Long Museum West Bund",
             "ru": "Long Museum West Bund",
@@ -4564,7 +4355,7 @@
           "booking": true
         },
         {
-          "id": "d19-westbund",
+          "id": "d18-westbund",
           "name": {
             "en": "West Bund riverside at sunset",
             "ru": "Набережная West Bund на закате",
@@ -4590,7 +4381,7 @@
           "warn": false
         },
         {
-          "id": "d19-dinner",
+          "id": "d18-dinner",
           "name": {
             "en": "Dinner on the West Bund",
             "ru": "Ужин на West Bund",
@@ -4618,7 +4409,7 @@
       ],
       "checklist": [
         {
-          "id": "c14-long",
+          "id": "c13-long",
           "done": false,
           "text": {
             "en": "Long Museum West Bund ticket, if the current show appeals",
@@ -4627,23 +4418,23 @@
           }
         },
         {
-          "id": "c14-shuiguo",
+          "id": "c13-shuiguo",
           "done": false,
           "text": {
-            "en": "Buy tomorrow's Shuiguo Tangquan package (Dianping/Meituan or Trip.com)",
-            "ru": "Купите пакет Shuiguo Tangquan на завтра (Dianping/Meituan или Trip.com)",
-            "zh": "购买明天的水裹汤泉套餐（大众点评/美团或Trip.com）"
+            "en": "Shuiguo Tangquan package for tomorrow bought",
+            "ru": "Пакет Shuiguo Tangquan на завтра куплен",
+            "zh": "明天的水裹汤泉套餐已买"
           }
         }
       ]
     },
     {
-      "day": 20,
-      "date": "2026-11-15",
+      "day": 19,
+      "date": "2026-11-14",
       "weekday": {
-        "en": "Sun",
-        "ru": "Вс",
-        "zh": "周日"
+        "en": "Sat",
+        "ru": "Сб",
+        "zh": "周六"
       },
       "title": {
         "en": "Bathhouse day: Shuiguo Tangquan, Yangpu riverside",
@@ -4667,13 +4458,13 @@
         "zh": "穿着舒适即可：汤泉提供浴服、毛巾和洗护用品。请带护照和充电器。"
       },
       "extra": {
-        "en": "Why Shuiguo: it is the one Shanghai bathhouse that the city government and travel bloggers point foreign visitors to, at about ¥300 per person including all-you-can-eat food, drinks and fruit, rest areas and cinema, for an 8–16 hour stay. Luxury options such as Muyu Xinji cost ¥899–1,199. Buy on Dianping/Meituan or Trip.com: weekday packages are usually cheaper than Sunday, so if the price gap is big, swap this day with Friday 13 Nov. Bathing areas are separated by gender and bathing is nude, as in all Chinese bathhouses; swimwear is for the mixed areas.",
-        "ru": "Почему Shuiguo: это бани, которые городские власти и тревел-блогеры рекомендуют иностранцам, около ¥300 с человека — еда, напитки и фрукты без ограничений, зоны отдыха и кинозал, на 8–16 часов. Люксовые варианты вроде Muyu Xinji стоят ¥899–1199. Покупайте в Dianping/Meituan или Trip.com: в будни пакеты обычно дешевле, чем в воскресенье, так что при большой разнице поменяйте этот день с пятницей 13 ноября. Купальни раздельные для мужчин и женщин и без одежды, как во всех китайских банях; купальник нужен в общих зонах.",
-        "zh": "选水裹的原因：上海市政府和旅行博主都向外国游客推荐这家，人均约¥300，含无限量餐食、饮品和水果、休息区、影院，可待8–16小时。沐屿新集等高端选择要¥899–1199。可在大众点评/美团或Trip.com购票：工作日套餐通常比周日便宜，差价大的话可与11月13日周五对调。和所有国内汤泉一样，浴区男女分开、不穿衣；公共区穿浴服。"
+        "en": "Last full day. Shuiguo Tangquan is about ¥300 per person for an 8–16 hour stay with all-you-can-eat food, drinks and fruit; buy on Dianping/Meituan or Trip.com (Saturday may cost more than a weekday). Bathing areas are separated by gender and bathing is nude; loungewear for the shared areas. Pack tonight: you fly tomorrow.",
+        "ru": "Последний полный день. Shuiguo Tangquan — около ¥300 с человека на 8–16 часов, еда, напитки и фрукты без ограничений; покупайте в Dianping/Meituan или Trip.com (в субботу может быть дороже, чем в будни). Купальни раздельные и без одежды; в общих зонах — пижама. Вечером соберите вещи: завтра вылет.",
+        "zh": "最后一整天。水裹汤泉人均约¥300，可待8–16小时，餐食、饮品、水果无限量；在大众点评/美团或Trip.com购买（周六可能比工作日贵）。浴区男女分开、不穿衣；公共区穿浴服。今晚收拾行李，明天回程。"
       },
       "locations": [
         {
-          "id": "d20-breakfast",
+          "id": "d19-breakfast",
           "name": {
             "en": "Light breakfast",
             "ru": "Лёгкий завтрак",
@@ -4694,7 +4485,7 @@
           "warn": false
         },
         {
-          "id": "d20-yangpu",
+          "id": "d19-yangpu",
           "name": {
             "en": "Yangpu riverside (杨浦滨江)",
             "ru": "Набережная Янпу (杨浦滨江)",
@@ -4726,7 +4517,7 @@
           }
         },
         {
-          "id": "d20-shuiguo",
+          "id": "d19-shuiguo",
           "name": {
             "en": "Shuiguo Tangquan (水裹汤泉), Wujiaochang",
             "ru": "Shuiguo Tangquan (水裹汤泉), Уцзяочан",
@@ -4753,7 +4544,7 @@
           "booking": true
         },
         {
-          "id": "d20-lunch",
+          "id": "d19-lunch",
           "name": {
             "en": "Lunch: bathhouse buffet",
             "ru": "Обед: шведский стол в банях",
@@ -4774,7 +4565,7 @@
           "warn": false
         },
         {
-          "id": "d20-work",
+          "id": "d19-work",
           "name": {
             "en": "Work in the bathhouse lounge (3 h)",
             "ru": "Работа в зоне отдыха бань (3 ч)",
@@ -4800,7 +4591,7 @@
           "warn": false
         },
         {
-          "id": "d20-alt-soak",
+          "id": "d19-alt-soak",
           "name": {
             "en": "If not working: soak, sauna and nap",
             "ru": "Если без работы: купальни, сауна и сон",
@@ -4827,7 +4618,7 @@
           "altFor": true
         },
         {
-          "id": "d20-massage",
+          "id": "d19-massage",
           "name": {
             "en": "Massage or TCM treatment",
             "ru": "Массаж или процедура ТКМ",
@@ -4848,7 +4639,7 @@
           "warn": false
         },
         {
-          "id": "d20-dinner",
+          "id": "d19-dinner",
           "name": {
             "en": "Dinner: bathhouse buffet, then pack",
             "ru": "Ужин: шведский стол, затем сборы",
@@ -4860,9 +4651,9 @@
           "lng": 121.514,
           "placeId": null,
           "note": {
-            "en": "Taxi back around 20:00 and pack: tomorrow is the flight.",
-            "ru": "Около 20:00 на такси обратно и собирайте вещи: завтра вылет.",
-            "zh": "约20:00打车回酒店收拾行李：明天回程。"
+            "en": "Taxi back around 20:00 and pack: tomorrow is the flight to Phuket.",
+            "ru": "Около 20:00 на такси обратно и собирайте вещи: завтра вылет на Пхукет.",
+            "zh": "约20:00打车回酒店收拾行李：明天飞普吉岛。"
           },
           "optional": false,
           "meal": "dinner",
@@ -4871,7 +4662,7 @@
       ],
       "checklist": [
         {
-          "id": "c15-shuiguo",
+          "id": "c14-shuiguo",
           "done": false,
           "text": {
             "en": "Shuiguo Tangquan package bought; passport for check-in",
@@ -4880,34 +4671,34 @@
           }
         },
         {
-          "id": "c15-checkin",
+          "id": "c14-checkin",
           "done": false,
           "text": {
-            "en": "Online check-in for tomorrow's flight to Kuala Lumpur",
-            "ru": "Онлайн-регистрация на завтрашний рейс в Куала-Лумпур",
-            "zh": "办理明天回吉隆坡航班的网上值机"
+            "en": "Online check-in for tomorrow's flight to Phuket",
+            "ru": "Онлайн-регистрация на завтрашний рейс на Пхукет",
+            "zh": "办理明天飞普吉岛航班的网上值机"
           }
         }
       ]
     },
     {
-      "day": 21,
-      "date": "2026-11-16",
+      "day": 20,
+      "date": "2026-11-15",
       "weekday": {
-        "en": "Mon",
-        "ru": "Пн",
-        "zh": "周一"
+        "en": "Sun",
+        "ru": "Вс",
+        "zh": "周日"
       },
       "title": {
-        "en": "Departure from Shanghai Pudong",
-        "ru": "Вылет из Шанхая (Пудун)",
-        "zh": "从上海浦东返程"
+        "en": "Fly to Phuket from Shanghai Pudong",
+        "ru": "Вылет на Пхукет из Шанхая (Пудун)",
+        "zh": "从上海浦东飞普吉岛"
       },
       "busyness": 1,
       "focus": {
-        "en": "From the hotel to Pudong airport for the flight to Kuala Lumpur. The flight time is not confirmed yet, so the times below are placeholders.",
-        "ru": "Из отеля в аэропорт Пудун на рейс в Куала-Лумпур. Время вылета пока не подтверждено, поэтому время ниже ориентировочное.",
-        "zh": "从酒店前往浦东机场，搭乘返回吉隆坡的航班。航班时间待确认，以下时间仅供参考。"
+        "en": "From the hotel to Pudong airport for the flight to Phuket. The flight time is not confirmed yet, so the times below are placeholders.",
+        "ru": "Из отеля в аэропорт Пудун на рейс в Пхукет. Время вылета пока не подтверждено, поэтому время ниже ориентировочное.",
+        "zh": "从酒店前往浦东机场，搭乘返回普吉岛的航班。航班时间待确认，以下时间仅供参考。"
       },
       "roads": {
         "en": "Metro Line 2 from Jing'an Temple to Pudong International Airport, about 1 h 20 – 1 h 30 (some trains terminate at Guanglan Road: change to the airport train on the same platform). Faster: Line 2 to Longyang Road, then the Maglev (about 8 minutes). Taxi/DiDi about 50–60 minutes. Arrive 3 hours before an international flight.",
@@ -4915,18 +4706,18 @@
         "zh": "地铁2号线静安寺 → 浦东国际机场，约1小时20分–1小时30分（部分车次终点为广兰路，同站台换乘去机场的车）。更快：2号线到龙阳路换磁悬浮（约8分钟）。打车约50–60分钟。国际航班请提前3小时到达。"
       },
       "clothing": {
-        "en": "Comfortable travel clothes; Kuala Lumpur is about +32 °C.",
-        "ru": "Удобная одежда для дороги; в Куала-Лумпуре около +32 °C.",
-        "zh": "穿舒适的旅行服装；吉隆坡约32°C。"
+        "en": "Comfortable travel clothes; Phuket is about +31 °C.",
+        "ru": "Удобная одежда для дороги; в Пхукете около +31 °C.",
+        "zh": "穿舒适的旅行服装；普吉岛约31°C。"
       },
       "extra": {
-        "en": "Visa-free stay: 27 Oct – 16 Nov is 21 days, within the 30-day limit. Keep your passport and boarding pass at hand.",
-        "ru": "Безвизовое пребывание: 27 октября – 16 ноября — 21 день, в пределах лимита 30 дней. Паспорт и посадочный держите под рукой.",
-        "zh": "免签停留：10月27日至11月16日共21天，在30天限期内。护照和登机牌随身携带。"
+        "en": "Visa-free stay: 27 Oct – 15 Nov is 20 days, within the 30-day limit. Keep your passport and boarding pass at hand.",
+        "ru": "Безвизовое пребывание: 27 октября – 15 ноября — 20 дней, в пределах лимита 30 дней. Паспорт и посадочный держите под рукой.",
+        "zh": "免签停留：10月27日至11月15日共20天，在30天限期内。护照和登机牌随身携带。"
       },
       "locations": [
         {
-          "id": "d21-breakfast",
+          "id": "d20-breakfast",
           "name": {
             "en": "Breakfast",
             "ru": "Завтрак",
@@ -4947,7 +4738,7 @@
           "warn": false
         },
         {
-          "id": "d21-checkout",
+          "id": "d20-checkout",
           "name": {
             "en": "Check-out: Jing'an Temple hotel",
             "ru": "Выезд: отель у Jing'an Temple",
@@ -4968,7 +4759,7 @@
           "warn": false
         },
         {
-          "id": "d21-metro",
+          "id": "d20-metro",
           "name": {
             "en": "Metro Line 2 / Maglev to Pudong airport",
             "ru": "Метро линии 2 / маглев в аэропорт Пудун",
@@ -4989,7 +4780,7 @@
           "warn": false
         },
         {
-          "id": "d21-departure",
+          "id": "d20-departure",
           "name": {
             "en": "Departure: Shanghai Pudong (PVG)",
             "ru": "Вылет: Шанхай Пудун (PVG)",
@@ -5018,12 +4809,12 @@
       ],
       "checklist": [
         {
-          "id": "c16-flight",
+          "id": "c15-flight",
           "done": false,
           "text": {
-            "en": "Leave the hotel 4.5 hours before the flight; passport and boarding pass at hand",
-            "ru": "Выезд из отеля за 4,5 часа до рейса; паспорт и посадочный под рукой",
-            "zh": "航班前4.5小时离开酒店；护照、登机牌随身"
+            "en": "Leave the hotel 4.5 hours before the flight to Phuket; passport and boarding pass at hand",
+            "ru": "Выезд из отеля за 4,5 часа до рейса на Пхукет; паспорт и посадочный под рукой",
+            "zh": "飞普吉岛航班前4.5小时离开酒店；护照、登机牌随身"
           }
         }
       ]
@@ -5375,32 +5166,6 @@
         "warn": false
       },
       {
-        "id": "din-lujiazui",
-        "name": {
-          "en": "Lujiazui malls (Shanghai)",
-          "ru": "ТЦ Луцзяцзуя (Шанхай)",
-          "zh": "陆家嘴商场（上海）"
-        },
-        "time": null,
-        "category": "food",
-        "lat": 31.236,
-        "lng": 121.502,
-        "placeId": null,
-        "note": {
-          "en": "IFC and Super Brand Mall next to the towers: everything from dumplings to fine dining.",
-          "ru": "IFC и Super Brand Mall у башен: от пельменей до высокой кухни.",
-          "zh": "国金中心、正大广场：从小笼到高档餐厅都有。"
-        },
-        "details": {
-          "en": "The map pin is approximate: navigate by the name.",
-          "ru": "Точка на карте приблизительная: ищите по названию.",
-          "zh": "地图定位为大致位置，请按名称导航。"
-        },
-        "optional": false,
-        "meal": null,
-        "warn": false
-      },
-      {
         "id": "din-zhangyuan",
         "name": {
           "en": "Zhangyuan and Wujiang Road (Shanghai)",
@@ -5494,9 +5259,9 @@
           "zh": "入境"
         },
         "text": {
-          "en": "Malaysian passport: visa-free up to 30 days under the mutual exemption. Russian citizens: visa-free until 31 December 2027, up to 30 days (per sources). Confirm on the PRC MFA website before departure. This trip is 21 days (27 Oct – 16 Nov).",
-          "ru": "Паспорт Малайзии: безвизовый въезд до 30 дней по взаимному соглашению. Граждане РФ: безвизовый въезд до 31 декабря 2027 года, до 30 дней (по источникам). Подтвердите на сайте МИД КНР перед вылетом. Эта поездка — 21 день (27 октября – 16 ноября).",
-          "zh": "马来西亚护照：互免签证，可停留最长30天。俄罗斯公民：免签入境至2027年12月31日，最长30天（据资料）。出发前请在中国外交部网站确认。本次行程共21天（10月27日至11月16日）。"
+          "en": "Malaysian passport: visa-free up to 30 days under the mutual exemption. Russian citizens: visa-free until 31 December 2027, up to 30 days (per sources). Confirm on the PRC MFA website before departure. This trip is 20 days (27 Oct – 15 Nov).",
+          "ru": "Паспорт Малайзии: безвизовый въезд до 30 дней по взаимному соглашению. Граждане РФ: безвизовый въезд до 31 декабря 2027 года, до 30 дней (по источникам). Подтвердите на сайте МИД КНР перед вылетом. Эта поездка — 20 дней (27 октября – 15 ноября).",
+          "zh": "马来西亚护照：互免签证，可停留最长30天。俄罗斯公民：免签入境至2027年12月31日，最长30天（据资料）。出发前请在中国外交部网站确认。本次行程共20天（10月27日至11月15日）。"
         }
       },
       {
@@ -5506,9 +5271,9 @@
           "zh": "上海展会"
         },
         "text": {
-          "en": "The CIIE expo runs 5–10 November in Shanghai. You come back to Shanghai on 11 November, after it ends, so hotel prices are normal.",
-          "ru": "С 5 по 10 ноября в Шанхае проходит выставка CIIE. Вы возвращаетесь в Шанхай 11 ноября, уже после неё, поэтому цены на отели обычные.",
-          "zh": "11月5日至10日上海举办进博会。您11日回上海时展会已结束，酒店价格正常。"
+          "en": "The CIIE expo runs 5–10 November in Shanghai. You come back to Shanghai on 12 November, after it ends, so hotel prices are normal.",
+          "ru": "С 5 по 10 ноября в Шанхае проходит выставка CIIE. Вы возвращаетесь в Шанхай 12 ноября, уже после неё, поэтому цены на отели обычные.",
+          "zh": "11月5日至10日上海举办进博会。您12日回上海时展会已结束，酒店价格正常。"
         }
       },
       {
@@ -5518,9 +5283,9 @@
           "zh": "火车票"
         },
         "text": {
-          "en": "Book on the 12306 app (English, passport-linked) or Trip.com; entry is by passport. Remaining legs: 6 Nov Hangzhou East 13:20 → Nanjing 14:44 (booked); 9 Nov Nanjing (南京站, not Nanjing South) → Suzhou; 11 Nov Suzhou → Shanghai Hongqiao.",
-          "ru": "Бронируйте в приложении 12306 (английская версия, привязка паспорта) или на Trip.com; вход по паспорту. Оставшиеся переезды: 6 ноября Ханчжоу-Восточный 13:20 → Нанкин 14:44 (куплен); 9 ноября Нанкин (南京站, не Нанкин-Южный) → Сучжоу; 11 ноября Сучжоу → Шанхай-Хунцяо.",
-          "zh": "可通过12306（英文版，绑定护照）或Trip.com购票；进站验护照。剩余行程：11月6日杭州东13:20 → 南京14:44（已购）；9日南京站（不是南京南站）→ 苏州；11日苏州 → 上海虹桥。"
+          "en": "Book on the 12306 app (English, passport-linked) or Trip.com; entry is by passport. Remaining legs: 9 Nov Nanjing (南京站, not Nanjing South) → Suzhou; 12 Nov 10:30 Suzhou → Shanghai Hongqiao.",
+          "ru": "Бронируйте в приложении 12306 (английская версия, привязка паспорта) или на Trip.com; вход по паспорту. Оставшиеся переезды: 9 ноября Нанкин (南京站, не Нанкин-Южный) → Сучжоу; 12 ноября 10:30 Сучжоу → Шанхай-Хунцяо.",
+          "zh": "可通过12306（英文版，绑定护照）或Trip.com购票；进站验护照。剩余行程：11月9日南京站（不是南京南站）→ 苏州；12日10:30 苏州 → 上海虹桥。"
         }
       },
       {
@@ -5530,9 +5295,9 @@
           "zh": "需提前预约"
         },
         "text": {
-          "en": "Booked: Sun Yat-sen Mausoleum (8 Nov), Suzhou Museum (11 Nov, 11:00). Still to do: the Nanjing Massacre Memorial (7 or 8 Nov, its own WeChat account only), hotels in Nanjing (6–9 Nov), Suzhou (9–11 Nov) and Shanghai (11–16 Nov). Also: Shanghai Museum East (13 Nov), a Shanghai Tower sunset ticket and the Shuiguo Tangquan package for 15 Nov.",
-          "ru": "Забронировано: мавзолей Сунь Ятсена (8 ноября), музей Сучжоу (11 ноября, 11:00). Осталось: мемориал жертвам Нанкинской резни (7 или 8 ноября, только через его WeChat-аккаунт), отели в Нанкине (6–9 ноября), Сучжоу (9–11 ноября) и Шанхае (11–16 ноября). Также: восточный музей Шанхая (13 ноября), билет на закат в Шанхайскую башню и пакет Shuiguo Tangquan на 15 ноября.",
-          "zh": "已预约：中山陵（8日）、苏州博物馆（11日11:00）。待办：南京大屠杀纪念馆（7日或8日，只能在其官方微信公众号预约），以及南京（6–9日）、苏州（9–11日）、上海（11–16日）酒店。另需：上博东馆（13日）、上海中心日落门票和15日水裹汤泉套餐。"
+          "en": "Booked: Sun Yat-sen Mausoleum (8 Nov), Suzhou Museum (11 Nov, 11:00). Still to do: the Humble Administrator's Garden (11 Nov, 09:00), the Suzhou hotel's extra night (to 12 Nov), the Shanghai hotel (12–15 Nov), the 12 Nov train and the Shuiguo Tangquan package for 14 Nov. Each day's checklist in the app lists what to book.",
+          "ru": "Забронировано: мавзолей Сунь Ятсена (8 ноября), музей Сучжоу (11 ноября, 11:00). Осталось: сад Чжочжэн (11 ноября, 09:00), продление отеля в Сучжоу (до 12 ноября), отель в Шанхае (12–15 ноября), поезд 12 ноября и пакет Shuiguo Tangquan на 14 ноября. Чек-лист каждого дня в приложении показывает, что бронировать.",
+          "zh": "已预约：中山陵（8日）、苏州博物馆（11日11:00）。待办：拙政园（11日9:00）、苏州酒店续住到12日、上海酒店（12–15日）、12日的高铁和14日的水裹汤泉套餐。App里每天的清单会列出要预约的事项。"
         }
       },
       {
@@ -5566,9 +5331,9 @@
           "zh": "酒店"
         },
         "text": {
-          "en": "Shanghai 27–31 Oct and Hangzhou 1–6 Nov are done. Still to book: Nanjing near Daxinggong metro (3 nights, 6–9 Nov), Suzhou near Pingjiang Road (2 nights, 9–11 Nov), Shanghai near a Line 2 station at Jing'an Temple (5 nights, 11–16 Nov). Make sure each accepts foreign guests.",
-          "ru": "Шанхай 27–31 октября и Ханчжоу 1–6 ноября — уже. Осталось забронировать: Нанкин у метро Daxinggong (3 ночи, 6–9 ноября), Сучжоу у Пинцзян-лу (2 ночи, 9–11 ноября), Шанхай у станции линии 2 Jing'an Temple (5 ночей, 11–16 ноября). Убедитесь, что отели принимают иностранцев.",
-          "zh": "上海（10月27–31日）和杭州（11月1–6日）已入住。待订：南京大行宫地铁站附近（3晚，6–9日）、苏州平江路附近（2晚，9–11日）、上海静安寺2号线附近（5晚，11–16日）。请确认均可接待外籍住客。"
+          "en": "Suzhou near Pingjiang Road: 3 nights (9–12 Nov), extend by one night. Shanghai near a Line 2 station at Jing'an Temple: 3 nights (12–15 Nov). Make sure each accepts foreign guests.",
+          "ru": "Сучжоу у Пинцзян-лу: 3 ночи (9–12 ноября), продлите на одну ночь. Шанхай у станции линии 2 Jing'an Temple: 3 ночи (12–15 ноября). Убедитесь, что отели принимают иностранцев.",
+          "zh": "苏州平江路附近：3晚（9–12日），需续住一晚。上海静安寺2号线附近：3晚（12–15日）。请确认均可接待外籍住客。"
         }
       },
       {
