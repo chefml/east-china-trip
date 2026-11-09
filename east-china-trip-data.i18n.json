@@ -3494,9 +3494,9 @@
         {
           "id": "d15-lunch",
           "name": {
-            "en": "Late lunch near Guanqian Street",
-            "ru": "Поздний обед у Гуаньцянь-цзе",
-            "zh": "观前街一带午餐"
+            "en": "Lunch: Li Baixie crab-roe noodles (李百蟹)",
+            "ru": "Обед: лапша с крабовой икрой Li Baixie (李百蟹)",
+            "zh": "午餐：李百蟹蟹黄面"
           },
           "time": "14:15",
           "category": "food",
@@ -3504,17 +3504,17 @@
           "lng": 120.6255,
           "placeId": null,
           "note": {
-            "en": "About 10 minutes' walk south of Lion Grove: Suzhou noodles or snacks, then a rest at the hotel before the evening.",
-            "ru": "Около 10 минут пешком к югу от Шицзылиня: сучжоуская лапша или закуски, затем отдых в отеле перед вечером.",
-            "zh": "狮子林往南步行约10分钟：吃苏式汤面或小吃，之后回酒店休息再出门。"
+            "en": "After the gardens: a Suzhou noodle shop that specialises in crab-roe noodles (蟹黄面). Try the shrimp and crab-roe noodles and add the crab vinegar halfway through; a Jiangnan sweet soup on the side. Pricey for noodles (up to about ¥100+ a bowl). Then a rest at the hotel.",
+            "ru": "После садов: сучжоуская лапшичная, специализирующаяся на лапше с крабовой икрой (蟹黄面). Попробуйте лапшу с креветками и крабовой икрой, на середине добавьте крабовый уксус; к ней — цзяннаньский сладкий суп. Для лапши дорого (до ¥100+ за миску). Затем отдых в отеле.",
+            "zh": "逛完园林去吃：专做蟹黄面的苏式面馆。可点虾仁蟹黄面，吃到一半加蟹醋；配一碗江南糖水。作为面价格偏高（一碗可达¥100以上）。吃完回酒店休息。"
           },
           "optional": false,
           "meal": "main",
           "warn": false,
           "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
+            "en": "Branches on Guanqian Street (about 10 minutes' walk from Lion Grove) and on Pingjiang Road by the river (李百蟹·蟹黄面·平江河畔, near the hotel). Addresses, hours and prices not checked live: confirm on Dianping. The map pin is approximate.",
+            "ru": "Филиалы на Гуаньцянь-цзе (около 10 минут пешком от Шицзылиня) и на Пинцзян-лу у реки (李百蟹·蟹黄面·平江河畔, рядом с отелем). Адреса, часы и цены не проверены: уточните в Dianping. Точка на карте приблизительная.",
+            "zh": "观前街店（狮子林步行约10分钟）和平江路河畔店（李百蟹·蟹黄面·平江河畔，离酒店近）。地址、营业时间和价格未实时核实，请在大众点评确认。地图定位为大致位置。"
           }
         },
         {
