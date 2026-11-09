@@ -3420,9 +3420,9 @@
         "zh": "舒适的鞋；晚上湖边带外套。"
       },
       "extra": {
-        "en": "Pack tonight: tomorrow is the move to Shanghai. Buy a Suzhou → Shanghai Hongqiao ticket for about 14:15 on 11 Nov, after the museum.",
-        "ru": "Вечером соберите вещи: завтра переезд в Шанхай. Купите билет Сучжоу → Шанхай-Хунцяо на 11 ноября около 14:15, после музея.",
-        "zh": "今晚收拾行李，明天去上海。请购买11月11日14:15左右（看完博物馆后）苏州 → 上海虹桥的车票。"
+        "en": "Pack tonight: tomorrow is the move to Shanghai. Buy the 16:00 Suzhou → Shanghai Hongqiao train for 11 Nov.",
+        "ru": "Вечером соберите вещи: завтра переезд в Шанхай. Купите поезд 11 ноября в 16:00 Сучжоу → Шанхай-Хунцяо.",
+        "zh": "今晚收拾行李，明天去上海。请购买11月11日16:00 苏州 → 上海虹桥的车票。"
       },
       "locations": [
         {
@@ -3599,9 +3599,9 @@
           "id": "c10-train",
           "done": false,
           "text": {
-            "en": "Buy tomorrow's train Suzhou → Shanghai Hongqiao about 14:15",
-            "ru": "Купите поезд на завтра Сучжоу → Шанхай-Хунцяо около 14:15",
-            "zh": "买明天约14:15 苏州 → 上海虹桥的车票"
+            "en": "Buy tomorrow's 16:00 train Suzhou → Shanghai Hongqiao",
+            "ru": "Купите поезд на завтра 16:00 Сучжоу → Шанхай-Хунцяо",
+            "zh": "买明天16:00 苏州 → 上海虹桥的车票"
           }
         }
       ]
@@ -3615,20 +3615,20 @@
         "zh": "周三"
       },
       "title": {
-        "en": "Lingering Garden, Suzhou Museum at 11:00, train to Shanghai, Zhangyuan at dusk",
-        "ru": "Сад Люйюань, музей Сучжоу в 11:00, поезд в Шанхай, Чжанъюань в сумерках",
-        "zh": "留园、苏州博物馆（11:00），转场上海，黄昏张园"
+        "en": "Free morning, Suzhou Museum at 11:00, 16:00 train to Shanghai, Zhangyuan by night",
+        "ru": "Свободное утро, музей Сучжоу в 11:00, поезд в 16:00 в Шанхай, Чжанъюань вечером",
+        "zh": "上午自由，11:00苏州博物馆，16:00高铁去上海，夜游张园"
       },
       "busyness": 3,
       "focus": {
-        "en": "The Lingering Garden at opening, Suzhou Museum on your 11:00 booking, lunch and an afternoon train to Shanghai. Check in at Jing'an Temple, then Zhangyuan, the restored shikumen quarter, as its lanes light up. No work block today.",
-        "ru": "Сад Люйюань к открытию, музей Сучжоу по брони на 11:00, обед и дневной поезд в Шанхай. Заселение у Jing'an Temple, затем Чжанъюань — отреставрированный квартал шикумэнь, когда в переулках зажигается свет. Сегодня без работы.",
-        "zh": "开门即逛留园，11:00按预约参观苏州博物馆，午饭后坐下午的车去上海。静安寺入住后，黄昏去修缮后的石库门街区张园。今天不安排办公。"
+        "en": "No plans in the morning. Suzhou Museum on your 11:00 booking, lunch and a slow afternoon around Pingjiang Road, then the 16:00 train to Shanghai. Check in at Jing'an Temple and walk to Zhangyuan as its lanes light up.",
+        "ru": "Утром ничего не запланировано. Музей Сучжоу по брони на 11:00, обед и неспешный день у Пинцзян-лу, затем поезд в 16:00 в Шанхай. Заселение у Jing'an Temple и прогулка в Чжанъюань, когда в переулках горят огни.",
+        "zh": "上午不安排。11:00按预约参观苏州博物馆，午饭后在平江路一带慢慢逛，16:00坐高铁去上海。静安寺入住后，晚上步行去亮灯的张园。"
       },
       "roads": {
-        "en": "Hotel → Lingering Garden: taxi about 15 minutes, and back the same. Hotel → Suzhou Museum: a short walk or taxi. Hotel → Suzhou station: taxi about 15 minutes. Train to Shanghai Hongqiao: about 25–30 minutes, about ¥40. Hongqiao → Jing'an Temple: metro Line 2 direct, about 35 minutes. Hotel → Zhangyuan: about 15 minutes on foot.",
-        "ru": "Отель → сад Люйюань: такси около 15 минут, обратно так же. Отель → музей Сучжоу: пешком или на такси, недалеко. Отель → вокзал Сучжоу: такси около 15 минут. Поезд до Шанхай-Хунцяо: около 25–30 минут, около ¥40. Хунцяо → Jing'an Temple: метро линии 2 без пересадок, около 35 минут. Отель → Чжанъюань: около 15 минут пешком.",
-        "zh": "酒店 → 留园：打车约15分钟，往返相同。酒店 → 苏州博物馆：步行或打车都很近。酒店 → 苏州站：打车约15分钟。高铁到上海虹桥：约25–30分钟，约¥40。虹桥 → 静安寺：地铁2号线直达约35分钟。酒店 → 张园：步行约15分钟。"
+        "en": "Hotel → Suzhou Museum: about 15 minutes on foot, or a short taxi. Hotel → Suzhou station: taxi about 15 minutes. Train to Shanghai Hongqiao: about 25–30 minutes, about ¥40. Hongqiao → Jing'an Temple: metro Line 2 direct, about 35 minutes. Hotel → Zhangyuan: about 15 minutes on foot.",
+        "ru": "Отель → музей Сучжоу: около 15 минут пешком или короткое такси. Отель → вокзал Сучжоу: такси около 15 минут. Поезд до Шанхай-Хунцяо: около 25–30 минут, около ¥40. Хунцяо → Jing'an Temple: метро линии 2 без пересадок, около 35 минут. Отель → Чжанъюань: около 15 минут пешком.",
+        "zh": "酒店 → 苏州博物馆：步行约15分钟或短程打车。酒店 → 苏州站：打车约15分钟。高铁到上海虹桥：约25–30分钟，约¥40。虹桥 → 静安寺：地铁2号线直达约35分钟。酒店 → 张园：步行约15分钟。"
       },
       "clothing": {
         "en": "Light layers; Shanghai about +11…+18 °C.",
@@ -3642,70 +3642,21 @@
       },
       "locations": [
         {
-          "id": "d16-breakfast",
-          "name": {
-            "en": "Breakfast",
-            "ru": "Завтрак",
-            "zh": "早餐"
-          },
-          "time": "07:00",
-          "category": "food",
-          "lat": 31.315,
-          "lng": 120.636,
-          "placeId": null,
-          "note": {
-            "en": "A quick bowl of noodles before the garden.",
-            "ru": "Быстрая миска лапши перед садом.",
-            "zh": "去园林前快速吃碗面。"
-          },
-          "optional": false,
-          "meal": "breakfast",
-          "warn": false
-        },
-        {
-          "id": "d16-lingering",
-          "name": {
-            "en": "Lingering Garden",
-            "ru": "Сад Люйюань",
-            "zh": "留园"
-          },
-          "time": "07:45",
-          "category": "garden",
-          "lat": 31.3157066,
-          "lng": 120.5925704,
-          "placeId": "ChIJ9QCvWeagszURmzdDoPCfRw4",
-          "note": {
-            "en": "Suzhou's other great garden, quiet at opening; about 1.5 hours. Entry about ¥45 off-season.",
-            "ru": "Второй великий сад Сучжоу, тихий к открытию; около 1,5 часа. Вход около ¥45 вне сезона.",
-            "zh": "苏州另一名园，开门时人少；约1.5小时。淡季门票约¥45。"
-          },
-          "optional": false,
-          "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "photos/d16-lingering.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:Lingering_Garden2.jpg",
-            "credit": "Wikimedia Commons",
-            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Lingering_Garden2.jpg?width=1200"
-          },
-          "booking": true
-        },
-        {
           "id": "d16-checkout",
           "name": {
-            "en": "Check-out in Suzhou",
-            "ru": "Выезд из отеля в Сучжоу",
-            "zh": "苏州退房"
+            "en": "Check out, bags at the desk",
+            "ru": "Выезд, вещи на ресепшен",
+            "zh": "退房，行李寄存前台"
           },
-          "time": "09:45",
+          "time": "10:30",
           "category": "hotel",
           "lat": 31.315,
           "lng": 120.636,
           "placeId": null,
           "note": {
-            "en": "Taxi back from the Lingering Garden (about 15 minutes), check out and leave the bags at the desk. The museum is a short walk or taxi from Pingjiang Road.",
-            "ru": "Такси обратно из сада Люйюань (около 15 минут), выезд, вещи на ресепшен. Музей недалеко от Пинцзян-лу пешком или на такси.",
-            "zh": "从留园打车回酒店（约15分钟），退房并寄存行李。从平江路步行或打车到博物馆都很近。"
+            "en": "A free morning until then. Check out and leave the bags at the hotel desk; the museum is about 15 minutes' walk from Pingjiang Road.",
+            "ru": "До этого утро свободно. Выезд, вещи на ресепшен; до музея около 15 минут пешком от Пинцзян-лу.",
+            "zh": "此前上午自由安排。退房后把行李寄存在前台；从平江路步行到博物馆约15分钟。"
           },
           "optional": false,
           "meal": null,
@@ -3757,30 +3708,51 @@
           "lng": 120.636,
           "placeId": null,
           "note": {
-            "en": "Suzhou noodles or snacks around Pingjiang Road, then collect the bags.",
-            "ru": "Сучжоуская лапша или закуски у Пинцзян-лу, затем заберите вещи.",
-            "zh": "在平江路一带吃苏式汤面或小吃，再回酒店取行李。"
+            "en": "Around Pingjiang Road or Guanqian Street, then a slow afternoon nearby (Pingjiang Road's lanes, a teahouse) before collecting the bags.",
+            "ru": "У Пинцзян-лу или Гуаньцянь-цзе, затем неспешный день рядом (переулки Пинцзян-лу, чайная) перед тем, как забрать вещи.",
+            "zh": "在平江路或观前街一带吃，之后在附近慢慢逛（平江路小巷、茶馆），再回酒店取行李。"
           },
           "optional": false,
           "meal": "main",
           "warn": false
         },
         {
+          "id": "d16-bags",
+          "name": {
+            "en": "Collect the bags, taxi to Suzhou station",
+            "ru": "Забрать вещи, такси до вокзала Сучжоу",
+            "zh": "取行李，打车去苏州站"
+          },
+          "time": "15:00",
+          "category": "hotel",
+          "lat": 31.315,
+          "lng": 120.636,
+          "placeId": null,
+          "note": {
+            "en": "Taxi about 15 minutes; be at the station by 15:30.",
+            "ru": "Такси около 15 минут; будьте на вокзале к 15:30.",
+            "zh": "打车约15分钟，15:30前到站。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
           "id": "d16-train",
           "name": {
-            "en": "Train Suzhou → Shanghai Hongqiao",
-            "ru": "Поезд Сучжоу → Шанхай-Хунцяо",
-            "zh": "高铁 苏州站 → 上海虹桥"
+            "en": "Train 16:00 Suzhou → Shanghai Hongqiao",
+            "ru": "Поезд 16:00 Сучжоу → Шанхай-Хунцяо",
+            "zh": "16:00高铁 苏州站 → 上海虹桥"
           },
-          "time": "14:15",
+          "time": "16:00",
           "category": "transit",
           "lat": 31.3306,
           "lng": 120.6083,
           "placeId": null,
           "note": {
-            "en": "About 25–30 minutes, about ¥40 (2nd class). Leave the hotel by 13:30 (taxi about 15 minutes to Suzhou station). Passport required.",
-            "ru": "Около 25–30 минут, около ¥40 (2-й класс). Выезжайте из отеля к 13:30 (такси около 15 минут до вокзала). Нужен паспорт.",
-            "zh": "约25–30分钟，二等座约¥40。13:30前从酒店出发（打车约15分钟到苏州站）。需护照。"
+            "en": "About 25–30 minutes, about ¥40 (2nd class). Passport required.",
+            "ru": "Около 25–30 минут, около ¥40 (2-й класс). Нужен паспорт.",
+            "zh": "约25–30分钟，二等座约¥40。需护照。"
           },
           "optional": false,
           "meal": null,
@@ -3794,15 +3766,15 @@
             "ru": "Отель (выбрать): Jing'an Temple, Шанхай (11–16 ноября)",
             "zh": "酒店（待订）：上海静安寺（11月11–16日）"
           },
-          "time": "15:30",
+          "time": "17:15",
           "category": "hotel",
           "lat": 31.2236,
           "lng": 121.4466,
           "placeId": null,
           "note": {
-            "en": "5 nights. Line 2 from Hongqiao, about 35 minutes; rest before the evening. Pick a hotel within 5 minutes of a Line 2 station (Jing'an Temple or West Nanjing Road); check that it accepts foreign guests.",
-            "ru": "5 ночей. Линия 2 от Хунцяо, около 35 минут; отдохните перед вечером. Ищите отель в 5 минутах от станции линии 2 (Jing'an Temple или West Nanjing Road); проверьте, что принимает иностранцев.",
-            "zh": "住5晚。从虹桥坐2号线约35分钟，晚上出门前先休息。选距2号线站点（静安寺或南京西路）5分钟内的酒店；确认可接待外籍住客。"
+            "en": "5 nights. Line 2 from Hongqiao, about 35 minutes. Pick a hotel within 5 minutes of a Line 2 station (Jing'an Temple or West Nanjing Road); check that it accepts foreign guests.",
+            "ru": "5 ночей. Линия 2 от Хунцяо, около 35 минут. Ищите отель в 5 минутах от станции линии 2 (Jing'an Temple или West Nanjing Road); проверьте, что принимает иностранцев.",
+            "zh": "住5晚。从虹桥坐2号线约35分钟。选距2号线站点（静安寺或南京西路）5分钟内的酒店；确认可接待外籍住客。"
           },
           "details": {
             "en": "The map pin is approximate: navigate by the name.",
@@ -3816,11 +3788,11 @@
         {
           "id": "d16-zhangyuan",
           "name": {
-            "en": "Zhangyuan (张园) at dusk",
-            "ru": "Чжанъюань (张园) в сумерках",
-            "zh": "黄昏张园"
+            "en": "Zhangyuan (张园) by night",
+            "ru": "Чжанъюань (张园) вечером",
+            "zh": "夜游张园"
           },
-          "time": "17:15",
+          "time": "18:00",
           "category": "sight",
           "lat": 31.2302,
           "lng": 121.4589,
@@ -3852,7 +3824,7 @@
             "ru": "Ужин у Нанкин-роуд Западной",
             "zh": "南京西路一带晚餐"
           },
-          "time": "18:30",
+          "time": "18:45",
           "category": "food",
           "lat": 31.2302,
           "lng": 121.4589,
@@ -3883,21 +3855,12 @@
           }
         },
         {
-          "id": "c11-lingering",
-          "done": false,
-          "text": {
-            "en": "Lingering Garden ticket (online)",
-            "ru": "Билет в сад Люйюань (онлайн)",
-            "zh": "留园门票（网上）"
-          }
-        },
-        {
           "id": "c11-train",
           "done": false,
           "text": {
-            "en": "Train Suzhou → Shanghai Hongqiao about 14:15",
-            "ru": "Поезд Сучжоу → Шанхай-Хунцяо около 14:15",
-            "zh": "约14:15 苏州 → 上海虹桥"
+            "en": "Train 16:00 Suzhou → Shanghai Hongqiao",
+            "ru": "Поезд 16:00 Сучжоу → Шанхай-Хунцяо",
+            "zh": "16:00 苏州 → 上海虹桥"
           }
         },
         {
