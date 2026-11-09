@@ -3378,15 +3378,6 @@
             "ru": "Отель в Сучжоу у Пинцзян-лу, 2 ночи (9–11 ноября)",
             "zh": "苏州平江路附近酒店，2晚（9–11日）"
           }
-        },
-        {
-          "id": "c09-hump",
-          "done": false,
-          "text": {
-            "en": "Book tomorrow's Humble Administrator's Garden (real-name, passport) for 11:00",
-            "ru": "Забронируйте на завтра сад Чжочжэн (по имени, паспорт) на 11:00",
-            "zh": "预约明天11:00的拙政园（实名，护照）"
-          }
         }
       ]
     },
@@ -3399,20 +3390,20 @@
         "zh": "周二"
       },
       "title": {
-        "en": "Humble Administrator's Garden and Lion Grove, Jinji Lake at sunset",
-        "ru": "Сад Чжочжэн и Шицзылинь, озеро Цзиньцзи на закате",
-        "zh": "拙政园、狮子林，金鸡湖日落"
+        "en": "Shuangta Market, Shiquan Street, Zhuhui Huanyu Hui, Jinji Lake at sunset",
+        "ru": "Рынок Шуанта, улица Шицюань, Чжухуэй Хуаньюйхуэй, озеро Цзиньцзи на закате",
+        "zh": "双塔市集、十全街、竹辉环宇荟，金鸡湖日落"
       },
       "busyness": 2,
       "focus": {
-        "en": "A slow morning, out at 11:00 straight to the Humble Administrator's Garden and Lion Grove next door, a late lunch, a rest, then sunset on Jinji Lake. No work block today.",
-        "ru": "Неспешное утро, в 11:00 сразу в сад Чжочжэн и соседний Шицзылинь, поздний обед, отдых, затем закат на озере Цзиньцзи. Сегодня без работы.",
-        "zh": "上午休息，11:00出门直接去拙政园和旁边的狮子林，之后吃午饭、回酒店休息，傍晚去金鸡湖看日落。今天不安排办公。"
+        "en": "A slow morning, out at 11:00 for the younger side of the old town: Shuangta Market, the cafés of Shiquan Street and the Zhuhui Huanyu Hui waterfront, then crab-roe noodles, a rest and sunset on Jinji Lake. No work block today.",
+        "ru": "Неспешное утро, в 11:00 — молодёжная сторона старого города: рынок Шуанта, кофейни Шицюань и набережная Чжухуэй Хуаньюйхуэй, затем лапша с крабовой икрой, отдых и закат на озере Цзиньцзи. Сегодня без работы.",
+        "zh": "上午休息，11:00出门逛老城里年轻人爱去的地方：双塔市集、十全街的咖啡馆、竹辉环宇荟，之后吃蟹黄面、回酒店休息，傍晚去金鸡湖看日落。今天不安排办公。"
       },
       "roads": {
-        "en": "Hotel (Pingjiang Road) → Humble Administrator's Garden: about 10 minutes on foot. → Lion Grove: about 5 minutes (about 400 m apart, Suzhou Museum between them). → Guanqian Street for lunch: about 10 minutes. Hotel → Jinji Lake: taxi about 20 minutes, and back the same.",
-        "ru": "Отель (Пинцзян-лу) → сад Чжочжэн: около 10 минут пешком. → Шицзылинь: около 5 минут (около 400 м, посередине музей Сучжоу). → Гуаньцянь-цзе на обед: около 10 минут. Отель → озеро Цзиньцзи: такси около 20 минут, обратно так же.",
-        "zh": "酒店（平江路）→ 拙政园：步行约10分钟 → 狮子林：约5分钟（相距约400米，苏州博物馆在中间）→ 观前街吃午饭：约10分钟。酒店 → 金鸡湖：打车约20分钟，往返相同。"
+        "en": "Hotel (Pingjiang Road) → Shuangta Market: taxi about 10 minutes. Shuangta Market → Shiquan Street → Zhuhui Huanyu Hui: all on foot, a few minutes apart. → Li Baixie (Guanqian Street or Pingjiang Road): taxi about 10 minutes. Hotel → Jinji Lake: taxi about 20 minutes, and back the same.",
+        "ru": "Отель (Пинцзян-лу) → рынок Шуанта: такси около 10 минут. Шуанта → Шицюань → Чжухуэй Хуаньюйхуэй: пешком, в нескольких минутах друг от друга. → Li Baixie (Гуаньцянь-цзе или Пинцзян-лу): такси около 10 минут. Отель → озеро Цзиньцзи: такси около 20 минут, обратно так же.",
+        "zh": "酒店（平江路）→ 双塔市集：打车约10分钟。双塔市集 → 十全街 → 竹辉环宇荟：步行，相距几分钟。→ 李百蟹（观前街或平江路）：打车约10分钟。酒店 → 金鸡湖：打车约20分钟，往返相同。"
       },
       "clothing": {
         "en": "Comfortable shoes; a jacket for the lakeside in the evening.",
@@ -3426,70 +3417,82 @@
       },
       "locations": [
         {
-          "id": "d15-hump",
+          "id": "d15-shuangta",
           "name": {
-            "en": "Humble Administrator's Garden",
-            "ru": "Сад скромного чиновника (Чжочжэн)",
-            "zh": "拙政园"
+            "en": "Shuangta Market (双塔市集)",
+            "ru": "Рынок Шуанта (双塔市集)",
+            "zh": "双塔市集"
           },
           "time": "11:00",
-          "category": "garden",
-          "lat": 31.324224,
-          "lng": 120.62997,
-          "placeId": "ChIJ95Kf4M-mszUREZWApzl39cg",
-          "note": {
-            "en": "Suzhou's largest classical garden, a UNESCO site. A ticket costs about ¥70 off-season.",
-            "ru": "Крупнейший классический сад Сучжоу, объект ЮНЕСКО. Билет около ¥70 вне сезона.",
-            "zh": "苏州最大的古典园林，世界遗产。淡季门票约¥70。"
-          },
-          "details": {
-            "en": "Book online (passport); hours differ across sources, the last entry in November is about 16:00. Allow 2–3 hours.",
-            "ru": "Билет онлайн (паспорт); часы по источникам расходятся, последний вход в ноябре около 16:00. На осмотр 2–3 часа.",
-            "zh": "线上购票（护照）；各来源开放时间不一，11月约16:00停止入园。游览约2–3小时。"
-          },
-          "optional": false,
-          "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "photos/d15-hump.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:Suzhou,_Humble_Administrator%27s_Garden_(03).JPG",
-            "credit": "Wikimedia Commons",
-            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou,_Humble_Administrator%27s_Garden_(03).JPG?width=1200"
-          },
-          "booking": true
-        },
-        {
-          "id": "d15-lion",
-          "name": {
-            "en": "Lion Grove Garden",
-            "ru": "Сад Львиной рощи (Шицзылинь)",
-            "zh": "狮子林"
-          },
-          "time": "13:00",
-          "category": "garden",
-          "lat": 31.3228,
-          "lng": 120.6245,
+          "category": "sight",
+          "lat": 31.3035,
+          "lng": 120.6315,
           "placeId": null,
           "note": {
-            "en": "A garden of rockery labyrinths, about 5 minutes' walk from the Humble Administrator's Garden. Entry about ¥30–40; allow about 1 hour. Afternoons are quieter than mornings.",
-            "ru": "Сад каменных лабиринтов, около 5 минут пешком от сада Чжочжэн. Вход около ¥30–40; около часа. После обеда спокойнее, чем утром.",
-            "zh": "假山迷宫式园林，离拙政园步行约5分钟。门票约¥30–40，游览约1小时。下午比上午人少。"
+            "en": "An old wet market turned food-and-design hall by the Twin Pagodas: locals buying vegetables next to coffee, tea, a small bar, Suzhou pastries and snacks. Good for a light brunch.",
+            "ru": "Старый продуктовый рынок у Двух пагод, превращённый в фуд-холл: местные покупают овощи рядом с кофе, чаем, маленьким баром, сучжоуской выпечкой и закусками. Хорошо для лёгкого бранча.",
+            "zh": "双塔旁的老菜场改造成的文创市集：本地人买菜的摊位旁边就是咖啡、茶饮、小酒馆、苏式糕点和小吃，适合简单吃个早午餐。"
           },
           "details": {
-            "en": "The map pin is approximate: navigate by the name.",
-            "ru": "Точка на карте приблизительная: ищите по названию.",
-            "zh": "地图定位为大致位置，请按名称导航。"
+            "en": "Suggested from local news, not checked live: confirm hours on Dianping. The map pin is approximate: navigate by the name.",
+            "ru": "По местным новостям, не проверено в реальном времени: часы уточните в Dianping. Точка на карте приблизительная — ищите по названию.",
+            "zh": "根据本地新闻推荐，未实时核实，请在大众点评确认营业时间。地图定位为大致位置，请按名称导航。"
           },
           "optional": false,
           "meal": null,
-          "warn": false,
-          "photo": {
-            "src": "photos/d15-lion.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:Lion_Grove_Garden_Suzhou_November_2017_008.jpg",
-            "credit": "Wikimedia Commons",
-            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion_Grove_Garden_Suzhou_November_2017_008.jpg?width=1200"
+          "warn": false
+        },
+        {
+          "id": "d15-shiquan",
+          "name": {
+            "en": "Shiquan Street (十全街)",
+            "ru": "Улица Шицюань (十全街)",
+            "zh": "十全街"
           },
-          "booking": true
+          "time": "12:15",
+          "category": "sight",
+          "lat": 31.2975,
+          "lng": 120.6275,
+          "placeId": null,
+          "note": {
+            "en": "A 2 km plane-tree street nicknamed «Suzhou's Wukang Road», with about ten independent coffee shops, tea bars and local snack shops. Walk it slowly, a few minutes from Shuangta Market.",
+            "ru": "Улица длиной 2 км под платанами, прозванная «сучжоуской Укан-лу»: около десяти независимых кофеен, чайные и местные закусочные. Пройдитесь неспешно, в нескольких минутах от рынка Шуанта.",
+            "zh": "约2公里的梧桐街，被称为「苏州武康路」，有十来家独立咖啡馆、茶饮和本地小吃。离双塔市集几分钟，慢慢逛。"
+          },
+          "details": {
+            "en": "Suggested from local news, not checked live: confirm hours on Dianping. The map pin is approximate: navigate by the name.",
+            "ru": "По местным новостям, не проверено в реальном времени: часы уточните в Dianping. Точка на карте приблизительная — ищите по названию.",
+            "zh": "根据本地新闻推荐，未实时核实，请在大众点评确认营业时间。地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d15-zhuhui",
+          "name": {
+            "en": "Zhuhui Huanyu Hui (竹辉环宇荟)",
+            "ru": "Чжухуэй Хуаньюйхуэй (竹辉环宇荟)",
+            "zh": "竹辉环宇荟"
+          },
+          "time": "13:15",
+          "category": "sight",
+          "lat": 31.2925,
+          "lng": 120.6255,
+          "placeId": null,
+          "note": {
+            "en": "An open-air waterfront street opened in 2022: coffee, select shops, cocktail bars and an art space in Suzhou-style buildings, at the south end of Shiquan Street.",
+            "ru": "Открытая улица у воды, открыта в 2022: кофе, мультибрендовые магазины, коктейль-бары и арт-пространство в зданиях в сучжоуском стиле, у южного конца Шицюань.",
+            "zh": "2022年开业的临水露天街区：苏式建筑里有咖啡、买手店、鸡尾酒吧和艺术空间，在十全街南端。"
+          },
+          "details": {
+            "en": "Suggested from local news, not checked live: confirm hours on Dianping. The map pin is approximate: navigate by the name.",
+            "ru": "По местным новостям, не проверено в реальном времени: часы уточните в Dianping. Точка на карте приблизительная — ищите по названию.",
+            "zh": "根据本地新闻推荐，未实时核实，请在大众点评确认营业时间。地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
         },
         {
           "id": "d15-lunch",
@@ -3504,17 +3507,17 @@
           "lng": 120.6255,
           "placeId": null,
           "note": {
-            "en": "After the gardens: a Suzhou noodle shop that specialises in crab-roe noodles (蟹黄面). Try the shrimp and crab-roe noodles and add the crab vinegar halfway through; a Jiangnan sweet soup on the side. Pricey for noodles (up to about ¥100+ a bowl). Then a rest at the hotel.",
-            "ru": "После садов: сучжоуская лапшичная, специализирующаяся на лапше с крабовой икрой (蟹黄面). Попробуйте лапшу с креветками и крабовой икрой, на середине добавьте крабовый уксус; к ней — цзяннаньский сладкий суп. Для лапши дорого (до ¥100+ за миску). Затем отдых в отеле.",
-            "zh": "逛完园林去吃：专做蟹黄面的苏式面馆。可点虾仁蟹黄面，吃到一半加蟹醋；配一碗江南糖水。作为面价格偏高（一碗可达¥100以上）。吃完回酒店休息。"
+            "en": "After the walk: a Suzhou noodle shop that specialises in crab-roe noodles (蟹黄面). Try the shrimp and crab-roe noodles and add the crab vinegar halfway through; a Jiangnan sweet soup on the side. Pricey for noodles (up to about ¥100+ a bowl). Then a rest at the hotel.",
+            "ru": "После прогулки: сучжоуская лапшичная, специализирующаяся на лапше с крабовой икрой (蟹黄面). Попробуйте лапшу с креветками и крабовой икрой, на середине добавьте крабовый уксус; к ней — цзяннаньский сладкий суп. Для лапши дорого (до ¥100+ за миску). Затем отдых в отеле.",
+            "zh": "逛完去吃：专做蟹黄面的苏式面馆。可点虾仁蟹黄面，吃到一半加蟹醋；配一碗江南糖水。作为面价格偏高（一碗可达¥100以上）。吃完回酒店休息。"
           },
           "optional": false,
           "meal": "main",
           "warn": false,
           "details": {
-            "en": "Branches on Guanqian Street (about 10 minutes' walk from Lion Grove) and on Pingjiang Road by the river (李百蟹·蟹黄面·平江河畔, near the hotel). Addresses, hours and prices not checked live: confirm on Dianping. The map pin is approximate.",
-            "ru": "Филиалы на Гуаньцянь-цзе (около 10 минут пешком от Шицзылиня) и на Пинцзян-лу у реки (李百蟹·蟹黄面·平江河畔, рядом с отелем). Адреса, часы и цены не проверены: уточните в Dianping. Точка на карте приблизительная.",
-            "zh": "观前街店（狮子林步行约10分钟）和平江路河畔店（李百蟹·蟹黄面·平江河畔，离酒店近）。地址、营业时间和价格未实时核实，请在大众点评确认。地图定位为大致位置。"
+            "en": "Branches on Guanqian Street (about 10 minutes by taxi from Zhuhui Huanyu Hui) and on Pingjiang Road by the river (李百蟹·蟹黄面·平江河畔, near the hotel). Addresses, hours and prices not checked live: confirm on Dianping. The map pin is approximate.",
+            "ru": "Филиалы на Гуаньцянь-цзе (около 10 минут на такси от Чжухуэй Хуаньюйхуэй) и на Пинцзян-лу у реки (李百蟹·蟹黄面·平江河畔, рядом с отелем). Адреса, часы и цены не проверены: уточните в Dianping. Точка на карте приблизительная.",
+            "zh": "观前街店（从竹辉环宇荟打车约10分钟）和平江路河畔店（李百蟹·蟹黄面·平江河畔，离酒店近）。地址、营业时间和价格未实时核实，请在大众点评确认。地图定位为大致位置。"
           }
         },
         {
@@ -3577,24 +3580,6 @@
         }
       ],
       "checklist": [
-        {
-          "id": "c10-hump",
-          "done": false,
-          "text": {
-            "en": "Humble Administrator's Garden: real-name slot for 11:00 booked",
-            "ru": "Сад Чжочжэн: слот по имени на 11:00 забронирован",
-            "zh": "拙政园：已实名预约11:00时段"
-          }
-        },
-        {
-          "id": "c10-lion",
-          "done": false,
-          "text": {
-            "en": "Lion Grove ticket (online)",
-            "ru": "Билет в сад Шицзылинь (онлайн)",
-            "zh": "狮子林门票（网上）"
-          }
-        },
         {
           "id": "c10-train",
           "done": false,
@@ -5545,9 +5530,9 @@
           "zh": "需提前预约"
         },
         "text": {
-          "en": "Booked: Sun Yat-sen Mausoleum (8 Nov), Suzhou Museum (11 Nov, 11:00). Still to do: the Nanjing Massacre Memorial (7 or 8 Nov, its own WeChat account only), hotels in Nanjing (6–9 Nov), Suzhou (9–11 Nov) and Shanghai (11–16 Nov). Also: the Humble Administrator's Garden, Shanghai Museum East (13 Nov), a Shanghai Tower sunset ticket and the Shuiguo Tangquan package for 15 Nov.",
-          "ru": "Забронировано: мавзолей Сунь Ятсена (8 ноября), музей Сучжоу (11 ноября, 11:00). Осталось: мемориал жертвам Нанкинской резни (7 или 8 ноября, только через его WeChat-аккаунт), отели в Нанкине (6–9 ноября), Сучжоу (9–11 ноября) и Шанхае (11–16 ноября). Также: сад Чжочжэн, восточный музей Шанхая (13 ноября), билет на закат в Шанхайскую башню и пакет Shuiguo Tangquan на 15 ноября.",
-          "zh": "已预约：中山陵（8日）、苏州博物馆（11日11:00）。待办：南京大屠杀纪念馆（7日或8日，只能在其官方微信公众号预约），以及南京（6–9日）、苏州（9–11日）、上海（11–16日）酒店。另需：拙政园、上博东馆（13日）、上海中心日落门票和15日水裹汤泉套餐。"
+          "en": "Booked: Sun Yat-sen Mausoleum (8 Nov), Suzhou Museum (11 Nov, 11:00). Still to do: the Nanjing Massacre Memorial (7 or 8 Nov, its own WeChat account only), hotels in Nanjing (6–9 Nov), Suzhou (9–11 Nov) and Shanghai (11–16 Nov). Also: Shanghai Museum East (13 Nov), a Shanghai Tower sunset ticket and the Shuiguo Tangquan package for 15 Nov.",
+          "ru": "Забронировано: мавзолей Сунь Ятсена (8 ноября), музей Сучжоу (11 ноября, 11:00). Осталось: мемориал жертвам Нанкинской резни (7 или 8 ноября, только через его WeChat-аккаунт), отели в Нанкине (6–9 ноября), Сучжоу (9–11 ноября) и Шанхае (11–16 ноября). Также: восточный музей Шанхая (13 ноября), билет на закат в Шанхайскую башню и пакет Shuiguo Tangquan на 15 ноября.",
+          "zh": "已预约：中山陵（8日）、苏州博物馆（11日11:00）。待办：南京大屠杀纪念馆（7日或8日，只能在其官方微信公众号预约），以及南京（6–9日）、苏州（9–11日）、上海（11–16日）酒店。另需：上博东馆（13日）、上海中心日落门票和15日水裹汤泉套餐。"
         }
       },
       {
