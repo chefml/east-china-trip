@@ -3383,9 +3383,9 @@
           "id": "c09-hump",
           "done": false,
           "text": {
-            "en": "Book tomorrow's Humble Administrator's Garden (real-name, passport) for about 11:45",
-            "ru": "Забронируйте на завтра сад Чжочжэн (по имени, паспорт) примерно на 11:45",
-            "zh": "预约明天约11:45的拙政园（实名，护照）"
+            "en": "Book tomorrow's Humble Administrator's Garden (real-name, passport) for 11:00",
+            "ru": "Забронируйте на завтра сад Чжочжэн (по имени, паспорт) на 11:00",
+            "zh": "预约明天11:00的拙政园（实名，护照）"
           }
         }
       ]
@@ -3399,20 +3399,20 @@
         "zh": "周二"
       },
       "title": {
-        "en": "Late start: Humble Administrator's Garden, Lion Grove, Jinji Lake at sunset",
-        "ru": "Поздний старт: сад Чжочжэн, Шицзылинь, озеро Цзиньцзи на закате",
-        "zh": "晚点出门：拙政园、狮子林，金鸡湖日落"
+        "en": "Humble Administrator's Garden and Lion Grove, Jinji Lake at sunset",
+        "ru": "Сад Чжочжэн и Шицзылинь, озеро Цзиньцзи на закате",
+        "zh": "拙政园、狮子林，金鸡湖日落"
       },
       "busyness": 2,
       "focus": {
-        "en": "A slow morning, out at 11:00: brunch on Lindun Road, the Humble Administrator's Garden and Lion Grove next door (afternoons are quieter than mornings), then Eslite and sunset on Jinji Lake. No work block today.",
-        "ru": "Неспешное утро, выход в 11:00: бранч на Линьдунь-лу, сад Чжочжэн и соседний Шицзылинь (после обеда спокойнее, чем утром), затем Eslite и закат на озере Цзиньцзи. Сегодня без работы.",
-        "zh": "上午睡个懒觉，11:00出门：临顿路吃早午餐，然后拙政园和旁边的狮子林（下午比上午人少），之后逛诚品、看金鸡湖日落。今天不安排办公。"
+        "en": "A slow morning, out at 11:00 straight to the Humble Administrator's Garden and Lion Grove next door, a late lunch, a rest, then sunset on Jinji Lake. No work block today.",
+        "ru": "Неспешное утро, в 11:00 сразу в сад Чжочжэн и соседний Шицзылинь, поздний обед, отдых, затем закат на озере Цзиньцзи. Сегодня без работы.",
+        "zh": "上午休息，11:00出门直接去拙政园和旁边的狮子林，之后吃午饭、回酒店休息，傍晚去金鸡湖看日落。今天不安排办公。"
       },
       "roads": {
-        "en": "Everything until 15:00 is on foot: hotel (Pingjiang Road) → Yaba Shengjian about 10 minutes; → Humble Administrator's Garden about 10 minutes; → Lion Grove about 5 minutes (they are about 400 m apart, with Suzhou Museum between them). Lion Grove → Eslite (east shore of Jinji Lake): taxi about 20 minutes. Back to the hotel: taxi about 20 minutes.",
-        "ru": "До 15:00 всё пешком: отель (Пинцзян-лу) → Yaba Shengjian около 10 минут; → сад Чжочжэн около 10 минут; → Шицзылинь около 5 минут (между ними около 400 м, посередине музей Сучжоу). Шицзылинь → Eslite (восточный берег Цзиньцзи): такси около 20 минут. Обратно в отель: такси около 20 минут.",
-        "zh": "15:00前全程步行：酒店（平江路）→ 哑巴生煎约10分钟 → 拙政园约10分钟 → 狮子林约5分钟（两园相距约400米，苏州博物馆就在中间）。狮子林 → 诚品（金鸡湖东岸）：打车约20分钟。回酒店打车约20分钟。"
+        "en": "Hotel (Pingjiang Road) → Humble Administrator's Garden: about 10 minutes on foot. → Lion Grove: about 5 minutes (about 400 m apart, Suzhou Museum between them). → Guanqian Street for lunch: about 10 minutes. Hotel → Jinji Lake: taxi about 20 minutes, and back the same.",
+        "ru": "Отель (Пинцзян-лу) → сад Чжочжэн: около 10 минут пешком. → Шицзылинь: около 5 минут (около 400 м, посередине музей Сучжоу). → Гуаньцянь-цзе на обед: около 10 минут. Отель → озеро Цзиньцзи: такси около 20 минут, обратно так же.",
+        "zh": "酒店（平江路）→ 拙政园：步行约10分钟 → 狮子林：约5分钟（相距约400米，苏州博物馆在中间）→ 观前街吃午饭：约10分钟。酒店 → 金鸡湖：打车约20分钟，往返相同。"
       },
       "clothing": {
         "en": "Comfortable shoes; a jacket for the lakeside in the evening.",
@@ -3426,39 +3426,13 @@
       },
       "locations": [
         {
-          "id": "d15-lunch",
-          "name": {
-            "en": "Brunch: Yaba Shengjian (哑巴生煎)",
-            "ru": "Бранч: Yaba Shengjian (哑巴生煎)",
-            "zh": "早午餐：哑巴生煎"
-          },
-          "time": "11:00",
-          "category": "food",
-          "lat": 31.315,
-          "lng": 120.636,
-          "placeId": null,
-          "note": {
-            "en": "Pan-fried buns on Lindun Road, about 10 minutes' walk from Pingjiang Road and on the way to the gardens. Go before noon: they often sell out.",
-            "ru": "Жареные баоцзы на Линьдунь-лу, около 10 минут пешком от Пинцзян-лу и по пути к садам. Приходите до полудня: часто всё раскупают.",
-            "zh": "临顿路的生煎，离平江路步行约10分钟，正好顺路去园林。中午前去，经常卖完。"
-          },
-          "optional": false,
-          "meal": "main",
-          "warn": false,
-          "details": {
-            "en": "Suggested from general knowledge, not checked live: confirm the address, hours and queue on Dianping (大众点评) or Amap. The map pin marks the area, so navigate by the restaurant name.",
-            "ru": "Рекомендация по общим сведениям, не проверена в реальном времени: адрес, часы и очередь уточните в Dianping (大众点评) или Amap. Точка на карте отмечает район — ищите по названию ресторана.",
-            "zh": "根据常识推荐，未实时核实：地址、营业时间和排队情况请在大众点评或高德确认。地图定位为大致区域，请按店名导航。"
-          }
-        },
-        {
           "id": "d15-hump",
           "name": {
             "en": "Humble Administrator's Garden",
             "ru": "Сад скромного чиновника (Чжочжэн)",
             "zh": "拙政园"
           },
-          "time": "11:45",
+          "time": "11:00",
           "category": "garden",
           "lat": 31.324224,
           "lng": 120.62997,
@@ -3491,7 +3465,7 @@
             "ru": "Сад Львиной рощи (Шицзылинь)",
             "zh": "狮子林"
           },
-          "time": "14:00",
+          "time": "13:00",
           "category": "garden",
           "lat": 31.3228,
           "lng": 120.6245,
@@ -3518,35 +3492,29 @@
           "booking": true
         },
         {
-          "id": "d15-work",
+          "id": "d15-lunch",
           "name": {
-            "en": "Eslite Suzhou bookstore",
-            "ru": "Книжный Eslite Suzhou",
-            "zh": "苏州诚品书店"
+            "en": "Late lunch near Guanqian Street",
+            "ru": "Поздний обед у Гуаньцянь-цзе",
+            "zh": "观前街一带午餐"
           },
-          "time": "16:00",
-          "category": "sight",
-          "lat": 31.3195,
-          "lng": 120.714,
+          "time": "14:15",
+          "category": "food",
+          "lat": 31.3205,
+          "lng": 120.6255,
           "placeId": null,
           "note": {
-            "en": "Browse the mainland flagship of Taiwan's Eslite before sunset: two floors of books, design shops and cafés, right on the east shore of Jinji Lake.",
-            "ru": "Загляните перед закатом во флагман тайваньской Eslite на материке: два этажа книг, дизайнерские магазины и кафе, прямо на восточном берегу озера Цзиньцзи.",
-            "zh": "日落前逛逛台湾诚品的大陆旗舰店：两层书店、设计小店和咖啡馆，就在金鸡湖东岸。"
+            "en": "About 10 minutes' walk south of Lion Grove: Suzhou noodles or snacks, then a rest at the hotel before the evening.",
+            "ru": "Около 10 минут пешком к югу от Шицзылиня: сучжоуская лапша или закуски, затем отдых в отеле перед вечером.",
+            "zh": "狮子林往南步行约10分钟：吃苏式汤面或小吃，之后回酒店休息再出门。"
           },
-          "details": {
-            "en": "月廊街8号. Taxi from the gardens about 20 minutes. The map pin is approximate.",
-            "ru": "月廊街8号. Такси от садов около 20 минут. Точка на карте приблизительная.",
-            "zh": "月廊街8号。从园林打车约20分钟。地图定位为大致位置。"
-          },
-          "optional": true,
-          "meal": null,
+          "optional": false,
+          "meal": "main",
           "warn": false,
-          "photo": {
-            "src": "photos/d15-work.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:Eslite_Bookstore_Suzhou_Store.jpg",
-            "credit": "Wikimedia Commons",
-            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Eslite_Bookstore_Suzhou_Store.jpg?width=1200"
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
           }
         },
         {
@@ -3613,9 +3581,9 @@
           "id": "c10-hump",
           "done": false,
           "text": {
-            "en": "Humble Administrator's Garden: real-name slot for about 11:45 booked",
-            "ru": "Сад Чжочжэн: слот по имени примерно на 11:45 забронирован",
-            "zh": "拙政园：已实名预约约11:45的时段"
+            "en": "Humble Administrator's Garden: real-name slot for 11:00 booked",
+            "ru": "Сад Чжочжэн: слот по имени на 11:00 забронирован",
+            "zh": "拙政园：已实名预约11:00时段"
           }
         },
         {
