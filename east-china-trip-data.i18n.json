@@ -4169,9 +4169,9 @@
         "zh": "周六"
       },
       "title": {
-        "en": "City walk: Suzhou Creek, 1933 Old Millfun, Duolun Road, North Bund",
-        "ru": "Прогулка: Сучжоу-Крик, 1933 Old Millfun, Дуолунь-лу, Северный Бунд",
-        "zh": "城市漫步：苏州河、1933老场坊、多伦路、北外滩"
+        "en": "City walk: Suzhou Creek, 1933 Old Millfun, Duolun Road, North Bund, Nanjing Road and M&M's",
+        "ru": "Прогулка: Сучжоу-Крик, 1933 Old Millfun, Дуолунь-лу, Северный Бунд, Нанкин-роуд и M&M's",
+        "zh": "城市漫步：苏州河、老场坊、多伦路、北外滩、南京东路与M&M's"
       },
       "busyness": 3,
       "focus": {
@@ -4180,9 +4180,9 @@
         "zh": "11:00出门逛城北，全是没去过的地方：四行仓库和苏州河步道、1933年的装饰艺术老场坊、多伦路，傍晚到北外滩看日落（从北边看老外滩）。早点休息：明天8:30的航班。"
       },
       "roads": {
-        "en": "Hotel → Sihang Warehouse (光复路1号): taxi about 20 minutes. Riverside walk east along Suzhou Creek about 1.5 km. Creek → 1933 Old Millfun: taxi about 10 minutes. Millfun → Duolun Road: taxi 10 minutes. Duolun Road → North Bund (Waibaidu Bridge): taxi about 10 minutes. Back to the hotel: taxi about 25 minutes.",
-        "ru": "Отель → склад Сыхан (光复路1号): такси около 20 минут. Прогулка на восток вдоль Сучжоу-Крик около 1,5 км. Набережная → 1933 Old Millfun: такси около 10 минут. Millfun → Дуолунь-лу: такси 10 минут. Дуолунь-лу → Северный Бунд (мост Вайбайду): такси около 10 минут. Обратно в отель: такси около 25 минут.",
-        "zh": "酒店 → 四行仓库（光复路1号）：打车约20分钟。沿苏州河往东走约1.5公里。苏州河 → 1933老场坊：打车约10分钟。老场坊 → 多伦路：打车10分钟。多伦路 → 北外滩（外白渡桥）：打车约10分钟。回酒店打车约25分钟。"
+        "en": "Hotel → Sihang Warehouse (光复路1号): taxi about 20 minutes. Riverside walk east along Suzhou Creek about 1.5 km. Creek → 1933 Old Millfun: taxi about 10 minutes. Millfun → Duolun Road: taxi 10 minutes. Duolun Road → North Bund (Waibaidu Bridge): taxi about 10 minutes. North Bund → Nanjing Road East: walk over Waibaidu Bridge and along the Bund, about 15 minutes. People's Square → hotel: Line 1 direct to Changshu Road, about 15 minutes.",
+        "ru": "Отель → склад Сыхан (光复路1号): такси около 20 минут. Прогулка на восток вдоль Сучжоу-Крик около 1,5 км. Набережная → 1933 Old Millfun: такси около 10 минут. Millfun → Дуолунь-лу: такси 10 минут. Дуолунь-лу → Северный Бунд (мост Вайбайду): такси около 10 минут. Северный Бунд → Нанкин-роуд Восточная: пешком через мост Вайбайду и по Бунду, около 15 минут. Народная площадь → отель: линия 1 без пересадок до Changshu Road, около 15 минут.",
+        "zh": "酒店 → 四行仓库（光复路1号）：打车约20分钟。沿苏州河往东走约1.5公里。苏州河 → 1933老场坊：打车约10分钟。老场坊 → 多伦路：打车10分钟。多伦路 → 北外滩（外白渡桥）：打车约10分钟。北外滩 → 南京东路：过外白渡桥沿外滩步行约15分钟。人民广场 → 酒店：1号线直达常熟路约15分钟。"
       },
       "clothing": {
         "en": "Comfortable shoes; windy by the river in the evening.",
@@ -4366,21 +4366,68 @@
           }
         },
         {
-          "id": "d19-dinner",
+          "id": "d19-nanjingrd",
           "name": {
-            "en": "Early dinner on the North Bund",
-            "ru": "Ранний ужин на Северном Бунде",
-            "zh": "北外滩早晚餐"
+            "en": "Nanjing Road East pedestrian street at night",
+            "ru": "Пешеходная Нанкин-роуд Восточная вечером",
+            "zh": "南京东路步行街夜景"
           },
-          "time": "18:00",
-          "category": "food",
-          "lat": 31.2485,
-          "lng": 121.4965,
+          "time": "17:30",
+          "category": "sight",
+          "lat": 31.2375,
+          "lng": 121.4795,
           "placeId": null,
           "note": {
-            "en": "Then taxi back, pack and sleep early.",
-            "ru": "Затем такси обратно, сборы и ранний сон.",
-            "zh": "吃完打车回酒店，收拾行李早点睡。"
+            "en": "From the North Bund cross Waibaidu Bridge and walk the Bund to the start of Nanjing Road East (about 15 minutes), then west along the lit pedestrian street, about 1.2 km, to the People's Square end.",
+            "ru": "От Северного Бунда через мост Вайбайду и по Бунду к началу Нанкин-роуд Восточной (около 15 минут), затем на запад по освещённой пешеходной улице, около 1,2 км, до конца у Народной площади.",
+            "zh": "从北外滩过外白渡桥，沿外滩走到南京东路口（约15分钟），再沿亮灯的步行街往西走约1.2公里，到人民广场那头。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d19-mms",
+          "name": {
+            "en": "M&M's World Shanghai",
+            "ru": "M&M's World Shanghai",
+            "zh": "M&M's World 上海"
+          },
+          "time": "18:30",
+          "category": "sight",
+          "lat": 31.2355,
+          "lng": 121.4745,
+          "placeId": null,
+          "note": {
+            "en": "The multi-storey M&M's store at the People's Square end of the pedestrian street.",
+            "ru": "Многоэтажный магазин M&M's у конца пешеходной улицы со стороны Народной площади.",
+            "zh": "步行街靠人民广场那头的多层M&M's旗舰店。"
+          },
+          "details": {
+            "en": "In Shimao International Plaza (世茂国际广场), Nanjing Road East near People's Square. Not checked live: confirm it is open and its hours on Dianping/Amap before going. The map pin is approximate.",
+            "ru": "В Shimao International Plaza (世茂国际广场), Нанкин-роуд Восточная у Народной площади. Не проверено: перед походом уточните в Dianping/Amap, что магазин работает, и часы. Точка на карте приблизительная.",
+            "zh": "在南京东路靠人民广场的世茂国际广场。未实时核实，去之前请在大众点评/高德确认是否营业及营业时间。地图定位为大致位置。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d19-dinner",
+          "name": {
+            "en": "Dinner around People's Square, then Line 1 home",
+            "ru": "Ужин у Народной площади, затем линия 1 до отеля",
+            "zh": "人民广场一带晚餐，坐1号线回酒店"
+          },
+          "time": "19:15",
+          "category": "food",
+          "lat": 31.2335,
+          "lng": 121.4725,
+          "placeId": null,
+          "note": {
+            "en": "Line 1 from People's Square runs straight to Changshu Road, about 15 minutes. Home by about 21:00: pack and sleep early.",
+            "ru": "Линия 1 от Народной площади идёт прямо до Changshu Road, около 15 минут. Дома примерно к 21:00: сборы и ранний сон.",
+            "zh": "人民广场坐1号线直达常熟路，约15分钟。约21:00前回酒店，收拾行李早点睡。"
           },
           "details": {
             "en": "The map pin is approximate: navigate by the name.",
