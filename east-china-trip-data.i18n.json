@@ -4625,9 +4625,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Karon_Beach,_Phuket.jpg?width=1200",
+            "src": "photos/d20-sunset.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:Karon_Beach,_Phuket.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Karon_Beach,_Phuket.jpg?width=1200"
           }
         },
         {
@@ -4795,9 +4796,10 @@
           "meal": null,
           "warn": false,
           "photo": {
-            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Big_Buddha,_Phuket.jpg?width=1200",
+            "src": "photos/d21-bigbuddha.jpg",
             "source": "https://commons.wikimedia.org/wiki/File:The_Big_Buddha,_Phuket.jpg",
-            "credit": "Wikimedia Commons"
+            "credit": "Wikimedia Commons",
+            "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Big_Buddha,_Phuket.jpg?width=1200"
           }
         },
         {
