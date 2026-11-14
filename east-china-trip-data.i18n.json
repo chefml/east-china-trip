@@ -4723,25 +4723,25 @@
         "zh": "周一"
       },
       "title": {
-        "en": "Slow morning, Big Buddha at noon, Karon Viewpoint",
-        "ru": "Неспешное утро, Большой Будда в полдень, смотровая Карон",
-        "zh": "睡到自然醒，中午普吉大佛，卡伦观景台"
+        "en": "Big Buddha at noon, Hanuman World luge karts",
+        "ru": "Большой Будда в полдень, картинг-люж Hanuman World",
+        "zh": "中午普吉大佛，下午Hanuman World滑道卡丁车"
       },
-      "busyness": 2,
+      "busyness": 3,
       "focus": {
-        "en": "A slow beach morning, the Big Buddha at noon, a long lunch and an afternoon by the pool; sunset at Karon Viewpoint if you feel like it.",
-        "ru": "Неспешное утро на пляже, Большой Будда в полдень, долгий обед и день у бассейна; закат на смотровой Карон, если захочется.",
-        "zh": "上午慢慢来、在海边待着，中午去普吉大佛，悠闲吃个午饭，下午在泳池边休息；有兴致的话傍晚去卡伦观景台看日落。"
+        "en": "A slow beach morning, the Big Buddha at noon, lunch in Chalong, then Hanuman World for the luge karts (your Mario Kart) and the zipline if you like. Back for sunset at Karon Viewpoint and dinner.",
+        "ru": "Неспешное утро на пляже, Большой Будда в полдень, обед в Чалонге, затем Hanuman World — картинг-люж (ваш Марио Карт) и зиплайн по желанию. Обратно к закату на смотровой Карон и ужину.",
+        "zh": "上午海边慢慢来，中午普吉大佛，查龙吃午饭，下午去Hanuman World玩滑道卡丁车（你的马里奥赛车），想玩可加丛林飞跃。傍晚回卡伦观景台看日落、吃晚饭。"
       },
       "roads": {
-        "en": "Karon → Big Buddha: Grab/Bolt about 20 minutes up a paved mountain road (show the Thai name พระใหญ่ภูเก็ต). Karon → Karon Viewpoint: about 15 minutes south.",
-        "ru": "Карон → Большой Будда: Grab/Bolt около 20 минут по асфальтовой горной дороге (покажите тайское название พระใหญ่ภูเก็ต). Карон → смотровая Карон: около 15 минут на юг.",
-        "zh": "卡伦 → 普吉大佛：打Grab/Bolt约20分钟，走铺好的山路（可给司机看泰文名 พระใหญ่ภูเก็ต）。卡伦 → 卡伦观景台：往南约15分钟。"
+        "en": "Karon → Big Buddha: Grab/Bolt about 20 minutes (show พระใหญ่ภูเก็ต). Big Buddha → Chalong: 10 minutes. Chalong → Hanuman World (Chaofa Road, Wichit): about 20 minutes. Hanuman World → Karon Viewpoint / Karon: about 35–40 minutes.",
+        "ru": "Карон → Большой Будда: Grab/Bolt около 20 минут (покажите พระใหญ่ภูเก็ต). Большой Будда → Чалонг: 10 минут. Чалонг → Hanuman World (Chaofa Road, Вичит): около 20 минут. Hanuman World → смотровая Карон / Карон: около 35–40 минут.",
+        "zh": "卡伦 → 普吉大佛：打Grab/Bolt约20分钟（给司机看 พระใหญ่ภูเก็ต）。大佛 → 查龙：10分钟。查龙 → Hanuman World（Chaofa路，Wichit）：约20分钟。Hanuman World → 卡伦观景台/卡伦：约35–40分钟。"
       },
       "clothing": {
-        "en": "For the Big Buddha: shoulders and knees covered (free sarongs at the entrance). Sun protection: it is exposed at noon.",
-        "ru": "Для Большого Будды: закрытые плечи и колени (саронги у входа бесплатно). Защита от солнца: в полдень там открыто.",
-        "zh": "去大佛：遮住肩膀和膝盖（门口可免费借纱笼）。注意防晒：中午山顶没有遮挡。"
+        "en": "For the Big Buddha: shoulders and knees covered (free sarongs). For Hanuman World: closed shoes, clothes you can move in; bring sun protection and water.",
+        "ru": "Для Большого Будды: закрытые плечи и колени (саронги бесплатно). Для Hanuman World: закрытая обувь и удобная одежда; защита от солнца и вода.",
+        "zh": "去大佛：遮住肩膀和膝盖（可免费借纱笼）。去Hanuman World：穿包脚的鞋、方便活动的衣服；带好防晒和水。"
       },
       "extra": {
         "en": "The Big Buddha reopened in March 2026 after a landslide closure; it is free (donations welcome), open about 09:00–18:00, last entry 17:30. Noon is the hottest time: bring water.",
@@ -4805,19 +4805,19 @@
         {
           "id": "d21-lunch",
           "name": {
-            "en": "Lunch in Chalong or back in Karon",
-            "ru": "Обед в Чалонге или в Кароне",
-            "zh": "查龙或回卡伦吃午饭"
+            "en": "Lunch in Chalong",
+            "ru": "Обед в Чалонге",
+            "zh": "查龙午餐"
           },
-          "time": "13:30",
+          "time": "13:15",
           "category": "food",
           "lat": 7.835,
           "lng": 98.335,
           "placeId": null,
           "note": {
-            "en": "Thai lunch on the way down (Chalong is 10 minutes below), then back to the hotel.",
-            "ru": "Тайский обед по дороге вниз (Чалонг в 10 минутах ниже), затем в отель.",
-            "zh": "下山路上吃泰餐（查龙就在山下10分钟），然后回酒店。"
+            "en": "Thai lunch at the foot of the hill (10 minutes down), on the way to Hanuman World.",
+            "ru": "Тайский обед у подножия холма (10 минут вниз), по пути в Hanuman World.",
+            "zh": "下山10分钟在查龙吃泰餐，正好顺路去Hanuman World。"
           },
           "details": {
             "en": "The map pin is approximate: navigate by the name.",
@@ -4829,25 +4829,31 @@
           "warn": false
         },
         {
-          "id": "d21-pool",
+          "id": "d21-hanuman",
           "name": {
-            "en": "Pool and beach afternoon",
-            "ru": "Бассейн и пляж",
-            "zh": "下午泳池、海滩"
+            "en": "Hanuman World: luge karts (and zipline)",
+            "ru": "Hanuman World: картинг-люж (и зиплайн)",
+            "zh": "Hanuman World：滑道卡丁车（可加丛林飞跃）"
           },
-          "time": "15:00",
-          "category": "pool",
-          "lat": 7.8455,
-          "lng": 98.2945,
+          "time": "14:30",
+          "category": "activity",
+          "lat": 7.8985,
+          "lng": 98.3625,
           "placeId": null,
           "note": {
-            "en": "Nothing planned: swim, nap, read.",
-            "ru": "Ничего не запланировано: плавать, спать, читать.",
-            "zh": "不安排：游泳、午睡、看书。"
+            "en": "Your «Mario Kart»: the Hanuman Luge, solo gravity karts down a 650 m track through the rainforest, steering and braking yourself. 3 day rides take about 45 minutes. Add the zipline/Roller course if you want more (about 2 hours).",
+            "ru": "Ваш «Марио Карт»: Hanuman Luge — одиночные гравитационные карты по трассе 650 м через тропический лес, сами рулите и тормозите. 3 дневных заезда — около 45 минут. Хотите больше — добавьте зиплайн/Roller (около 2 часов).",
+            "zh": "你的「马里奥赛车」：Hanuman Luge滑道卡丁车，一人一车沿650米雨林赛道往下冲，自己控制方向和刹车。白天3次约45分钟。想玩更多可加丛林飞跃/Roller（约2小时）。"
+          },
+          "details": {
+            "en": "105 Moo 4, Chaofa Road, Wichit, about 30 minutes from Karon and 20 minutes from the Big Buddha. Open daily about 08:00–18:00. Luge from about US$27; book on Klook, Trip.com or Tiqets (same-day possible). Children 4–10 ride with a parent; not for pregnancy or back/heart problems. Lockers on site. The map pin is approximate.",
+            "ru": "105 Moo 4, Chaofa Road, Вичит, около 30 минут от Карона и 20 минут от Большого Будды. Ежедневно примерно 08:00–18:00. Люж от ~US$27; бронь на Klook, Trip.com или Tiqets (можно в тот же день). Дети 4–10 лет — с родителем; не при беременности и проблемах со спиной/сердцем. Есть шкафчики. Точка на карте приблизительная.",
+            "zh": "地址：105 Moo 4, Chaofa Road, Wichit，离卡伦约30分钟，离大佛约20分钟。每天约8:00–18:00。滑道约US$27起，可在Klook、Trip.com或Tiqets预订（可当天订）。4–10岁儿童需家长陪同；孕妇、腰背或心脏不好的人不建议。现场有储物柜。地图定位为大致位置。"
           },
           "optional": false,
           "meal": null,
-          "warn": false
+          "warn": false,
+          "booking": true
         },
         {
           "id": "d21-viewpoint",
@@ -4856,7 +4862,7 @@
             "ru": "Смотровая Карон на закате",
             "zh": "卡伦观景台日落"
           },
-          "time": "17:30",
+          "time": "17:45",
           "category": "nature",
           "lat": 7.808,
           "lng": 98.3015,
@@ -4902,7 +4908,17 @@
           "warn": false
         }
       ],
-      "checklist": []
+      "checklist": [
+        {
+          "id": "c16-hanuman",
+          "done": false,
+          "text": {
+            "en": "Book Hanuman Luge (3 day rides, about 14:30) on Klook / Trip.com / Tiqets; add the zipline if you want",
+            "ru": "Забронируйте Hanuman Luge (3 дневных заезда, около 14:30) на Klook / Trip.com / Tiqets; при желании добавьте зиплайн",
+            "zh": "在Klook/Trip.com/Tiqets预订Hanuman Luge（白天3次，约14:30）；想玩可加丛林飞跃"
+          }
+        }
+      ]
     },
     {
       "day": 22,
