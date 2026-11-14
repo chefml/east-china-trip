@@ -1,15 +1,15 @@
 {
   "_instructions": {
-    "en": "Multilingual dataset for the East China trip PWA (27 Oct – 15 Nov 2026). Text fields (trip.title, trip.overview, day.title/weekday/focus/roads/clothing/extra, location.name/note/details, general, legend, appGuide, dining) are objects {en,ru,zh}: pick the active language. UI strings live in 'ui' keyed by language code. 'location.category' and 'location.meal' are language-independent codes; look up display labels in ui[lang].categories / ui[lang].meals. New categories compared with the Chiang Mai file: transit, museum, sight, work (a laptop work block or work spot). Google Maps links use lat/lng + placeId (name is cosmetic only); placeId may be null. A top-level 'dining' object holds standalone dinner options: {title, intro, places[]} (same schema as a location, time=null, meal=null) and is rendered as the 4th tab (ui[lang].tabDining). 'day.day' is the sequential trip day (1..20), 'day.date' is the calendar date. 'location.details' is an optional expanded reference. Build a language switcher over trip.languages; default = trip.defaultLanguage. 'location.photo' is optional: {src, source, credit}. src is a repo-relative file in photos/ (downloaded from Wikimedia Commons by .github/workflows/photos.yml) or, until the download has run, the remote Commons URL; source is the Commons file page and credit the credit line. Stops without a photo get a photo-search link instead. 'day.checklist' (from day 11, Nanjing) is an optional list of {id, done, text}: bookings and tickets to sort out, shown at the top of the day; done is the initial state and the viewer's ticks are kept on the device. 'location.booking' = true marks a stop that needs a ticket or booking in advance. 'location.altFor' = true marks an optional stop to do instead of the work block just before it.",
-    "ru": "Мультиязычный датасет для PWA поездки по Восточному Китаю (27 октября – 15 ноября 2026). Текстовые поля — объекты {en,ru,zh}. Строки интерфейса — в 'ui' по коду языка. Коды 'category'/'meal' языконезависимы, подписи берутся из ui[lang]. Новые категории относительно файла Чиангмая: transit, museum, sight, work (рабочий блок или место для работы). Ссылки Google Maps строятся по lat/lng + placeId (placeId может быть null). Верхнеуровневый объект 'dining' — отдельные опции для ужина {title, intro, places[]}, выводится 4-й вкладкой (ui[lang].tabDining). 'day.day' — сквозной номер дня поездки (1..20), 'day.date' — календарная дата. 'location.details' — необязательный расширенный справочник. Переключатель языка — по trip.languages, по умолчанию trip.defaultLanguage. 'location.photo' необязателен: {src, source, credit}. src — файл в photos/ внутри репозитория (его скачивает с Wikimedia Commons .github/workflows/photos.yml) или, пока скачивание не прошло, исходный URL Commons; source — страница файла на Commons, credit — подпись. Для точек без фото показывается ссылка на поиск фотографий. 'day.checklist' (с 11-го дня, Нанкин) — необязательный список {id, done, text}: брони и билеты, которые нужно оформить; показывается вверху дня, done — начальное состояние, отметки пользователя хранятся на устройстве. 'location.booking' = true — точка, куда нужен билет или бронь заранее. 'location.altFor' = true — необязательная точка вместо рабочего блока перед ней."
+    "en": "Multilingual dataset for the East China trip PWA (27 Oct – 18 Nov 2026). Text fields (trip.title, trip.overview, day.title/weekday/focus/roads/clothing/extra, location.name/note/details, general, legend, appGuide, dining) are objects {en,ru,zh}: pick the active language. UI strings live in 'ui' keyed by language code. 'location.category' and 'location.meal' are language-independent codes; look up display labels in ui[lang].categories / ui[lang].meals. New categories compared with the Chiang Mai file: transit, museum, sight, work (a laptop work block or work spot). Google Maps links use lat/lng + placeId (name is cosmetic only); placeId may be null. A top-level 'dining' object holds standalone dinner options: {title, intro, places[]} (same schema as a location, time=null, meal=null) and is rendered as the 4th tab (ui[lang].tabDining). 'day.day' is the sequential trip day (1..23), 'day.date' is the calendar date. 'location.details' is an optional expanded reference. Build a language switcher over trip.languages; default = trip.defaultLanguage. 'location.photo' is optional: {src, source, credit}. src is a repo-relative file in photos/ (downloaded from Wikimedia Commons by .github/workflows/photos.yml) or, until the download has run, the remote Commons URL; source is the Commons file page and credit the credit line. Stops without a photo get a photo-search link instead. 'day.checklist' (from day 11, Nanjing) is an optional list of {id, done, text}: bookings and tickets to sort out, shown at the top of the day; done is the initial state and the viewer's ticks are kept on the device. 'location.booking' = true marks a stop that needs a ticket or booking in advance. 'location.altFor' = true marks an optional stop to do instead of the work block just before it.",
+    "ru": "Мультиязычный датасет для PWA поездки по Восточному Китаю (27 октября – 18 ноября 2026). Текстовые поля — объекты {en,ru,zh}. Строки интерфейса — в 'ui' по коду языка. Коды 'category'/'meal' языконезависимы, подписи берутся из ui[lang]. Новые категории относительно файла Чиангмая: transit, museum, sight, work (рабочий блок или место для работы). Ссылки Google Maps строятся по lat/lng + placeId (placeId может быть null). Верхнеуровневый объект 'dining' — отдельные опции для ужина {title, intro, places[]}, выводится 4-й вкладкой (ui[lang].tabDining). 'day.day' — сквозной номер дня поездки (1..23), 'day.date' — календарная дата. 'location.details' — необязательный расширенный справочник. Переключатель языка — по trip.languages, по умолчанию trip.defaultLanguage. 'location.photo' необязателен: {src, source, credit}. src — файл в photos/ внутри репозитория (его скачивает с Wikimedia Commons .github/workflows/photos.yml) или, пока скачивание не прошло, исходный URL Commons; source — страница файла на Commons, credit — подпись. Для точек без фото показывается ссылка на поиск фотографий. 'day.checklist' (с 11-го дня, Нанкин) — необязательный список {id, done, text}: брони и билеты, которые нужно оформить; показывается вверху дня, done — начальное состояние, отметки пользователя хранятся на устройстве. 'location.booking' = true — точка, куда нужен билет или бронь заранее. 'location.altFor' = true — необязательная точка вместо рабочего блока перед ней."
   },
   "trip": {
     "title": {
-      "en": "East China — Shanghai, Wuzhen, Hangzhou, Nanjing, Suzhou, Shanghai",
-      "ru": "Восточный Китай — Шанхай, Учжэнь, Ханчжоу, Нанкин, Сучжоу, Шанхай",
-      "zh": "华东 — 上海、乌镇、杭州、南京、苏州、上海"
+      "en": "East China & Phuket — Shanghai, Hangzhou, Nanjing, Suzhou, Phuket",
+      "ru": "Восточный Китай и Пхукет — Шанхай, Ханчжоу, Нанкин, Сучжоу, Пхукет",
+      "zh": "华东与普吉岛 — 上海、杭州、南京、苏州、普吉岛"
     },
-    "dates": "2026-10-27 … 2026-11-15",
+    "dates": "2026-10-27 … 2026-11-18",
     "brandColor": "#9F1239",
     "languages": [
       "en",
@@ -18,9 +18,9 @@
     ],
     "defaultLanguage": "ru",
     "overview": {
-      "en": "20 days by high-speed train, working on the road: Shanghai (27–31 Oct) → Wuzhen Xizha (a night in the water town) → Hangzhou (1–6 Nov: work days, Hanggang Park, the Gongyan banquet, Grand Canal museums, West Lake and Yue Fei Temple) → Nanjing (6–9 Nov: the Qinhuai, Niushoushan's Usnisa Palace, Purple Mountain, the Tangshan ape-man cave) → Suzhou (9–12 Nov: Shuangta Market, Shiquan Street, Jinji Lake, the Humble Administrator's Garden, Suzhou Museum, Lion Grove) → Shanghai again (12–15 Nov, only places new to you: Youmu Onsen, the Yuyuan Road and Suzhou Creek city walks, Columbia Circle, Zhangyuan, 1933 Old Millfun, Duolun Road and the North Bund) → fly to Phuket on 15 Nov. Nanjing has no work blocks; elsewhere most days have a 3-hour work block.",
-      "ru": "20 дней на скоростных поездах с работой в дороге: Шанхай (27–31 октября) → Учжэнь, Сичжа (ночь в водном городке) → Ханчжоу (1–6 ноября: рабочие дни, парк Ханган, ужин «Гунъянь», музеи Великого канала, Сиху и храм Юэ Фэя) → Нанкин (6–9 ноября: Циньхуай, дворец Фодин на Нюшоушане, Пурпурная гора, пещера Тангшань) → Сучжоу (9–12 ноября: рынок Шуанта, улица Шицюань, озеро Цзиньцзи, сад Чжочжэн, музей Сучжоу, Шицзылинь) → снова Шанхай (12–15 ноября, только новые места: онсэн Youmu, прогулки по Юйюань-лу и Сучжоу-Крик, Columbia Circle, Чжанъюань, 1933 Old Millfun, Дуолунь-лу и Северный Бунд) → вылет на Пхукет 15 ноября. В Нанкине без рабочих блоков; в остальных городах в большинстве дней 3-часовой рабочий блок.",
-      "zh": "20天高铁行程，边旅行边办公：上海（10月27–31日）→ 乌镇西栅（夜宿水乡）→ 杭州（11月1–6日：办公日、杭钢公园、宫宴、大运河博物馆、西湖与岳王庙）→ 南京（11月6–9日：秦淮河、牛首山佛顶宫、紫金山、汤山猿人洞）→ 苏州（11月9–12日：双塔市集、十全街、金鸡湖、拙政园、苏州博物馆、狮子林）→ 再回上海（11月12–15日，只去没去过的地方：游沐汤泉、愚园路和苏州河城市漫步、上生新所、张园、1933老场坊、多伦路、北外滩）→ 15日飞普吉岛。南京不安排办公；其他城市大多数日子安排3小时办公。"
+      "en": "23 days by high-speed train, working on the road: Shanghai (27–31 Oct) → Wuzhen Xizha (a night in the water town) → Hangzhou (1–6 Nov: work days, Hanggang Park, the Gongyan banquet, Grand Canal museums, West Lake and Yue Fei Temple) → Nanjing (6–9 Nov: the Qinhuai, Niushoushan's Usnisa Palace, Purple Mountain, the Tangshan ape-man cave) → Suzhou (9–12 Nov: Shuangta Market, Shiquan Street, Jinji Lake, the Humble Administrator's Garden, Suzhou Museum, Lion Grove) → Shanghai again (12–15 Nov, only places new to you: Youmu Onsen, the Yuyuan Road and Suzhou Creek city walks, Columbia Circle, Zhangyuan, 1933 Old Millfun, Duolun Road and the North Bund) → Phuket (15–18 Nov: Karon Beach, massages, the Big Buddha, noodles at Baan Kuay Tiew, a slow beach finish). Nanjing has no work blocks; elsewhere most days have a 3-hour work block.",
+      "ru": "23 дня на скоростных поездах с работой в дороге: Шанхай (27–31 октября) → Учжэнь, Сичжа (ночь в водном городке) → Ханчжоу (1–6 ноября: рабочие дни, парк Ханган, ужин «Гунъянь», музеи Великого канала, Сиху и храм Юэ Фэя) → Нанкин (6–9 ноября: Циньхуай, дворец Фодин на Нюшоушане, Пурпурная гора, пещера Тангшань) → Сучжоу (9–12 ноября: рынок Шуанта, улица Шицюань, озеро Цзиньцзи, сад Чжочжэн, музей Сучжоу, Шицзылинь) → снова Шанхай (12–15 ноября, только новые места: онсэн Youmu, прогулки по Юйюань-лу и Сучжоу-Крик, Columbia Circle, Чжанъюань, 1933 Old Millfun, Дуолунь-лу и Северный Бунд) → Пхукет (15–18 ноября: пляж Карон, массаж, Большой Будда, лапша в Baan Kuay Tiew, спокойный финал у моря). В Нанкине без рабочих блоков; в остальных городах в большинстве дней 3-часовой рабочий блок.",
+      "zh": "23天高铁行程，边旅行边办公：上海（10月27–31日）→ 乌镇西栅（夜宿水乡）→ 杭州（11月1–6日：办公日、杭钢公园、宫宴、大运河博物馆、西湖与岳王庙）→ 南京（11月6–9日：秦淮河、牛首山佛顶宫、紫金山、汤山猿人洞）→ 苏州（11月9–12日：双塔市集、十全街、金鸡湖、拙政园、苏州博物馆、狮子林）→ 再回上海（11月12–15日，只去没去过的地方：游沐汤泉、愚园路和苏州河城市漫步、上生新所、张园、1933老场坊、多伦路、北外滩）→ 普吉岛（11月15–18日：卡伦海滩、按摩、普吉大佛、บ้านก๋วยเตี๋ยว粿条，在海边慢慢收尾）。南京不安排办公；其他城市大多数日子安排3小时办公。"
     }
   },
   "ui": {
@@ -4478,30 +4478,30 @@
         "zh": "周日"
       },
       "title": {
-        "en": "08:30 flight to Phuket",
-        "ru": "Рейс в 08:30 на Пхукет",
-        "zh": "8:30飞普吉岛"
+        "en": "Fly to Phuket, Karon Beach, massage and late dinner",
+        "ru": "Перелёт на Пхукет, пляж Карон, массаж и поздний ужин",
+        "zh": "飞普吉岛：卡伦海滩、按摩、晚一点吃晚饭"
       },
-      "busyness": 1,
+      "busyness": 2,
       "focus": {
-        "en": "An early start: taxi from the hotel at 05:30 to Pudong for the 08:30 flight to Phuket.",
-        "ru": "Ранний подъём: такси от отеля в 05:30 до Пудуна на рейс в 08:30 на Пхукет.",
-        "zh": "早起：5:30从酒店打车去浦东，赶8:30飞普吉岛的航班。"
+        "en": "Taxi at 05:30 for the 08:30 flight, land in Phuket at 13:15 and check in at Karon Beach. Rest, sunset on the beach, then a massage and a late dinner.",
+        "ru": "Такси в 05:30 на рейс в 08:30, посадка на Пхукете в 13:15 и заселение на пляже Карон. Отдых, закат на пляже, затем массаж и поздний ужин.",
+        "zh": "5:30打车赶8:30的航班，13:15到普吉岛，入住卡伦海滩。休息一下，海边看日落，晚上按摩，晚一点吃晚饭。"
       },
       "roads": {
-        "en": "Changshu Road → Pudong International Airport: taxi/DiDi about 50–60 minutes early on a Sunday. If the flight is from Hongqiao instead, it is about 30 minutes.",
-        "ru": "Чаншу-лу → аэропорт Пудун: такси/DiDi около 50–60 минут рано утром в воскресенье. Если рейс из Хунцяо — около 30 минут.",
-        "zh": "常熟路 → 浦东国际机场：周日清晨打车约50–60分钟。如果是虹桥机场出发，约30分钟。"
+        "en": "Changshu Road → Pudong airport: taxi about 50–60 minutes. Phuket airport → Karon Beach: Grab/Bolt or airport taxi, about 50–60 minutes. In Karon, the beach, massage shops and restaurants are within walking distance.",
+        "ru": "Чаншу-лу → аэропорт Пудун: такси около 50–60 минут. Аэропорт Пхукета → пляж Карон: Grab/Bolt или такси аэропорта, около 50–60 минут. В Кароне пляж, массаж и рестораны в пешей доступности.",
+        "zh": "常熟路 → 浦东机场：打车约50–60分钟。普吉机场 → 卡伦海滩：Grab/Bolt或机场出租车约50–60分钟。在卡伦，海滩、按摩店和餐厅都步行可达。"
       },
       "clothing": {
-        "en": "Comfortable travel clothes; Phuket is about +31 °C.",
-        "ru": "Удобная одежда для дороги; в Пхукете около +31 °C.",
-        "zh": "穿舒适的旅行服装；普吉岛约31°C。"
+        "en": "Light clothes, swimwear, sunscreen and a hat; +27…+32 °C.",
+        "ru": "Лёгкая одежда, купальник, солнцезащитный крем и шляпа; +27…+32 °C.",
+        "zh": "轻薄衣服、泳衣、防晒霜和帽子；约27–32°C。"
       },
       "extra": {
-        "en": "Visa-free stay: 27 Oct – 15 Nov is 20 days, within the 30-day limit.",
-        "ru": "Безвизовое пребывание: 27 октября – 15 ноября — 20 дней, в пределах лимита 30 дней.",
-        "zh": "免签停留：10月27日至11月15日共20天，在30天限期内。"
+        "en": "China visa-free stay: 27 Oct – 15 Nov is 20 days, within the 30-day limit. Thailand: fill in the free Thailand Digital Arrival Card (TDAC) at tdac.immigration.go.th before you land; it is required for all foreign arrivals and accepted up to 72 hours ahead.",
+        "ru": "Безвизовое пребывание в Китае: 27 октября – 15 ноября — 20 дней, в пределах лимита. Таиланд: до посадки заполните бесплатную цифровую карту прибытия (TDAC) на tdac.immigration.go.th; она обязательна для всех иностранцев и принимается за 72 часа до прибытия.",
+        "zh": "中国免签停留：10月27日至11月15日共20天，在30天限期内。泰国：落地前在 tdac.immigration.go.th 免费填写泰国数字入境卡（TDAC），所有外国人入境都必须填，可在抵达前72小时内提交。"
       },
       "locations": [
         {
@@ -4551,9 +4551,148 @@
             "credit": "Wikimedia Commons",
             "remote": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_Pudong_International_Airport.jpg?width=1200"
           }
+        },
+        {
+          "id": "d20-arrive",
+          "name": {
+            "en": "Arrive Phuket airport (HKT)",
+            "ru": "Прилёт в аэропорт Пхукета (HKT)",
+            "zh": "抵达普吉机场（HKT）"
+          },
+          "time": "13:15",
+          "category": "transit",
+          "lat": 8.1132,
+          "lng": 98.3169,
+          "placeId": null,
+          "note": {
+            "en": "Thai time is one hour behind China. Immigration with your TDAC, then a Grab, Bolt or airport taxi south to Karon, about 50–60 minutes, roughly ฿800–1,000.",
+            "ru": "Время в Таиланде на час меньше, чем в Китае. Паспортный контроль с TDAC, затем Grab, Bolt или такси аэропорта на юг до Карона, около 50–60 минут, примерно ฿800–1000.",
+            "zh": "泰国比中国慢1小时。凭TDAC入境，然后坐Grab、Bolt或机场出租车往南到卡伦，约50–60分钟，约฿800–1,000。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d20-hotel",
+          "name": {
+            "en": "Hotel: Karon Beach (15–18 Nov)",
+            "ru": "Отель: пляж Карон (15–18 ноября)",
+            "zh": "酒店：卡伦海滩（11月15–18日）"
+          },
+          "time": "14:30",
+          "category": "hotel",
+          "lat": 7.8455,
+          "lng": 98.2945,
+          "placeId": null,
+          "note": {
+            "en": "3 nights. Check in, rest after the 05:30 start, add the hotel name and address here.",
+            "ru": "3 ночи. Заселение и отдых после подъёма в 05:30; добавьте сюда название и адрес отеля.",
+            "zh": "住3晚。入住后休息，补回5:30起床的觉；请在此补充酒店名称和地址。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": true
+        },
+        {
+          "id": "d20-sunset",
+          "name": {
+            "en": "Sunset on Karon Beach",
+            "ru": "Закат на пляже Карон",
+            "zh": "卡伦海滩日落"
+          },
+          "time": "17:45",
+          "category": "nature",
+          "lat": 7.8445,
+          "lng": 98.293,
+          "placeId": null,
+          "note": {
+            "en": "Karon faces west: a slow walk on the 3 km beach as the sun goes down, about 18:00.",
+            "ru": "Карон смотрит на запад: неспешная прогулка по 3-километровому пляжу на закате, около 18:00.",
+            "zh": "卡伦海滩朝西：日落（约18:00）时沿3公里长的沙滩慢慢走。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false,
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Karon_Beach,_Phuket.jpg?width=1200",
+            "source": "https://commons.wikimedia.org/wiki/File:Karon_Beach,_Phuket.jpg",
+            "credit": "Wikimedia Commons"
+          }
+        },
+        {
+          "id": "d20-massage",
+          "name": {
+            "en": "Thai massage",
+            "ru": "Тайский массаж",
+            "zh": "泰式按摩"
+          },
+          "time": "19:00",
+          "category": "activity",
+          "lat": 7.846,
+          "lng": 98.2965,
+          "placeId": null,
+          "note": {
+            "en": "An hour of Thai, oil or foot massage at one of the shops along Karon's beach road (Karon Road / Patak Road): roughly ฿300–500 an hour. Walk in or book an hour ahead.",
+            "ru": "Час тайского, масляного или массажа ног в одном из салонов вдоль пляжной дороги Карона (Karon Road / Patak Road): примерно ฿300–500 в час. Можно без записи или за час заранее.",
+            "zh": "在卡伦海滩路（Karon Road / Patak Road）沿街的按摩店做一小时泰式、精油或足疗：约฿300–500/小时。可直接进店，或提前一小时预约。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d20-dinner",
+          "name": {
+            "en": "Late dinner in Karon",
+            "ru": "Поздний ужин в Кароне",
+            "zh": "卡伦晚餐（晚一点）"
+          },
+          "time": "20:30",
+          "category": "food",
+          "lat": 7.846,
+          "lng": 98.2965,
+          "placeId": null,
+          "note": {
+            "en": "Thai seafood or curries at a local restaurant near the hotel; many stay open late.",
+            "ru": "Тайские морепродукты или карри в местном ресторане рядом с отелем; многие работают допоздна.",
+            "zh": "在酒店附近的泰餐馆吃海鲜或咖喱，很多店开到很晚。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
         }
       ],
       "checklist": [
+        {
+          "id": "c15-tdac",
+          "done": false,
+          "text": {
+            "en": "Thailand Digital Arrival Card (TDAC) submitted at tdac.immigration.go.th (free; required)",
+            "ru": "Цифровая карта прибытия (TDAC) заполнена на tdac.immigration.go.th (бесплатно; обязательно)",
+            "zh": "已在 tdac.immigration.go.th 提交泰国数字入境卡TDAC（免费，必须）"
+          }
+        },
         {
           "id": "c15-flight",
           "done": false,
@@ -4561,6 +4700,440 @@
             "en": "Passport, boarding pass, taxi at 05:30",
             "ru": "Паспорт, посадочный, такси в 05:30",
             "zh": "护照、登机牌、5:30的车"
+          }
+        },
+        {
+          "id": "c15-thb",
+          "done": false,
+          "text": {
+            "en": "Some Thai baht or a card for the airport taxi",
+            "ru": "Немного тайских бат или карта для такси из аэропорта",
+            "zh": "准备些泰铢或可刷的卡付机场打车"
+          }
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "date": "2026-11-16",
+      "weekday": {
+        "en": "Mon",
+        "ru": "Пн",
+        "zh": "周一"
+      },
+      "title": {
+        "en": "Slow morning, Big Buddha at noon, Karon Viewpoint",
+        "ru": "Неспешное утро, Большой Будда в полдень, смотровая Карон",
+        "zh": "睡到自然醒，中午普吉大佛，卡伦观景台"
+      },
+      "busyness": 2,
+      "focus": {
+        "en": "A slow beach morning, the Big Buddha at noon, a long lunch and an afternoon by the pool; sunset at Karon Viewpoint if you feel like it.",
+        "ru": "Неспешное утро на пляже, Большой Будда в полдень, долгий обед и день у бассейна; закат на смотровой Карон, если захочется.",
+        "zh": "上午慢慢来、在海边待着，中午去普吉大佛，悠闲吃个午饭，下午在泳池边休息；有兴致的话傍晚去卡伦观景台看日落。"
+      },
+      "roads": {
+        "en": "Karon → Big Buddha: Grab/Bolt about 20 minutes up a paved mountain road (show the Thai name พระใหญ่ภูเก็ต). Karon → Karon Viewpoint: about 15 minutes south.",
+        "ru": "Карон → Большой Будда: Grab/Bolt около 20 минут по асфальтовой горной дороге (покажите тайское название พระใหญ่ภูเก็ต). Карон → смотровая Карон: около 15 минут на юг.",
+        "zh": "卡伦 → 普吉大佛：打Grab/Bolt约20分钟，走铺好的山路（可给司机看泰文名 พระใหญ่ภูเก็ต）。卡伦 → 卡伦观景台：往南约15分钟。"
+      },
+      "clothing": {
+        "en": "For the Big Buddha: shoulders and knees covered (free sarongs at the entrance). Sun protection: it is exposed at noon.",
+        "ru": "Для Большого Будды: закрытые плечи и колени (саронги у входа бесплатно). Защита от солнца: в полдень там открыто.",
+        "zh": "去大佛：遮住肩膀和膝盖（门口可免费借纱笼）。注意防晒：中午山顶没有遮挡。"
+      },
+      "extra": {
+        "en": "The Big Buddha reopened in March 2026 after a landslide closure; it is free (donations welcome), open about 09:00–18:00, last entry 17:30. Noon is the hottest time: bring water.",
+        "ru": "Большой Будда снова открыт с марта 2026 после закрытия из-за оползня; бесплатно (пожертвования приветствуются), примерно 09:00–18:00, вход до 17:30. Полдень — самое жаркое время: возьмите воду.",
+        "zh": "普吉大佛因山体滑坡关闭后，2026年3月已重新开放；免费（欢迎捐款），约9:00–18:00开放，17:30停止入场。中午最热，记得带水。"
+      },
+      "locations": [
+        {
+          "id": "d21-breakfast",
+          "name": {
+            "en": "Slow breakfast and the beach",
+            "ru": "Неспешный завтрак и пляж",
+            "zh": "慢慢吃早餐、海边放空"
+          },
+          "time": "09:30",
+          "category": "food",
+          "lat": 7.8455,
+          "lng": 98.2945,
+          "placeId": null,
+          "note": {
+            "en": "No plans until noon.",
+            "ru": "До полудня никаких планов.",
+            "zh": "中午前没有安排。"
+          },
+          "optional": false,
+          "meal": "breakfast",
+          "warn": false
+        },
+        {
+          "id": "d21-bigbuddha",
+          "name": {
+            "en": "Big Buddha (พระใหญ่ภูเก็ต)",
+            "ru": "Большой Будда (พระใหญ่ภูเก็ต)",
+            "zh": "普吉大佛"
+          },
+          "time": "12:00",
+          "category": "temple",
+          "lat": 7.8278,
+          "lng": 98.3125,
+          "placeId": null,
+          "note": {
+            "en": "The 45 m white-marble Buddha on Nakkerd Hill, with views over Chalong Bay and down to Kata and Karon. About 1 hour.",
+            "ru": "45-метровый Будда из белого мрамора на холме Наккерд, с видом на залив Чалонг и вниз на Кату и Карон. Около часа.",
+            "zh": "那卡山顶45米高的白色大理石佛像，可俯瞰查龙湾和卡塔、卡伦海滩。约1小时。"
+          },
+          "details": {
+            "en": "Free; donations welcome. Open about 09:00–18:00, last entry 17:30. Dress code applies. The map pin is approximate.",
+            "ru": "Бесплатно; пожертвования приветствуются. Примерно 09:00–18:00, вход до 17:30. Дресс-код. Точка на карте приблизительная.",
+            "zh": "免费，欢迎捐款。约9:00–18:00开放，17:30停止入场。有着装要求。地图定位为大致位置。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false,
+          "photo": {
+            "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Big_Buddha,_Phuket.jpg?width=1200",
+            "source": "https://commons.wikimedia.org/wiki/File:The_Big_Buddha,_Phuket.jpg",
+            "credit": "Wikimedia Commons"
+          }
+        },
+        {
+          "id": "d21-lunch",
+          "name": {
+            "en": "Lunch in Chalong or back in Karon",
+            "ru": "Обед в Чалонге или в Кароне",
+            "zh": "查龙或回卡伦吃午饭"
+          },
+          "time": "13:30",
+          "category": "food",
+          "lat": 7.835,
+          "lng": 98.335,
+          "placeId": null,
+          "note": {
+            "en": "Thai lunch on the way down (Chalong is 10 minutes below), then back to the hotel.",
+            "ru": "Тайский обед по дороге вниз (Чалонг в 10 минутах ниже), затем в отель.",
+            "zh": "下山路上吃泰餐（查龙就在山下10分钟），然后回酒店。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": "main",
+          "warn": false
+        },
+        {
+          "id": "d21-pool",
+          "name": {
+            "en": "Pool and beach afternoon",
+            "ru": "Бассейн и пляж",
+            "zh": "下午泳池、海滩"
+          },
+          "time": "15:00",
+          "category": "pool",
+          "lat": 7.8455,
+          "lng": 98.2945,
+          "placeId": null,
+          "note": {
+            "en": "Nothing planned: swim, nap, read.",
+            "ru": "Ничего не запланировано: плавать, спать, читать.",
+            "zh": "不安排：游泳、午睡、看书。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d21-viewpoint",
+          "name": {
+            "en": "Karon Viewpoint at sunset",
+            "ru": "Смотровая Карон на закате",
+            "zh": "卡伦观景台日落"
+          },
+          "time": "17:30",
+          "category": "nature",
+          "lat": 7.808,
+          "lng": 98.3015,
+          "placeId": null,
+          "note": {
+            "en": "The three-beach view over Kata Noi, Kata and Karon, about 15 minutes south of the hotel.",
+            "ru": "Вид на три пляжа — Ката Ной, Ката и Карон, около 15 минут на юг от отеля.",
+            "zh": "一眼看到卡塔诺伊、卡塔、卡伦三个海湾，离酒店往南约15分钟。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": true,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d21-dinner",
+          "name": {
+            "en": "Dinner in Kata or Karon",
+            "ru": "Ужин в Кате или Кароне",
+            "zh": "卡塔或卡伦晚餐"
+          },
+          "time": "19:00",
+          "category": "food",
+          "lat": 7.8205,
+          "lng": 98.2985,
+          "placeId": null,
+          "note": {
+            "en": "Kata is on the way back from the viewpoint.",
+            "ru": "Ката по пути обратно со смотровой.",
+            "zh": "从观景台回来正好经过卡塔。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        }
+      ],
+      "checklist": []
+    },
+    {
+      "day": 22,
+      "date": "2026-11-17",
+      "weekday": {
+        "en": "Tue",
+        "ru": "Вт",
+        "zh": "周二"
+      },
+      "title": {
+        "en": "Chill day, noodles at Baan Kuay Tiew",
+        "ru": "Спокойный день, лапша в Baan Kuay Tiew",
+        "zh": "放空的一天，去บ้านก๋วยเตี๋ยว吃粿条"
+      },
+      "busyness": 1,
+      "focus": {
+        "en": "A free day by the sea. Around midday, a drive north for noodles at บ้านก๋วยเตี๋ยว (Baan Kuay Tiew); the rest of the day is the beach and the pool.",
+        "ru": "Свободный день у моря. Около полудня — поездка на север за лапшой в บ้านก๋วยเตี๋ยว (Baan Kuay Tiew); остальное время пляж и бассейн.",
+        "zh": "海边自由的一天。中午前后往北去บ้านก๋วยเตี๋ยว吃粿条，其余时间在海滩和泳池。"
+      },
+      "roads": {
+        "en": "Karon → Baan Kuay Tiew (Pa Sak, Thalang): Grab/Bolt about 40–50 minutes each way.",
+        "ru": "Карон → Baan Kuay Tiew (Па Сак, Тхаланг): Grab/Bolt около 40–50 минут в одну сторону.",
+        "zh": "卡伦 → บ้านก๋วยเตี๋ยว（他朗县巴萨）：打Grab/Bolt单程约40–50分钟。"
+      },
+      "clothing": {
+        "en": "Light clothes, swimwear, sunscreen and a hat; +27…+32 °C.",
+        "ru": "Лёгкая одежда, купальник, солнцезащитный крем и шляпа; +27…+32 °C.",
+        "zh": "轻薄衣服、泳衣、防晒霜和帽子；约27–32°C。"
+      },
+      "extra": {
+        "en": "Pack tonight: you fly home tomorrow. Add the flight time to the 18 Nov day.",
+        "ru": "Вечером соберите вещи: завтра домой. Добавьте время рейса в день 18 ноября.",
+        "zh": "今晚收拾行李，明天回程。请把航班时间补到18日。"
+      },
+      "locations": [
+        {
+          "id": "d22-beach",
+          "name": {
+            "en": "Beach morning",
+            "ru": "Утро на пляже",
+            "zh": "上午海滩"
+          },
+          "time": "09:30",
+          "category": "nature",
+          "lat": 7.8445,
+          "lng": 98.293,
+          "placeId": null,
+          "note": {
+            "en": "Swim early, before the midday sun.",
+            "ru": "Купайтесь рано, до полуденного солнца.",
+            "zh": "趁中午太阳大之前早点下海。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d22-noodles",
+          "name": {
+            "en": "Lunch: บ้านก๋วยเตี๋ยว (Baan Kuay Tiew)",
+            "ru": "Обед: บ้านก๋วยเตี๋ยว (Baan Kuay Tiew)",
+            "zh": "午餐：บ้านก๋วยเตี๋ยว 粿条店"
+          },
+          "time": "12:00",
+          "category": "food",
+          "lat": 8.032,
+          "lng": 98.308,
+          "placeId": null,
+          "note": {
+            "en": "A local noodle house: khao soi (northern curry noodles, beef or chicken), dry noodles, pork waterfall noodles, tom yum noodles. Under ฿100 a person.",
+            "ru": "Местная лапшичная: као сой (северная лапша в карри, с говядиной или курицей), сухая лапша, свиная «водопадная» лапша, лапша том ям. Меньше ฿100 на человека.",
+            "zh": "本地粿条店：泰北咖喱面（牛肉或鸡肉）、干捞粿条、猪肉船面（水猪粿条）、冬阴功粿条。人均不到฿100。"
+          },
+          "details": {
+            "en": "บ้านก๋วยเตี๋ยว ป่าสัก, 9/75 Moo 4, Pa Sak, Thalang. Open Monday–Saturday 08:30–16:00, closed Sunday (per Wongnai; check before going). If you meant a different Baan Kuay Tiew branch, tell me and I'll swap it. The map pin is approximate.",
+            "ru": "บ้านก๋วยเตี๋ยว ป่าสัก, 9/75 Moo 4, Па Сак, Тхаланг. Пн–Сб 08:30–16:00, в воскресенье закрыто (по Wongnai; проверьте заранее). Если имелся в виду другой филиал, скажите — заменю. Точка на карте приблизительная.",
+            "zh": "บ้านก๋วยเตี๋ยว ป่าสัก，地址 9/75 Moo 4, Pa Sak, Thalang。周一至周六8:30–16:00，周日休息（据Wongnai，去前请确认）。如果你说的是另一家分店，告诉我再换。地图定位为大致位置。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d22-pool",
+          "name": {
+            "en": "Pool, beach, massage",
+            "ru": "Бассейн, пляж, массаж",
+            "zh": "泳池、海滩、按摩"
+          },
+          "time": "14:30",
+          "category": "pool",
+          "lat": 7.8455,
+          "lng": 98.2945,
+          "placeId": null,
+          "note": {
+            "en": "Free afternoon; another massage if you liked yesterday's.",
+            "ru": "Свободный день; ещё один массаж, если вчерашний понравился.",
+            "zh": "下午自由安排；喜欢的话再去按摩一次。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d22-dinner",
+          "name": {
+            "en": "Sunset dinner by the beach",
+            "ru": "Ужин на закате у пляжа",
+            "zh": "海边日落晚餐"
+          },
+          "time": "18:00",
+          "category": "food",
+          "lat": 7.846,
+          "lng": 98.2965,
+          "placeId": null,
+          "note": {
+            "en": "A beachfront table in Karon for the last sunset.",
+            "ru": "Столик у моря в Кароне на последний закат.",
+            "zh": "在卡伦找个海边位子看最后一次日落。"
+          },
+          "details": {
+            "en": "The map pin is approximate: navigate by the name.",
+            "ru": "Точка на карте приблизительная: ищите по названию.",
+            "zh": "地图定位为大致位置，请按名称导航。"
+          },
+          "optional": false,
+          "meal": "dinner",
+          "warn": false
+        }
+      ],
+      "checklist": []
+    },
+    {
+      "day": 23,
+      "date": "2026-11-18",
+      "weekday": {
+        "en": "Wed",
+        "ru": "Ср",
+        "zh": "周三"
+      },
+      "title": {
+        "en": "Fly home from Phuket",
+        "ru": "Вылет домой с Пхукета",
+        "zh": "从普吉岛回程"
+      },
+      "busyness": 1,
+      "focus": {
+        "en": "Check out and head to Phuket airport. The flight time is not in the plan yet.",
+        "ru": "Выезд и дорога в аэропорт Пхукета. Время рейса пока не указано.",
+        "zh": "退房去普吉机场。航班时间还没填。"
+      },
+      "roads": {
+        "en": "Karon → Phuket airport (HKT): Grab/Bolt or taxi about 50–60 minutes; allow more in the afternoon. Be at the airport 2.5–3 hours before an international flight.",
+        "ru": "Карон → аэропорт Пхукета (HKT): Grab/Bolt или такси около 50–60 минут; днём закладывайте больше. В аэропорту за 2,5–3 часа до международного рейса.",
+        "zh": "卡伦 → 普吉机场（HKT）：打Grab/Bolt或出租车约50–60分钟，下午堵车要多留时间。国际航班提前2.5–3小时到机场。"
+      },
+      "clothing": {
+        "en": "Light clothes, swimwear, sunscreen and a hat; +27…+32 °C.",
+        "ru": "Лёгкая одежда, купальник, солнцезащитный крем и шляпа; +27…+32 °C.",
+        "zh": "轻薄衣服、泳衣、防晒霜和帽子；约27–32°C。"
+      },
+      "extra": {
+        "en": "Tell me the flight time and I'll set the departure times.",
+        "ru": "Скажите время рейса — расставлю время выезда.",
+        "zh": "告诉我航班时间，我再把出发时间排好。"
+      },
+      "locations": [
+        {
+          "id": "d23-checkout",
+          "name": {
+            "en": "Check out, Karon Beach",
+            "ru": "Выезд, пляж Карон",
+            "zh": "卡伦酒店退房"
+          },
+          "time": "—",
+          "category": "hotel",
+          "lat": 7.8455,
+          "lng": 98.2945,
+          "placeId": null,
+          "note": {
+            "en": "Leave about 4 hours before the flight.",
+            "ru": "Выезжайте примерно за 4 часа до рейса.",
+            "zh": "约在航班前4小时出发。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        },
+        {
+          "id": "d23-departure",
+          "name": {
+            "en": "Flight home from Phuket (HKT)",
+            "ru": "Рейс домой из Пхукета (HKT)",
+            "zh": "普吉机场（HKT）回程航班"
+          },
+          "time": "—",
+          "category": "transit",
+          "lat": 8.1132,
+          "lng": 98.3169,
+          "placeId": null,
+          "note": {
+            "en": "Time to be added.",
+            "ru": "Время уточнить.",
+            "zh": "时间待补。"
+          },
+          "optional": false,
+          "meal": null,
+          "warn": false
+        }
+      ],
+      "checklist": [
+        {
+          "id": "c18-checkin",
+          "done": false,
+          "text": {
+            "en": "Online check-in for the flight home",
+            "ru": "Онлайн-регистрация на рейс домой",
+            "zh": "办理回程航班网上值机"
+          }
+        },
+        {
+          "id": "c18-taxi",
+          "done": false,
+          "text": {
+            "en": "Book the airport Grab/taxi",
+            "ru": "Закажите Grab/такси в аэропорт",
+            "zh": "预约去机场的Grab/出租车"
           }
         }
       ]
@@ -5066,6 +5639,18 @@
           "en": "Work spots by city: Hangzhou Library, Suzhou Library or Eslite, Shanghai Library East and Huaihai Road. Public libraries are free but usually close on Mondays and may ask for your passport; weekend seats fill by mid-morning. Use your own data or a phone hotspot: public Wi-Fi needs a Chinese number and blocks Google, Slack and WhatsApp.",
           "ru": "Места для работы по городам: библиотеки Ханчжоу, Сучжоу или Eslite, Восточная библиотека Шанхая и библиотека на Хуайхай-роуд. Публичные библиотеки бесплатны, но обычно закрыты по понедельникам и могут попросить паспорт; в выходные места заканчиваются к середине утра. Пользуйтесь своим интернетом или раздачей с телефона: публичный Wi-Fi требует китайский номер и блокирует Google, Slack и WhatsApp.",
           "zh": "各城市办公点：杭州图书馆、苏州图书馆或诚品、上海图书馆东馆和淮海路馆。公共图书馆免费，但一般周一闭馆，可能要求出示护照；周末上午座位就满。请用自己的流量或手机热点：公共Wi-Fi需中国手机号，且无法使用Google、Slack、WhatsApp。"
+        }
+      },
+      {
+        "label": {
+          "en": "Phuket",
+          "ru": "Пхукет",
+          "zh": "普吉岛"
+        },
+        "text": {
+          "en": "Thailand is one hour behind China. Fill in the free TDAC arrival card at tdac.immigration.go.th within 72 hours before landing. Get around with Grab or Bolt; pay in baht (cash or card). Karon faces west, so every evening is a sunset.",
+          "ru": "Время в Таиланде на час меньше, чем в Китае. Заполните бесплатную карту прибытия TDAC на tdac.immigration.go.th за 72 часа до посадки. Передвигайтесь на Grab или Bolt; платите в батах (наличные или карта). Карон смотрит на запад — каждый вечер закат.",
+          "zh": "泰国比中国慢1小时。落地前72小时内在 tdac.immigration.go.th 免费填写TDAC入境卡。出行用Grab或Bolt，付泰铢（现金或刷卡）。卡伦海滩朝西，每天傍晚都能看日落。"
         }
       }
     ]
